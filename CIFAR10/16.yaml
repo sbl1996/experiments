@@ -1,0 +1,68 @@
+Dataset:
+  type: CIFAR10
+  data_home: "/home/aistudio/work/datasets/CIFAR10"
+  Train:
+    transforms:
+    - !RandomCrop
+      size: 32
+      padding: 4
+      fill: 128
+    - !RandomHorizontalFlip {}
+    # - !CIFAR10Policy {}
+    - !ToTensor {}
+    - !Normalize
+      mean: [0.4914, 0.4822, 0.4465]
+      std: [0.247, 0.243, 0.261]
+    # - !Cutout
+    #   n_holes: 1
+    #   length: 16
+    batch_size: 1024
+    shuffle: True
+    pin_memory: False
+    num_workers: 2
+    use_process: False
+  Test:
+    transforms:
+    - !ToTensor {}
+    - !Normalize
+      mean: [0.4914, 0.4822, 0.4465]
+      std: [0.247, 0.243, 0.261]
+    batch_size: 2048
+    num_workers: 2
+    use_process: False
+
+Model: RegNet
+
+RegNet:
+  stem_channels: 32
+  channels_per_stage: [96, 256, 640]
+  units_per_stage: [4, 8, 2]
+  channels_per_group: 16
+  use_se: True
+
+Optimizer:
+  type: SGD
+  lr: 0.8
+  momentum: 0.9
+  weight_decay: 0.0001
+  nesterov: True
+
+LRScheduler:
+  type: CosineAnnealingLR
+  T_max: 200
+  eta_min: 0.00001
+  warmup: 10
+  warmup_eta_min: 0.1
+
+# Mixup:
+#   alpha: 1.0
+
+label_smooth: 0.1
+
+fp16: True
+benchmark: True
+seed: 0
+save_path: "/home/aistudio/work/checkpoints/CIFAR10-RegNet"
+epochs: 200
+eval_freq: 10
+save_freq: 100
