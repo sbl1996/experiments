@@ -21,7 +21,8 @@ epochs: 600
 topk: 5
 image_shape: [3, 32, 32]
 
-use_mix: True
+
+use_mix: False
 ls_epsilon: -1
 
 LEARNING_RATE:
@@ -60,9 +61,6 @@ TRAIN:
             std: [0.247, 0.243, 0.261]
             order: ''
         - ToCHWImage:
-    mix:
-        - CutmixOperator:
-            alpha: 1.0
 
 
 VALID:
