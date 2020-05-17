@@ -1,0 +1,84 @@
+mode: 'train'
+ARCHITECTURE:
+    name: 'ShuffleNetV2Plus_CIFAR'
+    params:
+        stem_channels: 32
+        channels_per_stage: [128, 256, 512]
+        units_per_stage: [4, 8, 4]
+        final_channels: 512
+        use_se: True
+        dropout: 0.2
+
+checkpoints: ""
+pretrained_model: ""
+model_save_dir: "/home/aistudio/work/PaddleClas/output/"
+classes_num: 10
+total_images: 50000
+save_interval: 10
+validate: True
+valid_interval: 5
+epochs: 600
+topk: 5
+image_shape: [3, 32, 32]
+
+use_mix: True
+ls_epsilon: -1
+
+LEARNING_RATE:
+    function: 'CosineWarmup'
+    params:                   
+        lr: 0.8
+
+OPTIMIZER:
+    function: 'Momentum'
+    params:
+        momentum: 0.9
+    regularizer:
+        function: 'L2'
+        factor: 0.00005
+
+TRAIN:
+    batch_size: 1024
+    num_workers: 4
+    file_list: "/home/aistudio/work/PaddleClas/dataset/cifar10/train_list.txt"
+    data_dir: "/home/aistudio/work/PaddleClas/dataset/cifar10/bmp"
+    shuffle_seed: 0
+    transforms:
+        - DecodeImage:
+            to_rgb: True
+            to_np: False
+            channel_first: False
+        - RandomCrop:
+            size: 32
+            padding: 4
+            fill: 128
+        - RandFlipImage:
+            flip_code: 1
+        - NormalizeImage:
+            scale: 1./255.
+            mean: [0.4914, 0.4822, 0.4465]
+            std: [0.247, 0.243, 0.261]
+            order: ''
+        - ToCHWImage:
+    mix:
+        - CutmixOperator:
+            alpha: 1.0
+
+
+VALID:
+    batch_size: 1024
+    num_workers: 4
+    file_list: "/home/aistudio/work/PaddleClas/dataset/cifar10/test_list.txt"
+    data_dir: "/home/aistudio/work/PaddleClas/dataset/cifar10/bmp"
+    shuffle_seed: 0
+    transforms:
+        - DecodeImage:
+            to_rgb: True
+            to_np: False
+            channel_first: False
+        - NormalizeImage:
+            scale: 1./255.
+            mean: [0.4914, 0.4822, 0.4465]
+            std: [0.247, 0.243, 0.261]
+            order: ''
+        - ToCHWImage:

@@ -1,0 +1,940 @@
+2020-05-17 16:30:37 INFO: 
+===========================================================
+==        PaddleClas is powered by PaddlePaddle !        ==
+===========================================================
+==                                                       ==
+==   For more info please go to the following website.   ==
+==                                                       ==
+==       https://github.com/PaddlePaddle/PaddleClas      ==
+===========================================================
+
+2020-05-17 16:30:37 INFO: ARCHITECTURE : 
+2020-05-17 16:30:37 INFO:     name : ShuffleNetV2Plus_CIFAR
+2020-05-17 16:30:37 INFO:     params : 
+2020-05-17 16:30:37 INFO:         channels_per_stage : [128, 256, 512]
+2020-05-17 16:30:37 INFO:         dropout : 0.2
+2020-05-17 16:30:37 INFO:         final_channels : 512
+2020-05-17 16:30:37 INFO:         stem_channels : 32
+2020-05-17 16:30:37 INFO:         units_per_stage : [4, 8, 4]
+2020-05-17 16:30:37 INFO:         use_se : True
+2020-05-17 16:30:37 INFO: ------------------------------------------------------------
+2020-05-17 16:30:37 INFO: LEARNING_RATE : 
+2020-05-17 16:30:37 INFO:     function : CosineWarmup
+2020-05-17 16:30:37 INFO:     params : 
+2020-05-17 16:30:37 INFO:         lr : 0.8
+2020-05-17 16:30:37 INFO: ------------------------------------------------------------
+2020-05-17 16:30:37 INFO: OPTIMIZER : 
+2020-05-17 16:30:37 INFO:     function : Momentum
+2020-05-17 16:30:37 INFO:     params : 
+2020-05-17 16:30:37 INFO:         momentum : 0.9
+2020-05-17 16:30:37 INFO:     regularizer : 
+2020-05-17 16:30:37 INFO:         factor : 5e-05
+2020-05-17 16:30:37 INFO:         function : L2
+2020-05-17 16:30:37 INFO: ------------------------------------------------------------
+2020-05-17 16:30:37 INFO: TRAIN : 
+2020-05-17 16:30:37 INFO:     batch_size : 1024
+2020-05-17 16:30:37 INFO:     data_dir : /home/aistudio/work/PaddleClas/dataset/cifar10/bmp
+2020-05-17 16:30:37 INFO:     file_list : /home/aistudio/work/PaddleClas/dataset/cifar10/train_list.txt
+2020-05-17 16:30:37 INFO:     mix : 
+2020-05-17 16:30:37 INFO:         CutmixOperator : 
+2020-05-17 16:30:37 INFO:             alpha : 1.0
+2020-05-17 16:30:37 INFO:     num_workers : 4
+2020-05-17 16:30:37 INFO:     shuffle_seed : 0
+2020-05-17 16:30:37 INFO:     transforms : 
+2020-05-17 16:30:37 INFO:         DecodeImage : 
+2020-05-17 16:30:37 INFO:             channel_first : False
+2020-05-17 16:30:37 INFO:             to_np : False
+2020-05-17 16:30:37 INFO:             to_rgb : True
+2020-05-17 16:30:37 INFO:         RandomCrop : 
+2020-05-17 16:30:37 INFO:             fill : 128
+2020-05-17 16:30:37 INFO:             padding : 4
+2020-05-17 16:30:37 INFO:             size : 32
+2020-05-17 16:30:37 INFO:         RandFlipImage : 
+2020-05-17 16:30:37 INFO:             flip_code : 1
+2020-05-17 16:30:37 INFO:         NormalizeImage : 
+2020-05-17 16:30:37 INFO:             mean : [0.4914, 0.4822, 0.4465]
+2020-05-17 16:30:37 INFO:             order : 
+2020-05-17 16:30:37 INFO:             scale : 1./255.
+2020-05-17 16:30:37 INFO:             std : [0.247, 0.243, 0.261]
+2020-05-17 16:30:37 INFO:         ToCHWImage : None
+2020-05-17 16:30:37 INFO: ------------------------------------------------------------
+2020-05-17 16:30:37 INFO: VALID : 
+2020-05-17 16:30:37 INFO:     batch_size : 1024
+2020-05-17 16:30:37 INFO:     data_dir : /home/aistudio/work/PaddleClas/dataset/cifar10/bmp
+2020-05-17 16:30:37 INFO:     file_list : /home/aistudio/work/PaddleClas/dataset/cifar10/test_list.txt
+2020-05-17 16:30:37 INFO:     num_workers : 4
+2020-05-17 16:30:37 INFO:     shuffle_seed : 0
+2020-05-17 16:30:37 INFO:     transforms : 
+2020-05-17 16:30:37 INFO:         DecodeImage : 
+2020-05-17 16:30:37 INFO:             channel_first : False
+2020-05-17 16:30:37 INFO:             to_np : False
+2020-05-17 16:30:37 INFO:             to_rgb : True
+2020-05-17 16:30:37 INFO:         NormalizeImage : 
+2020-05-17 16:30:37 INFO:             mean : [0.4914, 0.4822, 0.4465]
+2020-05-17 16:30:37 INFO:             order : 
+2020-05-17 16:30:37 INFO:             scale : 1./255.
+2020-05-17 16:30:37 INFO:             std : [0.247, 0.243, 0.261]
+2020-05-17 16:30:37 INFO:         ToCHWImage : None
+2020-05-17 16:30:37 INFO: ------------------------------------------------------------
+2020-05-17 16:30:37 INFO: checkpoints : 
+2020-05-17 16:30:37 INFO: classes_num : 10
+2020-05-17 16:30:37 INFO: epochs : 600
+2020-05-17 16:30:37 INFO: image_shape : [3, 32, 32]
+2020-05-17 16:30:37 INFO: ls_epsilon : -1
+2020-05-17 16:30:37 INFO: mode : train
+2020-05-17 16:30:37 INFO: model_save_dir : /home/aistudio/work/PaddleClas/output/
+2020-05-17 16:30:37 INFO: pretrained_model : 
+2020-05-17 16:30:37 INFO: save_interval : 10
+2020-05-17 16:30:37 INFO: topk : 5
+2020-05-17 16:30:37 INFO: total_images : 50000
+2020-05-17 16:30:37 INFO: use_mix : True
+2020-05-17 16:30:37 INFO: valid_interval : 5
+2020-05-17 16:30:37 INFO: validate : True
+
+
+API is deprecated since 2.0.0 Please use FleetAPI instead.
+WIKI: https://github.com/PaddlePaddle/Fleet/blob/develop/markdown_doc/transpiler
+
+        
+W0517 08:30:51.853581  4824 device_context.cc:237] Please NOTE: device: 0, CUDA Capability: 70, Driver API Version: 10.1, Runtime API Version: 9.0
+W0517 08:30:51.857106  4824 device_context.cc:245] device: 0, cuDNN Version: 7.3.
+I0517 08:30:53.446869  4824 rpc_client.h:107] init rpc client with trainer_id 0
+I0517 08:30:54.041379  4824 parallel_executor.cc:440] The Program will be executed on CUDA using ParallelExecutor, 1 cards are used, so 1 programs are executed in parallel.
+I0517 08:30:54.137246  4824 build_strategy.cc:365] SeqOnlyAllReduceOps:0, num_trainers:1
+I0517 08:30:54.289870  4824 parallel_executor.cc:307] Inplace strategy is enabled, when build_strategy.enable_inplace = True
+I0517 08:30:54.341045  4824 parallel_executor.cc:375] Garbage collection strategy is enabled, when FLAGS_eager_delete_tensor_gb = 0
+2020-05-17 16:31:29 INFO: END epoch:0   train loss_avg:  2.2557  elapse_sum: 35.593s
+I0517 08:31:29.451654  4824 parallel_executor.cc:440] The Program will be executed on CUDA using ParallelExecutor, 1 cards are used, so 1 programs are executed in parallel.
+I0517 08:31:29.481067  4824 build_strategy.cc:365] SeqOnlyAllReduceOps:0, num_trainers:1
+2020-05-17 16:31:33 INFO: END epoch:0   valid loss_avg:  2.4073 top1_avg: 0.1007 top5_avg: 0.5003 elapse_sum: 4.681s
+2020-05-17 16:31:33 INFO: The best top1 acc 0.10069, in epoch: 0
+2020-05-17 16:31:34 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_0
+2020-05-17 16:31:34 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/0
+2020-05-17 16:31:59 INFO: END epoch:1   train loss_avg:  2.0277  elapse_sum: 25.515s
+2020-05-17 16:32:25 INFO: END epoch:2   train loss_avg:  1.8478  elapse_sum: 25.562s
+2020-05-17 16:32:51 INFO: END epoch:3   train loss_avg:  1.7084  elapse_sum: 25.608s
+2020-05-17 16:33:16 INFO: END epoch:4   train loss_avg:  1.5835  elapse_sum: 25.614s
+2020-05-17 16:33:42 INFO: END epoch:5   train loss_avg:  1.5286  elapse_sum: 25.602s
+2020-05-17 16:33:44 INFO: END epoch:5   valid loss_avg:  1.0684 top1_avg: 0.6536 top5_avg: 0.9640 elapse_sum: 1.922s
+2020-05-17 16:33:44 INFO: The best top1 acc 0.65365, in epoch: 5
+2020-05-17 16:34:09 INFO: END epoch:6   train loss_avg:  1.4414  elapse_sum: 25.642s
+2020-05-17 16:34:35 INFO: END epoch:7   train loss_avg:  1.4014  elapse_sum: 25.634s
+2020-05-17 16:35:01 INFO: END epoch:8   train loss_avg:  1.3317  elapse_sum: 25.691s
+2020-05-17 16:35:26 INFO: END epoch:9   train loss_avg:  1.2863  elapse_sum: 25.651s
+2020-05-17 16:35:52 INFO: END epoch:10  train loss_avg:  1.1924  elapse_sum: 25.629s
+2020-05-17 16:35:54 INFO: END epoch:10  valid loss_avg:  0.6468 top1_avg: 0.8010 top5_avg: 0.9876 elapse_sum: 1.943s
+2020-05-17 16:35:54 INFO: The best top1 acc 0.80100, in epoch: 10
+2020-05-17 16:35:54 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_10
+2020-05-17 16:35:54 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/10
+2020-05-17 16:36:20 INFO: END epoch:11  train loss_avg:  1.2137  elapse_sum: 25.731s
+2020-05-17 16:36:46 INFO: END epoch:12  train loss_avg:  1.1949  elapse_sum: 25.593s
+2020-05-17 16:37:11 INFO: END epoch:13  train loss_avg:  1.1338  elapse_sum: 25.637s
+2020-05-17 16:37:37 INFO: END epoch:14  train loss_avg:  1.1832  elapse_sum: 25.613s
+2020-05-17 16:38:03 INFO: END epoch:15  train loss_avg:  1.1905  elapse_sum: 25.630s
+2020-05-17 16:38:05 INFO: END epoch:15  valid loss_avg:  0.5886 top1_avg: 0.8250 top5_avg: 0.9910 elapse_sum: 1.923s
+2020-05-17 16:38:05 INFO: The best top1 acc 0.82498, in epoch: 15
+2020-05-17 16:38:30 INFO: END epoch:16  train loss_avg:  1.2002  elapse_sum: 25.620s
+2020-05-17 16:38:56 INFO: END epoch:17  train loss_avg:  1.1170  elapse_sum: 25.631s
+2020-05-17 16:39:21 INFO: END epoch:18  train loss_avg:  1.0684  elapse_sum: 25.625s
+2020-05-17 16:39:47 INFO: END epoch:19  train loss_avg:  1.0582  elapse_sum: 25.600s
+2020-05-17 16:40:13 INFO: END epoch:20  train loss_avg:  1.1334  elapse_sum: 25.630s
+2020-05-17 16:40:15 INFO: END epoch:20  valid loss_avg:  0.5622 top1_avg: 0.8388 top5_avg: 0.9919 elapse_sum: 1.941s
+2020-05-17 16:40:15 INFO: The best top1 acc 0.83876, in epoch: 20
+2020-05-17 16:40:15 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_20
+2020-05-17 16:40:15 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/20
+2020-05-17 16:40:41 INFO: END epoch:21  train loss_avg:  1.0442  elapse_sum: 25.652s
+2020-05-17 16:41:07 INFO: END epoch:22  train loss_avg:  1.0818  elapse_sum: 25.662s
+2020-05-17 16:41:32 INFO: END epoch:23  train loss_avg:  1.0597  elapse_sum: 25.628s
+2020-05-17 16:41:58 INFO: END epoch:24  train loss_avg:  1.0334  elapse_sum: 25.633s
+2020-05-17 16:42:23 INFO: END epoch:25  train loss_avg:  1.0579  elapse_sum: 25.606s
+2020-05-17 16:42:25 INFO: END epoch:25  valid loss_avg:  0.4219 top1_avg: 0.8865 top5_avg: 0.9951 elapse_sum: 1.941s
+2020-05-17 16:42:25 INFO: The best top1 acc 0.88650, in epoch: 25
+2020-05-17 16:42:51 INFO: END epoch:26  train loss_avg:  1.0800  elapse_sum: 25.640s
+2020-05-17 16:43:17 INFO: END epoch:27  train loss_avg:  1.0711  elapse_sum: 25.644s
+2020-05-17 16:43:42 INFO: END epoch:28  train loss_avg:  0.9875  elapse_sum: 25.594s
+2020-05-17 16:44:08 INFO: END epoch:29  train loss_avg:  1.0355  elapse_sum: 25.600s
+2020-05-17 16:44:33 INFO: END epoch:30  train loss_avg:  1.0611  elapse_sum: 25.607s
+2020-05-17 16:44:35 INFO: END epoch:30  valid loss_avg:  0.4519 top1_avg: 0.8777 top5_avg: 0.9963 elapse_sum: 1.990s
+2020-05-17 16:44:36 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/30
+2020-05-17 16:45:01 INFO: END epoch:31  train loss_avg:  0.9551  elapse_sum: 25.616s
+2020-05-17 16:45:27 INFO: END epoch:32  train loss_avg:  0.9610  elapse_sum: 25.612s
+2020-05-17 16:45:53 INFO: END epoch:33  train loss_avg:  0.9567  elapse_sum: 25.633s
+2020-05-17 16:46:18 INFO: END epoch:34  train loss_avg:  1.0164  elapse_sum: 25.597s
+2020-05-17 16:46:44 INFO: END epoch:35  train loss_avg:  0.9689  elapse_sum: 25.600s
+2020-05-17 16:46:46 INFO: END epoch:35  valid loss_avg:  0.3783 top1_avg: 0.8992 top5_avg: 0.9972 elapse_sum: 1.953s
+2020-05-17 16:46:46 INFO: The best top1 acc 0.89920, in epoch: 35
+2020-05-17 16:47:11 INFO: END epoch:36  train loss_avg:  0.9160  elapse_sum: 25.694s
+2020-05-17 16:47:37 INFO: END epoch:37  train loss_avg:  0.9644  elapse_sum: 25.619s
+2020-05-17 16:48:03 INFO: END epoch:38  train loss_avg:  1.0010  elapse_sum: 25.627s
+2020-05-17 16:48:28 INFO: END epoch:39  train loss_avg:  0.9811  elapse_sum: 25.650s
+2020-05-17 16:48:54 INFO: END epoch:40  train loss_avg:  0.9556  elapse_sum: 25.621s
+2020-05-17 16:48:56 INFO: END epoch:40  valid loss_avg:  0.3530 top1_avg: 0.8985 top5_avg: 0.9964 elapse_sum: 1.958s
+2020-05-17 16:48:56 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/40
+2020-05-17 16:49:22 INFO: END epoch:41  train loss_avg:  0.9034  elapse_sum: 25.642s
+2020-05-17 16:49:48 INFO: END epoch:42  train loss_avg:  0.9912  elapse_sum: 25.605s
+2020-05-17 16:50:13 INFO: END epoch:43  train loss_avg:  0.9194  elapse_sum: 25.602s
+2020-05-17 16:50:39 INFO: END epoch:44  train loss_avg:  0.9405  elapse_sum: 25.627s
+2020-05-17 16:51:04 INFO: END epoch:45  train loss_avg:  0.8444  elapse_sum: 25.592s
+2020-05-17 16:51:06 INFO: END epoch:45  valid loss_avg:  0.3281 top1_avg: 0.9072 top5_avg: 0.9975 elapse_sum: 1.989s
+2020-05-17 16:51:06 INFO: The best top1 acc 0.90723, in epoch: 45
+2020-05-17 16:51:32 INFO: END epoch:46  train loss_avg:  0.8813  elapse_sum: 25.632s
+2020-05-17 16:51:58 INFO: END epoch:47  train loss_avg:  0.9087  elapse_sum: 25.604s
+2020-05-17 16:52:23 INFO: END epoch:48  train loss_avg:  0.8540  elapse_sum: 25.586s
+2020-05-17 16:52:49 INFO: END epoch:49  train loss_avg:  0.9485  elapse_sum: 25.656s
+2020-05-17 16:53:15 INFO: END epoch:50  train loss_avg:  0.9676  elapse_sum: 25.726s
+2020-05-17 16:53:17 INFO: END epoch:50  valid loss_avg:  0.4334 top1_avg: 0.8801 top5_avg: 0.9950 elapse_sum: 1.959s
+2020-05-17 16:53:17 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/50
+2020-05-17 16:53:43 INFO: END epoch:51  train loss_avg:  0.9324  elapse_sum: 25.700s
+2020-05-17 16:54:08 INFO: END epoch:52  train loss_avg:  0.9349  elapse_sum: 25.643s
+2020-05-17 16:54:34 INFO: END epoch:53  train loss_avg:  0.8808  elapse_sum: 25.591s
+2020-05-17 16:54:59 INFO: END epoch:54  train loss_avg:  0.9327  elapse_sum: 25.585s
+2020-05-17 16:55:25 INFO: END epoch:55  train loss_avg:  0.8480  elapse_sum: 25.578s
+2020-05-17 16:55:27 INFO: END epoch:55  valid loss_avg:  0.3079 top1_avg: 0.9077 top5_avg: 0.9973 elapse_sum: 1.969s
+2020-05-17 16:55:27 INFO: The best top1 acc 0.90766, in epoch: 55
+2020-05-17 16:55:53 INFO: END epoch:56  train loss_avg:  0.9585  elapse_sum: 25.707s
+2020-05-17 16:56:18 INFO: END epoch:57  train loss_avg:  0.9040  elapse_sum: 25.587s
+2020-05-17 16:56:44 INFO: END epoch:58  train loss_avg:  0.9069  elapse_sum: 25.606s
+2020-05-17 16:57:09 INFO: END epoch:59  train loss_avg:  0.9578  elapse_sum: 25.631s
+2020-05-17 16:57:35 INFO: END epoch:60  train loss_avg:  0.8382  elapse_sum: 25.650s
+2020-05-17 16:57:37 INFO: END epoch:60  valid loss_avg:  0.3359 top1_avg: 0.9026 top5_avg: 0.9970 elapse_sum: 1.952s
+2020-05-17 16:57:37 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/60
+2020-05-17 16:58:03 INFO: END epoch:61  train loss_avg:  0.8701  elapse_sum: 25.608s
+2020-05-17 16:58:29 INFO: END epoch:62  train loss_avg:  0.9384  elapse_sum: 25.625s
+2020-05-17 16:58:54 INFO: END epoch:63  train loss_avg:  0.8586  elapse_sum: 25.690s
+2020-05-17 16:59:20 INFO: END epoch:64  train loss_avg:  0.8476  elapse_sum: 25.624s
+2020-05-17 16:59:46 INFO: END epoch:65  train loss_avg:  0.8329  elapse_sum: 25.631s
+2020-05-17 16:59:48 INFO: END epoch:65  valid loss_avg:  0.2944 top1_avg: 0.9186 top5_avg: 0.9972 elapse_sum: 1.970s
+2020-05-17 16:59:48 INFO: The best top1 acc 0.91862, in epoch: 65
+2020-05-17 17:00:13 INFO: END epoch:66  train loss_avg:  0.8894  elapse_sum: 25.622s
+2020-05-17 17:00:39 INFO: END epoch:67  train loss_avg:  0.8889  elapse_sum: 25.652s
+2020-05-17 17:01:04 INFO: END epoch:68  train loss_avg:  0.8452  elapse_sum: 25.657s
+2020-05-17 17:01:30 INFO: END epoch:69  train loss_avg:  0.9080  elapse_sum: 25.671s
+2020-05-17 17:01:56 INFO: END epoch:70  train loss_avg:  0.8157  elapse_sum: 25.639s
+2020-05-17 17:01:58 INFO: END epoch:70  valid loss_avg:  0.3061 top1_avg: 0.9097 top5_avg: 0.9975 elapse_sum: 1.956s
+2020-05-17 17:01:58 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/70
+2020-05-17 17:02:24 INFO: END epoch:71  train loss_avg:  0.8210  elapse_sum: 25.826s
+2020-05-17 17:02:50 INFO: END epoch:72  train loss_avg:  0.9011  elapse_sum: 25.643s
+2020-05-17 17:03:15 INFO: END epoch:73  train loss_avg:  0.8991  elapse_sum: 25.643s
+2020-05-17 17:03:41 INFO: END epoch:74  train loss_avg:  0.8293  elapse_sum: 25.611s
+2020-05-17 17:04:06 INFO: END epoch:75  train loss_avg:  0.8320  elapse_sum: 25.612s
+2020-05-17 17:04:08 INFO: END epoch:75  valid loss_avg:  0.2970 top1_avg: 0.9087 top5_avg: 0.9972 elapse_sum: 1.969s
+2020-05-17 17:04:34 INFO: END epoch:76  train loss_avg:  0.8596  elapse_sum: 25.647s
+2020-05-17 17:05:00 INFO: END epoch:77  train loss_avg:  0.8829  elapse_sum: 25.649s
+2020-05-17 17:05:25 INFO: END epoch:78  train loss_avg:  0.8929  elapse_sum: 25.648s
+2020-05-17 17:05:51 INFO: END epoch:79  train loss_avg:  0.8578  elapse_sum: 25.649s
+2020-05-17 17:06:17 INFO: END epoch:80  train loss_avg:  0.8102  elapse_sum: 25.667s
+2020-05-17 17:06:19 INFO: END epoch:80  valid loss_avg:  0.3520 top1_avg: 0.9045 top5_avg: 0.9961 elapse_sum: 1.964s
+2020-05-17 17:06:19 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/80
+2020-05-17 17:06:45 INFO: END epoch:81  train loss_avg:  0.7643  elapse_sum: 25.662s
+2020-05-17 17:07:10 INFO: END epoch:82  train loss_avg:  0.8804  elapse_sum: 25.634s
+2020-05-17 17:07:36 INFO: END epoch:83  train loss_avg:  0.8273  elapse_sum: 25.617s
+2020-05-17 17:08:01 INFO: END epoch:84  train loss_avg:  0.8843  elapse_sum: 25.626s
+2020-05-17 17:08:27 INFO: END epoch:85  train loss_avg:  0.8764  elapse_sum: 25.644s
+2020-05-17 17:08:29 INFO: END epoch:85  valid loss_avg:  0.3458 top1_avg: 0.8891 top5_avg: 0.9974 elapse_sum: 1.967s
+2020-05-17 17:08:55 INFO: END epoch:86  train loss_avg:  0.7735  elapse_sum: 25.622s
+2020-05-17 17:09:20 INFO: END epoch:87  train loss_avg:  0.8677  elapse_sum: 25.602s
+2020-05-17 17:09:46 INFO: END epoch:88  train loss_avg:  0.8661  elapse_sum: 25.589s
+2020-05-17 17:10:12 INFO: END epoch:89  train loss_avg:  0.8741  elapse_sum: 25.639s
+2020-05-17 17:10:37 INFO: END epoch:90  train loss_avg:  0.8326  elapse_sum: 25.613s
+2020-05-17 17:10:39 INFO: END epoch:90  valid loss_avg:  0.3722 top1_avg: 0.8809 top5_avg: 0.9971 elapse_sum: 1.952s
+2020-05-17 17:10:39 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/90
+2020-05-17 17:11:05 INFO: END epoch:91  train loss_avg:  0.8057  elapse_sum: 25.641s
+2020-05-17 17:11:31 INFO: END epoch:92  train loss_avg:  0.8536  elapse_sum: 25.601s
+2020-05-17 17:11:56 INFO: END epoch:93  train loss_avg:  0.8131  elapse_sum: 25.607s
+2020-05-17 17:12:22 INFO: END epoch:94  train loss_avg:  0.8765  elapse_sum: 25.637s
+2020-05-17 17:12:48 INFO: END epoch:95  train loss_avg:  0.8522  elapse_sum: 25.610s
+2020-05-17 17:12:49 INFO: END epoch:95  valid loss_avg:  0.2917 top1_avg: 0.9220 top5_avg: 0.9979 elapse_sum: 1.945s
+2020-05-17 17:12:49 INFO: The best top1 acc 0.92198, in epoch: 95
+2020-05-17 17:13:15 INFO: END epoch:96  train loss_avg:  0.7883  elapse_sum: 25.643s
+2020-05-17 17:13:41 INFO: END epoch:97  train loss_avg:  0.8185  elapse_sum: 25.626s
+2020-05-17 17:14:06 INFO: END epoch:98  train loss_avg:  0.8204  elapse_sum: 25.599s
+2020-05-17 17:14:32 INFO: END epoch:99  train loss_avg:  0.8561  elapse_sum: 25.613s
+2020-05-17 17:14:58 INFO: END epoch:100 train loss_avg:  0.7869  elapse_sum: 25.617s
+2020-05-17 17:15:00 INFO: END epoch:100 valid loss_avg:  0.3237 top1_avg: 0.9009 top5_avg: 0.9972 elapse_sum: 1.962s
+2020-05-17 17:15:00 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/100
+2020-05-17 17:15:25 INFO: END epoch:101 train loss_avg:  0.8642  elapse_sum: 25.605s
+2020-05-17 17:15:51 INFO: END epoch:102 train loss_avg:  0.8291  elapse_sum: 25.629s
+2020-05-17 17:16:17 INFO: END epoch:103 train loss_avg:  0.8207  elapse_sum: 25.626s
+2020-05-17 17:16:42 INFO: END epoch:104 train loss_avg:  0.8167  elapse_sum: 25.595s
+2020-05-17 17:17:08 INFO: END epoch:105 train loss_avg:  0.8493  elapse_sum: 25.616s
+2020-05-17 17:17:10 INFO: END epoch:105 valid loss_avg:  0.3105 top1_avg: 0.9091 top5_avg: 0.9966 elapse_sum: 1.945s
+2020-05-17 17:17:35 INFO: END epoch:106 train loss_avg:  0.8322  elapse_sum: 25.603s
+2020-05-17 17:18:01 INFO: END epoch:107 train loss_avg:  0.8104  elapse_sum: 25.615s
+2020-05-17 17:18:27 INFO: END epoch:108 train loss_avg:  0.8327  elapse_sum: 25.623s
+2020-05-17 17:18:52 INFO: END epoch:109 train loss_avg:  0.8207  elapse_sum: 25.656s
+2020-05-17 17:19:18 INFO: END epoch:110 train loss_avg:  0.7851  elapse_sum: 25.569s
+2020-05-17 17:19:20 INFO: END epoch:110 valid loss_avg:  0.3208 top1_avg: 0.9000 top5_avg: 0.9973 elapse_sum: 1.953s
+2020-05-17 17:19:20 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/110
+2020-05-17 17:19:46 INFO: END epoch:111 train loss_avg:  0.7463  elapse_sum: 25.566s
+2020-05-17 17:20:11 INFO: END epoch:112 train loss_avg:  0.8090  elapse_sum: 25.608s
+2020-05-17 17:20:37 INFO: END epoch:113 train loss_avg:  0.8567  elapse_sum: 25.606s
+2020-05-17 17:21:03 INFO: END epoch:114 train loss_avg:  0.8049  elapse_sum: 25.596s
+2020-05-17 17:21:28 INFO: END epoch:115 train loss_avg:  0.7838  elapse_sum: 25.613s
+2020-05-17 17:21:30 INFO: END epoch:115 valid loss_avg:  0.3105 top1_avg: 0.9042 top5_avg: 0.9975 elapse_sum: 1.962s
+2020-05-17 17:21:56 INFO: END epoch:116 train loss_avg:  0.7775  elapse_sum: 25.627s
+2020-05-17 17:22:21 INFO: END epoch:117 train loss_avg:  0.7890  elapse_sum: 25.690s
+2020-05-17 17:22:47 INFO: END epoch:118 train loss_avg:  0.8506  elapse_sum: 25.606s
+2020-05-17 17:23:13 INFO: END epoch:119 train loss_avg:  0.8349  elapse_sum: 25.642s
+2020-05-17 17:23:38 INFO: END epoch:120 train loss_avg:  0.7888  elapse_sum: 25.662s
+2020-05-17 17:23:40 INFO: END epoch:120 valid loss_avg:  0.2775 top1_avg: 0.9189 top5_avg: 0.9977 elapse_sum: 1.935s
+2020-05-17 17:23:41 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/120
+2020-05-17 17:24:06 INFO: END epoch:121 train loss_avg:  0.7845  elapse_sum: 25.641s
+2020-05-17 17:24:32 INFO: END epoch:122 train loss_avg:  0.7844  elapse_sum: 25.627s
+2020-05-17 17:24:58 INFO: END epoch:123 train loss_avg:  0.8191  elapse_sum: 25.626s
+2020-05-17 17:25:23 INFO: END epoch:124 train loss_avg:  0.8047  elapse_sum: 25.688s
+2020-05-17 17:25:49 INFO: END epoch:125 train loss_avg:  0.7899  elapse_sum: 25.651s
+2020-05-17 17:25:51 INFO: END epoch:125 valid loss_avg:  0.2497 top1_avg: 0.9297 top5_avg: 0.9979 elapse_sum: 1.961s
+2020-05-17 17:25:51 INFO: The best top1 acc 0.92969, in epoch: 125
+2020-05-17 17:26:16 INFO: END epoch:126 train loss_avg:  0.8257  elapse_sum: 25.612s
+2020-05-17 17:26:42 INFO: END epoch:127 train loss_avg:  0.7801  elapse_sum: 25.585s
+2020-05-17 17:27:08 INFO: END epoch:128 train loss_avg:  0.7738  elapse_sum: 25.593s
+2020-05-17 17:27:33 INFO: END epoch:129 train loss_avg:  0.8092  elapse_sum: 25.608s
+2020-05-17 17:27:59 INFO: END epoch:130 train loss_avg:  0.8075  elapse_sum: 25.652s
+2020-05-17 17:28:01 INFO: END epoch:130 valid loss_avg:  0.2642 top1_avg: 0.9207 top5_avg: 0.9977 elapse_sum: 1.985s
+2020-05-17 17:28:01 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/130
+2020-05-17 17:28:27 INFO: END epoch:131 train loss_avg:  0.7835  elapse_sum: 25.638s
+2020-05-17 17:28:52 INFO: END epoch:132 train loss_avg:  0.8057  elapse_sum: 25.609s
+2020-05-17 17:29:18 INFO: END epoch:133 train loss_avg:  0.7400  elapse_sum: 25.614s
+2020-05-17 17:29:44 INFO: END epoch:134 train loss_avg:  0.7533  elapse_sum: 25.583s
+2020-05-17 17:30:09 INFO: END epoch:135 train loss_avg:  0.8266  elapse_sum: 25.626s
+2020-05-17 17:30:11 INFO: END epoch:135 valid loss_avg:  0.2859 top1_avg: 0.9205 top5_avg: 0.9972 elapse_sum: 1.956s
+2020-05-17 17:30:37 INFO: END epoch:136 train loss_avg:  0.8166  elapse_sum: 25.588s
+2020-05-17 17:31:02 INFO: END epoch:137 train loss_avg:  0.8170  elapse_sum: 25.628s
+2020-05-17 17:31:28 INFO: END epoch:138 train loss_avg:  0.8275  elapse_sum: 25.652s
+2020-05-17 17:31:54 INFO: END epoch:139 train loss_avg:  0.7647  elapse_sum: 25.643s
+2020-05-17 17:32:19 INFO: END epoch:140 train loss_avg:  0.7831  elapse_sum: 25.678s
+2020-05-17 17:32:21 INFO: END epoch:140 valid loss_avg:  0.2495 top1_avg: 0.9263 top5_avg: 0.9980 elapse_sum: 1.958s
+2020-05-17 17:32:22 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/140
+2020-05-17 17:32:47 INFO: END epoch:141 train loss_avg:  0.8312  elapse_sum: 25.601s
+2020-05-17 17:33:13 INFO: END epoch:142 train loss_avg:  0.8505  elapse_sum: 25.670s
+2020-05-17 17:33:39 INFO: END epoch:143 train loss_avg:  0.7747  elapse_sum: 25.590s
+2020-05-17 17:34:04 INFO: END epoch:144 train loss_avg:  0.8438  elapse_sum: 25.632s
+2020-05-17 17:34:30 INFO: END epoch:145 train loss_avg:  0.8082  elapse_sum: 25.629s
+2020-05-17 17:34:32 INFO: END epoch:145 valid loss_avg:  0.2544 top1_avg: 0.9250 top5_avg: 0.9978 elapse_sum: 1.956s
+2020-05-17 17:34:57 INFO: END epoch:146 train loss_avg:  0.8290  elapse_sum: 25.624s
+2020-05-17 17:35:23 INFO: END epoch:147 train loss_avg:  0.7741  elapse_sum: 25.627s
+2020-05-17 17:35:49 INFO: END epoch:148 train loss_avg:  0.7756  elapse_sum: 25.616s
+2020-05-17 17:36:14 INFO: END epoch:149 train loss_avg:  0.8329  elapse_sum: 25.604s
+2020-05-17 17:36:40 INFO: END epoch:150 train loss_avg:  0.8244  elapse_sum: 25.626s
+2020-05-17 17:36:42 INFO: END epoch:150 valid loss_avg:  0.2483 top1_avg: 0.9321 top5_avg: 0.9977 elapse_sum: 1.962s
+2020-05-17 17:36:42 INFO: The best top1 acc 0.93207, in epoch: 150
+2020-05-17 17:36:42 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_150
+2020-05-17 17:36:42 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/150
+2020-05-17 17:37:08 INFO: END epoch:151 train loss_avg:  0.8224  elapse_sum: 25.625s
+2020-05-17 17:37:34 INFO: END epoch:152 train loss_avg:  0.7833  elapse_sum: 25.635s
+2020-05-17 17:37:59 INFO: END epoch:153 train loss_avg:  0.7536  elapse_sum: 25.608s
+2020-05-17 17:38:25 INFO: END epoch:154 train loss_avg:  0.8177  elapse_sum: 25.631s
+2020-05-17 17:38:51 INFO: END epoch:155 train loss_avg:  0.7695  elapse_sum: 25.665s
+2020-05-17 17:38:53 INFO: END epoch:155 valid loss_avg:  0.2373 top1_avg: 0.9310 top5_avg: 0.9976 elapse_sum: 1.979s
+2020-05-17 17:39:18 INFO: END epoch:156 train loss_avg:  0.7052  elapse_sum: 25.616s
+2020-05-17 17:39:44 INFO: END epoch:157 train loss_avg:  0.8120  elapse_sum: 25.759s
+2020-05-17 17:40:10 INFO: END epoch:158 train loss_avg:  0.7569  elapse_sum: 25.619s
+2020-05-17 17:40:35 INFO: END epoch:159 train loss_avg:  0.8051  elapse_sum: 25.639s
+2020-05-17 17:41:01 INFO: END epoch:160 train loss_avg:  0.8249  elapse_sum: 25.666s
+2020-05-17 17:41:03 INFO: END epoch:160 valid loss_avg:  0.2371 top1_avg: 0.9313 top5_avg: 0.9983 elapse_sum: 1.965s
+2020-05-17 17:41:03 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/160
+2020-05-17 17:41:29 INFO: END epoch:161 train loss_avg:  0.8011  elapse_sum: 25.599s
+2020-05-17 17:41:54 INFO: END epoch:162 train loss_avg:  0.7969  elapse_sum: 25.652s
+2020-05-17 17:42:20 INFO: END epoch:163 train loss_avg:  0.7303  elapse_sum: 25.620s
+2020-05-17 17:42:46 INFO: END epoch:164 train loss_avg:  0.7379  elapse_sum: 25.604s
+2020-05-17 17:43:11 INFO: END epoch:165 train loss_avg:  0.8264  elapse_sum: 25.630s
+2020-05-17 17:43:13 INFO: END epoch:165 valid loss_avg:  0.3041 top1_avg: 0.9062 top5_avg: 0.9977 elapse_sum: 1.966s
+2020-05-17 17:43:39 INFO: END epoch:166 train loss_avg:  0.7020  elapse_sum: 25.644s
+2020-05-17 17:44:05 INFO: END epoch:167 train loss_avg:  0.7578  elapse_sum: 25.642s
+2020-05-17 17:44:30 INFO: END epoch:168 train loss_avg:  0.7426  elapse_sum: 25.626s
+2020-05-17 17:44:56 INFO: END epoch:169 train loss_avg:  0.7580  elapse_sum: 25.635s
+2020-05-17 17:45:21 INFO: END epoch:170 train loss_avg:  0.7386  elapse_sum: 25.621s
+2020-05-17 17:45:23 INFO: END epoch:170 valid loss_avg:  0.3094 top1_avg: 0.9077 top5_avg: 0.9975 elapse_sum: 1.990s
+2020-05-17 17:45:24 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/170
+2020-05-17 17:45:49 INFO: END epoch:171 train loss_avg:  0.7301  elapse_sum: 25.646s
+2020-05-17 17:46:15 INFO: END epoch:172 train loss_avg:  0.7383  elapse_sum: 25.637s
+2020-05-17 17:46:41 INFO: END epoch:173 train loss_avg:  0.7952  elapse_sum: 25.643s
+2020-05-17 17:47:06 INFO: END epoch:174 train loss_avg:  0.7309  elapse_sum: 25.650s
+2020-05-17 17:47:32 INFO: END epoch:175 train loss_avg:  0.7872  elapse_sum: 25.632s
+2020-05-17 17:47:34 INFO: END epoch:175 valid loss_avg:  0.2492 top1_avg: 0.9259 top5_avg: 0.9985 elapse_sum: 1.966s
+2020-05-17 17:48:00 INFO: END epoch:176 train loss_avg:  0.7717  elapse_sum: 25.661s
+2020-05-17 17:48:25 INFO: END epoch:177 train loss_avg:  0.7637  elapse_sum: 25.665s
+2020-05-17 17:48:51 INFO: END epoch:178 train loss_avg:  0.7555  elapse_sum: 25.630s
+2020-05-17 17:49:17 INFO: END epoch:179 train loss_avg:  0.7968  elapse_sum: 25.636s
+2020-05-17 17:49:42 INFO: END epoch:180 train loss_avg:  0.8265  elapse_sum: 25.635s
+2020-05-17 17:49:44 INFO: END epoch:180 valid loss_avg:  0.2333 top1_avg: 0.9308 top5_avg: 0.9983 elapse_sum: 1.951s
+2020-05-17 17:49:44 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/180
+2020-05-17 17:50:10 INFO: END epoch:181 train loss_avg:  0.7585  elapse_sum: 25.639s
+2020-05-17 17:50:36 INFO: END epoch:182 train loss_avg:  0.7100  elapse_sum: 25.608s
+2020-05-17 17:51:01 INFO: END epoch:183 train loss_avg:  0.8037  elapse_sum: 25.627s
+2020-05-17 17:51:27 INFO: END epoch:184 train loss_avg:  0.7430  elapse_sum: 25.633s
+2020-05-17 17:51:53 INFO: END epoch:185 train loss_avg:  0.7302  elapse_sum: 25.635s
+2020-05-17 17:51:55 INFO: END epoch:185 valid loss_avg:  0.2462 top1_avg: 0.9285 top5_avg: 0.9980 elapse_sum: 1.971s
+2020-05-17 17:52:20 INFO: END epoch:186 train loss_avg:  0.7881  elapse_sum: 25.646s
+2020-05-17 17:52:46 INFO: END epoch:187 train loss_avg:  0.7949  elapse_sum: 25.608s
+2020-05-17 17:53:12 INFO: END epoch:188 train loss_avg:  0.7860  elapse_sum: 25.655s
+2020-05-17 17:53:37 INFO: END epoch:189 train loss_avg:  0.7448  elapse_sum: 25.625s
+2020-05-17 17:54:03 INFO: END epoch:190 train loss_avg:  0.7543  elapse_sum: 25.637s
+2020-05-17 17:54:05 INFO: END epoch:190 valid loss_avg:  0.2678 top1_avg: 0.9194 top5_avg: 0.9982 elapse_sum: 1.965s
+2020-05-17 17:54:05 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/190
+2020-05-17 17:54:31 INFO: END epoch:191 train loss_avg:  0.6509  elapse_sum: 25.653s
+2020-05-17 17:54:56 INFO: END epoch:192 train loss_avg:  0.8195  elapse_sum: 25.617s
+2020-05-17 17:55:22 INFO: END epoch:193 train loss_avg:  0.7545  elapse_sum: 25.628s
+2020-05-17 17:55:48 INFO: END epoch:194 train loss_avg:  0.7318  elapse_sum: 25.666s
+2020-05-17 17:56:13 INFO: END epoch:195 train loss_avg:  0.7410  elapse_sum: 25.653s
+2020-05-17 17:56:15 INFO: END epoch:195 valid loss_avg:  0.2369 top1_avg: 0.9324 top5_avg: 0.9967 elapse_sum: 1.974s
+2020-05-17 17:56:15 INFO: The best top1 acc 0.93240, in epoch: 195
+2020-05-17 17:56:41 INFO: END epoch:196 train loss_avg:  0.7321  elapse_sum: 25.644s
+2020-05-17 17:57:07 INFO: END epoch:197 train loss_avg:  0.7942  elapse_sum: 25.620s
+2020-05-17 17:57:32 INFO: END epoch:198 train loss_avg:  0.7361  elapse_sum: 25.616s
+2020-05-17 17:57:58 INFO: END epoch:199 train loss_avg:  0.7896  elapse_sum: 25.670s
+2020-05-17 17:58:23 INFO: END epoch:200 train loss_avg:  0.7960  elapse_sum: 25.657s
+2020-05-17 17:58:25 INFO: END epoch:200 valid loss_avg:  0.2623 top1_avg: 0.9222 top5_avg: 0.9976 elapse_sum: 1.959s
+2020-05-17 17:58:26 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/200
+2020-05-17 17:58:51 INFO: END epoch:201 train loss_avg:  0.8048  elapse_sum: 25.641s
+2020-05-17 17:59:17 INFO: END epoch:202 train loss_avg:  0.7393  elapse_sum: 25.718s
+2020-05-17 17:59:43 INFO: END epoch:203 train loss_avg:  0.7767  elapse_sum: 25.627s
+2020-05-17 18:00:08 INFO: END epoch:204 train loss_avg:  0.7371  elapse_sum: 25.673s
+2020-05-17 18:00:34 INFO: END epoch:205 train loss_avg:  0.7747  elapse_sum: 25.635s
+2020-05-17 18:00:36 INFO: END epoch:205 valid loss_avg:  0.2392 top1_avg: 0.9291 top5_avg: 0.9979 elapse_sum: 1.969s
+2020-05-17 18:01:02 INFO: END epoch:206 train loss_avg:  0.7167  elapse_sum: 25.655s
+2020-05-17 18:01:27 INFO: END epoch:207 train loss_avg:  0.6912  elapse_sum: 25.641s
+2020-05-17 18:01:53 INFO: END epoch:208 train loss_avg:  0.7670  elapse_sum: 25.666s
+2020-05-17 18:02:19 INFO: END epoch:209 train loss_avg:  0.7283  elapse_sum: 25.663s
+2020-05-17 18:02:44 INFO: END epoch:210 train loss_avg:  0.7338  elapse_sum: 25.664s
+2020-05-17 18:02:46 INFO: END epoch:210 valid loss_avg:  0.2401 top1_avg: 0.9309 top5_avg: 0.9979 elapse_sum: 1.969s
+2020-05-17 18:02:47 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/210
+2020-05-17 18:03:12 INFO: END epoch:211 train loss_avg:  0.6861  elapse_sum: 25.601s
+2020-05-17 18:03:38 INFO: END epoch:212 train loss_avg:  0.7931  elapse_sum: 25.684s
+2020-05-17 18:04:04 INFO: END epoch:213 train loss_avg:  0.7399  elapse_sum: 25.642s
+2020-05-17 18:04:29 INFO: END epoch:214 train loss_avg:  0.7121  elapse_sum: 25.613s
+2020-05-17 18:04:55 INFO: END epoch:215 train loss_avg:  0.6928  elapse_sum: 25.608s
+2020-05-17 18:04:57 INFO: END epoch:215 valid loss_avg:  0.2637 top1_avg: 0.9210 top5_avg: 0.9974 elapse_sum: 1.971s
+2020-05-17 18:05:22 INFO: END epoch:216 train loss_avg:  0.7674  elapse_sum: 25.617s
+2020-05-17 18:05:48 INFO: END epoch:217 train loss_avg:  0.7211  elapse_sum: 25.626s
+2020-05-17 18:06:14 INFO: END epoch:218 train loss_avg:  0.7673  elapse_sum: 25.593s
+2020-05-17 18:06:39 INFO: END epoch:219 train loss_avg:  0.8038  elapse_sum: 25.626s
+2020-05-17 18:07:05 INFO: END epoch:220 train loss_avg:  0.7777  elapse_sum: 25.667s
+2020-05-17 18:07:07 INFO: END epoch:220 valid loss_avg:  0.2201 top1_avg: 0.9366 top5_avg: 0.9986 elapse_sum: 1.956s
+2020-05-17 18:07:07 INFO: The best top1 acc 0.93663, in epoch: 220
+2020-05-17 18:07:07 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_220
+2020-05-17 18:07:07 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/220
+2020-05-17 18:07:33 INFO: END epoch:221 train loss_avg:  0.7563  elapse_sum: 25.614s
+2020-05-17 18:07:59 INFO: END epoch:222 train loss_avg:  0.7676  elapse_sum: 25.596s
+2020-05-17 18:08:24 INFO: END epoch:223 train loss_avg:  0.7227  elapse_sum: 25.603s
+2020-05-17 18:08:50 INFO: END epoch:224 train loss_avg:  0.6681  elapse_sum: 25.726s
+2020-05-17 18:09:16 INFO: END epoch:225 train loss_avg:  0.7680  elapse_sum: 25.604s
+2020-05-17 18:09:18 INFO: END epoch:225 valid loss_avg:  0.2707 top1_avg: 0.9205 top5_avg: 0.9974 elapse_sum: 1.984s
+2020-05-17 18:09:43 INFO: END epoch:226 train loss_avg:  0.8108  elapse_sum: 25.581s
+2020-05-17 18:10:09 INFO: END epoch:227 train loss_avg:  0.7319  elapse_sum: 25.627s
+2020-05-17 18:10:34 INFO: END epoch:228 train loss_avg:  0.7871  elapse_sum: 25.609s
+2020-05-17 18:11:00 INFO: END epoch:229 train loss_avg:  0.7487  elapse_sum: 25.608s
+2020-05-17 18:11:26 INFO: END epoch:230 train loss_avg:  0.7227  elapse_sum: 25.631s
+2020-05-17 18:11:28 INFO: END epoch:230 valid loss_avg:  0.2382 top1_avg: 0.9247 top5_avg: 0.9982 elapse_sum: 1.964s
+2020-05-17 18:11:28 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/230
+2020-05-17 18:11:54 INFO: END epoch:231 train loss_avg:  0.8042  elapse_sum: 25.660s
+2020-05-17 18:12:19 INFO: END epoch:232 train loss_avg:  0.7438  elapse_sum: 25.615s
+2020-05-17 18:12:45 INFO: END epoch:233 train loss_avg:  0.6675  elapse_sum: 25.590s
+2020-05-17 18:13:10 INFO: END epoch:234 train loss_avg:  0.7676  elapse_sum: 25.589s
+2020-05-17 18:13:36 INFO: END epoch:235 train loss_avg:  0.7207  elapse_sum: 25.642s
+2020-05-17 18:13:38 INFO: END epoch:235 valid loss_avg:  0.2740 top1_avg: 0.9193 top5_avg: 0.9974 elapse_sum: 1.958s
+2020-05-17 18:14:04 INFO: END epoch:236 train loss_avg:  0.7301  elapse_sum: 25.586s
+2020-05-17 18:14:29 INFO: END epoch:237 train loss_avg:  0.7668  elapse_sum: 25.615s
+2020-05-17 18:14:55 INFO: END epoch:238 train loss_avg:  0.7737  elapse_sum: 25.625s
+2020-05-17 18:15:20 INFO: END epoch:239 train loss_avg:  0.7517  elapse_sum: 25.645s
+2020-05-17 18:15:46 INFO: END epoch:240 train loss_avg:  0.6758  elapse_sum: 25.598s
+2020-05-17 18:15:48 INFO: END epoch:240 valid loss_avg:  0.2478 top1_avg: 0.9270 top5_avg: 0.9962 elapse_sum: 1.954s
+2020-05-17 18:15:48 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/240
+2020-05-17 18:16:14 INFO: END epoch:241 train loss_avg:  0.7705  elapse_sum: 25.610s
+2020-05-17 18:16:40 INFO: END epoch:242 train loss_avg:  0.6837  elapse_sum: 25.666s
+2020-05-17 18:17:05 INFO: END epoch:243 train loss_avg:  0.6945  elapse_sum: 25.650s
+2020-05-17 18:17:31 INFO: END epoch:244 train loss_avg:  0.7568  elapse_sum: 25.633s
+2020-05-17 18:17:56 INFO: END epoch:245 train loss_avg:  0.7783  elapse_sum: 25.610s
+2020-05-17 18:17:58 INFO: END epoch:245 valid loss_avg:  0.2511 top1_avg: 0.9272 top5_avg: 0.9977 elapse_sum: 1.978s
+2020-05-17 18:18:24 INFO: END epoch:246 train loss_avg:  0.7370  elapse_sum: 25.641s
+2020-05-17 18:18:50 INFO: END epoch:247 train loss_avg:  0.7576  elapse_sum: 25.629s
+2020-05-17 18:19:15 INFO: END epoch:248 train loss_avg:  0.7543  elapse_sum: 25.626s
+2020-05-17 18:19:41 INFO: END epoch:249 train loss_avg:  0.7317  elapse_sum: 25.712s
+2020-05-17 18:20:07 INFO: END epoch:250 train loss_avg:  0.6956  elapse_sum: 25.642s
+2020-05-17 18:20:09 INFO: END epoch:250 valid loss_avg:  0.2554 top1_avg: 0.9291 top5_avg: 0.9980 elapse_sum: 1.946s
+2020-05-17 18:20:09 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/250
+2020-05-17 18:20:35 INFO: END epoch:251 train loss_avg:  0.7144  elapse_sum: 25.607s
+2020-05-17 18:21:00 INFO: END epoch:252 train loss_avg:  0.7409  elapse_sum: 25.609s
+2020-05-17 18:21:26 INFO: END epoch:253 train loss_avg:  0.7313  elapse_sum: 25.586s
+2020-05-17 18:21:51 INFO: END epoch:254 train loss_avg:  0.6755  elapse_sum: 25.621s
+2020-05-17 18:22:17 INFO: END epoch:255 train loss_avg:  0.7168  elapse_sum: 25.658s
+2020-05-17 18:22:19 INFO: END epoch:255 valid loss_avg:  0.2136 top1_avg: 0.9373 top5_avg: 0.9989 elapse_sum: 1.954s
+2020-05-17 18:22:19 INFO: The best top1 acc 0.93728, in epoch: 255
+2020-05-17 18:22:45 INFO: END epoch:256 train loss_avg:  0.7475  elapse_sum: 25.601s
+2020-05-17 18:23:10 INFO: END epoch:257 train loss_avg:  0.7425  elapse_sum: 25.629s
+2020-05-17 18:23:36 INFO: END epoch:258 train loss_avg:  0.7515  elapse_sum: 25.671s
+2020-05-17 18:24:02 INFO: END epoch:259 train loss_avg:  0.7614  elapse_sum: 25.631s
+2020-05-17 18:24:27 INFO: END epoch:260 train loss_avg:  0.7808  elapse_sum: 25.643s
+2020-05-17 18:24:29 INFO: END epoch:260 valid loss_avg:  0.2482 top1_avg: 0.9273 top5_avg: 0.9978 elapse_sum: 1.968s
+2020-05-17 18:24:29 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/260
+2020-05-17 18:24:55 INFO: END epoch:261 train loss_avg:  0.7164  elapse_sum: 25.645s
+2020-05-17 18:25:21 INFO: END epoch:262 train loss_avg:  0.7194  elapse_sum: 25.611s
+2020-05-17 18:25:46 INFO: END epoch:263 train loss_avg:  0.6738  elapse_sum: 25.594s
+2020-05-17 18:26:12 INFO: END epoch:264 train loss_avg:  0.7115  elapse_sum: 25.589s
+2020-05-17 18:26:37 INFO: END epoch:265 train loss_avg:  0.6845  elapse_sum: 25.616s
+2020-05-17 18:26:39 INFO: END epoch:265 valid loss_avg:  0.2177 top1_avg: 0.9342 top5_avg: 0.9978 elapse_sum: 1.986s
+2020-05-17 18:27:05 INFO: END epoch:266 train loss_avg:  0.7405  elapse_sum: 25.611s
+2020-05-17 18:27:31 INFO: END epoch:267 train loss_avg:  0.6898  elapse_sum: 25.628s
+2020-05-17 18:27:56 INFO: END epoch:268 train loss_avg:  0.7784  elapse_sum: 25.602s
+2020-05-17 18:28:22 INFO: END epoch:269 train loss_avg:  0.7550  elapse_sum: 25.629s
+2020-05-17 18:28:48 INFO: END epoch:270 train loss_avg:  0.6963  elapse_sum: 25.587s
+2020-05-17 18:28:49 INFO: END epoch:270 valid loss_avg:  0.2533 top1_avg: 0.9300 top5_avg: 0.9975 elapse_sum: 1.946s
+2020-05-17 18:28:50 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/270
+2020-05-17 18:29:15 INFO: END epoch:271 train loss_avg:  0.7082  elapse_sum: 25.601s
+2020-05-17 18:29:41 INFO: END epoch:272 train loss_avg:  0.7462  elapse_sum: 25.610s
+2020-05-17 18:30:07 INFO: END epoch:273 train loss_avg:  0.7086  elapse_sum: 25.633s
+2020-05-17 18:30:32 INFO: END epoch:274 train loss_avg:  0.7168  elapse_sum: 25.634s
+2020-05-17 18:30:58 INFO: END epoch:275 train loss_avg:  0.7195  elapse_sum: 25.606s
+2020-05-17 18:31:00 INFO: END epoch:275 valid loss_avg:  0.2156 top1_avg: 0.9347 top5_avg: 0.9979 elapse_sum: 1.950s
+2020-05-17 18:31:25 INFO: END epoch:276 train loss_avg:  0.6911  elapse_sum: 25.627s
+2020-05-17 18:31:51 INFO: END epoch:277 train loss_avg:  0.6994  elapse_sum: 25.640s
+2020-05-17 18:32:17 INFO: END epoch:278 train loss_avg:  0.7538  elapse_sum: 25.636s
+2020-05-17 18:32:42 INFO: END epoch:279 train loss_avg:  0.7045  elapse_sum: 25.634s
+2020-05-17 18:33:08 INFO: END epoch:280 train loss_avg:  0.7282  elapse_sum: 25.672s
+2020-05-17 18:33:10 INFO: END epoch:280 valid loss_avg:  0.2215 top1_avg: 0.9354 top5_avg: 0.9979 elapse_sum: 1.959s
+2020-05-17 18:33:10 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/280
+2020-05-17 18:33:36 INFO: END epoch:281 train loss_avg:  0.6856  elapse_sum: 25.605s
+2020-05-17 18:34:02 INFO: END epoch:282 train loss_avg:  0.7176  elapse_sum: 25.643s
+2020-05-17 18:34:27 INFO: END epoch:283 train loss_avg:  0.7173  elapse_sum: 25.623s
+2020-05-17 18:34:53 INFO: END epoch:284 train loss_avg:  0.7059  elapse_sum: 25.631s
+2020-05-17 18:35:18 INFO: END epoch:285 train loss_avg:  0.7759  elapse_sum: 25.653s
+2020-05-17 18:35:20 INFO: END epoch:285 valid loss_avg:  0.2543 top1_avg: 0.9238 top5_avg: 0.9974 elapse_sum: 1.939s
+2020-05-17 18:35:46 INFO: END epoch:286 train loss_avg:  0.7767  elapse_sum: 25.612s
+2020-05-17 18:36:12 INFO: END epoch:287 train loss_avg:  0.7582  elapse_sum: 25.673s
+2020-05-17 18:36:37 INFO: END epoch:288 train loss_avg:  0.7254  elapse_sum: 25.635s
+2020-05-17 18:37:03 INFO: END epoch:289 train loss_avg:  0.7356  elapse_sum: 25.622s
+2020-05-17 18:37:29 INFO: END epoch:290 train loss_avg:  0.6354  elapse_sum: 25.717s
+2020-05-17 18:37:31 INFO: END epoch:290 valid loss_avg:  0.2646 top1_avg: 0.9220 top5_avg: 0.9966 elapse_sum: 1.947s
+2020-05-17 18:37:31 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/290
+2020-05-17 18:37:57 INFO: END epoch:291 train loss_avg:  0.7432  elapse_sum: 25.662s
+2020-05-17 18:38:22 INFO: END epoch:292 train loss_avg:  0.7227  elapse_sum: 25.652s
+2020-05-17 18:38:48 INFO: END epoch:293 train loss_avg:  0.6967  elapse_sum: 25.642s
+2020-05-17 18:39:14 INFO: END epoch:294 train loss_avg:  0.7076  elapse_sum: 25.654s
+2020-05-17 18:39:39 INFO: END epoch:295 train loss_avg:  0.7102  elapse_sum: 25.635s
+2020-05-17 18:39:41 INFO: END epoch:295 valid loss_avg:  0.2031 top1_avg: 0.9399 top5_avg: 0.9982 elapse_sum: 1.960s
+2020-05-17 18:39:41 INFO: The best top1 acc 0.93989, in epoch: 295
+2020-05-17 18:40:07 INFO: END epoch:296 train loss_avg:  0.7207  elapse_sum: 25.631s
+2020-05-17 18:40:33 INFO: END epoch:297 train loss_avg:  0.6922  elapse_sum: 25.735s
+2020-05-17 18:40:58 INFO: END epoch:298 train loss_avg:  0.7715  elapse_sum: 25.615s
+2020-05-17 18:41:24 INFO: END epoch:299 train loss_avg:  0.7053  elapse_sum: 25.649s
+2020-05-17 18:41:49 INFO: END epoch:300 train loss_avg:  0.6707  elapse_sum: 25.643s
+2020-05-17 18:41:51 INFO: END epoch:300 valid loss_avg:  0.2527 top1_avg: 0.9240 top5_avg: 0.9977 elapse_sum: 1.963s
+2020-05-17 18:41:52 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/300
+2020-05-17 18:42:17 INFO: END epoch:301 train loss_avg:  0.7423  elapse_sum: 25.610s
+2020-05-17 18:42:43 INFO: END epoch:302 train loss_avg:  0.7094  elapse_sum: 25.643s
+2020-05-17 18:43:09 INFO: END epoch:303 train loss_avg:  0.6894  elapse_sum: 25.668s
+2020-05-17 18:43:34 INFO: END epoch:304 train loss_avg:  0.7427  elapse_sum: 25.614s
+2020-05-17 18:44:00 INFO: END epoch:305 train loss_avg:  0.6617  elapse_sum: 25.620s
+2020-05-17 18:44:02 INFO: END epoch:305 valid loss_avg:  0.2041 top1_avg: 0.9397 top5_avg: 0.9988 elapse_sum: 1.947s
+2020-05-17 18:44:27 INFO: END epoch:306 train loss_avg:  0.7517  elapse_sum: 25.608s
+2020-05-17 18:44:53 INFO: END epoch:307 train loss_avg:  0.7124  elapse_sum: 25.670s
+2020-05-17 18:45:19 INFO: END epoch:308 train loss_avg:  0.7189  elapse_sum: 25.687s
+2020-05-17 18:45:44 INFO: END epoch:309 train loss_avg:  0.7296  elapse_sum: 25.631s
+2020-05-17 18:46:10 INFO: END epoch:310 train loss_avg:  0.6723  elapse_sum: 25.639s
+2020-05-17 18:46:12 INFO: END epoch:310 valid loss_avg:  0.2117 top1_avg: 0.9389 top5_avg: 0.9980 elapse_sum: 1.952s
+2020-05-17 18:46:12 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/310
+2020-05-17 18:46:38 INFO: END epoch:311 train loss_avg:  0.6721  elapse_sum: 25.614s
+2020-05-17 18:47:04 INFO: END epoch:312 train loss_avg:  0.7243  elapse_sum: 25.631s
+2020-05-17 18:47:29 INFO: END epoch:313 train loss_avg:  0.6942  elapse_sum: 25.621s
+2020-05-17 18:47:55 INFO: END epoch:314 train loss_avg:  0.6966  elapse_sum: 25.620s
+2020-05-17 18:48:20 INFO: END epoch:315 train loss_avg:  0.6840  elapse_sum: 25.639s
+2020-05-17 18:48:22 INFO: END epoch:315 valid loss_avg:  0.2229 top1_avg: 0.9360 top5_avg: 0.9982 elapse_sum: 1.935s
+2020-05-17 18:48:48 INFO: END epoch:316 train loss_avg:  0.6648  elapse_sum: 25.637s
+2020-05-17 18:49:14 INFO: END epoch:317 train loss_avg:  0.6677  elapse_sum: 25.629s
+2020-05-17 18:49:39 INFO: END epoch:318 train loss_avg:  0.7383  elapse_sum: 25.628s
+2020-05-17 18:50:05 INFO: END epoch:319 train loss_avg:  0.7273  elapse_sum: 25.609s
+2020-05-17 18:50:30 INFO: END epoch:320 train loss_avg:  0.6450  elapse_sum: 25.641s
+2020-05-17 18:50:32 INFO: END epoch:320 valid loss_avg:  0.1994 top1_avg: 0.9398 top5_avg: 0.9986 elapse_sum: 1.965s
+2020-05-17 18:50:33 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/320
+2020-05-17 18:50:58 INFO: END epoch:321 train loss_avg:  0.7174  elapse_sum: 25.657s
+2020-05-17 18:51:24 INFO: END epoch:322 train loss_avg:  0.6317  elapse_sum: 25.638s
+2020-05-17 18:51:50 INFO: END epoch:323 train loss_avg:  0.7269  elapse_sum: 25.614s
+2020-05-17 18:52:15 INFO: END epoch:324 train loss_avg:  0.6940  elapse_sum: 25.629s
+2020-05-17 18:52:41 INFO: END epoch:325 train loss_avg:  0.7129  elapse_sum: 25.636s
+2020-05-17 18:52:43 INFO: END epoch:325 valid loss_avg:  0.2311 top1_avg: 0.9331 top5_avg: 0.9983 elapse_sum: 1.948s
+2020-05-17 18:53:09 INFO: END epoch:326 train loss_avg:  0.6996  elapse_sum: 25.636s
+2020-05-17 18:53:34 INFO: END epoch:327 train loss_avg:  0.6418  elapse_sum: 25.630s
+2020-05-17 18:54:00 INFO: END epoch:328 train loss_avg:  0.7094  elapse_sum: 25.630s
+2020-05-17 18:54:25 INFO: END epoch:329 train loss_avg:  0.7084  elapse_sum: 25.599s
+2020-05-17 18:54:51 INFO: END epoch:330 train loss_avg:  0.7181  elapse_sum: 25.660s
+2020-05-17 18:54:53 INFO: END epoch:330 valid loss_avg:  0.2383 top1_avg: 0.9322 top5_avg: 0.9985 elapse_sum: 1.977s
+2020-05-17 18:54:53 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/330
+2020-05-17 18:55:19 INFO: END epoch:331 train loss_avg:  0.7229  elapse_sum: 25.638s
+2020-05-17 18:55:45 INFO: END epoch:332 train loss_avg:  0.6381  elapse_sum: 25.609s
+2020-05-17 18:56:10 INFO: END epoch:333 train loss_avg:  0.7236  elapse_sum: 25.630s
+2020-05-17 18:56:36 INFO: END epoch:334 train loss_avg:  0.6018  elapse_sum: 25.640s
+2020-05-17 18:57:02 INFO: END epoch:335 train loss_avg:  0.6825  elapse_sum: 25.761s
+2020-05-17 18:57:04 INFO: END epoch:335 valid loss_avg:  0.2440 top1_avg: 0.9297 top5_avg: 0.9976 elapse_sum: 1.953s
+2020-05-17 18:57:29 INFO: END epoch:336 train loss_avg:  0.7014  elapse_sum: 25.624s
+2020-05-17 18:57:55 INFO: END epoch:337 train loss_avg:  0.6947  elapse_sum: 25.647s
+2020-05-17 18:58:20 INFO: END epoch:338 train loss_avg:  0.6531  elapse_sum: 25.629s
+2020-05-17 18:58:46 INFO: END epoch:339 train loss_avg:  0.6652  elapse_sum: 25.628s
+2020-05-17 18:59:12 INFO: END epoch:340 train loss_avg:  0.7422  elapse_sum: 25.631s
+2020-05-17 18:59:14 INFO: END epoch:340 valid loss_avg:  0.2056 top1_avg: 0.9404 top5_avg: 0.9984 elapse_sum: 1.957s
+2020-05-17 18:59:14 INFO: The best top1 acc 0.94043, in epoch: 340
+2020-05-17 18:59:14 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_340
+2020-05-17 18:59:14 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/340
+2020-05-17 18:59:40 INFO: END epoch:341 train loss_avg:  0.6630  elapse_sum: 25.848s
+2020-05-17 19:00:06 INFO: END epoch:342 train loss_avg:  0.6835  elapse_sum: 25.670s
+2020-05-17 19:00:31 INFO: END epoch:343 train loss_avg:  0.6717  elapse_sum: 25.630s
+2020-05-17 19:00:57 INFO: END epoch:344 train loss_avg:  0.6891  elapse_sum: 25.618s
+2020-05-17 19:01:23 INFO: END epoch:345 train loss_avg:  0.6550  elapse_sum: 25.609s
+2020-05-17 19:01:25 INFO: END epoch:345 valid loss_avg:  0.2179 top1_avg: 0.9377 top5_avg: 0.9986 elapse_sum: 1.947s
+2020-05-17 19:01:50 INFO: END epoch:346 train loss_avg:  0.6573  elapse_sum: 25.678s
+2020-05-17 19:02:16 INFO: END epoch:347 train loss_avg:  0.6673  elapse_sum: 25.620s
+2020-05-17 19:02:42 INFO: END epoch:348 train loss_avg:  0.7012  elapse_sum: 25.627s
+2020-05-17 19:03:07 INFO: END epoch:349 train loss_avg:  0.7037  elapse_sum: 25.613s
+2020-05-17 19:03:33 INFO: END epoch:350 train loss_avg:  0.6875  elapse_sum: 25.629s
+2020-05-17 19:03:35 INFO: END epoch:350 valid loss_avg:  0.1968 top1_avg: 0.9438 top5_avg: 0.9980 elapse_sum: 1.968s
+2020-05-17 19:03:35 INFO: The best top1 acc 0.94379, in epoch: 350
+2020-05-17 19:03:35 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_350
+2020-05-17 19:03:35 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/350
+2020-05-17 19:04:01 INFO: END epoch:351 train loss_avg:  0.7003  elapse_sum: 25.625s
+2020-05-17 19:04:27 INFO: END epoch:352 train loss_avg:  0.6862  elapse_sum: 25.589s
+2020-05-17 19:04:52 INFO: END epoch:353 train loss_avg:  0.6605  elapse_sum: 25.610s
+2020-05-17 19:05:18 INFO: END epoch:354 train loss_avg:  0.7142  elapse_sum: 25.583s
+2020-05-17 19:05:43 INFO: END epoch:355 train loss_avg:  0.6291  elapse_sum: 25.618s
+2020-05-17 19:05:45 INFO: END epoch:355 valid loss_avg:  0.2258 top1_avg: 0.9340 top5_avg: 0.9986 elapse_sum: 1.969s
+2020-05-17 19:06:11 INFO: END epoch:356 train loss_avg:  0.6724  elapse_sum: 25.663s
+2020-05-17 19:06:37 INFO: END epoch:357 train loss_avg:  0.6973  elapse_sum: 25.575s
+2020-05-17 19:07:02 INFO: END epoch:358 train loss_avg:  0.6729  elapse_sum: 25.587s
+2020-05-17 19:07:28 INFO: END epoch:359 train loss_avg:  0.6437  elapse_sum: 25.618s
+2020-05-17 19:07:53 INFO: END epoch:360 train loss_avg:  0.6041  elapse_sum: 25.625s
+2020-05-17 19:07:55 INFO: END epoch:360 valid loss_avg:  0.2090 top1_avg: 0.9392 top5_avg: 0.9977 elapse_sum: 1.971s
+2020-05-17 19:07:56 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/360
+2020-05-17 19:08:21 INFO: END epoch:361 train loss_avg:  0.6952  elapse_sum: 25.666s
+2020-05-17 19:08:47 INFO: END epoch:362 train loss_avg:  0.6912  elapse_sum: 25.589s
+2020-05-17 19:09:13 INFO: END epoch:363 train loss_avg:  0.7138  elapse_sum: 25.583s
+2020-05-17 19:09:38 INFO: END epoch:364 train loss_avg:  0.6404  elapse_sum: 25.593s
+2020-05-17 19:10:04 INFO: END epoch:365 train loss_avg:  0.6764  elapse_sum: 25.612s
+2020-05-17 19:10:06 INFO: END epoch:365 valid loss_avg:  0.2082 top1_avg: 0.9411 top5_avg: 0.9980 elapse_sum: 1.970s
+2020-05-17 19:10:31 INFO: END epoch:366 train loss_avg:  0.6270  elapse_sum: 25.596s
+2020-05-17 19:10:57 INFO: END epoch:367 train loss_avg:  0.6337  elapse_sum: 25.604s
+2020-05-17 19:11:23 INFO: END epoch:368 train loss_avg:  0.6255  elapse_sum: 25.612s
+2020-05-17 19:11:48 INFO: END epoch:369 train loss_avg:  0.6793  elapse_sum: 25.607s
+2020-05-17 19:12:14 INFO: END epoch:370 train loss_avg:  0.6533  elapse_sum: 25.614s
+2020-05-17 19:12:16 INFO: END epoch:370 valid loss_avg:  0.2203 top1_avg: 0.9395 top5_avg: 0.9986 elapse_sum: 1.963s
+2020-05-17 19:12:16 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/370
+2020-05-17 19:12:42 INFO: END epoch:371 train loss_avg:  0.7062  elapse_sum: 25.625s
+2020-05-17 19:13:07 INFO: END epoch:372 train loss_avg:  0.6887  elapse_sum: 25.610s
+2020-05-17 19:13:33 INFO: END epoch:373 train loss_avg:  0.6721  elapse_sum: 25.615s
+2020-05-17 19:13:59 INFO: END epoch:374 train loss_avg:  0.6032  elapse_sum: 25.599s
+2020-05-17 19:14:24 INFO: END epoch:375 train loss_avg:  0.6299  elapse_sum: 25.595s
+2020-05-17 19:14:26 INFO: END epoch:375 valid loss_avg:  0.2023 top1_avg: 0.9421 top5_avg: 0.9977 elapse_sum: 1.963s
+2020-05-17 19:14:52 INFO: END epoch:376 train loss_avg:  0.6768  elapse_sum: 25.631s
+2020-05-17 19:15:17 INFO: END epoch:377 train loss_avg:  0.6090  elapse_sum: 25.606s
+2020-05-17 19:15:43 INFO: END epoch:378 train loss_avg:  0.6523  elapse_sum: 25.605s
+2020-05-17 19:16:09 INFO: END epoch:379 train loss_avg:  0.6726  elapse_sum: 25.621s
+2020-05-17 19:16:34 INFO: END epoch:380 train loss_avg:  0.6422  elapse_sum: 25.598s
+2020-05-17 19:16:36 INFO: END epoch:380 valid loss_avg:  0.2587 top1_avg: 0.9289 top5_avg: 0.9966 elapse_sum: 1.961s
+2020-05-17 19:16:36 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/380
+2020-05-17 19:17:02 INFO: END epoch:381 train loss_avg:  0.6233  elapse_sum: 25.613s
+2020-05-17 19:17:28 INFO: END epoch:382 train loss_avg:  0.6860  elapse_sum: 25.588s
+2020-05-17 19:17:53 INFO: END epoch:383 train loss_avg:  0.7195  elapse_sum: 25.613s
+2020-05-17 19:18:19 INFO: END epoch:384 train loss_avg:  0.6736  elapse_sum: 25.617s
+2020-05-17 19:18:44 INFO: END epoch:385 train loss_avg:  0.6548  elapse_sum: 25.598s
+2020-05-17 19:18:46 INFO: END epoch:385 valid loss_avg:  0.2128 top1_avg: 0.9387 top5_avg: 0.9973 elapse_sum: 1.967s
+2020-05-17 19:19:12 INFO: END epoch:386 train loss_avg:  0.7471  elapse_sum: 25.587s
+2020-05-17 19:19:38 INFO: END epoch:387 train loss_avg:  0.6635  elapse_sum: 25.572s
+2020-05-17 19:20:03 INFO: END epoch:388 train loss_avg:  0.6408  elapse_sum: 25.591s
+2020-05-17 19:20:29 INFO: END epoch:389 train loss_avg:  0.6508  elapse_sum: 25.605s
+2020-05-17 19:20:54 INFO: END epoch:390 train loss_avg:  0.7071  elapse_sum: 25.628s
+2020-05-17 19:20:56 INFO: END epoch:390 valid loss_avg:  0.1937 top1_avg: 0.9448 top5_avg: 0.9987 elapse_sum: 1.972s
+2020-05-17 19:20:56 INFO: The best top1 acc 0.94477, in epoch: 390
+2020-05-17 19:20:57 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_390
+2020-05-17 19:20:57 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/390
+2020-05-17 19:21:23 INFO: END epoch:391 train loss_avg:  0.6250  elapse_sum: 25.632s
+2020-05-17 19:21:48 INFO: END epoch:392 train loss_avg:  0.7159  elapse_sum: 25.596s
+2020-05-17 19:22:14 INFO: END epoch:393 train loss_avg:  0.6716  elapse_sum: 25.595s
+2020-05-17 19:22:39 INFO: END epoch:394 train loss_avg:  0.6223  elapse_sum: 25.613s
+2020-05-17 19:23:05 INFO: END epoch:395 train loss_avg:  0.6704  elapse_sum: 25.633s
+2020-05-17 19:23:07 INFO: END epoch:395 valid loss_avg:  0.1995 top1_avg: 0.9423 top5_avg: 0.9984 elapse_sum: 1.975s
+2020-05-17 19:23:33 INFO: END epoch:396 train loss_avg:  0.5723  elapse_sum: 25.619s
+2020-05-17 19:23:58 INFO: END epoch:397 train loss_avg:  0.6145  elapse_sum: 25.639s
+2020-05-17 19:24:24 INFO: END epoch:398 train loss_avg:  0.6515  elapse_sum: 25.609s
+2020-05-17 19:24:50 INFO: END epoch:399 train loss_avg:  0.6286  elapse_sum: 25.617s
+2020-05-17 19:25:15 INFO: END epoch:400 train loss_avg:  0.6658  elapse_sum: 25.637s
+2020-05-17 19:25:17 INFO: END epoch:400 valid loss_avg:  0.1985 top1_avg: 0.9463 top5_avg: 0.9985 elapse_sum: 1.973s
+2020-05-17 19:25:17 INFO: The best top1 acc 0.94629, in epoch: 400
+2020-05-17 19:25:17 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_400
+2020-05-17 19:25:18 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/400
+2020-05-17 19:25:43 INFO: END epoch:401 train loss_avg:  0.6626  elapse_sum: 25.630s
+2020-05-17 19:26:09 INFO: END epoch:402 train loss_avg:  0.6583  elapse_sum: 25.603s
+2020-05-17 19:26:35 INFO: END epoch:403 train loss_avg:  0.5921  elapse_sum: 25.608s
+2020-05-17 19:27:00 INFO: END epoch:404 train loss_avg:  0.6031  elapse_sum: 25.613s
+2020-05-17 19:27:26 INFO: END epoch:405 train loss_avg:  0.6338  elapse_sum: 25.646s
+2020-05-17 19:27:28 INFO: END epoch:405 valid loss_avg:  0.1915 top1_avg: 0.9465 top5_avg: 0.9986 elapse_sum: 1.960s
+2020-05-17 19:27:28 INFO: The best top1 acc 0.94651, in epoch: 405
+2020-05-17 19:27:53 INFO: END epoch:406 train loss_avg:  0.6443  elapse_sum: 25.600s
+2020-05-17 19:28:19 INFO: END epoch:407 train loss_avg:  0.6530  elapse_sum: 25.615s
+2020-05-17 19:28:45 INFO: END epoch:408 train loss_avg:  0.6702  elapse_sum: 25.571s
+2020-05-17 19:29:10 INFO: END epoch:409 train loss_avg:  0.6724  elapse_sum: 25.598s
+2020-05-17 19:29:36 INFO: END epoch:410 train loss_avg:  0.6288  elapse_sum: 25.641s
+2020-05-17 19:29:38 INFO: END epoch:410 valid loss_avg:  0.2146 top1_avg: 0.9389 top5_avg: 0.9977 elapse_sum: 1.960s
+2020-05-17 19:29:38 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/410
+2020-05-17 19:30:04 INFO: END epoch:411 train loss_avg:  0.5846  elapse_sum: 25.639s
+2020-05-17 19:30:29 INFO: END epoch:412 train loss_avg:  0.6361  elapse_sum: 25.605s
+2020-05-17 19:30:55 INFO: END epoch:413 train loss_avg:  0.6465  elapse_sum: 25.605s
+2020-05-17 19:31:21 INFO: END epoch:414 train loss_avg:  0.6097  elapse_sum: 25.636s
+2020-05-17 19:31:46 INFO: END epoch:415 train loss_avg:  0.6508  elapse_sum: 25.607s
+2020-05-17 19:31:48 INFO: END epoch:415 valid loss_avg:  0.1922 top1_avg: 0.9488 top5_avg: 0.9982 elapse_sum: 1.952s
+2020-05-17 19:31:48 INFO: The best top1 acc 0.94878, in epoch: 415
+2020-05-17 19:32:14 INFO: END epoch:416 train loss_avg:  0.6730  elapse_sum: 25.612s
+2020-05-17 19:32:39 INFO: END epoch:417 train loss_avg:  0.6010  elapse_sum: 25.623s
+2020-05-17 19:33:05 INFO: END epoch:418 train loss_avg:  0.5487  elapse_sum: 25.648s
+2020-05-17 19:33:31 INFO: END epoch:419 train loss_avg:  0.6586  elapse_sum: 25.635s
+2020-05-17 19:33:56 INFO: END epoch:420 train loss_avg:  0.6446  elapse_sum: 25.644s
+2020-05-17 19:33:58 INFO: END epoch:420 valid loss_avg:  0.2113 top1_avg: 0.9402 top5_avg: 0.9976 elapse_sum: 1.966s
+2020-05-17 19:33:59 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/420
+2020-05-17 19:34:24 INFO: END epoch:421 train loss_avg:  0.6382  elapse_sum: 25.618s
+2020-05-17 19:34:50 INFO: END epoch:422 train loss_avg:  0.6838  elapse_sum: 25.604s
+2020-05-17 19:35:16 INFO: END epoch:423 train loss_avg:  0.6760  elapse_sum: 25.645s
+2020-05-17 19:35:41 INFO: END epoch:424 train loss_avg:  0.6149  elapse_sum: 25.665s
+2020-05-17 19:36:07 INFO: END epoch:425 train loss_avg:  0.6531  elapse_sum: 25.620s
+2020-05-17 19:36:09 INFO: END epoch:425 valid loss_avg:  0.1833 top1_avg: 0.9490 top5_avg: 0.9980 elapse_sum: 1.968s
+2020-05-17 19:36:09 INFO: The best top1 acc 0.94900, in epoch: 425
+2020-05-17 19:36:34 INFO: END epoch:426 train loss_avg:  0.6178  elapse_sum: 25.624s
+2020-05-17 19:37:00 INFO: END epoch:427 train loss_avg:  0.6662  elapse_sum: 25.641s
+2020-05-17 19:37:26 INFO: END epoch:428 train loss_avg:  0.6353  elapse_sum: 25.590s
+2020-05-17 19:37:51 INFO: END epoch:429 train loss_avg:  0.6206  elapse_sum: 25.620s
+2020-05-17 19:38:17 INFO: END epoch:430 train loss_avg:  0.6435  elapse_sum: 25.629s
+2020-05-17 19:38:19 INFO: END epoch:430 valid loss_avg:  0.1996 top1_avg: 0.9446 top5_avg: 0.9978 elapse_sum: 1.957s
+2020-05-17 19:38:19 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/430
+2020-05-17 19:38:45 INFO: END epoch:431 train loss_avg:  0.6585  elapse_sum: 25.638s
+2020-05-17 19:39:10 INFO: END epoch:432 train loss_avg:  0.6545  elapse_sum: 25.608s
+2020-05-17 19:39:36 INFO: END epoch:433 train loss_avg:  0.6247  elapse_sum: 25.630s
+2020-05-17 19:40:02 INFO: END epoch:434 train loss_avg:  0.6375  elapse_sum: 25.612s
+2020-05-17 19:40:27 INFO: END epoch:435 train loss_avg:  0.6593  elapse_sum: 25.621s
+2020-05-17 19:40:29 INFO: END epoch:435 valid loss_avg:  0.2009 top1_avg: 0.9437 top5_avg: 0.9983 elapse_sum: 1.961s
+2020-05-17 19:40:55 INFO: END epoch:436 train loss_avg:  0.6533  elapse_sum: 25.668s
+2020-05-17 19:41:21 INFO: END epoch:437 train loss_avg:  0.6284  elapse_sum: 25.642s
+2020-05-17 19:41:46 INFO: END epoch:438 train loss_avg:  0.6283  elapse_sum: 25.578s
+2020-05-17 19:42:12 INFO: END epoch:439 train loss_avg:  0.6547  elapse_sum: 25.635s
+2020-05-17 19:42:37 INFO: END epoch:440 train loss_avg:  0.5679  elapse_sum: 25.633s
+2020-05-17 19:42:39 INFO: END epoch:440 valid loss_avg:  0.1883 top1_avg: 0.9451 top5_avg: 0.9984 elapse_sum: 1.954s
+2020-05-17 19:42:40 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/440
+2020-05-17 19:43:05 INFO: END epoch:441 train loss_avg:  0.6379  elapse_sum: 25.618s
+2020-05-17 19:43:31 INFO: END epoch:442 train loss_avg:  0.5901  elapse_sum: 25.609s
+2020-05-17 19:43:57 INFO: END epoch:443 train loss_avg:  0.6712  elapse_sum: 25.605s
+2020-05-17 19:44:22 INFO: END epoch:444 train loss_avg:  0.6428  elapse_sum: 25.628s
+2020-05-17 19:44:48 INFO: END epoch:445 train loss_avg:  0.6126  elapse_sum: 25.644s
+2020-05-17 19:44:50 INFO: END epoch:445 valid loss_avg:  0.1896 top1_avg: 0.9484 top5_avg: 0.9984 elapse_sum: 1.949s
+2020-05-17 19:45:15 INFO: END epoch:446 train loss_avg:  0.6023  elapse_sum: 25.617s
+2020-05-17 19:45:41 INFO: END epoch:447 train loss_avg:  0.6151  elapse_sum: 25.620s
+2020-05-17 19:46:07 INFO: END epoch:448 train loss_avg:  0.6077  elapse_sum: 25.585s
+2020-05-17 19:46:32 INFO: END epoch:449 train loss_avg:  0.6136  elapse_sum: 25.656s
+2020-05-17 19:46:58 INFO: END epoch:450 train loss_avg:  0.6600  elapse_sum: 25.614s
+2020-05-17 19:47:00 INFO: END epoch:450 valid loss_avg:  0.1987 top1_avg: 0.9443 top5_avg: 0.9986 elapse_sum: 1.965s
+2020-05-17 19:47:00 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/450
+2020-05-17 19:47:26 INFO: END epoch:451 train loss_avg:  0.5873  elapse_sum: 25.613s
+2020-05-17 19:47:51 INFO: END epoch:452 train loss_avg:  0.5936  elapse_sum: 25.613s
+2020-05-17 19:48:17 INFO: END epoch:453 train loss_avg:  0.6232  elapse_sum: 25.587s
+2020-05-17 19:48:43 INFO: END epoch:454 train loss_avg:  0.5850  elapse_sum: 25.580s
+2020-05-17 19:49:08 INFO: END epoch:455 train loss_avg:  0.6534  elapse_sum: 25.617s
+2020-05-17 19:49:10 INFO: END epoch:455 valid loss_avg:  0.1893 top1_avg: 0.9473 top5_avg: 0.9977 elapse_sum: 1.956s
+2020-05-17 19:49:36 INFO: END epoch:456 train loss_avg:  0.6420  elapse_sum: 25.681s
+2020-05-17 19:50:01 INFO: END epoch:457 train loss_avg:  0.5797  elapse_sum: 25.619s
+2020-05-17 19:50:27 INFO: END epoch:458 train loss_avg:  0.6057  elapse_sum: 25.610s
+2020-05-17 19:50:53 INFO: END epoch:459 train loss_avg:  0.6285  elapse_sum: 25.618s
+2020-05-17 19:51:18 INFO: END epoch:460 train loss_avg:  0.6638  elapse_sum: 25.575s
+2020-05-17 19:51:20 INFO: END epoch:460 valid loss_avg:  0.2012 top1_avg: 0.9448 top5_avg: 0.9978 elapse_sum: 1.970s
+2020-05-17 19:51:21 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/460
+2020-05-17 19:51:46 INFO: END epoch:461 train loss_avg:  0.6476  elapse_sum: 25.635s
+2020-05-17 19:52:12 INFO: END epoch:462 train loss_avg:  0.5700  elapse_sum: 25.603s
+2020-05-17 19:52:37 INFO: END epoch:463 train loss_avg:  0.5951  elapse_sum: 25.711s
+2020-05-17 19:53:03 INFO: END epoch:464 train loss_avg:  0.5935  elapse_sum: 25.650s
+2020-05-17 19:53:29 INFO: END epoch:465 train loss_avg:  0.6223  elapse_sum: 25.647s
+2020-05-17 19:53:31 INFO: END epoch:465 valid loss_avg:  0.1980 top1_avg: 0.9464 top5_avg: 0.9973 elapse_sum: 1.943s
+2020-05-17 19:53:56 INFO: END epoch:466 train loss_avg:  0.5827  elapse_sum: 25.634s
+2020-05-17 19:54:22 INFO: END epoch:467 train loss_avg:  0.5414  elapse_sum: 25.634s
+2020-05-17 19:54:48 INFO: END epoch:468 train loss_avg:  0.6160  elapse_sum: 25.627s
+2020-05-17 19:55:13 INFO: END epoch:469 train loss_avg:  0.5825  elapse_sum: 25.610s
+2020-05-17 19:55:39 INFO: END epoch:470 train loss_avg:  0.5879  elapse_sum: 25.589s
+2020-05-17 19:55:41 INFO: END epoch:470 valid loss_avg:  0.1922 top1_avg: 0.9481 top5_avg: 0.9986 elapse_sum: 1.950s
+2020-05-17 19:55:41 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/470
+2020-05-17 19:56:07 INFO: END epoch:471 train loss_avg:  0.5887  elapse_sum: 25.817s
+2020-05-17 19:56:33 INFO: END epoch:472 train loss_avg:  0.6276  elapse_sum: 25.626s
+2020-05-17 19:56:58 INFO: END epoch:473 train loss_avg:  0.5563  elapse_sum: 25.613s
+2020-05-17 19:57:24 INFO: END epoch:474 train loss_avg:  0.6331  elapse_sum: 25.611s
+2020-05-17 19:57:49 INFO: END epoch:475 train loss_avg:  0.5919  elapse_sum: 25.605s
+2020-05-17 19:57:51 INFO: END epoch:475 valid loss_avg:  0.1905 top1_avg: 0.9493 top5_avg: 0.9980 elapse_sum: 1.963s
+2020-05-17 19:57:51 INFO: The best top1 acc 0.94933, in epoch: 475
+2020-05-17 19:58:17 INFO: END epoch:476 train loss_avg:  0.6567  elapse_sum: 25.599s
+2020-05-17 19:58:43 INFO: END epoch:477 train loss_avg:  0.5978  elapse_sum: 25.635s
+2020-05-17 19:59:08 INFO: END epoch:478 train loss_avg:  0.6245  elapse_sum: 25.613s
+2020-05-17 19:59:34 INFO: END epoch:479 train loss_avg:  0.6273  elapse_sum: 25.616s
+2020-05-17 19:59:59 INFO: END epoch:480 train loss_avg:  0.5961  elapse_sum: 25.618s
+2020-05-17 20:00:01 INFO: END epoch:480 valid loss_avg:  0.1859 top1_avg: 0.9497 top5_avg: 0.9985 elapse_sum: 1.960s
+2020-05-17 20:00:01 INFO: The best top1 acc 0.94965, in epoch: 480
+2020-05-17 20:00:02 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_480
+2020-05-17 20:00:02 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/480
+2020-05-17 20:00:28 INFO: END epoch:481 train loss_avg:  0.6004  elapse_sum: 25.587s
+2020-05-17 20:00:53 INFO: END epoch:482 train loss_avg:  0.6259  elapse_sum: 25.599s
+2020-05-17 20:01:19 INFO: END epoch:483 train loss_avg:  0.5949  elapse_sum: 25.616s
+2020-05-17 20:01:44 INFO: END epoch:484 train loss_avg:  0.6175  elapse_sum: 25.587s
+2020-05-17 20:02:10 INFO: END epoch:485 train loss_avg:  0.6036  elapse_sum: 25.646s
+2020-05-17 20:02:12 INFO: END epoch:485 valid loss_avg:  0.1859 top1_avg: 0.9490 top5_avg: 0.9979 elapse_sum: 1.956s
+2020-05-17 20:02:38 INFO: END epoch:486 train loss_avg:  0.5408  elapse_sum: 25.572s
+2020-05-17 20:03:03 INFO: END epoch:487 train loss_avg:  0.5906  elapse_sum: 25.595s
+2020-05-17 20:03:29 INFO: END epoch:488 train loss_avg:  0.6169  elapse_sum: 25.599s
+2020-05-17 20:03:54 INFO: END epoch:489 train loss_avg:  0.5776  elapse_sum: 25.609s
+2020-05-17 20:04:20 INFO: END epoch:490 train loss_avg:  0.5983  elapse_sum: 25.602s
+2020-05-17 20:04:22 INFO: END epoch:490 valid loss_avg:  0.1869 top1_avg: 0.9482 top5_avg: 0.9979 elapse_sum: 1.963s
+2020-05-17 20:04:22 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/490
+2020-05-17 20:04:48 INFO: END epoch:491 train loss_avg:  0.5837  elapse_sum: 25.597s
+2020-05-17 20:05:13 INFO: END epoch:492 train loss_avg:  0.6008  elapse_sum: 25.596s
+2020-05-17 20:05:39 INFO: END epoch:493 train loss_avg:  0.6264  elapse_sum: 25.628s
+2020-05-17 20:06:05 INFO: END epoch:494 train loss_avg:  0.5777  elapse_sum: 25.625s
+2020-05-17 20:06:30 INFO: END epoch:495 train loss_avg:  0.6039  elapse_sum: 25.651s
+2020-05-17 20:06:32 INFO: END epoch:495 valid loss_avg:  0.1808 top1_avg: 0.9488 top5_avg: 0.9983 elapse_sum: 1.959s
+2020-05-17 20:06:58 INFO: END epoch:496 train loss_avg:  0.5797  elapse_sum: 25.622s
+2020-05-17 20:07:24 INFO: END epoch:497 train loss_avg:  0.5534  elapse_sum: 25.583s
+2020-05-17 20:07:49 INFO: END epoch:498 train loss_avg:  0.5734  elapse_sum: 25.609s
+2020-05-17 20:08:15 INFO: END epoch:499 train loss_avg:  0.6084  elapse_sum: 25.624s
+2020-05-17 20:08:40 INFO: END epoch:500 train loss_avg:  0.5845  elapse_sum: 25.604s
+2020-05-17 20:08:42 INFO: END epoch:500 valid loss_avg:  0.1811 top1_avg: 0.9507 top5_avg: 0.9983 elapse_sum: 1.968s
+2020-05-17 20:08:42 INFO: The best top1 acc 0.95074, in epoch: 500
+2020-05-17 20:08:43 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/best_model_in_epoch_500
+2020-05-17 20:08:43 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/500
+2020-05-17 20:09:09 INFO: END epoch:501 train loss_avg:  0.6242  elapse_sum: 25.597s
+2020-05-17 20:09:34 INFO: END epoch:502 train loss_avg:  0.5376  elapse_sum: 25.602s
+2020-05-17 20:10:00 INFO: END epoch:503 train loss_avg:  0.5963  elapse_sum: 25.630s
+2020-05-17 20:10:25 INFO: END epoch:504 train loss_avg:  0.5890  elapse_sum: 25.625s
+2020-05-17 20:10:51 INFO: END epoch:505 train loss_avg:  0.5901  elapse_sum: 25.629s
+2020-05-17 20:10:53 INFO: END epoch:505 valid loss_avg:  0.1814 top1_avg: 0.9510 top5_avg: 0.9980 elapse_sum: 1.950s
+2020-05-17 20:10:53 INFO: The best top1 acc 0.95095, in epoch: 505
+2020-05-17 20:11:19 INFO: END epoch:506 train loss_avg:  0.5367  elapse_sum: 25.645s
+2020-05-17 20:11:44 INFO: END epoch:507 train loss_avg:  0.6462  elapse_sum: 25.589s
+2020-05-17 20:12:10 INFO: END epoch:508 train loss_avg:  0.6265  elapse_sum: 25.659s
+2020-05-17 20:12:36 INFO: END epoch:509 train loss_avg:  0.6068  elapse_sum: 25.628s
+2020-05-17 20:13:01 INFO: END epoch:510 train loss_avg:  0.5745  elapse_sum: 25.883s
+2020-05-17 20:13:03 INFO: END epoch:510 valid loss_avg:  0.1799 top1_avg: 0.9499 top5_avg: 0.9982 elapse_sum: 1.952s
+2020-05-17 20:13:04 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/510
+2020-05-17 20:13:29 INFO: END epoch:511 train loss_avg:  0.5863  elapse_sum: 25.630s
+2020-05-17 20:13:55 INFO: END epoch:512 train loss_avg:  0.5303  elapse_sum: 25.641s
+2020-05-17 20:14:21 INFO: END epoch:513 train loss_avg:  0.5926  elapse_sum: 25.656s
+2020-05-17 20:14:46 INFO: END epoch:514 train loss_avg:  0.5571  elapse_sum: 25.608s
+2020-05-17 20:15:12 INFO: END epoch:515 train loss_avg:  0.5939  elapse_sum: 25.607s
+2020-05-17 20:15:14 INFO: END epoch:515 valid loss_avg:  0.1899 top1_avg: 0.9460 top5_avg: 0.9980 elapse_sum: 1.951s
+2020-05-17 20:15:39 INFO: END epoch:516 train loss_avg:  0.5166  elapse_sum: 25.706s
+2020-05-17 20:16:05 INFO: END epoch:517 train loss_avg:  0.6016  elapse_sum: 25.624s
+2020-05-17 20:16:31 INFO: END epoch:518 train loss_avg:  0.5755  elapse_sum: 25.626s
+2020-05-17 20:16:56 INFO: END epoch:519 train loss_avg:  0.5644  elapse_sum: 25.625s
+2020-05-17 20:17:22 INFO: END epoch:520 train loss_avg:  0.6116  elapse_sum: 25.605s
+2020-05-17 20:17:24 INFO: END epoch:520 valid loss_avg:  0.1888 top1_avg: 0.9493 top5_avg: 0.9984 elapse_sum: 1.962s
+2020-05-17 20:17:24 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/520
+2020-05-17 20:17:50 INFO: END epoch:521 train loss_avg:  0.5595  elapse_sum: 25.634s
+2020-05-17 20:18:15 INFO: END epoch:522 train loss_avg:  0.5465  elapse_sum: 25.629s
+2020-05-17 20:18:41 INFO: END epoch:523 train loss_avg:  0.5958  elapse_sum: 25.612s
+2020-05-17 20:19:07 INFO: END epoch:524 train loss_avg:  0.5559  elapse_sum: 25.650s
+2020-05-17 20:19:32 INFO: END epoch:525 train loss_avg:  0.5687  elapse_sum: 25.626s
+2020-05-17 20:19:34 INFO: END epoch:525 valid loss_avg:  0.1917 top1_avg: 0.9466 top5_avg: 0.9985 elapse_sum: 1.949s
+2020-05-17 20:20:00 INFO: END epoch:526 train loss_avg:  0.5835  elapse_sum: 25.643s
+2020-05-17 20:20:26 INFO: END epoch:527 train loss_avg:  0.5269  elapse_sum: 25.623s
+2020-05-17 20:20:51 INFO: END epoch:528 train loss_avg:  0.5740  elapse_sum: 25.627s
+2020-05-17 20:21:17 INFO: END epoch:529 train loss_avg:  0.5849  elapse_sum: 25.637s
+2020-05-17 20:21:43 INFO: END epoch:530 train loss_avg:  0.5669  elapse_sum: 25.637s
+2020-05-17 20:21:44 INFO: END epoch:530 valid loss_avg:  0.1823 top1_avg: 0.9510 top5_avg: 0.9982 elapse_sum: 1.969s
+2020-05-17 20:21:45 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/530
+2020-05-17 20:22:10 INFO: END epoch:531 train loss_avg:  0.5743  elapse_sum: 25.622s
+2020-05-17 20:22:36 INFO: END epoch:532 train loss_avg:  0.6044  elapse_sum: 25.616s
+2020-05-17 20:23:02 INFO: END epoch:533 train loss_avg:  0.6036  elapse_sum: 25.610s
+2020-05-17 20:23:27 INFO: END epoch:534 train loss_avg:  0.5703  elapse_sum: 25.597s
+2020-05-17 20:23:53 INFO: END epoch:535 train loss_avg:  0.5448  elapse_sum: 25.669s
+2020-05-17 20:23:55 INFO: END epoch:535 valid loss_avg:  0.1769 top1_avg: 0.9510 top5_avg: 0.9978 elapse_sum: 1.970s
+2020-05-17 20:24:20 INFO: END epoch:536 train loss_avg:  0.5555  elapse_sum: 25.627s
+2020-05-17 20:24:46 INFO: END epoch:537 train loss_avg:  0.5837  elapse_sum: 25.601s
+2020-05-17 20:25:12 INFO: END epoch:538 train loss_avg:  0.5787  elapse_sum: 25.630s
+2020-05-17 20:25:37 INFO: END epoch:539 train loss_avg:  0.5878  elapse_sum: 25.628s
+2020-05-17 20:26:03 INFO: END epoch:540 train loss_avg:  0.5386  elapse_sum: 25.626s
+2020-05-17 20:26:05 INFO: END epoch:540 valid loss_avg:  0.1850 top1_avg: 0.9499 top5_avg: 0.9982 elapse_sum: 1.980s
+2020-05-17 20:26:05 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/540
+2020-05-17 20:26:31 INFO: END epoch:541 train loss_avg:  0.6068  elapse_sum: 25.631s
+2020-05-17 20:26:57 INFO: END epoch:542 train loss_avg:  0.5868  elapse_sum: 25.595s
+2020-05-17 20:27:22 INFO: END epoch:543 train loss_avg:  0.5841  elapse_sum: 25.626s
+2020-05-17 20:27:48 INFO: END epoch:544 train loss_avg:  0.5590  elapse_sum: 25.624s
+2020-05-17 20:28:13 INFO: END epoch:545 train loss_avg:  0.5992  elapse_sum: 25.614s
+2020-05-17 20:28:15 INFO: END epoch:545 valid loss_avg:  0.1852 top1_avg: 0.9494 top5_avg: 0.9984 elapse_sum: 1.960s
+2020-05-17 20:28:41 INFO: END epoch:546 train loss_avg:  0.5906  elapse_sum: 25.594s
+2020-05-17 20:29:07 INFO: END epoch:547 train loss_avg:  0.5777  elapse_sum: 25.613s
+2020-05-17 20:29:32 INFO: END epoch:548 train loss_avg:  0.5749  elapse_sum: 25.610s
+2020-05-17 20:29:58 INFO: END epoch:549 train loss_avg:  0.5732  elapse_sum: 25.613s
+2020-05-17 20:30:24 INFO: END epoch:550 train loss_avg:  0.5566  elapse_sum: 25.718s
+2020-05-17 20:30:26 INFO: END epoch:550 valid loss_avg:  0.1808 top1_avg: 0.9500 top5_avg: 0.9979 elapse_sum: 1.963s
+2020-05-17 20:30:26 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/550
+2020-05-17 20:30:51 INFO: END epoch:551 train loss_avg:  0.6157  elapse_sum: 25.611s
+2020-05-17 20:31:17 INFO: END epoch:552 train loss_avg:  0.5541  elapse_sum: 25.608s
+2020-05-17 20:31:43 INFO: END epoch:553 train loss_avg:  0.5530  elapse_sum: 25.625s
+2020-05-17 20:32:08 INFO: END epoch:554 train loss_avg:  0.5749  elapse_sum: 25.650s
+2020-05-17 20:32:34 INFO: END epoch:555 train loss_avg:  0.5736  elapse_sum: 25.621s
+2020-05-17 20:32:36 INFO: END epoch:555 valid loss_avg:  0.1834 top1_avg: 0.9504 top5_avg: 0.9975 elapse_sum: 1.957s
+2020-05-17 20:33:02 INFO: END epoch:556 train loss_avg:  0.5972  elapse_sum: 25.623s
+2020-05-17 20:33:27 INFO: END epoch:557 train loss_avg:  0.5877  elapse_sum: 25.611s
+2020-05-17 20:33:53 INFO: END epoch:558 train loss_avg:  0.5795  elapse_sum: 25.616s
+2020-05-17 20:34:18 INFO: END epoch:559 train loss_avg:  0.6156  elapse_sum: 25.630s
+2020-05-17 20:34:44 INFO: END epoch:560 train loss_avg:  0.5518  elapse_sum: 25.604s
+2020-05-17 20:34:46 INFO: END epoch:560 valid loss_avg:  0.1806 top1_avg: 0.9502 top5_avg: 0.9980 elapse_sum: 1.969s
+2020-05-17 20:34:46 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/560
+2020-05-17 20:35:12 INFO: END epoch:561 train loss_avg:  0.5783  elapse_sum: 25.587s
+2020-05-17 20:35:37 INFO: END epoch:562 train loss_avg:  0.5623  elapse_sum: 25.622s
+2020-05-17 20:36:03 INFO: END epoch:563 train loss_avg:  0.5535  elapse_sum: 25.634s
+2020-05-17 20:36:29 INFO: END epoch:564 train loss_avg:  0.5777  elapse_sum: 25.612s
+2020-05-17 20:36:54 INFO: END epoch:565 train loss_avg:  0.5596  elapse_sum: 25.631s
+2020-05-17 20:36:56 INFO: END epoch:565 valid loss_avg:  0.1808 top1_avg: 0.9513 top5_avg: 0.9985 elapse_sum: 1.978s
+2020-05-17 20:36:56 INFO: The best top1 acc 0.95128, in epoch: 565
+2020-05-17 20:37:22 INFO: END epoch:566 train loss_avg:  0.5668  elapse_sum: 25.632s
+2020-05-17 20:37:48 INFO: END epoch:567 train loss_avg:  0.5755  elapse_sum: 25.596s
+2020-05-17 20:38:13 INFO: END epoch:568 train loss_avg:  0.5589  elapse_sum: 25.607s
+2020-05-17 20:38:39 INFO: END epoch:569 train loss_avg:  0.5851  elapse_sum: 25.626s
+2020-05-17 20:39:04 INFO: END epoch:570 train loss_avg:  0.6019  elapse_sum: 25.610s
+2020-05-17 20:39:06 INFO: END epoch:570 valid loss_avg:  0.1803 top1_avg: 0.9501 top5_avg: 0.9982 elapse_sum: 1.970s
+2020-05-17 20:39:07 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/570
+2020-05-17 20:39:32 INFO: END epoch:571 train loss_avg:  0.5427  elapse_sum: 25.596s
+2020-05-17 20:39:58 INFO: END epoch:572 train loss_avg:  0.5495  elapse_sum: 25.615s
+2020-05-17 20:40:23 INFO: END epoch:573 train loss_avg:  0.5729  elapse_sum: 25.616s
+2020-05-17 20:40:49 INFO: END epoch:574 train loss_avg:  0.5807  elapse_sum: 25.649s
+2020-05-17 20:41:15 INFO: END epoch:575 train loss_avg:  0.5863  elapse_sum: 25.620s
+2020-05-17 20:41:17 INFO: END epoch:575 valid loss_avg:  0.1783 top1_avg: 0.9507 top5_avg: 0.9980 elapse_sum: 1.962s
+2020-05-17 20:41:42 INFO: END epoch:576 train loss_avg:  0.5609  elapse_sum: 25.586s
+2020-05-17 20:42:08 INFO: END epoch:577 train loss_avg:  0.5682  elapse_sum: 25.628s
+2020-05-17 20:42:34 INFO: END epoch:578 train loss_avg:  0.5722  elapse_sum: 25.577s
+2020-05-17 20:42:59 INFO: END epoch:579 train loss_avg:  0.5824  elapse_sum: 25.608s
+2020-05-17 20:43:25 INFO: END epoch:580 train loss_avg:  0.5203  elapse_sum: 25.633s
+2020-05-17 20:43:27 INFO: END epoch:580 valid loss_avg:  0.1772 top1_avg: 0.9510 top5_avg: 0.9980 elapse_sum: 1.961s
+2020-05-17 20:43:27 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/580
+2020-05-17 20:43:53 INFO: END epoch:581 train loss_avg:  0.5615  elapse_sum: 25.618s
+2020-05-17 20:44:18 INFO: END epoch:582 train loss_avg:  0.5354  elapse_sum: 25.611s
+2020-05-17 20:44:44 INFO: END epoch:583 train loss_avg:  0.5575  elapse_sum: 25.617s
+2020-05-17 20:45:10 INFO: END epoch:584 train loss_avg:  0.5742  elapse_sum: 25.627s
+2020-05-17 20:45:35 INFO: END epoch:585 train loss_avg:  0.5743  elapse_sum: 25.629s
+2020-05-17 20:45:37 INFO: END epoch:585 valid loss_avg:  0.1761 top1_avg: 0.9520 top5_avg: 0.9979 elapse_sum: 1.960s
+2020-05-17 20:45:37 INFO: The best top1 acc 0.95204, in epoch: 585
+2020-05-17 20:46:03 INFO: END epoch:586 train loss_avg:  0.5766  elapse_sum: 25.626s
+2020-05-17 20:46:28 INFO: END epoch:587 train loss_avg:  0.5646  elapse_sum: 25.628s
+2020-05-17 20:46:54 INFO: END epoch:588 train loss_avg:  0.5864  elapse_sum: 25.635s
+2020-05-17 20:47:20 INFO: END epoch:589 train loss_avg:  0.5421  elapse_sum: 25.651s
+2020-05-17 20:47:45 INFO: END epoch:590 train loss_avg:  0.5219  elapse_sum: 25.609s
+2020-05-17 20:47:47 INFO: END epoch:590 valid loss_avg:  0.1761 top1_avg: 0.9512 top5_avg: 0.9982 elapse_sum: 1.962s
+2020-05-17 20:47:48 INFO: Already save model in /home/aistudio/work/PaddleClas/output/ShuffleNetV2Plus_CIFAR/590
+2020-05-17 20:48:13 INFO: END epoch:591 train loss_avg:  0.5534  elapse_sum: 25.602s
+2020-05-17 20:48:39 INFO: END epoch:592 train loss_avg:  0.5405  elapse_sum: 25.592s
+2020-05-17 20:49:04 INFO: END epoch:593 train loss_avg:  0.5352  elapse_sum: 25.616s
+2020-05-17 20:49:30 INFO: END epoch:594 train loss_avg:  0.6077  elapse_sum: 25.609s
+2020-05-17 20:49:56 INFO: END epoch:595 train loss_avg:  0.5686  elapse_sum: 25.727s
+2020-05-17 20:49:58 INFO: END epoch:595 valid loss_avg:  0.1766 top1_avg: 0.9510 top5_avg: 0.9982 elapse_sum: 1.972s
+2020-05-17 20:50:23 INFO: END epoch:596 train loss_avg:  0.5206  elapse_sum: 25.645s
+2020-05-17 20:50:49 INFO: END epoch:597 train loss_avg:  0.5223  elapse_sum: 25.615s
+2020-05-17 20:51:15 INFO: END epoch:598 train loss_avg:  0.5310  elapse_sum: 25.611s
+2020-05-17 20:51:40 INFO: END epoch:599 train loss_avg:  0.6110  elapse_sum: 25.649s
+-----------  Configuration Arguments -----------
+cluster_node_ips: 127.0.0.1
+log_dir: None
+node_ip: 127.0.0.1
+print_config: True
+selected_gpus: 0
+started_port: 6170
+training_script: tools/train.py
+training_script_args: ['-c', '/home/aistudio/23.yaml']
+use_paddlecloud: False
+------------------------------------------------
+trainers_endpoints: 127.0.0.1:6170 , node_id: 0 , current_node_ip: 127.0.0.1 , num_nodes: 1 , node_ips: ['127.0.0.1'] , nranks: 1
