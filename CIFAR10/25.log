@@ -1,0 +1,904 @@
+2020-05-18 08:21:40 INFO: 
+===========================================================
+==        PaddleClas is powered by PaddlePaddle !        ==
+===========================================================
+==                                                       ==
+==   For more info please go to the following website.   ==
+==                                                       ==
+==       https://github.com/PaddlePaddle/PaddleClas      ==
+===========================================================
+
+2020-05-18 08:21:40 INFO: ARCHITECTURE : 
+2020-05-18 08:21:40 INFO:     name : PreActResNet_CIFAR
+2020-05-18 08:21:40 INFO:     params : 
+2020-05-18 08:21:40 INFO:         depth : 28
+2020-05-18 08:21:40 INFO:         fp16 : True
+2020-05-18 08:21:40 INFO:         k : 10
+2020-05-18 08:21:40 INFO: ------------------------------------------------------------
+2020-05-18 08:21:40 INFO: LEARNING_RATE : 
+2020-05-18 08:21:40 INFO:     function : CosineWarmup
+2020-05-18 08:21:40 INFO:     params : 
+2020-05-18 08:21:40 INFO:         lr : 0.4
+2020-05-18 08:21:40 INFO: ------------------------------------------------------------
+2020-05-18 08:21:40 INFO: OPTIMIZER : 
+2020-05-18 08:21:40 INFO:     function : Momentum
+2020-05-18 08:21:40 INFO:     params : 
+2020-05-18 08:21:40 INFO:         momentum : 0.9
+2020-05-18 08:21:40 INFO:     regularizer : 
+2020-05-18 08:21:40 INFO:         factor : 0.0005
+2020-05-18 08:21:40 INFO:         function : L2
+2020-05-18 08:21:40 INFO: ------------------------------------------------------------
+2020-05-18 08:21:40 INFO: TRAIN : 
+2020-05-18 08:21:40 INFO:     batch_size : 512
+2020-05-18 08:21:40 INFO:     data_dir : /home/aistudio/work/PaddleClas/dataset/cifar10/bmp
+2020-05-18 08:21:40 INFO:     file_list : /home/aistudio/work/PaddleClas/dataset/cifar10/train_list.txt
+2020-05-18 08:21:40 INFO:     mix : 
+2020-05-18 08:21:40 INFO:         CutmixOperator : 
+2020-05-18 08:21:40 INFO:             alpha : 1.0
+2020-05-18 08:21:40 INFO:     num_workers : 4
+2020-05-18 08:21:40 INFO:     shuffle_seed : 0
+2020-05-18 08:21:40 INFO:     transforms : 
+2020-05-18 08:21:40 INFO:         DecodeImage : 
+2020-05-18 08:21:40 INFO:             channel_first : False
+2020-05-18 08:21:40 INFO:             to_np : False
+2020-05-18 08:21:40 INFO:             to_rgb : True
+2020-05-18 08:21:40 INFO:         RandomCrop : 
+2020-05-18 08:21:40 INFO:             fill : 128
+2020-05-18 08:21:40 INFO:             padding : 4
+2020-05-18 08:21:40 INFO:             size : 32
+2020-05-18 08:21:40 INFO:         RandFlipImage : 
+2020-05-18 08:21:40 INFO:             flip_code : 1
+2020-05-18 08:21:40 INFO:         NormalizeImage : 
+2020-05-18 08:21:40 INFO:             mean : [0.4914, 0.4822, 0.4465]
+2020-05-18 08:21:40 INFO:             order : 
+2020-05-18 08:21:40 INFO:             scale : 1./255.
+2020-05-18 08:21:40 INFO:             std : [0.247, 0.243, 0.261]
+2020-05-18 08:21:40 INFO:         ToCHWImage : None
+2020-05-18 08:21:40 INFO: ------------------------------------------------------------
+2020-05-18 08:21:40 INFO: VALID : 
+2020-05-18 08:21:40 INFO:     batch_size : 1024
+2020-05-18 08:21:40 INFO:     data_dir : /home/aistudio/work/PaddleClas/dataset/cifar10/bmp
+2020-05-18 08:21:40 INFO:     file_list : /home/aistudio/work/PaddleClas/dataset/cifar10/test_list.txt
+2020-05-18 08:21:40 INFO:     num_workers : 4
+2020-05-18 08:21:40 INFO:     shuffle_seed : 0
+2020-05-18 08:21:40 INFO:     transforms : 
+2020-05-18 08:21:40 INFO:         DecodeImage : 
+2020-05-18 08:21:40 INFO:             channel_first : False
+2020-05-18 08:21:40 INFO:             to_np : False
+2020-05-18 08:21:40 INFO:             to_rgb : True
+2020-05-18 08:21:40 INFO:         NormalizeImage : 
+2020-05-18 08:21:40 INFO:             mean : [0.4914, 0.4822, 0.4465]
+2020-05-18 08:21:40 INFO:             order : 
+2020-05-18 08:21:40 INFO:             scale : 1./255.
+2020-05-18 08:21:40 INFO:             std : [0.247, 0.243, 0.261]
+2020-05-18 08:21:40 INFO:         ToCHWImage : None
+2020-05-18 08:21:40 INFO: ------------------------------------------------------------
+2020-05-18 08:21:40 INFO: amp_scale_loss : 128.0
+2020-05-18 08:21:40 INFO: checkpoints : 
+2020-05-18 08:21:40 INFO: classes_num : 10
+2020-05-18 08:21:40 INFO: epochs : 600
+2020-05-18 08:21:40 INFO: image_shape : [3, 32, 32]
+2020-05-18 08:21:40 INFO: ls_epsilon : -1
+2020-05-18 08:21:40 INFO: mode : train
+2020-05-18 08:21:40 INFO: model_save_dir : /home/aistudio/work/PaddleClas/output/
+2020-05-18 08:21:40 INFO: pretrained_model : 
+2020-05-18 08:21:40 INFO: save_interval : 20
+2020-05-18 08:21:40 INFO: topk : 5
+2020-05-18 08:21:40 INFO: total_images : 50000
+2020-05-18 08:21:40 INFO: use_dynamic_loss_scaling : True
+2020-05-18 08:21:40 INFO: use_fp16 : True
+2020-05-18 08:21:40 INFO: use_mix : True
+2020-05-18 08:21:40 INFO: valid_interval : 5
+2020-05-18 08:21:40 INFO: validate : True
+
+
+API is deprecated since 2.0.0 Please use FleetAPI instead.
+WIKI: https://github.com/PaddlePaddle/Fleet/blob/develop/markdown_doc/transpiler
+
+        
+W0518 00:21:44.913344 29208 device_context.cc:237] Please NOTE: device: 0, CUDA Capability: 70, Driver API Version: 10.1, Runtime API Version: 9.0
+W0518 00:21:44.917786 29208 device_context.cc:245] device: 0, cuDNN Version: 7.3.
+I0518 00:21:46.608652 29208 rpc_client.h:107] init rpc client with trainer_id 0
+I0518 00:21:47.130992 29208 parallel_executor.cc:440] The Program will be executed on CUDA using ParallelExecutor, 1 cards are used, so 1 programs are executed in parallel.
+I0518 00:21:47.181939 29208 build_strategy.cc:365] SeqOnlyAllReduceOps:0, num_trainers:1
+I0518 00:21:47.232353 29208 parallel_executor.cc:307] Inplace strategy is enabled, when build_strategy.enable_inplace = True
+I0518 00:21:47.256023 29208 parallel_executor.cc:375] Garbage collection strategy is enabled, when FLAGS_eager_delete_tensor_gb = 0
+2020-05-18 08:22:28 INFO: END epoch:0   train loss_avg:  1.9741  elapse_sum: 41.964s
+I0518 00:22:28.940176 29208 parallel_executor.cc:440] The Program will be executed on CUDA using ParallelExecutor, 1 cards are used, so 1 programs are executed in parallel.
+I0518 00:22:28.949484 29208 build_strategy.cc:365] SeqOnlyAllReduceOps:0, num_trainers:1
+2020-05-18 08:22:38 INFO: END epoch:0   valid loss_avg:  1.4695 top1_avg: 0.4679 top5_avg: 0.9246 elapse_sum: 9.626s
+2020-05-18 08:22:38 INFO: The best top1 acc 0.46788, in epoch: 0
+2020-05-18 08:22:41 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/best_model_in_epoch_0
+2020-05-18 08:22:45 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/0
+2020-05-18 08:23:27 INFO: END epoch:1   train loss_avg:  1.7831  elapse_sum: 41.912s
+2020-05-18 08:24:09 INFO: END epoch:2   train loss_avg:  1.6619  elapse_sum: 42.097s
+2020-05-18 08:24:51 INFO: END epoch:3   train loss_avg:  1.5464  elapse_sum: 42.362s
+2020-05-18 08:25:34 INFO: END epoch:4   train loss_avg:  1.4635  elapse_sum: 42.513s
+2020-05-18 08:26:17 INFO: END epoch:5   train loss_avg:  1.4114  elapse_sum: 42.674s
+2020-05-18 08:26:23 INFO: END epoch:5   valid loss_avg:  1.0080 top1_avg: 0.6696 top5_avg: 0.9745 elapse_sum: 6.394s
+2020-05-18 08:26:23 INFO: The best top1 acc 0.66960, in epoch: 5
+2020-05-18 08:27:06 INFO: END epoch:6   train loss_avg:  1.4018  elapse_sum: 42.594s
+2020-05-18 08:27:48 INFO: END epoch:7   train loss_avg:  1.3086  elapse_sum: 42.544s
+2020-05-18 08:28:31 INFO: END epoch:8   train loss_avg:  1.3471  elapse_sum: 42.636s
+2020-05-18 08:29:13 INFO: END epoch:9   train loss_avg:  1.2784  elapse_sum: 42.613s
+2020-05-18 08:29:56 INFO: END epoch:10  train loss_avg:  1.2687  elapse_sum: 42.581s
+2020-05-18 08:30:02 INFO: END epoch:10  valid loss_avg:  0.8127 top1_avg: 0.7598 top5_avg: 0.9835 elapse_sum: 6.322s
+2020-05-18 08:30:02 INFO: The best top1 acc 0.75977, in epoch: 10
+2020-05-18 08:30:45 INFO: END epoch:11  train loss_avg:  1.2439  elapse_sum: 42.629s
+2020-05-18 08:31:28 INFO: END epoch:12  train loss_avg:  1.2364  elapse_sum: 42.686s
+2020-05-18 08:32:10 INFO: END epoch:13  train loss_avg:  1.2192  elapse_sum: 42.494s
+2020-05-18 08:32:53 INFO: END epoch:14  train loss_avg:  1.1819  elapse_sum: 42.499s
+2020-05-18 08:33:35 INFO: END epoch:15  train loss_avg:  1.2148  elapse_sum: 42.495s
+2020-05-18 08:33:41 INFO: END epoch:15  valid loss_avg:  0.7114 top1_avg: 0.7946 top5_avg: 0.9803 elapse_sum: 6.272s
+2020-05-18 08:33:41 INFO: The best top1 acc 0.79460, in epoch: 15
+2020-05-18 08:34:24 INFO: END epoch:16  train loss_avg:  1.2318  elapse_sum: 42.509s
+2020-05-18 08:35:06 INFO: END epoch:17  train loss_avg:  1.2082  elapse_sum: 42.550s
+2020-05-18 08:35:49 INFO: END epoch:18  train loss_avg:  1.1865  elapse_sum: 42.585s
+2020-05-18 08:36:31 INFO: END epoch:19  train loss_avg:  1.1894  elapse_sum: 42.446s
+2020-05-18 08:37:14 INFO: END epoch:20  train loss_avg:  1.1516  elapse_sum: 42.604s
+2020-05-18 08:37:20 INFO: END epoch:20  valid loss_avg:  0.5552 top1_avg: 0.8290 top5_avg: 0.9887 elapse_sum: 6.288s
+2020-05-18 08:37:20 INFO: The best top1 acc 0.82899, in epoch: 20
+2020-05-18 08:37:24 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/best_model_in_epoch_20
+2020-05-18 08:37:28 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/20
+2020-05-18 08:38:10 INFO: END epoch:21  train loss_avg:  1.1163  elapse_sum: 42.565s
+2020-05-18 08:38:53 INFO: END epoch:22  train loss_avg:  1.1662  elapse_sum: 42.471s
+2020-05-18 08:39:35 INFO: END epoch:23  train loss_avg:  1.1990  elapse_sum: 42.414s
+2020-05-18 08:40:18 INFO: END epoch:24  train loss_avg:  1.1453  elapse_sum: 42.490s
+2020-05-18 08:41:00 INFO: END epoch:25  train loss_avg:  1.1764  elapse_sum: 42.491s
+2020-05-18 08:41:06 INFO: END epoch:25  valid loss_avg:  0.6078 top1_avg: 0.8251 top5_avg: 0.9913 elapse_sum: 6.281s
+2020-05-18 08:41:49 INFO: END epoch:26  train loss_avg:  1.1695  elapse_sum: 42.500s
+2020-05-18 08:42:31 INFO: END epoch:27  train loss_avg:  1.1644  elapse_sum: 42.482s
+2020-05-18 08:43:14 INFO: END epoch:28  train loss_avg:  1.1568  elapse_sum: 42.588s
+2020-05-18 08:43:57 INFO: END epoch:29  train loss_avg:  1.1415  elapse_sum: 42.675s
+2020-05-18 08:44:39 INFO: END epoch:30  train loss_avg:  1.1420  elapse_sum: 42.686s
+2020-05-18 08:44:46 INFO: END epoch:30  valid loss_avg:  0.6431 top1_avg: 0.8162 top5_avg: 0.9863 elapse_sum: 6.344s
+2020-05-18 08:45:28 INFO: END epoch:31  train loss_avg:  1.1426  elapse_sum: 42.658s
+2020-05-18 08:46:11 INFO: END epoch:32  train loss_avg:  1.1084  elapse_sum: 42.672s
+2020-05-18 08:46:54 INFO: END epoch:33  train loss_avg:  1.1564  elapse_sum: 42.592s
+2020-05-18 08:47:36 INFO: END epoch:34  train loss_avg:  1.1239  elapse_sum: 42.580s
+2020-05-18 08:48:19 INFO: END epoch:35  train loss_avg:  1.1463  elapse_sum: 42.652s
+2020-05-18 08:48:25 INFO: END epoch:35  valid loss_avg:  0.6431 top1_avg: 0.8041 top5_avg: 0.9891 elapse_sum: 6.291s
+2020-05-18 08:49:08 INFO: END epoch:36  train loss_avg:  1.1180  elapse_sum: 42.652s
+2020-05-18 08:49:50 INFO: END epoch:37  train loss_avg:  1.0821  elapse_sum: 42.569s
+2020-05-18 08:50:33 INFO: END epoch:38  train loss_avg:  1.1197  elapse_sum: 42.508s
+2020-05-18 08:51:16 INFO: END epoch:39  train loss_avg:  1.1622  elapse_sum: 42.669s
+2020-05-18 08:51:58 INFO: END epoch:40  train loss_avg:  1.1401  elapse_sum: 42.663s
+2020-05-18 08:52:05 INFO: END epoch:40  valid loss_avg:  0.6569 top1_avg: 0.7982 top5_avg: 0.9905 elapse_sum: 6.217s
+2020-05-18 08:52:08 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/40
+2020-05-18 08:52:51 INFO: END epoch:41  train loss_avg:  1.1090  elapse_sum: 42.694s
+2020-05-18 08:53:34 INFO: END epoch:42  train loss_avg:  1.1177  elapse_sum: 42.626s
+2020-05-18 08:54:16 INFO: END epoch:43  train loss_avg:  1.1385  elapse_sum: 42.595s
+2020-05-18 08:54:59 INFO: END epoch:44  train loss_avg:  1.1086  elapse_sum: 42.623s
+2020-05-18 08:55:41 INFO: END epoch:45  train loss_avg:  1.1310  elapse_sum: 42.573s
+2020-05-18 08:55:48 INFO: END epoch:45  valid loss_avg:  0.7462 top1_avg: 0.7805 top5_avg: 0.9842 elapse_sum: 6.317s
+2020-05-18 08:56:30 INFO: END epoch:46  train loss_avg:  1.1119  elapse_sum: 42.553s
+2020-05-18 08:57:13 INFO: END epoch:47  train loss_avg:  1.1383  elapse_sum: 42.712s
+2020-05-18 08:57:56 INFO: END epoch:48  train loss_avg:  1.1176  elapse_sum: 42.669s
+2020-05-18 08:58:38 INFO: END epoch:49  train loss_avg:  1.0973  elapse_sum: 42.669s
+2020-05-18 08:59:21 INFO: END epoch:50  train loss_avg:  1.1195  elapse_sum: 42.614s
+2020-05-18 08:59:27 INFO: END epoch:50  valid loss_avg:  0.7012 top1_avg: 0.7843 top5_avg: 0.9916 elapse_sum: 6.336s
+2020-05-18 09:00:10 INFO: END epoch:51  train loss_avg:  1.0807  elapse_sum: 42.665s
+2020-05-18 09:00:52 INFO: END epoch:52  train loss_avg:  1.1260  elapse_sum: 42.588s
+2020-05-18 09:01:35 INFO: END epoch:53  train loss_avg:  1.1286  elapse_sum: 42.583s
+2020-05-18 09:02:18 INFO: END epoch:54  train loss_avg:  1.0825  elapse_sum: 42.559s
+2020-05-18 09:03:00 INFO: END epoch:55  train loss_avg:  1.0812  elapse_sum: 42.540s
+2020-05-18 09:03:06 INFO: END epoch:55  valid loss_avg:  0.6089 top1_avg: 0.8102 top5_avg: 0.9886 elapse_sum: 6.281s
+2020-05-18 09:03:49 INFO: END epoch:56  train loss_avg:  1.0945  elapse_sum: 42.804s
+2020-05-18 09:04:32 INFO: END epoch:57  train loss_avg:  1.0878  elapse_sum: 42.718s
+2020-05-18 09:05:15 INFO: END epoch:58  train loss_avg:  1.0732  elapse_sum: 42.614s
+2020-05-18 09:05:57 INFO: END epoch:59  train loss_avg:  1.0855  elapse_sum: 42.604s
+2020-05-18 09:06:40 INFO: END epoch:60  train loss_avg:  1.1162  elapse_sum: 42.540s
+2020-05-18 09:06:46 INFO: END epoch:60  valid loss_avg:  0.7619 top1_avg: 0.7584 top5_avg: 0.9822 elapse_sum: 6.194s
+2020-05-18 09:06:50 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/60
+2020-05-18 09:07:32 INFO: END epoch:61  train loss_avg:  1.1100  elapse_sum: 42.322s
+2020-05-18 09:08:14 INFO: END epoch:62  train loss_avg:  1.1001  elapse_sum: 42.484s
+2020-05-18 09:08:57 INFO: END epoch:63  train loss_avg:  1.0931  elapse_sum: 42.418s
+2020-05-18 09:09:39 INFO: END epoch:64  train loss_avg:  1.0912  elapse_sum: 42.627s
+2020-05-18 09:10:22 INFO: END epoch:65  train loss_avg:  1.0658  elapse_sum: 42.514s
+2020-05-18 09:10:28 INFO: END epoch:65  valid loss_avg:  0.8565 top1_avg: 0.7386 top5_avg: 0.9771 elapse_sum: 6.277s
+2020-05-18 09:11:11 INFO: END epoch:66  train loss_avg:  1.1019  elapse_sum: 42.735s
+2020-05-18 09:11:54 INFO: END epoch:67  train loss_avg:  1.0656  elapse_sum: 42.530s
+2020-05-18 09:12:36 INFO: END epoch:68  train loss_avg:  1.0757  elapse_sum: 42.518s
+2020-05-18 09:13:19 INFO: END epoch:69  train loss_avg:  1.1155  elapse_sum: 42.557s
+2020-05-18 09:14:01 INFO: END epoch:70  train loss_avg:  1.0936  elapse_sum: 42.642s
+2020-05-18 09:14:07 INFO: END epoch:70  valid loss_avg:  0.5421 top1_avg: 0.8359 top5_avg: 0.9872 elapse_sum: 6.236s
+2020-05-18 09:14:07 INFO: The best top1 acc 0.83594, in epoch: 70
+2020-05-18 09:14:50 INFO: END epoch:71  train loss_avg:  1.0983  elapse_sum: 42.604s
+2020-05-18 09:15:33 INFO: END epoch:72  train loss_avg:  1.0780  elapse_sum: 42.561s
+2020-05-18 09:16:15 INFO: END epoch:73  train loss_avg:  1.1106  elapse_sum: 42.645s
+2020-05-18 09:16:58 INFO: END epoch:74  train loss_avg:  1.1135  elapse_sum: 42.682s
+2020-05-18 09:17:41 INFO: END epoch:75  train loss_avg:  1.1043  elapse_sum: 42.517s
+2020-05-18 09:17:47 INFO: END epoch:75  valid loss_avg:  0.7685 top1_avg: 0.7737 top5_avg: 0.9785 elapse_sum: 6.234s
+2020-05-18 09:18:29 INFO: END epoch:76  train loss_avg:  1.0828  elapse_sum: 42.548s
+2020-05-18 09:19:12 INFO: END epoch:77  train loss_avg:  1.0584  elapse_sum: 42.581s
+2020-05-18 09:19:54 INFO: END epoch:78  train loss_avg:  1.0460  elapse_sum: 42.576s
+2020-05-18 09:20:37 INFO: END epoch:79  train loss_avg:  1.0449  elapse_sum: 42.444s
+2020-05-18 09:21:20 INFO: END epoch:80  train loss_avg:  1.0698  elapse_sum: 42.648s
+2020-05-18 09:21:26 INFO: END epoch:80  valid loss_avg:  0.7808 top1_avg: 0.7622 top5_avg: 0.9851 elapse_sum: 6.303s
+2020-05-18 09:21:30 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/80
+2020-05-18 09:22:12 INFO: END epoch:81  train loss_avg:  1.1048  elapse_sum: 42.542s
+2020-05-18 09:22:55 INFO: END epoch:82  train loss_avg:  1.0883  elapse_sum: 42.565s
+2020-05-18 09:23:37 INFO: END epoch:83  train loss_avg:  1.0758  elapse_sum: 42.678s
+2020-05-18 09:24:20 INFO: END epoch:84  train loss_avg:  1.0783  elapse_sum: 42.550s
+2020-05-18 09:25:02 INFO: END epoch:85  train loss_avg:  1.0681  elapse_sum: 42.517s
+2020-05-18 09:25:09 INFO: END epoch:85  valid loss_avg:  0.5265 top1_avg: 0.8393 top5_avg: 0.9936 elapse_sum: 6.288s
+2020-05-18 09:25:09 INFO: The best top1 acc 0.83930, in epoch: 85
+2020-05-18 09:25:51 INFO: END epoch:86  train loss_avg:  1.0752  elapse_sum: 42.504s
+2020-05-18 09:26:34 INFO: END epoch:87  train loss_avg:  1.0560  elapse_sum: 42.461s
+2020-05-18 09:27:16 INFO: END epoch:88  train loss_avg:  1.1029  elapse_sum: 42.479s
+2020-05-18 09:27:59 INFO: END epoch:89  train loss_avg:  1.0513  elapse_sum: 42.508s
+2020-05-18 09:28:41 INFO: END epoch:90  train loss_avg:  1.0779  elapse_sum: 42.481s
+2020-05-18 09:28:47 INFO: END epoch:90  valid loss_avg:  0.6918 top1_avg: 0.7924 top5_avg: 0.9860 elapse_sum: 6.237s
+2020-05-18 09:29:30 INFO: END epoch:91  train loss_avg:  1.0547  elapse_sum: 42.484s
+2020-05-18 09:30:13 INFO: END epoch:92  train loss_avg:  1.0550  elapse_sum: 42.623s
+2020-05-18 09:30:55 INFO: END epoch:93  train loss_avg:  1.0684  elapse_sum: 42.525s
+2020-05-18 09:31:38 INFO: END epoch:94  train loss_avg:  1.0710  elapse_sum: 42.441s
+2020-05-18 09:32:20 INFO: END epoch:95  train loss_avg:  1.0375  elapse_sum: 42.500s
+2020-05-18 09:32:26 INFO: END epoch:95  valid loss_avg:  0.7172 top1_avg: 0.7861 top5_avg: 0.9742 elapse_sum: 6.313s
+2020-05-18 09:33:09 INFO: END epoch:96  train loss_avg:  1.1046  elapse_sum: 42.501s
+2020-05-18 09:33:51 INFO: END epoch:97  train loss_avg:  1.0863  elapse_sum: 42.517s
+2020-05-18 09:34:34 INFO: END epoch:98  train loss_avg:  1.0193  elapse_sum: 42.514s
+2020-05-18 09:35:16 INFO: END epoch:99  train loss_avg:  1.0776  elapse_sum: 42.548s
+2020-05-18 09:35:59 INFO: END epoch:100 train loss_avg:  1.1043  elapse_sum: 42.565s
+2020-05-18 09:36:05 INFO: END epoch:100 valid loss_avg:  0.5860 top1_avg: 0.8199 top5_avg: 0.9893 elapse_sum: 6.362s
+2020-05-18 09:36:09 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/100
+2020-05-18 09:36:51 INFO: END epoch:101 train loss_avg:  1.0497  elapse_sum: 42.397s
+2020-05-18 09:37:34 INFO: END epoch:102 train loss_avg:  1.0611  elapse_sum: 42.355s
+2020-05-18 09:38:16 INFO: END epoch:103 train loss_avg:  1.0358  elapse_sum: 42.330s
+2020-05-18 09:38:59 INFO: END epoch:104 train loss_avg:  1.0872  elapse_sum: 42.493s
+2020-05-18 09:39:41 INFO: END epoch:105 train loss_avg:  1.0746  elapse_sum: 42.454s
+2020-05-18 09:39:47 INFO: END epoch:105 valid loss_avg:  0.5701 top1_avg: 0.8203 top5_avg: 0.9913 elapse_sum: 6.288s
+2020-05-18 09:40:30 INFO: END epoch:106 train loss_avg:  1.0948  elapse_sum: 42.555s
+2020-05-18 09:41:13 INFO: END epoch:107 train loss_avg:  1.0313  elapse_sum: 42.578s
+2020-05-18 09:41:55 INFO: END epoch:108 train loss_avg:  1.0615  elapse_sum: 42.409s
+2020-05-18 09:42:37 INFO: END epoch:109 train loss_avg:  1.0419  elapse_sum: 42.488s
+2020-05-18 09:43:20 INFO: END epoch:110 train loss_avg:  1.0432  elapse_sum: 42.574s
+2020-05-18 09:43:26 INFO: END epoch:110 valid loss_avg:  1.0360 top1_avg: 0.6502 top5_avg: 0.9778 elapse_sum: 6.286s
+2020-05-18 09:44:09 INFO: END epoch:111 train loss_avg:  1.0538  elapse_sum: 42.539s
+2020-05-18 09:44:51 INFO: END epoch:112 train loss_avg:  1.0412  elapse_sum: 42.408s
+2020-05-18 09:45:34 INFO: END epoch:113 train loss_avg:  1.0696  elapse_sum: 42.477s
+2020-05-18 09:46:16 INFO: END epoch:114 train loss_avg:  1.0289  elapse_sum: 42.499s
+2020-05-18 09:46:59 INFO: END epoch:115 train loss_avg:  1.0541  elapse_sum: 42.529s
+2020-05-18 09:47:05 INFO: END epoch:115 valid loss_avg:  0.6957 top1_avg: 0.7795 top5_avg: 0.9868 elapse_sum: 6.216s
+2020-05-18 09:47:47 INFO: END epoch:116 train loss_avg:  1.0498  elapse_sum: 42.446s
+2020-05-18 09:48:30 INFO: END epoch:117 train loss_avg:  1.0506  elapse_sum: 42.426s
+2020-05-18 09:49:12 INFO: END epoch:118 train loss_avg:  1.1048  elapse_sum: 42.423s
+2020-05-18 09:49:55 INFO: END epoch:119 train loss_avg:  1.0298  elapse_sum: 42.459s
+2020-05-18 09:50:37 INFO: END epoch:120 train loss_avg:  1.0325  elapse_sum: 42.479s
+2020-05-18 09:50:44 INFO: END epoch:120 valid loss_avg:  0.7337 top1_avg: 0.7741 top5_avg: 0.9856 elapse_sum: 6.286s
+2020-05-18 09:50:47 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/120
+2020-05-18 09:51:30 INFO: END epoch:121 train loss_avg:  1.0651  elapse_sum: 42.376s
+2020-05-18 09:52:12 INFO: END epoch:122 train loss_avg:  1.0110  elapse_sum: 42.174s
+2020-05-18 09:52:54 INFO: END epoch:123 train loss_avg:  1.0233  elapse_sum: 42.194s
+2020-05-18 09:53:36 INFO: END epoch:124 train loss_avg:  1.0652  elapse_sum: 42.322s
+2020-05-18 09:54:19 INFO: END epoch:125 train loss_avg:  1.0649  elapse_sum: 42.294s
+2020-05-18 09:54:25 INFO: END epoch:125 valid loss_avg:  0.5482 top1_avg: 0.8370 top5_avg: 0.9881 elapse_sum: 6.250s
+2020-05-18 09:55:07 INFO: END epoch:126 train loss_avg:  1.0419  elapse_sum: 42.385s
+2020-05-18 09:55:50 INFO: END epoch:127 train loss_avg:  1.0692  elapse_sum: 42.322s
+2020-05-18 09:56:32 INFO: END epoch:128 train loss_avg:  1.0478  elapse_sum: 42.443s
+2020-05-18 09:57:15 INFO: END epoch:129 train loss_avg:  1.0660  elapse_sum: 42.544s
+2020-05-18 09:57:57 INFO: END epoch:130 train loss_avg:  1.0644  elapse_sum: 42.382s
+2020-05-18 09:58:03 INFO: END epoch:130 valid loss_avg:  0.6823 top1_avg: 0.7948 top5_avg: 0.9832 elapse_sum: 6.307s
+2020-05-18 09:58:46 INFO: END epoch:131 train loss_avg:  1.0355  elapse_sum: 42.315s
+2020-05-18 09:59:28 INFO: END epoch:132 train loss_avg:  1.0184  elapse_sum: 42.413s
+2020-05-18 10:00:10 INFO: END epoch:133 train loss_avg:  1.0532  elapse_sum: 42.330s
+2020-05-18 10:00:53 INFO: END epoch:134 train loss_avg:  1.0417  elapse_sum: 42.283s
+2020-05-18 10:01:35 INFO: END epoch:135 train loss_avg:  1.0522  elapse_sum: 42.332s
+2020-05-18 10:01:41 INFO: END epoch:135 valid loss_avg:  0.5164 top1_avg: 0.8602 top5_avg: 0.9896 elapse_sum: 6.275s
+2020-05-18 10:01:41 INFO: The best top1 acc 0.86024, in epoch: 135
+2020-05-18 10:02:24 INFO: END epoch:136 train loss_avg:  1.0395  elapse_sum: 42.387s
+2020-05-18 10:03:06 INFO: END epoch:137 train loss_avg:  1.0745  elapse_sum: 42.450s
+2020-05-18 10:03:49 INFO: END epoch:138 train loss_avg:  1.0679  elapse_sum: 42.356s
+2020-05-18 10:04:31 INFO: END epoch:139 train loss_avg:  1.0519  elapse_sum: 42.432s
+2020-05-18 10:05:14 INFO: END epoch:140 train loss_avg:  1.1015  elapse_sum: 42.544s
+2020-05-18 10:05:20 INFO: END epoch:140 valid loss_avg:  0.9820 top1_avg: 0.7123 top5_avg: 0.9373 elapse_sum: 6.302s
+2020-05-18 10:05:23 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/140
+2020-05-18 10:06:06 INFO: END epoch:141 train loss_avg:  1.0935  elapse_sum: 42.573s
+2020-05-18 10:06:48 INFO: END epoch:142 train loss_avg:  1.0423  elapse_sum: 42.391s
+2020-05-18 10:07:31 INFO: END epoch:143 train loss_avg:  1.0729  elapse_sum: 42.316s
+2020-05-18 10:08:13 INFO: END epoch:144 train loss_avg:  1.0580  elapse_sum: 42.388s
+2020-05-18 10:08:55 INFO: END epoch:145 train loss_avg:  1.0793  elapse_sum: 42.327s
+2020-05-18 10:09:02 INFO: END epoch:145 valid loss_avg:  0.4919 top1_avg: 0.8724 top5_avg: 0.9910 elapse_sum: 6.282s
+2020-05-18 10:09:02 INFO: The best top1 acc 0.87240, in epoch: 145
+2020-05-18 10:09:44 INFO: END epoch:146 train loss_avg:  1.0685  elapse_sum: 42.400s
+2020-05-18 10:10:27 INFO: END epoch:147 train loss_avg:  1.0580  elapse_sum: 42.429s
+2020-05-18 10:11:09 INFO: END epoch:148 train loss_avg:  1.0482  elapse_sum: 42.332s
+2020-05-18 10:11:51 INFO: END epoch:149 train loss_avg:  1.0705  elapse_sum: 42.406s
+2020-05-18 10:12:34 INFO: END epoch:150 train loss_avg:  1.0429  elapse_sum: 42.331s
+2020-05-18 10:12:40 INFO: END epoch:150 valid loss_avg:  0.9037 top1_avg: 0.7273 top5_avg: 0.9490 elapse_sum: 6.283s
+2020-05-18 10:13:22 INFO: END epoch:151 train loss_avg:  1.0704  elapse_sum: 42.426s
+2020-05-18 10:14:05 INFO: END epoch:152 train loss_avg:  1.0270  elapse_sum: 42.278s
+2020-05-18 10:14:47 INFO: END epoch:153 train loss_avg:  1.0119  elapse_sum: 42.295s
+2020-05-18 10:15:29 INFO: END epoch:154 train loss_avg:  1.0708  elapse_sum: 42.303s
+2020-05-18 10:16:11 INFO: END epoch:155 train loss_avg:  1.0153  elapse_sum: 42.286s
+2020-05-18 10:16:18 INFO: END epoch:155 valid loss_avg:  0.8073 top1_avg: 0.7383 top5_avg: 0.9847 elapse_sum: 6.284s
+2020-05-18 10:17:00 INFO: END epoch:156 train loss_avg:  1.0236  elapse_sum: 42.281s
+2020-05-18 10:17:42 INFO: END epoch:157 train loss_avg:  1.0584  elapse_sum: 42.291s
+2020-05-18 10:18:25 INFO: END epoch:158 train loss_avg:  1.0651  elapse_sum: 42.238s
+2020-05-18 10:19:07 INFO: END epoch:159 train loss_avg:  1.0822  elapse_sum: 42.295s
+2020-05-18 10:19:49 INFO: END epoch:160 train loss_avg:  0.9806  elapse_sum: 42.381s
+2020-05-18 10:19:56 INFO: END epoch:160 valid loss_avg:  0.6810 top1_avg: 0.7938 top5_avg: 0.9778 elapse_sum: 6.268s
+2020-05-18 10:19:59 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/160
+2020-05-18 10:20:41 INFO: END epoch:161 train loss_avg:  1.0222  elapse_sum: 42.349s
+2020-05-18 10:21:24 INFO: END epoch:162 train loss_avg:  1.0299  elapse_sum: 42.275s
+2020-05-18 10:22:06 INFO: END epoch:163 train loss_avg:  1.0106  elapse_sum: 42.223s
+2020-05-18 10:22:48 INFO: END epoch:164 train loss_avg:  1.0316  elapse_sum: 42.311s
+2020-05-18 10:23:31 INFO: END epoch:165 train loss_avg:  1.1278  elapse_sum: 42.323s
+2020-05-18 10:23:37 INFO: END epoch:165 valid loss_avg:  0.6409 top1_avg: 0.8112 top5_avg: 0.9886 elapse_sum: 6.230s
+2020-05-18 10:24:19 INFO: END epoch:166 train loss_avg:  1.0627  elapse_sum: 42.201s
+2020-05-18 10:25:01 INFO: END epoch:167 train loss_avg:  1.0604  elapse_sum: 42.300s
+2020-05-18 10:25:44 INFO: END epoch:168 train loss_avg:  1.0609  elapse_sum: 42.217s
+2020-05-18 10:26:26 INFO: END epoch:169 train loss_avg:  1.0544  elapse_sum: 42.181s
+2020-05-18 10:27:08 INFO: END epoch:170 train loss_avg:  0.9955  elapse_sum: 42.234s
+2020-05-18 10:27:14 INFO: END epoch:170 valid loss_avg:  0.6050 top1_avg: 0.8261 top5_avg: 0.9923 elapse_sum: 6.268s
+2020-05-18 10:27:57 INFO: END epoch:171 train loss_avg:  1.0293  elapse_sum: 42.270s
+2020-05-18 10:28:39 INFO: END epoch:172 train loss_avg:  1.0506  elapse_sum: 42.261s
+2020-05-18 10:29:21 INFO: END epoch:173 train loss_avg:  1.0426  elapse_sum: 42.342s
+2020-05-18 10:30:03 INFO: END epoch:174 train loss_avg:  0.9862  elapse_sum: 42.356s
+2020-05-18 10:30:46 INFO: END epoch:175 train loss_avg:  1.0563  elapse_sum: 42.383s
+2020-05-18 10:30:52 INFO: END epoch:175 valid loss_avg:  0.6157 top1_avg: 0.8274 top5_avg: 0.9868 elapse_sum: 6.330s
+2020-05-18 10:31:34 INFO: END epoch:176 train loss_avg:  1.0657  elapse_sum: 42.292s
+2020-05-18 10:32:17 INFO: END epoch:177 train loss_avg:  1.0421  elapse_sum: 42.183s
+2020-05-18 10:32:59 INFO: END epoch:178 train loss_avg:  1.0612  elapse_sum: 42.422s
+2020-05-18 10:33:41 INFO: END epoch:179 train loss_avg:  1.0240  elapse_sum: 42.196s
+2020-05-18 10:34:24 INFO: END epoch:180 train loss_avg:  1.0276  elapse_sum: 42.207s
+2020-05-18 10:34:30 INFO: END epoch:180 valid loss_avg:  0.7047 top1_avg: 0.8296 top5_avg: 0.9808 elapse_sum: 6.309s
+2020-05-18 10:34:33 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/180
+2020-05-18 10:35:15 INFO: END epoch:181 train loss_avg:  1.0317  elapse_sum: 42.072s
+2020-05-18 10:35:58 INFO: END epoch:182 train loss_avg:  1.0009  elapse_sum: 42.172s
+2020-05-18 10:36:40 INFO: END epoch:183 train loss_avg:  1.0181  elapse_sum: 42.110s
+2020-05-18 10:37:22 INFO: END epoch:184 train loss_avg:  1.0592  elapse_sum: 42.238s
+2020-05-18 10:38:04 INFO: END epoch:185 train loss_avg:  1.0109  elapse_sum: 42.287s
+2020-05-18 10:38:11 INFO: END epoch:185 valid loss_avg:  0.6039 top1_avg: 0.8377 top5_avg: 0.9888 elapse_sum: 6.279s
+2020-05-18 10:38:53 INFO: END epoch:186 train loss_avg:  1.0288  elapse_sum: 42.268s
+2020-05-18 10:39:35 INFO: END epoch:187 train loss_avg:  1.0420  elapse_sum: 42.229s
+2020-05-18 10:40:17 INFO: END epoch:188 train loss_avg:  1.0170  elapse_sum: 42.284s
+2020-05-18 10:40:59 INFO: END epoch:189 train loss_avg:  1.0506  elapse_sum: 42.157s
+2020-05-18 10:41:42 INFO: END epoch:190 train loss_avg:  1.0041  elapse_sum: 42.174s
+2020-05-18 10:41:48 INFO: END epoch:190 valid loss_avg:  0.6811 top1_avg: 0.7908 top5_avg: 0.9862 elapse_sum: 6.241s
+2020-05-18 10:42:30 INFO: END epoch:191 train loss_avg:  1.0268  elapse_sum: 42.145s
+2020-05-18 10:43:12 INFO: END epoch:192 train loss_avg:  0.9904  elapse_sum: 42.187s
+2020-05-18 10:43:54 INFO: END epoch:193 train loss_avg:  1.0280  elapse_sum: 42.161s
+2020-05-18 10:44:36 INFO: END epoch:194 train loss_avg:  1.0197  elapse_sum: 42.031s
+2020-05-18 10:45:19 INFO: END epoch:195 train loss_avg:  1.0291  elapse_sum: 42.175s
+2020-05-18 10:45:25 INFO: END epoch:195 valid loss_avg:  0.6579 top1_avg: 0.7990 top5_avg: 0.9840 elapse_sum: 6.282s
+2020-05-18 10:46:07 INFO: END epoch:196 train loss_avg:  1.0128  elapse_sum: 42.075s
+2020-05-18 10:46:49 INFO: END epoch:197 train loss_avg:  1.0263  elapse_sum: 42.237s
+2020-05-18 10:47:31 INFO: END epoch:198 train loss_avg:  0.9862  elapse_sum: 42.084s
+2020-05-18 10:48:13 INFO: END epoch:199 train loss_avg:  1.0194  elapse_sum: 42.182s
+2020-05-18 10:48:56 INFO: END epoch:200 train loss_avg:  1.0317  elapse_sum: 42.196s
+2020-05-18 10:49:02 INFO: END epoch:200 valid loss_avg:  0.5594 top1_avg: 0.8251 top5_avg: 0.9906 elapse_sum: 6.261s
+2020-05-18 10:49:05 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/200
+2020-05-18 10:49:48 INFO: END epoch:201 train loss_avg:  1.0350  elapse_sum: 42.163s
+2020-05-18 10:50:30 INFO: END epoch:202 train loss_avg:  0.9915  elapse_sum: 42.034s
+2020-05-18 10:51:12 INFO: END epoch:203 train loss_avg:  0.9988  elapse_sum: 42.058s
+2020-05-18 10:51:54 INFO: END epoch:204 train loss_avg:  1.0115  elapse_sum: 42.190s
+2020-05-18 10:52:36 INFO: END epoch:205 train loss_avg:  1.0300  elapse_sum: 42.163s
+2020-05-18 10:52:42 INFO: END epoch:205 valid loss_avg:  0.7351 top1_avg: 0.7633 top5_avg: 0.9834 elapse_sum: 6.273s
+2020-05-18 10:53:25 INFO: END epoch:206 train loss_avg:  1.0120  elapse_sum: 42.152s
+2020-05-18 10:54:07 INFO: END epoch:207 train loss_avg:  0.9770  elapse_sum: 42.173s
+2020-05-18 10:54:49 INFO: END epoch:208 train loss_avg:  0.9874  elapse_sum: 42.171s
+2020-05-18 10:55:31 INFO: END epoch:209 train loss_avg:  1.0243  elapse_sum: 42.205s
+2020-05-18 10:56:13 INFO: END epoch:210 train loss_avg:  1.0125  elapse_sum: 42.071s
+2020-05-18 10:56:19 INFO: END epoch:210 valid loss_avg:  0.6326 top1_avg: 0.8185 top5_avg: 0.9939 elapse_sum: 6.259s
+2020-05-18 10:57:01 INFO: END epoch:211 train loss_avg:  0.9911  elapse_sum: 41.918s
+2020-05-18 10:57:43 INFO: END epoch:212 train loss_avg:  1.0482  elapse_sum: 42.140s
+2020-05-18 10:58:26 INFO: END epoch:213 train loss_avg:  1.0114  elapse_sum: 42.074s
+2020-05-18 10:59:08 INFO: END epoch:214 train loss_avg:  0.9637  elapse_sum: 42.135s
+2020-05-18 10:59:50 INFO: END epoch:215 train loss_avg:  0.9799  elapse_sum: 42.275s
+2020-05-18 10:59:56 INFO: END epoch:215 valid loss_avg:  0.4655 top1_avg: 0.8637 top5_avg: 0.9900 elapse_sum: 6.281s
+2020-05-18 11:00:38 INFO: END epoch:216 train loss_avg:  0.9737  elapse_sum: 42.093s
+2020-05-18 11:01:20 INFO: END epoch:217 train loss_avg:  1.0145  elapse_sum: 42.138s
+2020-05-18 11:02:03 INFO: END epoch:218 train loss_avg:  1.0221  elapse_sum: 42.129s
+2020-05-18 11:02:45 INFO: END epoch:219 train loss_avg:  1.0031  elapse_sum: 42.102s
+2020-05-18 11:03:27 INFO: END epoch:220 train loss_avg:  1.0086  elapse_sum: 42.049s
+2020-05-18 11:03:33 INFO: END epoch:220 valid loss_avg:  0.3855 top1_avg: 0.8834 top5_avg: 0.9959 elapse_sum: 6.271s
+2020-05-18 11:03:33 INFO: The best top1 acc 0.88336, in epoch: 220
+2020-05-18 11:03:37 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/best_model_in_epoch_220
+2020-05-18 11:03:40 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/220
+2020-05-18 11:04:22 INFO: END epoch:221 train loss_avg:  0.9961  elapse_sum: 42.044s
+2020-05-18 11:05:04 INFO: END epoch:222 train loss_avg:  1.0178  elapse_sum: 41.921s
+2020-05-18 11:05:46 INFO: END epoch:223 train loss_avg:  0.9630  elapse_sum: 41.930s
+2020-05-18 11:06:28 INFO: END epoch:224 train loss_avg:  0.9635  elapse_sum: 41.910s
+2020-05-18 11:07:10 INFO: END epoch:225 train loss_avg:  0.9725  elapse_sum: 41.966s
+2020-05-18 11:07:16 INFO: END epoch:225 valid loss_avg:  0.5429 top1_avg: 0.8576 top5_avg: 0.9908 elapse_sum: 6.327s
+2020-05-18 11:07:58 INFO: END epoch:226 train loss_avg:  1.0013  elapse_sum: 42.088s
+2020-05-18 11:08:40 INFO: END epoch:227 train loss_avg:  0.9352  elapse_sum: 42.088s
+2020-05-18 11:09:22 INFO: END epoch:228 train loss_avg:  1.0278  elapse_sum: 42.084s
+2020-05-18 11:10:05 INFO: END epoch:229 train loss_avg:  0.9782  elapse_sum: 42.099s
+2020-05-18 11:10:47 INFO: END epoch:230 train loss_avg:  0.9663  elapse_sum: 42.060s
+2020-05-18 11:10:53 INFO: END epoch:230 valid loss_avg:  0.7775 top1_avg: 0.7676 top5_avg: 0.9880 elapse_sum: 6.281s
+2020-05-18 11:11:35 INFO: END epoch:231 train loss_avg:  0.9796  elapse_sum: 42.119s
+2020-05-18 11:12:17 INFO: END epoch:232 train loss_avg:  0.9466  elapse_sum: 42.155s
+2020-05-18 11:12:59 INFO: END epoch:233 train loss_avg:  0.9679  elapse_sum: 42.110s
+2020-05-18 11:13:41 INFO: END epoch:234 train loss_avg:  0.9912  elapse_sum: 41.991s
+2020-05-18 11:14:23 INFO: END epoch:235 train loss_avg:  0.9972  elapse_sum: 42.088s
+2020-05-18 11:14:30 INFO: END epoch:235 valid loss_avg:  0.5617 top1_avg: 0.8518 top5_avg: 0.9891 elapse_sum: 6.275s
+2020-05-18 11:15:12 INFO: END epoch:236 train loss_avg:  0.9910  elapse_sum: 42.051s
+2020-05-18 11:15:54 INFO: END epoch:237 train loss_avg:  0.9888  elapse_sum: 42.027s
+2020-05-18 11:16:36 INFO: END epoch:238 train loss_avg:  0.9621  elapse_sum: 42.072s
+2020-05-18 11:17:18 INFO: END epoch:239 train loss_avg:  1.0056  elapse_sum: 42.001s
+2020-05-18 11:18:00 INFO: END epoch:240 train loss_avg:  0.9629  elapse_sum: 42.060s
+2020-05-18 11:18:06 INFO: END epoch:240 valid loss_avg:  0.6696 top1_avg: 0.8167 top5_avg: 0.9891 elapse_sum: 6.288s
+2020-05-18 11:18:10 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/240
+2020-05-18 11:18:52 INFO: END epoch:241 train loss_avg:  1.0181  elapse_sum: 42.131s
+2020-05-18 11:19:34 INFO: END epoch:242 train loss_avg:  0.9672  elapse_sum: 41.867s
+2020-05-18 11:20:16 INFO: END epoch:243 train loss_avg:  0.9875  elapse_sum: 42.028s
+2020-05-18 11:20:58 INFO: END epoch:244 train loss_avg:  0.9840  elapse_sum: 42.065s
+2020-05-18 11:21:40 INFO: END epoch:245 train loss_avg:  0.9866  elapse_sum: 42.021s
+2020-05-18 11:21:46 INFO: END epoch:245 valid loss_avg:  0.7407 top1_avg: 0.7715 top5_avg: 0.9801 elapse_sum: 6.275s
+2020-05-18 11:22:28 INFO: END epoch:246 train loss_avg:  0.9853  elapse_sum: 42.088s
+2020-05-18 11:23:10 INFO: END epoch:247 train loss_avg:  0.9666  elapse_sum: 41.983s
+2020-05-18 11:23:52 INFO: END epoch:248 train loss_avg:  0.9489  elapse_sum: 41.978s
+2020-05-18 11:24:34 INFO: END epoch:249 train loss_avg:  0.9949  elapse_sum: 41.893s
+2020-05-18 11:25:16 INFO: END epoch:250 train loss_avg:  0.9863  elapse_sum: 41.993s
+2020-05-18 11:25:22 INFO: END epoch:250 valid loss_avg:  0.6888 top1_avg: 0.7931 top5_avg: 0.9819 elapse_sum: 6.276s
+2020-05-18 11:26:04 INFO: END epoch:251 train loss_avg:  0.9825  elapse_sum: 42.040s
+2020-05-18 11:26:46 INFO: END epoch:252 train loss_avg:  0.9821  elapse_sum: 41.992s
+2020-05-18 11:27:28 INFO: END epoch:253 train loss_avg:  1.0304  elapse_sum: 41.973s
+2020-05-18 11:28:10 INFO: END epoch:254 train loss_avg:  0.9613  elapse_sum: 41.909s
+2020-05-18 11:28:52 INFO: END epoch:255 train loss_avg:  0.9498  elapse_sum: 41.872s
+2020-05-18 11:28:58 INFO: END epoch:255 valid loss_avg:  0.6236 top1_avg: 0.8035 top5_avg: 0.9874 elapse_sum: 6.275s
+2020-05-18 11:29:40 INFO: END epoch:256 train loss_avg:  0.9358  elapse_sum: 42.008s
+2020-05-18 11:30:22 INFO: END epoch:257 train loss_avg:  0.9478  elapse_sum: 41.993s
+2020-05-18 11:31:04 INFO: END epoch:258 train loss_avg:  0.9445  elapse_sum: 42.072s
+2020-05-18 11:31:47 INFO: END epoch:259 train loss_avg:  0.9589  elapse_sum: 42.056s
+2020-05-18 11:32:28 INFO: END epoch:260 train loss_avg:  0.9762  elapse_sum: 41.964s
+2020-05-18 11:32:35 INFO: END epoch:260 valid loss_avg:  0.4734 top1_avg: 0.8917 top5_avg: 0.9924 elapse_sum: 6.316s
+2020-05-18 11:32:35 INFO: The best top1 acc 0.89171, in epoch: 260
+2020-05-18 11:32:38 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/best_model_in_epoch_260
+2020-05-18 11:32:42 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/260
+2020-05-18 11:33:23 INFO: END epoch:261 train loss_avg:  0.9841  elapse_sum: 41.837s
+2020-05-18 11:34:05 INFO: END epoch:262 train loss_avg:  0.9557  elapse_sum: 41.841s
+2020-05-18 11:34:47 INFO: END epoch:263 train loss_avg:  0.9768  elapse_sum: 41.998s
+2020-05-18 11:35:29 INFO: END epoch:264 train loss_avg:  0.9195  elapse_sum: 42.072s
+2020-05-18 11:36:11 INFO: END epoch:265 train loss_avg:  0.9478  elapse_sum: 42.089s
+2020-05-18 11:36:18 INFO: END epoch:265 valid loss_avg:  0.5184 top1_avg: 0.8605 top5_avg: 0.9863 elapse_sum: 6.297s
+2020-05-18 11:37:00 INFO: END epoch:266 train loss_avg:  0.9267  elapse_sum: 42.020s
+2020-05-18 11:37:42 INFO: END epoch:267 train loss_avg:  1.0027  elapse_sum: 42.061s
+2020-05-18 11:38:24 INFO: END epoch:268 train loss_avg:  0.9474  elapse_sum: 41.928s
+2020-05-18 11:39:06 INFO: END epoch:269 train loss_avg:  0.9619  elapse_sum: 41.824s
+2020-05-18 11:39:47 INFO: END epoch:270 train loss_avg:  0.9347  elapse_sum: 41.657s
+2020-05-18 11:39:53 INFO: END epoch:270 valid loss_avg:  0.7879 top1_avg: 0.7677 top5_avg: 0.9762 elapse_sum: 6.149s
+2020-05-18 11:40:35 INFO: END epoch:271 train loss_avg:  0.9315  elapse_sum: 41.626s
+2020-05-18 11:41:17 INFO: END epoch:272 train loss_avg:  0.9389  elapse_sum: 41.610s
+2020-05-18 11:41:58 INFO: END epoch:273 train loss_avg:  0.9360  elapse_sum: 41.587s
+2020-05-18 11:42:40 INFO: END epoch:274 train loss_avg:  0.9767  elapse_sum: 41.550s
+2020-05-18 11:43:21 INFO: END epoch:275 train loss_avg:  0.9811  elapse_sum: 41.636s
+2020-05-18 11:43:28 INFO: END epoch:275 valid loss_avg:  0.6279 top1_avg: 0.8277 top5_avg: 0.9857 elapse_sum: 6.144s
+2020-05-18 11:44:09 INFO: END epoch:276 train loss_avg:  0.9682  elapse_sum: 41.576s
+2020-05-18 11:44:51 INFO: END epoch:277 train loss_avg:  0.9609  elapse_sum: 41.610s
+2020-05-18 11:45:32 INFO: END epoch:278 train loss_avg:  0.9549  elapse_sum: 41.668s
+2020-05-18 11:46:14 INFO: END epoch:279 train loss_avg:  0.9725  elapse_sum: 41.655s
+2020-05-18 11:46:56 INFO: END epoch:280 train loss_avg:  0.9550  elapse_sum: 41.607s
+2020-05-18 11:47:02 INFO: END epoch:280 valid loss_avg:  0.5798 top1_avg: 0.8347 top5_avg: 0.9797 elapse_sum: 6.143s
+2020-05-18 11:47:05 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/280
+2020-05-18 11:47:47 INFO: END epoch:281 train loss_avg:  0.9405  elapse_sum: 41.549s
+2020-05-18 11:48:28 INFO: END epoch:282 train loss_avg:  0.9646  elapse_sum: 41.550s
+2020-05-18 11:49:10 INFO: END epoch:283 train loss_avg:  0.9772  elapse_sum: 41.566s
+2020-05-18 11:49:51 INFO: END epoch:284 train loss_avg:  0.9298  elapse_sum: 41.596s
+2020-05-18 11:50:33 INFO: END epoch:285 train loss_avg:  0.9463  elapse_sum: 41.631s
+2020-05-18 11:50:39 INFO: END epoch:285 valid loss_avg:  0.4915 top1_avg: 0.8602 top5_avg: 0.9921 elapse_sum: 6.124s
+2020-05-18 11:51:21 INFO: END epoch:286 train loss_avg:  0.9826  elapse_sum: 41.556s
+2020-05-18 11:52:02 INFO: END epoch:287 train loss_avg:  0.9313  elapse_sum: 41.693s
+2020-05-18 11:52:44 INFO: END epoch:288 train loss_avg:  0.9114  elapse_sum: 41.595s
+2020-05-18 11:53:25 INFO: END epoch:289 train loss_avg:  0.9696  elapse_sum: 41.580s
+2020-05-18 11:54:07 INFO: END epoch:290 train loss_avg:  0.9346  elapse_sum: 41.615s
+2020-05-18 11:54:13 INFO: END epoch:290 valid loss_avg:  0.5638 top1_avg: 0.8523 top5_avg: 0.9899 elapse_sum: 6.127s
+2020-05-18 11:54:55 INFO: END epoch:291 train loss_avg:  0.9425  elapse_sum: 41.575s
+2020-05-18 11:55:36 INFO: END epoch:292 train loss_avg:  0.9553  elapse_sum: 41.559s
+2020-05-18 11:56:18 INFO: END epoch:293 train loss_avg:  0.9018  elapse_sum: 41.539s
+2020-05-18 11:56:59 INFO: END epoch:294 train loss_avg:  0.9221  elapse_sum: 41.543s
+2020-05-18 11:57:41 INFO: END epoch:295 train loss_avg:  0.9395  elapse_sum: 41.603s
+2020-05-18 11:57:47 INFO: END epoch:295 valid loss_avg:  0.5996 top1_avg: 0.8236 top5_avg: 0.9898 elapse_sum: 6.134s
+2020-05-18 11:58:29 INFO: END epoch:296 train loss_avg:  0.8847  elapse_sum: 41.547s
+2020-05-18 11:59:10 INFO: END epoch:297 train loss_avg:  0.9369  elapse_sum: 41.558s
+2020-05-18 11:59:52 INFO: END epoch:298 train loss_avg:  0.8612  elapse_sum: 41.524s
+2020-05-18 12:00:33 INFO: END epoch:299 train loss_avg:  0.9233  elapse_sum: 41.604s
+2020-05-18 12:01:15 INFO: END epoch:300 train loss_avg:  0.9059  elapse_sum: 41.553s
+2020-05-18 12:01:21 INFO: END epoch:300 valid loss_avg:  0.6425 top1_avg: 0.8122 top5_avg: 0.9763 elapse_sum: 6.136s
+2020-05-18 12:01:24 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/300
+2020-05-18 12:02:06 INFO: END epoch:301 train loss_avg:  0.9397  elapse_sum: 41.497s
+2020-05-18 12:02:47 INFO: END epoch:302 train loss_avg:  0.9310  elapse_sum: 41.489s
+2020-05-18 12:03:29 INFO: END epoch:303 train loss_avg:  0.9289  elapse_sum: 41.556s
+2020-05-18 12:04:10 INFO: END epoch:304 train loss_avg:  0.9042  elapse_sum: 41.506s
+2020-05-18 12:04:52 INFO: END epoch:305 train loss_avg:  0.9528  elapse_sum: 41.605s
+2020-05-18 12:04:58 INFO: END epoch:305 valid loss_avg:  0.3975 top1_avg: 0.8898 top5_avg: 0.9942 elapse_sum: 6.144s
+2020-05-18 12:05:40 INFO: END epoch:306 train loss_avg:  0.9096  elapse_sum: 41.667s
+2020-05-18 12:06:21 INFO: END epoch:307 train loss_avg:  0.9383  elapse_sum: 41.529s
+2020-05-18 12:07:03 INFO: END epoch:308 train loss_avg:  0.8843  elapse_sum: 41.531s
+2020-05-18 12:07:44 INFO: END epoch:309 train loss_avg:  0.9173  elapse_sum: 41.553s
+2020-05-18 12:08:26 INFO: END epoch:310 train loss_avg:  0.8987  elapse_sum: 41.573s
+2020-05-18 12:08:32 INFO: END epoch:310 valid loss_avg:  0.4546 top1_avg: 0.8775 top5_avg: 0.9946 elapse_sum: 6.140s
+2020-05-18 12:09:14 INFO: END epoch:311 train loss_avg:  0.9571  elapse_sum: 41.525s
+2020-05-18 12:09:55 INFO: END epoch:312 train loss_avg:  0.8862  elapse_sum: 41.549s
+2020-05-18 12:10:37 INFO: END epoch:313 train loss_avg:  0.9011  elapse_sum: 41.610s
+2020-05-18 12:11:18 INFO: END epoch:314 train loss_avg:  0.8790  elapse_sum: 41.554s
+2020-05-18 12:12:00 INFO: END epoch:315 train loss_avg:  0.9375  elapse_sum: 41.594s
+2020-05-18 12:12:06 INFO: END epoch:315 valid loss_avg:  0.5065 top1_avg: 0.8754 top5_avg: 0.9882 elapse_sum: 6.119s
+2020-05-18 12:12:48 INFO: END epoch:316 train loss_avg:  0.9218  elapse_sum: 41.623s
+2020-05-18 12:13:29 INFO: END epoch:317 train loss_avg:  0.9110  elapse_sum: 41.530s
+2020-05-18 12:14:11 INFO: END epoch:318 train loss_avg:  0.9540  elapse_sum: 41.577s
+2020-05-18 12:14:52 INFO: END epoch:319 train loss_avg:  0.9187  elapse_sum: 41.573s
+2020-05-18 12:15:34 INFO: END epoch:320 train loss_avg:  0.8669  elapse_sum: 41.527s
+2020-05-18 12:15:40 INFO: END epoch:320 valid loss_avg:  0.4900 top1_avg: 0.8624 top5_avg: 0.9867 elapse_sum: 6.151s
+2020-05-18 12:15:43 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/320
+2020-05-18 12:16:25 INFO: END epoch:321 train loss_avg:  0.8933  elapse_sum: 41.477s
+2020-05-18 12:17:06 INFO: END epoch:322 train loss_avg:  0.8720  elapse_sum: 41.468s
+2020-05-18 12:17:48 INFO: END epoch:323 train loss_avg:  0.9042  elapse_sum: 41.467s
+2020-05-18 12:18:29 INFO: END epoch:324 train loss_avg:  0.8722  elapse_sum: 41.558s
+2020-05-18 12:19:11 INFO: END epoch:325 train loss_avg:  0.8955  elapse_sum: 41.549s
+2020-05-18 12:19:17 INFO: END epoch:325 valid loss_avg:  0.4694 top1_avg: 0.8850 top5_avg: 0.9934 elapse_sum: 6.107s
+2020-05-18 12:19:58 INFO: END epoch:326 train loss_avg:  0.8858  elapse_sum: 41.523s
+2020-05-18 12:20:40 INFO: END epoch:327 train loss_avg:  0.9227  elapse_sum: 41.526s
+2020-05-18 12:21:21 INFO: END epoch:328 train loss_avg:  0.8839  elapse_sum: 41.507s
+2020-05-18 12:22:03 INFO: END epoch:329 train loss_avg:  0.8974  elapse_sum: 41.515s
+2020-05-18 12:22:44 INFO: END epoch:330 train loss_avg:  0.9158  elapse_sum: 41.517s
+2020-05-18 12:22:51 INFO: END epoch:330 valid loss_avg:  0.4555 top1_avg: 0.8759 top5_avg: 0.9934 elapse_sum: 6.116s
+2020-05-18 12:23:32 INFO: END epoch:331 train loss_avg:  0.8826  elapse_sum: 41.544s
+2020-05-18 12:24:14 INFO: END epoch:332 train loss_avg:  0.9090  elapse_sum: 41.625s
+2020-05-18 12:24:55 INFO: END epoch:333 train loss_avg:  0.8898  elapse_sum: 41.518s
+2020-05-18 12:25:37 INFO: END epoch:334 train loss_avg:  0.9146  elapse_sum: 41.517s
+2020-05-18 12:26:18 INFO: END epoch:335 train loss_avg:  0.9302  elapse_sum: 41.542s
+2020-05-18 12:26:24 INFO: END epoch:335 valid loss_avg:  0.4837 top1_avg: 0.8768 top5_avg: 0.9863 elapse_sum: 6.137s
+2020-05-18 12:27:06 INFO: END epoch:336 train loss_avg:  0.9576  elapse_sum: 41.690s
+2020-05-18 12:27:48 INFO: END epoch:337 train loss_avg:  0.8461  elapse_sum: 41.477s
+2020-05-18 12:28:29 INFO: END epoch:338 train loss_avg:  0.9011  elapse_sum: 41.520s
+2020-05-18 12:29:11 INFO: END epoch:339 train loss_avg:  0.8301  elapse_sum: 41.596s
+2020-05-18 12:29:52 INFO: END epoch:340 train loss_avg:  0.8881  elapse_sum: 41.537s
+2020-05-18 12:29:58 INFO: END epoch:340 valid loss_avg:  0.4653 top1_avg: 0.8682 top5_avg: 0.9939 elapse_sum: 6.117s
+2020-05-18 12:30:02 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/340
+2020-05-18 12:30:43 INFO: END epoch:341 train loss_avg:  0.8918  elapse_sum: 41.523s
+2020-05-18 12:31:25 INFO: END epoch:342 train loss_avg:  0.9028  elapse_sum: 41.409s
+2020-05-18 12:32:06 INFO: END epoch:343 train loss_avg:  0.8779  elapse_sum: 41.425s
+2020-05-18 12:32:47 INFO: END epoch:344 train loss_avg:  0.8807  elapse_sum: 41.485s
+2020-05-18 12:33:29 INFO: END epoch:345 train loss_avg:  0.8662  elapse_sum: 41.529s
+2020-05-18 12:33:35 INFO: END epoch:345 valid loss_avg:  0.3643 top1_avg: 0.9044 top5_avg: 0.9937 elapse_sum: 6.147s
+2020-05-18 12:33:35 INFO: The best top1 acc 0.90441, in epoch: 345
+2020-05-18 12:34:17 INFO: END epoch:346 train loss_avg:  0.8872  elapse_sum: 41.545s
+2020-05-18 12:34:58 INFO: END epoch:347 train loss_avg:  0.8817  elapse_sum: 41.489s
+2020-05-18 12:35:40 INFO: END epoch:348 train loss_avg:  0.8911  elapse_sum: 41.473s
+2020-05-18 12:36:21 INFO: END epoch:349 train loss_avg:  0.8874  elapse_sum: 41.532s
+2020-05-18 12:37:03 INFO: END epoch:350 train loss_avg:  0.9187  elapse_sum: 41.481s
+2020-05-18 12:37:09 INFO: END epoch:350 valid loss_avg:  0.3991 top1_avg: 0.9041 top5_avg: 0.9957 elapse_sum: 6.133s
+2020-05-18 12:37:50 INFO: END epoch:351 train loss_avg:  0.8627  elapse_sum: 41.561s
+2020-05-18 12:38:32 INFO: END epoch:352 train loss_avg:  0.8732  elapse_sum: 41.545s
+2020-05-18 12:39:13 INFO: END epoch:353 train loss_avg:  0.8473  elapse_sum: 41.500s
+2020-05-18 12:39:55 INFO: END epoch:354 train loss_avg:  0.8362  elapse_sum: 41.501s
+2020-05-18 12:40:36 INFO: END epoch:355 train loss_avg:  0.8793  elapse_sum: 41.512s
+2020-05-18 12:40:43 INFO: END epoch:355 valid loss_avg:  0.3678 top1_avg: 0.9022 top5_avg: 0.9972 elapse_sum: 6.131s
+2020-05-18 12:41:24 INFO: END epoch:356 train loss_avg:  0.8837  elapse_sum: 41.510s
+2020-05-18 12:42:06 INFO: END epoch:357 train loss_avg:  0.9146  elapse_sum: 41.612s
+2020-05-18 12:42:47 INFO: END epoch:358 train loss_avg:  0.8171  elapse_sum: 41.513s
+2020-05-18 12:43:29 INFO: END epoch:359 train loss_avg:  0.8526  elapse_sum: 41.543s
+2020-05-18 12:44:10 INFO: END epoch:360 train loss_avg:  0.9021  elapse_sum: 41.489s
+2020-05-18 12:44:16 INFO: END epoch:360 valid loss_avg:  0.4853 top1_avg: 0.8725 top5_avg: 0.9883 elapse_sum: 6.116s
+2020-05-18 12:44:20 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/360
+2020-05-18 12:45:01 INFO: END epoch:361 train loss_avg:  0.8668  elapse_sum: 41.451s
+2020-05-18 12:45:42 INFO: END epoch:362 train loss_avg:  0.8588  elapse_sum: 41.410s
+2020-05-18 12:46:24 INFO: END epoch:363 train loss_avg:  0.8572  elapse_sum: 41.493s
+2020-05-18 12:47:05 INFO: END epoch:364 train loss_avg:  0.8587  elapse_sum: 41.466s
+2020-05-18 12:47:47 INFO: END epoch:365 train loss_avg:  0.8675  elapse_sum: 41.571s
+2020-05-18 12:47:53 INFO: END epoch:365 valid loss_avg:  0.4255 top1_avg: 0.8855 top5_avg: 0.9916 elapse_sum: 6.135s
+2020-05-18 12:48:35 INFO: END epoch:366 train loss_avg:  0.8914  elapse_sum: 41.495s
+2020-05-18 12:49:16 INFO: END epoch:367 train loss_avg:  0.8652  elapse_sum: 41.511s
+2020-05-18 12:49:58 INFO: END epoch:368 train loss_avg:  0.8049  elapse_sum: 41.515s
+2020-05-18 12:50:39 INFO: END epoch:369 train loss_avg:  0.8588  elapse_sum: 41.487s
+2020-05-18 12:51:21 INFO: END epoch:370 train loss_avg:  0.8752  elapse_sum: 41.486s
+2020-05-18 12:51:27 INFO: END epoch:370 valid loss_avg:  0.4095 top1_avg: 0.8967 top5_avg: 0.9938 elapse_sum: 6.146s
+2020-05-18 12:52:08 INFO: END epoch:371 train loss_avg:  0.8717  elapse_sum: 41.501s
+2020-05-18 12:52:50 INFO: END epoch:372 train loss_avg:  0.8274  elapse_sum: 41.510s
+2020-05-18 12:53:31 INFO: END epoch:373 train loss_avg:  0.8654  elapse_sum: 41.526s
+2020-05-18 12:54:13 INFO: END epoch:374 train loss_avg:  0.8585  elapse_sum: 41.480s
+2020-05-18 12:54:54 INFO: END epoch:375 train loss_avg:  0.8385  elapse_sum: 41.474s
+2020-05-18 12:55:00 INFO: END epoch:375 valid loss_avg:  0.4351 top1_avg: 0.8778 top5_avg: 0.9925 elapse_sum: 6.154s
+2020-05-18 12:55:42 INFO: END epoch:376 train loss_avg:  0.8336  elapse_sum: 41.494s
+2020-05-18 12:56:23 INFO: END epoch:377 train loss_avg:  0.8745  elapse_sum: 41.510s
+2020-05-18 12:57:05 INFO: END epoch:378 train loss_avg:  0.8448  elapse_sum: 41.547s
+2020-05-18 12:57:46 INFO: END epoch:379 train loss_avg:  0.8605  elapse_sum: 41.523s
+2020-05-18 12:58:28 INFO: END epoch:380 train loss_avg:  0.8043  elapse_sum: 41.540s
+2020-05-18 12:58:34 INFO: END epoch:380 valid loss_avg:  0.3876 top1_avg: 0.9019 top5_avg: 0.9945 elapse_sum: 6.143s
+2020-05-18 12:58:37 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/380
+2020-05-18 12:59:19 INFO: END epoch:381 train loss_avg:  0.8470  elapse_sum: 41.404s
+2020-05-18 13:00:00 INFO: END epoch:382 train loss_avg:  0.8000  elapse_sum: 41.351s
+2020-05-18 13:00:42 INFO: END epoch:383 train loss_avg:  0.8533  elapse_sum: 41.440s
+2020-05-18 13:01:23 INFO: END epoch:384 train loss_avg:  0.8346  elapse_sum: 41.472s
+2020-05-18 13:02:04 INFO: END epoch:385 train loss_avg:  0.8677  elapse_sum: 41.486s
+2020-05-18 13:02:11 INFO: END epoch:385 valid loss_avg:  0.3728 top1_avg: 0.9137 top5_avg: 0.9961 elapse_sum: 6.139s
+2020-05-18 13:02:11 INFO: The best top1 acc 0.91374, in epoch: 385
+2020-05-18 13:02:52 INFO: END epoch:386 train loss_avg:  0.8672  elapse_sum: 41.505s
+2020-05-18 13:03:34 INFO: END epoch:387 train loss_avg:  0.8223  elapse_sum: 41.526s
+2020-05-18 13:04:15 INFO: END epoch:388 train loss_avg:  0.8460  elapse_sum: 41.556s
+2020-05-18 13:04:57 INFO: END epoch:389 train loss_avg:  0.8116  elapse_sum: 41.560s
+2020-05-18 13:05:38 INFO: END epoch:390 train loss_avg:  0.8446  elapse_sum: 41.547s
+2020-05-18 13:05:44 INFO: END epoch:390 valid loss_avg:  0.4242 top1_avg: 0.9017 top5_avg: 0.9914 elapse_sum: 6.121s
+2020-05-18 13:06:26 INFO: END epoch:391 train loss_avg:  0.8595  elapse_sum: 41.509s
+2020-05-18 13:07:07 INFO: END epoch:392 train loss_avg:  0.8180  elapse_sum: 41.520s
+2020-05-18 13:07:49 INFO: END epoch:393 train loss_avg:  0.8145  elapse_sum: 41.536s
+2020-05-18 13:08:30 INFO: END epoch:394 train loss_avg:  0.7846  elapse_sum: 41.467s
+2020-05-18 13:09:12 INFO: END epoch:395 train loss_avg:  0.8031  elapse_sum: 41.529s
+2020-05-18 13:09:18 INFO: END epoch:395 valid loss_avg:  0.3544 top1_avg: 0.9280 top5_avg: 0.9980 elapse_sum: 6.138s
+2020-05-18 13:09:18 INFO: The best top1 acc 0.92795, in epoch: 395
+2020-05-18 13:10:00 INFO: END epoch:396 train loss_avg:  0.8357  elapse_sum: 41.462s
+2020-05-18 13:10:41 INFO: END epoch:397 train loss_avg:  0.8154  elapse_sum: 41.515s
+2020-05-18 13:11:23 INFO: END epoch:398 train loss_avg:  0.8253  elapse_sum: 41.550s
+2020-05-18 13:12:04 INFO: END epoch:399 train loss_avg:  0.8301  elapse_sum: 41.469s
+2020-05-18 13:12:46 INFO: END epoch:400 train loss_avg:  0.8332  elapse_sum: 41.467s
+2020-05-18 13:12:52 INFO: END epoch:400 valid loss_avg:  0.3481 top1_avg: 0.9198 top5_avg: 0.9976 elapse_sum: 6.141s
+2020-05-18 13:12:55 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/400
+2020-05-18 13:13:36 INFO: END epoch:401 train loss_avg:  0.8375  elapse_sum: 41.465s
+2020-05-18 13:14:18 INFO: END epoch:402 train loss_avg:  0.8472  elapse_sum: 41.408s
+2020-05-18 13:14:59 INFO: END epoch:403 train loss_avg:  0.8130  elapse_sum: 41.447s
+2020-05-18 13:15:41 INFO: END epoch:404 train loss_avg:  0.8442  elapse_sum: 41.410s
+2020-05-18 13:16:22 INFO: END epoch:405 train loss_avg:  0.8007  elapse_sum: 41.471s
+2020-05-18 13:16:28 INFO: END epoch:405 valid loss_avg:  0.4317 top1_avg: 0.8887 top5_avg: 0.9920 elapse_sum: 6.128s
+2020-05-18 13:17:10 INFO: END epoch:406 train loss_avg:  0.7763  elapse_sum: 41.525s
+2020-05-18 13:17:51 INFO: END epoch:407 train loss_avg:  0.8411  elapse_sum: 41.530s
+2020-05-18 13:18:33 INFO: END epoch:408 train loss_avg:  0.8293  elapse_sum: 41.484s
+2020-05-18 13:19:14 INFO: END epoch:409 train loss_avg:  0.7522  elapse_sum: 41.468s
+2020-05-18 13:19:56 INFO: END epoch:410 train loss_avg:  0.8054  elapse_sum: 41.486s
+2020-05-18 13:20:02 INFO: END epoch:410 valid loss_avg:  0.3587 top1_avg: 0.9252 top5_avg: 0.9950 elapse_sum: 6.149s
+2020-05-18 13:20:43 INFO: END epoch:411 train loss_avg:  0.8231  elapse_sum: 41.526s
+2020-05-18 13:21:25 INFO: END epoch:412 train loss_avg:  0.8267  elapse_sum: 41.568s
+2020-05-18 13:22:07 INFO: END epoch:413 train loss_avg:  0.7994  elapse_sum: 41.575s
+2020-05-18 13:22:48 INFO: END epoch:414 train loss_avg:  0.8160  elapse_sum: 41.483s
+2020-05-18 13:23:30 INFO: END epoch:415 train loss_avg:  0.7839  elapse_sum: 41.510s
+2020-05-18 13:23:36 INFO: END epoch:415 valid loss_avg:  0.3343 top1_avg: 0.9205 top5_avg: 0.9948 elapse_sum: 6.121s
+2020-05-18 13:24:17 INFO: END epoch:416 train loss_avg:  0.7699  elapse_sum: 41.457s
+2020-05-18 13:24:59 INFO: END epoch:417 train loss_avg:  0.7612  elapse_sum: 41.467s
+2020-05-18 13:25:40 INFO: END epoch:418 train loss_avg:  0.8323  elapse_sum: 41.485s
+2020-05-18 13:26:22 INFO: END epoch:419 train loss_avg:  0.7496  elapse_sum: 41.412s
+2020-05-18 13:27:03 INFO: END epoch:420 train loss_avg:  0.8002  elapse_sum: 41.466s
+2020-05-18 13:27:09 INFO: END epoch:420 valid loss_avg:  0.3460 top1_avg: 0.9141 top5_avg: 0.9920 elapse_sum: 6.133s
+2020-05-18 13:27:12 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/420
+2020-05-18 13:27:54 INFO: END epoch:421 train loss_avg:  0.7922  elapse_sum: 41.468s
+2020-05-18 13:28:35 INFO: END epoch:422 train loss_avg:  0.7614  elapse_sum: 41.411s
+2020-05-18 13:29:17 INFO: END epoch:423 train loss_avg:  0.8199  elapse_sum: 41.507s
+2020-05-18 13:29:58 INFO: END epoch:424 train loss_avg:  0.7769  elapse_sum: 41.440s
+2020-05-18 13:30:40 INFO: END epoch:425 train loss_avg:  0.8002  elapse_sum: 41.482s
+2020-05-18 13:30:46 INFO: END epoch:425 valid loss_avg:  0.3053 top1_avg: 0.9325 top5_avg: 0.9967 elapse_sum: 6.140s
+2020-05-18 13:30:46 INFO: The best top1 acc 0.93251, in epoch: 425
+2020-05-18 13:31:27 INFO: END epoch:426 train loss_avg:  0.7576  elapse_sum: 41.514s
+2020-05-18 13:32:09 INFO: END epoch:427 train loss_avg:  0.7650  elapse_sum: 41.587s
+2020-05-18 13:32:50 INFO: END epoch:428 train loss_avg:  0.8062  elapse_sum: 41.477s
+2020-05-18 13:33:32 INFO: END epoch:429 train loss_avg:  0.7891  elapse_sum: 41.477s
+2020-05-18 13:34:13 INFO: END epoch:430 train loss_avg:  0.7550  elapse_sum: 41.468s
+2020-05-18 13:34:19 INFO: END epoch:430 valid loss_avg:  0.3919 top1_avg: 0.8925 top5_avg: 0.9933 elapse_sum: 6.140s
+2020-05-18 13:35:01 INFO: END epoch:431 train loss_avg:  0.8009  elapse_sum: 41.552s
+2020-05-18 13:35:43 INFO: END epoch:432 train loss_avg:  0.7412  elapse_sum: 41.510s
+2020-05-18 13:36:24 INFO: END epoch:433 train loss_avg:  0.7986  elapse_sum: 41.521s
+2020-05-18 13:37:06 INFO: END epoch:434 train loss_avg:  0.7846  elapse_sum: 41.488s
+2020-05-18 13:37:47 INFO: END epoch:435 train loss_avg:  0.8178  elapse_sum: 41.495s
+2020-05-18 13:37:53 INFO: END epoch:435 valid loss_avg:  0.3036 top1_avg: 0.9382 top5_avg: 0.9962 elapse_sum: 6.137s
+2020-05-18 13:37:53 INFO: The best top1 acc 0.93815, in epoch: 435
+2020-05-18 13:38:35 INFO: END epoch:436 train loss_avg:  0.7545  elapse_sum: 41.613s
+2020-05-18 13:39:16 INFO: END epoch:437 train loss_avg:  0.7848  elapse_sum: 41.466s
+2020-05-18 13:39:58 INFO: END epoch:438 train loss_avg:  0.7881  elapse_sum: 41.450s
+2020-05-18 13:40:39 INFO: END epoch:439 train loss_avg:  0.7226  elapse_sum: 41.464s
+2020-05-18 13:41:21 INFO: END epoch:440 train loss_avg:  0.7692  elapse_sum: 41.482s
+2020-05-18 13:41:27 INFO: END epoch:440 valid loss_avg:  0.3312 top1_avg: 0.9103 top5_avg: 0.9969 elapse_sum: 6.139s
+2020-05-18 13:41:30 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/440
+2020-05-18 13:42:11 INFO: END epoch:441 train loss_avg:  0.7902  elapse_sum: 41.467s
+2020-05-18 13:42:53 INFO: END epoch:442 train loss_avg:  0.7775  elapse_sum: 41.448s
+2020-05-18 13:43:34 INFO: END epoch:443 train loss_avg:  0.7378  elapse_sum: 41.441s
+2020-05-18 13:44:16 INFO: END epoch:444 train loss_avg:  0.7146  elapse_sum: 41.443s
+2020-05-18 13:44:57 INFO: END epoch:445 train loss_avg:  0.7123  elapse_sum: 41.489s
+2020-05-18 13:45:03 INFO: END epoch:445 valid loss_avg:  0.2691 top1_avg: 0.9274 top5_avg: 0.9946 elapse_sum: 6.121s
+2020-05-18 13:45:45 INFO: END epoch:446 train loss_avg:  0.7467  elapse_sum: 41.444s
+2020-05-18 13:46:26 INFO: END epoch:447 train loss_avg:  0.7743  elapse_sum: 41.463s
+2020-05-18 13:47:08 INFO: END epoch:448 train loss_avg:  0.7516  elapse_sum: 41.471s
+2020-05-18 13:47:49 INFO: END epoch:449 train loss_avg:  0.7452  elapse_sum: 41.478s
+2020-05-18 13:48:31 INFO: END epoch:450 train loss_avg:  0.7792  elapse_sum: 41.492s
+2020-05-18 13:48:37 INFO: END epoch:450 valid loss_avg:  0.2526 top1_avg: 0.9410 top5_avg: 0.9975 elapse_sum: 6.126s
+2020-05-18 13:48:37 INFO: The best top1 acc 0.94097, in epoch: 450
+2020-05-18 13:49:18 INFO: END epoch:451 train loss_avg:  0.7229  elapse_sum: 41.521s
+2020-05-18 13:50:00 INFO: END epoch:452 train loss_avg:  0.7399  elapse_sum: 41.443s
+2020-05-18 13:50:41 INFO: END epoch:453 train loss_avg:  0.7368  elapse_sum: 41.619s
+2020-05-18 13:51:23 INFO: END epoch:454 train loss_avg:  0.7060  elapse_sum: 41.601s
+2020-05-18 13:52:05 INFO: END epoch:455 train loss_avg:  0.7009  elapse_sum: 41.512s
+2020-05-18 13:52:11 INFO: END epoch:455 valid loss_avg:  0.3194 top1_avg: 0.9198 top5_avg: 0.9947 elapse_sum: 6.145s
+2020-05-18 13:52:52 INFO: END epoch:456 train loss_avg:  0.6933  elapse_sum: 41.497s
+2020-05-18 13:53:34 INFO: END epoch:457 train loss_avg:  0.7157  elapse_sum: 41.529s
+2020-05-18 13:54:15 INFO: END epoch:458 train loss_avg:  0.7428  elapse_sum: 41.479s
+2020-05-18 13:54:57 INFO: END epoch:459 train loss_avg:  0.7297  elapse_sum: 41.505s
+2020-05-18 13:55:38 INFO: END epoch:460 train loss_avg:  0.7582  elapse_sum: 41.511s
+2020-05-18 13:55:44 INFO: END epoch:460 valid loss_avg:  0.2835 top1_avg: 0.9245 top5_avg: 0.9961 elapse_sum: 6.118s
+2020-05-18 13:55:48 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/460
+2020-05-18 13:56:29 INFO: END epoch:461 train loss_avg:  0.7114  elapse_sum: 41.410s
+2020-05-18 13:57:10 INFO: END epoch:462 train loss_avg:  0.7354  elapse_sum: 41.380s
+2020-05-18 13:57:52 INFO: END epoch:463 train loss_avg:  0.7290  elapse_sum: 41.375s
+2020-05-18 13:58:33 INFO: END epoch:464 train loss_avg:  0.7514  elapse_sum: 41.483s
+2020-05-18 13:59:15 INFO: END epoch:465 train loss_avg:  0.7303  elapse_sum: 41.452s
+2020-05-18 13:59:21 INFO: END epoch:465 valid loss_avg:  0.2289 top1_avg: 0.9362 top5_avg: 0.9983 elapse_sum: 6.132s
+2020-05-18 14:00:02 INFO: END epoch:466 train loss_avg:  0.7340  elapse_sum: 41.502s
+2020-05-18 14:00:44 INFO: END epoch:467 train loss_avg:  0.7229  elapse_sum: 41.472s
+2020-05-18 14:01:25 INFO: END epoch:468 train loss_avg:  0.7127  elapse_sum: 41.435s
+2020-05-18 14:02:07 INFO: END epoch:469 train loss_avg:  0.6453  elapse_sum: 41.458s
+2020-05-18 14:02:48 INFO: END epoch:470 train loss_avg:  0.7290  elapse_sum: 41.468s
+2020-05-18 14:02:54 INFO: END epoch:470 valid loss_avg:  0.2899 top1_avg: 0.9200 top5_avg: 0.9932 elapse_sum: 6.137s
+2020-05-18 14:03:36 INFO: END epoch:471 train loss_avg:  0.7109  elapse_sum: 41.552s
+2020-05-18 14:04:17 INFO: END epoch:472 train loss_avg:  0.7154  elapse_sum: 41.428s
+2020-05-18 14:04:59 INFO: END epoch:473 train loss_avg:  0.7409  elapse_sum: 41.416s
+2020-05-18 14:05:40 INFO: END epoch:474 train loss_avg:  0.7649  elapse_sum: 41.480s
+2020-05-18 14:06:22 INFO: END epoch:475 train loss_avg:  0.7129  elapse_sum: 41.568s
+2020-05-18 14:06:28 INFO: END epoch:475 valid loss_avg:  0.2078 top1_avg: 0.9437 top5_avg: 0.9976 elapse_sum: 6.131s
+2020-05-18 14:06:28 INFO: The best top1 acc 0.94368, in epoch: 475
+2020-05-18 14:07:09 INFO: END epoch:476 train loss_avg:  0.6581  elapse_sum: 41.588s
+2020-05-18 14:07:51 INFO: END epoch:477 train loss_avg:  0.7101  elapse_sum: 41.574s
+2020-05-18 14:08:33 INFO: END epoch:478 train loss_avg:  0.7250  elapse_sum: 41.525s
+2020-05-18 14:09:14 INFO: END epoch:479 train loss_avg:  0.6887  elapse_sum: 41.556s
+2020-05-18 14:09:56 INFO: END epoch:480 train loss_avg:  0.7125  elapse_sum: 41.550s
+2020-05-18 14:10:02 INFO: END epoch:480 valid loss_avg:  0.2438 top1_avg: 0.9265 top5_avg: 0.9982 elapse_sum: 6.132s
+2020-05-18 14:10:05 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/480
+2020-05-18 14:10:47 INFO: END epoch:481 train loss_avg:  0.6955  elapse_sum: 41.511s
+2020-05-18 14:11:28 INFO: END epoch:482 train loss_avg:  0.6752  elapse_sum: 41.424s
+2020-05-18 14:12:09 INFO: END epoch:483 train loss_avg:  0.6824  elapse_sum: 41.461s
+2020-05-18 14:12:51 INFO: END epoch:484 train loss_avg:  0.7202  elapse_sum: 41.610s
+2020-05-18 14:13:33 INFO: END epoch:485 train loss_avg:  0.6826  elapse_sum: 41.531s
+2020-05-18 14:13:39 INFO: END epoch:485 valid loss_avg:  0.1912 top1_avg: 0.9484 top5_avg: 0.9983 elapse_sum: 6.133s
+2020-05-18 14:13:39 INFO: The best top1 acc 0.94835, in epoch: 485
+2020-05-18 14:14:20 INFO: END epoch:486 train loss_avg:  0.6657  elapse_sum: 41.594s
+2020-05-18 14:15:02 INFO: END epoch:487 train loss_avg:  0.6483  elapse_sum: 41.559s
+2020-05-18 14:15:43 INFO: END epoch:488 train loss_avg:  0.6750  elapse_sum: 41.527s
+2020-05-18 14:16:25 INFO: END epoch:489 train loss_avg:  0.6452  elapse_sum: 41.517s
+2020-05-18 14:17:06 INFO: END epoch:490 train loss_avg:  0.6860  elapse_sum: 41.467s
+2020-05-18 14:17:12 INFO: END epoch:490 valid loss_avg:  0.2185 top1_avg: 0.9463 top5_avg: 0.9970 elapse_sum: 6.110s
+2020-05-18 14:17:54 INFO: END epoch:491 train loss_avg:  0.6779  elapse_sum: 41.478s
+2020-05-18 14:18:36 INFO: END epoch:492 train loss_avg:  0.6867  elapse_sum: 41.577s
+2020-05-18 14:19:17 INFO: END epoch:493 train loss_avg:  0.6702  elapse_sum: 41.459s
+2020-05-18 14:19:58 INFO: END epoch:494 train loss_avg:  0.6613  elapse_sum: 41.454s
+2020-05-18 14:20:40 INFO: END epoch:495 train loss_avg:  0.6588  elapse_sum: 41.455s
+2020-05-18 14:20:46 INFO: END epoch:495 valid loss_avg:  0.1956 top1_avg: 0.9431 top5_avg: 0.9988 elapse_sum: 6.113s
+2020-05-18 14:21:28 INFO: END epoch:496 train loss_avg:  0.6663  elapse_sum: 41.518s
+2020-05-18 14:22:09 INFO: END epoch:497 train loss_avg:  0.6650  elapse_sum: 41.561s
+2020-05-18 14:22:51 INFO: END epoch:498 train loss_avg:  0.7020  elapse_sum: 41.451s
+2020-05-18 14:23:32 INFO: END epoch:499 train loss_avg:  0.6924  elapse_sum: 41.490s
+2020-05-18 14:24:14 INFO: END epoch:500 train loss_avg:  0.6674  elapse_sum: 41.532s
+2020-05-18 14:24:20 INFO: END epoch:500 valid loss_avg:  0.1979 top1_avg: 0.9502 top5_avg: 0.9976 elapse_sum: 6.138s
+2020-05-18 14:24:20 INFO: The best top1 acc 0.95020, in epoch: 500
+2020-05-18 14:24:23 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/best_model_in_epoch_500
+2020-05-18 14:24:26 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/500
+2020-05-18 14:25:07 INFO: END epoch:501 train loss_avg:  0.7021  elapse_sum: 41.393s
+2020-05-18 14:25:49 INFO: END epoch:502 train loss_avg:  0.6377  elapse_sum: 41.515s
+2020-05-18 14:26:31 INFO: END epoch:503 train loss_avg:  0.6853  elapse_sum: 41.504s
+2020-05-18 14:27:12 INFO: END epoch:504 train loss_avg:  0.6472  elapse_sum: 41.445s
+2020-05-18 14:27:53 INFO: END epoch:505 train loss_avg:  0.6586  elapse_sum: 41.460s
+2020-05-18 14:28:00 INFO: END epoch:505 valid loss_avg:  0.1699 top1_avg: 0.9513 top5_avg: 0.9987 elapse_sum: 6.133s
+2020-05-18 14:28:00 INFO: The best top1 acc 0.95128, in epoch: 505
+2020-05-18 14:28:41 INFO: END epoch:506 train loss_avg:  0.6581  elapse_sum: 41.479s
+2020-05-18 14:29:23 INFO: END epoch:507 train loss_avg:  0.6721  elapse_sum: 41.526s
+2020-05-18 14:30:04 INFO: END epoch:508 train loss_avg:  0.6715  elapse_sum: 41.503s
+2020-05-18 14:30:46 INFO: END epoch:509 train loss_avg:  0.6264  elapse_sum: 41.441s
+2020-05-18 14:31:27 INFO: END epoch:510 train loss_avg:  0.6422  elapse_sum: 41.430s
+2020-05-18 14:31:33 INFO: END epoch:510 valid loss_avg:  0.2215 top1_avg: 0.9488 top5_avg: 0.9975 elapse_sum: 6.107s
+2020-05-18 14:32:15 INFO: END epoch:511 train loss_avg:  0.6385  elapse_sum: 41.504s
+2020-05-18 14:32:56 INFO: END epoch:512 train loss_avg:  0.6300  elapse_sum: 41.445s
+2020-05-18 14:33:37 INFO: END epoch:513 train loss_avg:  0.6473  elapse_sum: 41.469s
+2020-05-18 14:34:19 INFO: END epoch:514 train loss_avg:  0.6041  elapse_sum: 41.432s
+2020-05-18 14:35:00 INFO: END epoch:515 train loss_avg:  0.6249  elapse_sum: 41.508s
+2020-05-18 14:35:07 INFO: END epoch:515 valid loss_avg:  0.1793 top1_avg: 0.9545 top5_avg: 0.9983 elapse_sum: 6.134s
+2020-05-18 14:35:07 INFO: The best top1 acc 0.95454, in epoch: 515
+2020-05-18 14:35:48 INFO: END epoch:516 train loss_avg:  0.6524  elapse_sum: 41.569s
+2020-05-18 14:36:30 INFO: END epoch:517 train loss_avg:  0.6436  elapse_sum: 41.497s
+2020-05-18 14:37:11 INFO: END epoch:518 train loss_avg:  0.6296  elapse_sum: 41.479s
+2020-05-18 14:37:53 INFO: END epoch:519 train loss_avg:  0.6709  elapse_sum: 41.474s
+2020-05-18 14:38:34 INFO: END epoch:520 train loss_avg:  0.6293  elapse_sum: 41.499s
+2020-05-18 14:38:40 INFO: END epoch:520 valid loss_avg:  0.1660 top1_avg: 0.9532 top5_avg: 0.9991 elapse_sum: 6.137s
+2020-05-18 14:38:43 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/520
+2020-05-18 14:39:25 INFO: END epoch:521 train loss_avg:  0.6364  elapse_sum: 41.374s
+2020-05-18 14:40:06 INFO: END epoch:522 train loss_avg:  0.6124  elapse_sum: 41.393s
+2020-05-18 14:40:48 INFO: END epoch:523 train loss_avg:  0.6250  elapse_sum: 41.493s
+2020-05-18 14:41:29 INFO: END epoch:524 train loss_avg:  0.6730  elapse_sum: 41.439s
+2020-05-18 14:42:11 INFO: END epoch:525 train loss_avg:  0.6304  elapse_sum: 41.468s
+2020-05-18 14:42:17 INFO: END epoch:525 valid loss_avg:  0.1616 top1_avg: 0.9561 top5_avg: 0.9984 elapse_sum: 6.114s
+2020-05-18 14:42:17 INFO: The best top1 acc 0.95605, in epoch: 525
+2020-05-18 14:42:58 INFO: END epoch:526 train loss_avg:  0.6150  elapse_sum: 41.518s
+2020-05-18 14:43:40 INFO: END epoch:527 train loss_avg:  0.6331  elapse_sum: 41.509s
+2020-05-18 14:44:21 INFO: END epoch:528 train loss_avg:  0.6428  elapse_sum: 41.497s
+2020-05-18 14:45:03 INFO: END epoch:529 train loss_avg:  0.5804  elapse_sum: 41.479s
+2020-05-18 14:45:44 INFO: END epoch:530 train loss_avg:  0.6030  elapse_sum: 41.483s
+2020-05-18 14:45:50 INFO: END epoch:530 valid loss_avg:  0.1538 top1_avg: 0.9562 top5_avg: 0.9983 elapse_sum: 6.127s
+2020-05-18 14:45:50 INFO: The best top1 acc 0.95616, in epoch: 530
+2020-05-18 14:46:32 INFO: END epoch:531 train loss_avg:  0.6425  elapse_sum: 41.462s
+2020-05-18 14:47:13 INFO: END epoch:532 train loss_avg:  0.6227  elapse_sum: 41.464s
+2020-05-18 14:47:55 INFO: END epoch:533 train loss_avg:  0.5990  elapse_sum: 41.490s
+2020-05-18 14:48:36 INFO: END epoch:534 train loss_avg:  0.5991  elapse_sum: 41.492s
+2020-05-18 14:49:18 INFO: END epoch:535 train loss_avg:  0.6020  elapse_sum: 41.451s
+2020-05-18 14:49:24 INFO: END epoch:535 valid loss_avg:  0.1420 top1_avg: 0.9617 top5_avg: 0.9993 elapse_sum: 6.121s
+2020-05-18 14:49:24 INFO: The best top1 acc 0.96170, in epoch: 535
+2020-05-18 14:50:05 INFO: END epoch:536 train loss_avg:  0.6157  elapse_sum: 41.519s
+2020-05-18 14:50:47 INFO: END epoch:537 train loss_avg:  0.6021  elapse_sum: 41.424s
+2020-05-18 14:51:28 INFO: END epoch:538 train loss_avg:  0.5938  elapse_sum: 41.462s
+2020-05-18 14:52:10 INFO: END epoch:539 train loss_avg:  0.5806  elapse_sum: 41.504s
+2020-05-18 14:52:51 INFO: END epoch:540 train loss_avg:  0.5946  elapse_sum: 41.502s
+2020-05-18 14:52:57 INFO: END epoch:540 valid loss_avg:  0.1498 top1_avg: 0.9600 top5_avg: 0.9990 elapse_sum: 6.123s
+2020-05-18 14:53:01 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/540
+2020-05-18 14:53:42 INFO: END epoch:541 train loss_avg:  0.5880  elapse_sum: 41.446s
+2020-05-18 14:54:24 INFO: END epoch:542 train loss_avg:  0.6030  elapse_sum: 41.554s
+2020-05-18 14:55:05 INFO: END epoch:543 train loss_avg:  0.5848  elapse_sum: 41.460s
+2020-05-18 14:55:47 INFO: END epoch:544 train loss_avg:  0.5974  elapse_sum: 41.533s
+2020-05-18 14:56:28 INFO: END epoch:545 train loss_avg:  0.5972  elapse_sum: 41.499s
+2020-05-18 14:56:34 INFO: END epoch:545 valid loss_avg:  0.1437 top1_avg: 0.9622 top5_avg: 0.9985 elapse_sum: 6.146s
+2020-05-18 14:56:34 INFO: The best top1 acc 0.96224, in epoch: 545
+2020-05-18 14:57:16 INFO: END epoch:546 train loss_avg:  0.6014  elapse_sum: 41.426s
+2020-05-18 14:57:57 INFO: END epoch:547 train loss_avg:  0.6120  elapse_sum: 41.547s
+2020-05-18 14:58:39 INFO: END epoch:548 train loss_avg:  0.5751  elapse_sum: 41.511s
+2020-05-18 14:59:20 INFO: END epoch:549 train loss_avg:  0.5932  elapse_sum: 41.532s
+2020-05-18 15:00:02 INFO: END epoch:550 train loss_avg:  0.5456  elapse_sum: 41.523s
+2020-05-18 15:00:08 INFO: END epoch:550 valid loss_avg:  0.1486 top1_avg: 0.9626 top5_avg: 0.9983 elapse_sum: 6.139s
+2020-05-18 15:00:08 INFO: The best top1 acc 0.96257, in epoch: 550
+2020-05-18 15:00:49 INFO: END epoch:551 train loss_avg:  0.5758  elapse_sum: 41.473s
+2020-05-18 15:01:31 INFO: END epoch:552 train loss_avg:  0.5622  elapse_sum: 41.459s
+2020-05-18 15:02:12 INFO: END epoch:553 train loss_avg:  0.5977  elapse_sum: 41.454s
+2020-05-18 15:02:54 INFO: END epoch:554 train loss_avg:  0.5973  elapse_sum: 41.486s
+2020-05-18 15:03:35 INFO: END epoch:555 train loss_avg:  0.6088  elapse_sum: 41.515s
+2020-05-18 15:03:41 INFO: END epoch:555 valid loss_avg:  0.1285 top1_avg: 0.9615 top5_avg: 0.9991 elapse_sum: 6.145s
+2020-05-18 15:04:23 INFO: END epoch:556 train loss_avg:  0.5694  elapse_sum: 41.525s
+2020-05-18 15:05:04 INFO: END epoch:557 train loss_avg:  0.5824  elapse_sum: 41.507s
+2020-05-18 15:05:46 INFO: END epoch:558 train loss_avg:  0.5596  elapse_sum: 41.503s
+2020-05-18 15:06:28 INFO: END epoch:559 train loss_avg:  0.6048  elapse_sum: 41.610s
+2020-05-18 15:07:09 INFO: END epoch:560 train loss_avg:  0.5408  elapse_sum: 41.804s
+2020-05-18 15:07:16 INFO: END epoch:560 valid loss_avg:  0.1258 top1_avg: 0.9656 top5_avg: 0.9989 elapse_sum: 6.223s
+2020-05-18 15:07:16 INFO: The best top1 acc 0.96560, in epoch: 560
+2020-05-18 15:07:19 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/best_model_in_epoch_560
+2020-05-18 15:07:22 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/560
+2020-05-18 15:08:04 INFO: END epoch:561 train loss_avg:  0.5638  elapse_sum: 41.581s
+2020-05-18 15:08:45 INFO: END epoch:562 train loss_avg:  0.5846  elapse_sum: 41.385s
+2020-05-18 15:09:27 INFO: END epoch:563 train loss_avg:  0.6142  elapse_sum: 41.349s
+2020-05-18 15:10:08 INFO: END epoch:564 train loss_avg:  0.5631  elapse_sum: 41.415s
+2020-05-18 15:10:49 INFO: END epoch:565 train loss_avg:  0.5427  elapse_sum: 41.434s
+2020-05-18 15:10:56 INFO: END epoch:565 valid loss_avg:  0.1216 top1_avg: 0.9646 top5_avg: 0.9990 elapse_sum: 6.150s
+2020-05-18 15:11:37 INFO: END epoch:566 train loss_avg:  0.5846  elapse_sum: 41.479s
+2020-05-18 15:12:18 INFO: END epoch:567 train loss_avg:  0.5643  elapse_sum: 41.424s
+2020-05-18 15:13:00 INFO: END epoch:568 train loss_avg:  0.5856  elapse_sum: 41.430s
+2020-05-18 15:13:41 INFO: END epoch:569 train loss_avg:  0.5551  elapse_sum: 41.492s
+2020-05-18 15:14:23 INFO: END epoch:570 train loss_avg:  0.5498  elapse_sum: 41.504s
+2020-05-18 15:14:29 INFO: END epoch:570 valid loss_avg:  0.1225 top1_avg: 0.9631 top5_avg: 0.9992 elapse_sum: 6.136s
+2020-05-18 15:15:11 INFO: END epoch:571 train loss_avg:  0.5681  elapse_sum: 41.566s
+2020-05-18 15:15:52 INFO: END epoch:572 train loss_avg:  0.5934  elapse_sum: 41.526s
+2020-05-18 15:16:34 INFO: END epoch:573 train loss_avg:  0.5929  elapse_sum: 41.532s
+2020-05-18 15:17:15 INFO: END epoch:574 train loss_avg:  0.5397  elapse_sum: 41.620s
+2020-05-18 15:17:57 INFO: END epoch:575 train loss_avg:  0.5640  elapse_sum: 41.537s
+2020-05-18 15:18:03 INFO: END epoch:575 valid loss_avg:  0.1216 top1_avg: 0.9654 top5_avg: 0.9986 elapse_sum: 6.128s
+2020-05-18 15:18:44 INFO: END epoch:576 train loss_avg:  0.5720  elapse_sum: 41.500s
+2020-05-18 15:19:26 INFO: END epoch:577 train loss_avg:  0.5935  elapse_sum: 41.445s
+2020-05-18 15:20:08 INFO: END epoch:578 train loss_avg:  0.5661  elapse_sum: 41.593s
+2020-05-18 15:20:49 INFO: END epoch:579 train loss_avg:  0.5960  elapse_sum: 41.660s
+2020-05-18 15:21:31 INFO: END epoch:580 train loss_avg:  0.5603  elapse_sum: 41.655s
+2020-05-18 15:21:37 INFO: END epoch:580 valid loss_avg:  0.1152 top1_avg: 0.9647 top5_avg: 0.9992 elapse_sum: 6.155s
+2020-05-18 15:21:40 INFO: Already save model in /home/aistudio/work/PaddleClas/output/PreActResNet_CIFAR/580
+2020-05-18 15:22:22 INFO: END epoch:581 train loss_avg:  0.5612  elapse_sum: 41.667s
+2020-05-18 15:23:04 INFO: END epoch:582 train loss_avg:  0.5648  elapse_sum: 41.735s
+2020-05-18 15:23:45 INFO: END epoch:583 train loss_avg:  0.5549  elapse_sum: 41.615s
+2020-05-18 15:24:27 INFO: END epoch:584 train loss_avg:  0.5735  elapse_sum: 41.658s
+2020-05-18 15:25:09 INFO: END epoch:585 train loss_avg:  0.5685  elapse_sum: 41.776s
+2020-05-18 15:25:15 INFO: END epoch:585 valid loss_avg:  0.1166 top1_avg: 0.9658 top5_avg: 0.9990 elapse_sum: 6.171s
+2020-05-18 15:25:15 INFO: The best top1 acc 0.96582, in epoch: 585
+2020-05-18 15:25:57 INFO: END epoch:586 train loss_avg:  0.5851  elapse_sum: 41.674s
+2020-05-18 15:26:38 INFO: END epoch:587 train loss_avg:  0.5678  elapse_sum: 41.742s
+2020-05-18 15:27:20 INFO: END epoch:588 train loss_avg:  0.5360  elapse_sum: 41.674s
+2020-05-18 15:28:02 INFO: END epoch:589 train loss_avg:  0.5600  elapse_sum: 41.776s
+2020-05-18 15:28:43 INFO: END epoch:590 train loss_avg:  0.6050  elapse_sum: 41.663s
+2020-05-18 15:28:50 INFO: END epoch:590 valid loss_avg:  0.1168 top1_avg: 0.9647 top5_avg: 0.9990 elapse_sum: 6.130s
+2020-05-18 15:29:31 INFO: END epoch:591 train loss_avg:  0.5649  elapse_sum: 41.501s
+2020-05-18 15:30:13 INFO: END epoch:592 train loss_avg:  0.5513  elapse_sum: 41.526s
+2020-05-18 15:30:54 INFO: END epoch:593 train loss_avg:  0.5679  elapse_sum: 41.626s
+2020-05-18 15:31:36 INFO: END epoch:594 train loss_avg:  0.5821  elapse_sum: 41.523s
+2020-05-18 15:32:17 INFO: END epoch:595 train loss_avg:  0.5795  elapse_sum: 41.493s
+2020-05-18 15:32:23 INFO: END epoch:595 valid loss_avg:  0.1140 top1_avg: 0.9658 top5_avg: 0.9991 elapse_sum: 6.142s
+2020-05-18 15:33:05 INFO: END epoch:596 train loss_avg:  0.5709  elapse_sum: 41.578s
+2020-05-18 15:33:46 INFO: END epoch:597 train loss_avg:  0.5772  elapse_sum: 41.518s
+2020-05-18 15:34:28 INFO: END epoch:598 train loss_avg:  0.5491  elapse_sum: 41.509s
+2020-05-18 15:35:09 INFO: END epoch:599 train loss_avg:  0.5629  elapse_sum: 41.481s
+-----------  Configuration Arguments -----------
+cluster_node_ips: 127.0.0.1
+log_dir: None
+node_ip: 127.0.0.1
+print_config: True
+selected_gpus: 0
+started_port: 6170
+training_script: tools/train.py
+training_script_args: ['-c', '/home/aistudio/21.yaml']
+use_paddlecloud: False
+------------------------------------------------
+trainers_endpoints: 127.0.0.1:6170 , node_id: 0 , current_node_ip: 127.0.0.1 , num_nodes: 1 , node_ips: ['127.0.0.1'] , nranks: 1
