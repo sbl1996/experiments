@@ -1,0 +1,69 @@
+Dataset:
+  type: CIFAR10
+  data_home: "/home/aistudio/data"
+  Train:
+    transforms:
+    - !RandomCrop
+      size: 32
+      padding: 4
+      fill: 128
+    - !RandomHorizontalFlip {}
+    # - !CIFAR10Policy {}
+    - !ToTensor {}
+    - !Normalize
+      mean: [0.4914, 0.4822, 0.4465]
+      std: [0.247, 0.243, 0.261]
+    # - !Cutout
+    #   n_holes: 1
+    #   length: 16
+    batch_size: 512
+    shuffle: True
+    pin_memory: False
+    num_workers: 2
+  Test:
+    transforms:
+    - !ToTensor {}
+    - !Normalize
+      mean: [0.4914, 0.4822, 0.4465]
+      std: [0.247, 0.243, 0.261]
+    batch_size: 1024
+    num_workers: 2
+
+
+Model: WideResnet_SE
+
+WideResnet_SE:
+  num_filters: 16
+  k: 8
+  num_stack: 3
+  num_basic_block: 2
+  kernel_size: 3
+  num_classes: 10
+  r: 16
+
+Optimizer:
+  type: SGD
+  lr: 0.4
+  momentum: 0.9
+  weight_decay: 0.0005
+  nesterov: True
+
+LRScheduler:
+  type: CosineAnnealingLR
+  T_max: 200
+  eta_min: 0
+  warmup: 5
+  warmup_eta_min: 0.1
+
+# Mixup:
+#   alpha: 1.0
+
+# label_smooth: 0.1
+
+fp16: True
+benchmark: True
+seed: 0
+save_path: "/home/aistudio/work/checkpoints/CIFAR10-WRN_SE-16-8"
+epochs: 200
+eval_freq: 1
+save_freq: 1
