@@ -1,0 +1,68 @@
+Dataset:
+  type: CIFAR10
+  data_home: "/home/aistudio/data"
+  Train:
+    transforms:
+    - !RandomCrop
+      size: 32
+      padding: 4
+      fill: 128
+    - !RandomHorizontalFlip {}
+    - !CIFAR10Policy {}
+    - !ToTensor {}
+    - !Normalize
+      mean: [0.4914, 0.4822, 0.4465]
+      std: [0.247, 0.243, 0.261]
+    - !Cutout
+      n_holes: 1
+      length: 16
+    batch_size: 128
+    shuffle: True
+    pin_memory: False
+    num_workers: 2
+  Test:
+    transforms:
+    - !ToTensor {}
+    - !Normalize
+      mean: [0.4914, 0.4822, 0.4465]
+      std: [0.247, 0.243, 0.261]
+    batch_size: 1024
+    num_workers: 2
+
+
+Model: PyramidNetPlus
+
+PyramidNetPlus:
+  start_channels: 16
+  num_classes: 10
+  block: Bottleneck
+  widening_fractor: 270
+  num_layers: [18, 18, 18]
+
+
+Optimizer:
+  type: SGD
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 0.0001
+  nesterov: True
+
+LRScheduler:
+  type: CosineAnnealingLR
+  T_max: 600
+  eta_min: 0.0002
+  warmup: 10
+  warmup_eta_min: 0.1
+
+Mixup:
+  alpha: 1.0
+
+label_smooth: 0.1
+
+fp16: True
+benchmark: True
+seed: 0
+save_path: "/home/aistudio/work/checkpoints/CIFAR10-PyramidNetPlus"
+epochs: 600
+eval_freq: 1
+save_freq: 1
