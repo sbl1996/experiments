@@ -1,0 +1,65 @@
+Dataset:
+  type: CIFAR10
+  data_home: "/home/aistudio/work/datasets/CIFAR10"
+  Train:
+    transforms:
+    - RandomCrop:
+        size: 32
+        padding: 4
+        fill: 128
+    - RandomHorizontalFlip:
+    - Permute:
+    - Normalize:
+        mean: [123.675, 116.28, 103.53]
+        std: [58.395, 57.120, 57.375]
+    batch_size: 1024
+    shuffle: True
+    num_workers: 2
+    use_shared_memory: False
+  Test:
+    transforms:
+    - Permute:
+    - Normalize:
+        mean: [123.675, 116.28, 103.53]
+        std: [58.395, 57.120, 57.375]
+    batch_size: 1024
+    num_workers: 2
+    use_shared_memory: False
+
+Model: PyramidNet
+
+PyramidNet:
+  start_channels: 16
+  block: basic
+  widening_fractor: 84
+  depth: 110
+  num_classes: 10
+
+Optimizer:
+  type: Momentum
+  momentum: 0.9
+  use_nesterov: True
+  weight_decay: 0.0001
+
+LRScheduler:
+  type: CosineLR
+  learning_rate: 0.8
+  warmup_epoch: 10
+  warmup_min_lr: 0.1
+  min_lr: 0.00001
+
+# Mix:
+#   type: CutMix
+#   beta: 1.0
+#   prob: 0.5
+#   num_classes: 10
+
+input_shape: [3, 32, 32]
+fp16: True
+seed: 0
+device: 'gpu'
+save_path: "./checkpoints/CIFAR10-PyramidNet"
+epochs: 300
+eval_freq: 5
+save_freq: 100
+log_freq: 20

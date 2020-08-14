@@ -1,0 +1,801 @@
+08:45:03
+Epoch 1/50
+09:25:12 Train 48/48 - loss: 2.0702 - acc: 0.2252
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 2/50
+09:25:38 Train 48/48 - loss: 1.7447 - acc: 0.3435
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 3/50
+09:26:04 Train 48/48 - loss: 1.5596 - acc: 0.4294
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 4/50
+09:26:30 Train 48/48 - loss: 1.4553 - acc: 0.4793
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 5/50
+09:26:56 Train 48/48 - loss: 1.3987 - acc: 0.4991
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 6/50
+09:27:21 Train 48/48 - loss: 1.3100 - acc: 0.5275
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 7/50
+09:27:47 Train 48/48 - loss: 1.2519 - acc: 0.5494
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 8/50
+09:28:13 Train 48/48 - loss: 1.2029 - acc: 0.5697
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 9/50
+09:28:39 Train 48/48 - loss: 1.1403 - acc: 0.5945
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 10/50
+09:29:06 Train 48/48 - loss: 1.1083 - acc: 0.6041
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 11/50
+09:29:32 Train 48/48 - loss: 1.0855 - acc: 0.6146
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 12/50
+09:29:58 Train 48/48 - loss: 1.0553 - acc: 0.6232
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 13/50
+09:30:24 Train 48/48 - loss: 1.0133 - acc: 0.6410
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 14/50
+09:30:50 Train 48/48 - loss: 1.0057 - acc: 0.6414
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 15/50
+09:31:16 Train 48/48 - loss: 0.9968 - acc: 0.6459
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 1),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 0),
+        ('avg_pool_3x3', 2), ('max_pool_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('dil_conv_3x3', 0), ('sep_conv_5x5', 1),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('avg_pool_3x3', 2), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 0), ('avg_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 16/50
+10:35:03 Train 48/48 - loss: 0.9701 - acc: 0.6549
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+        ('dil_conv_3x3', 3), ('dil_conv_5x5', 1),
+        ('max_pool_3x3', 3), ('sep_conv_3x3', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('dil_conv_3x3', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 0),
+        ('max_pool_3x3', 3), ('avg_pool_3x3', 2),
+        ('sep_conv_5x5', 0), ('max_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 17/50
+10:35:38 Train 48/48 - loss: 0.9478 - acc: 0.6643
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 2), ('dil_conv_5x5', 1),
+        ('sep_conv_5x5', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 4), ('sep_conv_3x3', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 0),
+        ('max_pool_3x3', 3), ('sep_conv_5x5', 2),
+        ('sep_conv_5x5', 0), ('max_pool_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 18/50
+10:36:13 Train 48/48 - loss: 0.9264 - acc: 0.6719
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_3x3', 1),
+        ('sep_conv_5x5', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 4), ('sep_conv_3x3', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 2), ('sep_conv_5x5', 0),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 2),
+        ('max_pool_3x3', 4), ('sep_conv_5x5', 0),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 19/50
+10:36:47 Train 48/48 - loss: 0.9125 - acc: 0.6761
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_5x5', 1),
+        ('sep_conv_3x3', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 4), ('sep_conv_3x3', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 2), ('sep_conv_5x5', 0),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 2),
+        ('max_pool_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 20/50
+10:37:22 Train 48/48 - loss: 0.8919 - acc: 0.6881
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_5x5', 1),
+        ('sep_conv_3x3', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 4), ('sep_conv_3x3', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 2), ('sep_conv_5x5', 0),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 2),
+        ('max_pool_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 21/50
+10:37:57 Train 48/48 - loss: 0.8836 - acc: 0.6878
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_5x5', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 2), ('sep_conv_5x5', 0),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 2),
+        ('max_pool_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 22/50
+10:38:31 Train 48/48 - loss: 0.8693 - acc: 0.6911
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_5x5', 1),
+        ('sep_conv_3x3', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 2), ('sep_conv_5x5', 0),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 2),
+        ('max_pool_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 23/50
+10:39:06 Train 48/48 - loss: 0.8428 - acc: 0.7024
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 0), ('sep_conv_5x5', 2),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 2),
+        ('max_pool_3x3', 3), ('sep_conv_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 24/50
+10:39:41 Train 48/48 - loss: 0.8407 - acc: 0.7051
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 4), ('sep_conv_5x5', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 0), ('sep_conv_5x5', 2),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 25/50
+10:40:16 Train 48/48 - loss: 0.8308 - acc: 0.7093
+Genotype(
+    normal=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 4), ('sep_conv_3x3', 1),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 0), ('sep_conv_5x5', 2),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 26/50
+10:40:50 Train 48/48 - loss: 0.8087 - acc: 0.7179
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 4), ('sep_conv_3x3', 1),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 0), ('sep_conv_5x5', 2),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_5x5', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 27/50
+10:41:25 Train 48/48 - loss: 0.7912 - acc: 0.7221
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 4), ('sep_conv_3x3', 1),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 0), ('sep_conv_5x5', 2),
+        ('max_pool_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_5x5', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 28/50
+10:42:00 Train 48/48 - loss: 0.7671 - acc: 0.7333
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 0), ('sep_conv_5x5', 2),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 29/50
+10:42:35 Train 48/48 - loss: 0.7642 - acc: 0.7323
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_5x5', 4), ('sep_conv_3x3', 1),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 0), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 30/50
+10:43:09 Train 48/48 - loss: 0.7396 - acc: 0.7400
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 0), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 31/50
+10:43:44 Train 48/48 - loss: 0.7332 - acc: 0.7412
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 32/50
+10:44:19 Train 48/48 - loss: 0.7057 - acc: 0.7506
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 33/50
+10:44:54 Train 48/48 - loss: 0.6987 - acc: 0.7561
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 4),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 34/50
+10:45:29 Train 48/48 - loss: 0.6744 - acc: 0.7627
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 35/50
+10:46:03 Train 48/48 - loss: 0.6457 - acc: 0.7734
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 36/50
+10:46:38 Train 48/48 - loss: 0.6416 - acc: 0.7769
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 3),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 0), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('max_pool_3x3', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 37/50
+10:47:13 Train 48/48 - loss: 0.6179 - acc: 0.7848
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 38/50
+10:47:48 Train 48/48 - loss: 0.5976 - acc: 0.7895
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 39/50
+10:48:22 Train 48/48 - loss: 0.5789 - acc: 0.7974
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 40/50
+10:48:57 Train 48/48 - loss: 0.5561 - acc: 0.8054
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 41/50
+10:49:32 Train 48/48 - loss: 0.5425 - acc: 0.8105
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 3), ('sep_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 42/50
+10:50:07 Train 48/48 - loss: 0.5094 - acc: 0.8238
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 43/50
+10:50:42 Train 48/48 - loss: 0.4978 - acc: 0.8268
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 44/50
+10:51:16 Train 48/48 - loss: 0.4771 - acc: 0.8333
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('max_pool_3x3', 2),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 45/50
+10:51:51 Train 48/48 - loss: 0.4567 - acc: 0.8415
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 46/50
+10:52:26 Train 48/48 - loss: 0.4401 - acc: 0.8479
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('sep_conv_5x5', 1),
+        ('sep_conv_3x3', 4), ('sep_conv_5x5', 3),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 47/50
+10:53:01 Train 48/48 - loss: 0.4238 - acc: 0.8509
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('sep_conv_5x5', 1),
+        ('sep_conv_5x5', 3), ('sep_conv_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 48/50
+10:53:36 Train 48/48 - loss: 0.4204 - acc: 0.8550
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('sep_conv_5x5', 1),
+        ('sep_conv_5x5', 3), ('sep_conv_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 49/50
+10:54:11 Train 48/48 - loss: 0.4092 - acc: 0.8584
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('sep_conv_5x5', 1),
+        ('sep_conv_5x5', 3), ('sep_conv_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
+Epoch 50/50
+10:54:45 Train 48/48 - loss: 0.4117 - acc: 0.8575
+Genotype(
+    normal=[
+        ('sep_conv_3x3', 1), ('sep_conv_5x5', 0),
+        ('dil_conv_5x5', 2), ('dil_conv_3x3', 1),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 3),
+        ('sep_conv_3x3', 1), ('sep_conv_3x3', 2),
+    ], normal_concat=[2, 3, 4, 5],
+    reduce=[
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_5x5', 1), ('sep_conv_5x5', 0),
+        ('sep_conv_3x3', 3), ('sep_conv_5x5', 1),
+        ('sep_conv_5x5', 3), ('sep_conv_3x3', 4),
+    ], reduce_concat=[2, 3, 4, 5],
+)
