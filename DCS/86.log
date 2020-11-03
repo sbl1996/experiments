@@ -1,0 +1,368 @@
+Epoch 1/120
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+15:52:02 train - loss: 1.1755
+15:52:18 valid - nmse: 0.6010
+Epoch 2/120
+15:52:37 train - loss: 0.4587
+15:52:38 valid - nmse: 0.3361
+Epoch 3/120
+15:52:57 train - loss: 0.2596
+15:52:58 valid - nmse: 0.1973
+Epoch 4/120
+15:53:17 train - loss: 0.1665
+15:53:18 valid - nmse: 0.1455
+Epoch 5/120
+15:53:37 train - loss: 0.1350
+15:53:38 valid - nmse: 0.1302
+Epoch 6/120
+15:53:57 train - loss: 0.1199
+15:53:58 valid - nmse: 0.1226
+Epoch 7/120
+15:54:17 train - loss: 0.1059
+15:54:18 valid - nmse: 0.1106
+Epoch 8/120
+15:54:37 train - loss: 0.0974
+15:54:38 valid - nmse: 0.0941
+Epoch 9/120
+15:54:57 train - loss: 0.0923
+15:54:58 valid - nmse: 0.0946
+Epoch 10/120
+15:55:17 train - loss: 0.0882
+15:55:18 valid - nmse: 0.0874
+Epoch 11/120
+15:55:37 train - loss: 0.0855
+15:55:38 valid - nmse: 0.0912
+Epoch 12/120
+15:55:57 train - loss: 0.0827
+15:55:58 valid - nmse: 0.0852
+Epoch 13/120
+15:56:18 train - loss: 0.0809
+15:56:18 valid - nmse: 0.0788
+Epoch 14/120
+15:56:38 train - loss: 0.0789
+15:56:38 valid - nmse: 0.0783
+Epoch 15/120
+15:56:58 train - loss: 0.0772
+15:56:58 valid - nmse: 0.0775
+Epoch 16/120
+15:57:18 train - loss: 0.0757
+15:57:18 valid - nmse: 0.0781
+Epoch 17/120
+15:57:38 train - loss: 0.0740
+15:57:38 valid - nmse: 0.0774
+Epoch 18/120
+15:57:58 train - loss: 0.0727
+15:57:58 valid - nmse: 0.0728
+Epoch 19/120
+15:58:18 train - loss: 0.0716
+15:58:18 valid - nmse: 0.0702
+Epoch 20/120
+15:58:38 train - loss: 0.0704
+15:58:38 valid - nmse: 0.0721
+Epoch 21/120
+15:58:58 train - loss: 0.0695
+15:58:58 valid - nmse: 0.0688
+Epoch 22/120
+15:59:18 train - loss: 0.0681
+15:59:18 valid - nmse: 0.0765
+Epoch 23/120
+15:59:38 train - loss: 0.0672
+15:59:38 valid - nmse: 0.0666
+Epoch 24/120
+15:59:58 train - loss: 0.0660
+15:59:58 valid - nmse: 0.0703
+Epoch 25/120
+16:00:18 train - loss: 0.0648
+16:00:18 valid - nmse: 0.0640
+Epoch 26/120
+16:00:38 train - loss: 0.0642
+16:00:38 valid - nmse: 0.0663
+Epoch 27/120
+16:00:58 train - loss: 0.0631
+16:00:58 valid - nmse: 0.0619
+Epoch 28/120
+16:01:18 train - loss: 0.0623
+16:01:18 valid - nmse: 0.0689
+Epoch 29/120
+16:01:38 train - loss: 0.0612
+16:01:38 valid - nmse: 0.0629
+Epoch 30/120
+16:01:58 train - loss: 0.0604
+16:01:58 valid - nmse: 0.0596
+Epoch 31/120
+16:02:18 train - loss: 0.0595
+16:02:18 valid - nmse: 0.0647
+Epoch 32/120
+16:02:38 train - loss: 0.0587
+16:02:38 valid - nmse: 0.0679
+Epoch 33/120
+16:02:58 train - loss: 0.0573
+16:02:59 valid - nmse: 0.0572
+Epoch 34/120
+16:03:18 train - loss: 0.0566
+16:03:19 valid - nmse: 0.0560
+Epoch 35/120
+16:03:38 train - loss: 0.0556
+16:03:39 valid - nmse: 0.0574
+Epoch 36/120
+16:03:58 train - loss: 0.0546
+16:03:59 valid - nmse: 0.0579
+Epoch 37/120
+16:04:18 train - loss: 0.0539
+16:04:19 valid - nmse: 0.0536
+Epoch 38/120
+16:04:38 train - loss: 0.0528
+16:04:39 valid - nmse: 0.0530
+Epoch 39/120
+16:04:58 train - loss: 0.0521
+16:04:59 valid - nmse: 0.0573
+Epoch 40/120
+16:05:18 train - loss: 0.0509
+16:05:19 valid - nmse: 0.0585
+Epoch 41/120
+16:05:38 train - loss: 0.0501
+16:05:39 valid - nmse: 0.0508
+Epoch 42/120
+16:05:58 train - loss: 0.0491
+16:05:59 valid - nmse: 0.0502
+Epoch 43/120
+16:06:18 train - loss: 0.0480
+16:06:19 valid - nmse: 0.0477
+Epoch 44/120
+16:06:38 train - loss: 0.0474
+16:06:39 valid - nmse: 0.0498
+Epoch 45/120
+16:06:58 train - loss: 0.0462
+16:06:59 valid - nmse: 0.0480
+Epoch 46/120
+16:07:18 train - loss: 0.0453
+16:07:19 valid - nmse: 0.0462
+Epoch 47/120
+16:07:38 train - loss: 0.0446
+16:07:39 valid - nmse: 0.0500
+Epoch 48/120
+16:07:58 train - loss: 0.0437
+16:07:59 valid - nmse: 0.0448
+Epoch 49/120
+16:08:18 train - loss: 0.0429
+16:08:19 valid - nmse: 0.0423
+Epoch 50/120
+16:08:38 train - loss: 0.0419
+Save trainer to /content/models/DCS2/ckpt
+16:08:41 valid - nmse: 0.0408
+Epoch 51/120
+16:09:01 train - loss: 0.0408
+16:09:01 valid - nmse: 0.0403
+Epoch 52/120
+16:09:21 train - loss: 0.0402
+16:09:21 valid - nmse: 0.0395
+Epoch 53/120
+16:09:41 train - loss: 0.0394
+16:09:41 valid - nmse: 0.0391
+Epoch 54/120
+16:10:01 train - loss: 0.0384
+16:10:01 valid - nmse: 0.0394
+Epoch 55/120
+16:10:21 train - loss: 0.0375
+16:10:21 valid - nmse: 0.0399
+Epoch 56/120
+16:10:41 train - loss: 0.0367
+16:10:41 valid - nmse: 0.0369
+Epoch 57/120
+16:11:01 train - loss: 0.0357
+16:11:01 valid - nmse: 0.0389
+Epoch 58/120
+16:11:21 train - loss: 0.0349
+16:11:21 valid - nmse: 0.0351
+Epoch 59/120
+16:11:41 train - loss: 0.0343
+16:11:42 valid - nmse: 0.0333
+Epoch 60/120
+16:12:01 train - loss: 0.0335
+16:12:02 valid - nmse: 0.0335
+Epoch 61/120
+16:12:21 train - loss: 0.0327
+16:12:22 valid - nmse: 0.0319
+Epoch 62/120
+16:12:41 train - loss: 0.0318
+16:12:42 valid - nmse: 0.0315
+Epoch 63/120
+16:13:01 train - loss: 0.0311
+16:13:02 valid - nmse: 0.0318
+Epoch 64/120
+16:13:21 train - loss: 0.0304
+16:13:22 valid - nmse: 0.0297
+Epoch 65/120
+16:13:41 train - loss: 0.0296
+16:13:42 valid - nmse: 0.0332
+Epoch 66/120
+16:14:01 train - loss: 0.0288
+16:14:02 valid - nmse: 0.0287
+Epoch 67/120
+16:14:21 train - loss: 0.0280
+16:14:22 valid - nmse: 0.0280
+Epoch 68/120
+16:14:41 train - loss: 0.0273
+16:14:42 valid - nmse: 0.0266
+Epoch 69/120
+16:15:02 train - loss: 0.0267
+16:15:02 valid - nmse: 0.0254
+Epoch 70/120
+16:15:22 train - loss: 0.0258
+16:15:22 valid - nmse: 0.0250
+Epoch 71/120
+16:15:42 train - loss: 0.0254
+16:15:42 valid - nmse: 0.0247
+Epoch 72/120
+16:16:02 train - loss: 0.0246
+16:16:02 valid - nmse: 0.0255
+Epoch 73/120
+16:16:22 train - loss: 0.0237
+16:16:22 valid - nmse: 0.0228
+Epoch 74/120
+16:16:42 train - loss: 0.0233
+16:16:42 valid - nmse: 0.0225
+Epoch 75/120
+16:17:02 train - loss: 0.0228
+16:17:02 valid - nmse: 0.0237
+Epoch 76/120
+16:17:22 train - loss: 0.0222
+16:17:22 valid - nmse: 0.0215
+Epoch 77/120
+16:17:42 train - loss: 0.0216
+16:17:42 valid - nmse: 0.0204
+Epoch 78/120
+16:18:02 train - loss: 0.0211
+16:18:02 valid - nmse: 0.0201
+Epoch 79/120
+16:18:22 train - loss: 0.0204
+16:18:22 valid - nmse: 0.0195
+Epoch 80/120
+16:18:42 train - loss: 0.0198
+16:18:43 valid - nmse: 0.0193
+Epoch 81/120
+16:19:02 train - loss: 0.0194
+16:19:03 valid - nmse: 0.0189
+Epoch 82/120
+16:19:22 train - loss: 0.0188
+16:19:23 valid - nmse: 0.0190
+Epoch 83/120
+16:19:42 train - loss: 0.0184
+16:19:43 valid - nmse: 0.0202
+Epoch 84/120
+16:20:02 train - loss: 0.0177
+16:20:03 valid - nmse: 0.0172
+Epoch 85/120
+16:20:22 train - loss: 0.0174
+16:20:23 valid - nmse: 0.0165
+Epoch 86/120
+16:20:42 train - loss: 0.0168
+16:20:43 valid - nmse: 0.0163
+Epoch 87/120
+16:21:02 train - loss: 0.0164
+16:21:03 valid - nmse: 0.0154
+Epoch 88/120
+16:21:22 train - loss: 0.0160
+16:21:23 valid - nmse: 0.0150
+Epoch 89/120
+16:21:42 train - loss: 0.0156
+16:21:43 valid - nmse: 0.0145
+Epoch 90/120
+16:22:02 train - loss: 0.0152
+16:22:03 valid - nmse: 0.0142
+Epoch 91/120
+16:22:22 train - loss: 0.0148
+16:22:23 valid - nmse: 0.0142
+Epoch 92/120
+16:22:42 train - loss: 0.0144
+16:22:43 valid - nmse: 0.0134
+Epoch 93/120
+16:23:02 train - loss: 0.0141
+16:23:03 valid - nmse: 0.0132
+Epoch 94/120
+16:23:22 train - loss: 0.0137
+16:23:23 valid - nmse: 0.0128
+Epoch 95/120
+16:23:42 train - loss: 0.0133
+16:23:43 valid - nmse: 0.0130
+Epoch 96/120
+16:24:03 train - loss: 0.0131
+16:24:03 valid - nmse: 0.0126
+Epoch 97/120
+16:24:23 train - loss: 0.0128
+16:24:23 valid - nmse: 0.0117
+Epoch 98/120
+16:24:43 train - loss: 0.0125
+16:24:43 valid - nmse: 0.0116
+Epoch 99/120
+16:25:03 train - loss: 0.0122
+16:25:03 valid - nmse: 0.0110
+Epoch 100/120
+16:25:23 train - loss: 0.0119
+Save trainer to /content/models/DCS2/ckpt
+16:25:26 valid - nmse: 0.0108
+Epoch 101/120
+16:25:45 train - loss: 0.0117
+16:25:46 valid - nmse: 0.0106
+Epoch 102/120
+16:26:05 train - loss: 0.0114
+16:26:06 valid - nmse: 0.0105
+Epoch 103/120
+16:26:25 train - loss: 0.0112
+16:26:26 valid - nmse: 0.0103
+Epoch 104/120
+16:26:45 train - loss: 0.0110
+16:26:46 valid - nmse: 0.0100
+Epoch 105/120
+16:27:05 train - loss: 0.0108
+16:27:06 valid - nmse: 0.0098
+Epoch 106/120
+16:27:25 train - loss: 0.0107
+16:27:26 valid - nmse: 0.0096
+Epoch 107/120
+16:27:46 train - loss: 0.0105
+16:27:46 valid - nmse: 0.0095
+Epoch 108/120
+16:28:06 train - loss: 0.0104
+16:28:06 valid - nmse: 0.0094
+Epoch 109/120
+16:28:26 train - loss: 0.0102
+16:28:26 valid - nmse: 0.0092
+Epoch 110/120
+16:28:46 train - loss: 0.0101
+16:28:46 valid - nmse: 0.0091
+Epoch 111/120
+16:29:06 train - loss: 0.0100
+16:29:06 valid - nmse: 0.0090
+Epoch 112/120
+16:29:26 train - loss: 0.0099
+16:29:27 valid - nmse: 0.0090
+Epoch 113/120
+16:29:46 train - loss: 0.0098
+16:29:47 valid - nmse: 0.0089
+Epoch 114/120
+16:30:06 train - loss: 0.0098
+16:30:07 valid - nmse: 0.0088
+Epoch 115/120
+16:30:26 train - loss: 0.0097
+16:30:27 valid - nmse: 0.0088
+Epoch 116/120
+16:30:46 train - loss: 0.0097
+16:30:47 valid - nmse: 0.0088
+Epoch 117/120
+16:31:06 train - loss: 0.0096
+16:31:07 valid - nmse: 0.0087
+Epoch 118/120
+16:31:26 train - loss: 0.0096
+16:31:27 valid - nmse: 0.0087
+Epoch 119/120
+16:31:46 train - loss: 0.0096
+16:31:47 valid - nmse: 0.0087
+Epoch 120/120
+16:32:06 train - loss: 0.0096
+16:32:07 valid - nmse: 0.0087

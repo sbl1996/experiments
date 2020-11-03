@@ -1,43 +1,40 @@
 Epoch 1/600
-WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use `tf.data.Iterator.get_next_as_optional()` instead.
-WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use `tf.data.Iterator.get_next_as_optional()` instead.
-14:46:23 train - loss: 1.6941, acc: 0.3742
-14:46:47 valid - loss: 1.4747, acc: 0.4836
+14:54:45 train - loss: 1.5992, acc: 0.4091
+14:55:10 valid - loss: 1.3298, acc: 0.5186
 Epoch 2/600
-14:46:55 train - loss: 1.3299, acc: 0.5228
-14:46:55 valid - loss: 1.1600, acc: 0.6022
+14:55:18 train - loss: 1.2286, acc: 0.5589
+14:55:19 valid - loss: 1.2384, acc: 0.5945
 Epoch 3/600
-14:47:03 train - loss: 1.1587, acc: 0.5897
-14:47:03 valid - loss: 0.9425, acc: 0.6811
+14:55:27 train - loss: 1.0519, acc: 0.6239
+14:55:27 valid - loss: 1.0533, acc: 0.6585
 Epoch 4/600
-14:47:11 train - loss: 1.0387, acc: 0.6370
-14:47:12 valid - loss: 0.8747, acc: 0.7093
+14:55:36 train - loss: 0.9229, acc: 0.6741
+14:55:36 valid - loss: 0.9692, acc: 0.6824
 Epoch 5/600
-14:47:20 train - loss: 0.9598, acc: 0.6646
-14:47:20 valid - loss: 0.7906, acc: 0.7328
+14:55:44 train - loss: 0.8327, acc: 0.7053
+14:55:45 valid - loss: 0.7914, acc: 0.7336
 Epoch 6/600
-14:47:28 train - loss: 0.9045, acc: 0.6835
-14:47:28 valid - loss: 0.7412, acc: 0.7545
+14:55:53 train - loss: 0.7778, acc: 0.7265
+14:55:53 valid - loss: 0.9119, acc: 0.7188
 Epoch 7/600
-14:47:36 train - loss: 0.8666, acc: 0.6983
-14:47:36 valid - loss: 0.7750, acc: 0.7434
+14:56:02 train - loss: 0.7265, acc: 0.7448
+14:56:02 valid - loss: 0.6644, acc: 0.7796
 Epoch 8/600
-14:47:44 train - loss: 0.8126, acc: 0.7201
-14:47:44 valid - loss: 0.6712, acc: 0.7837
+14:56:10 train - loss: 0.6862, acc: 0.7602
+14:56:11 valid - loss: 0.6531, acc: 0.7884
 Epoch 9/600
-14:47:52 train - loss: 0.7896, acc: 0.7263
-14:47:52 valid - loss: 0.7036, acc: 0.7686
+14:56:19 train - loss: 0.6608, acc: 0.7678
+14:56:19 valid - loss: 0.6346, acc: 0.7913
 Epoch 10/600
-14:48:00 train - loss: 0.7630, acc: 0.7363
-14:48:01 valid - loss: 0.6366, acc: 0.7958
+14:56:28 train - loss: 0.6300, acc: 0.7806
+14:56:28 valid - loss: 0.5536, acc: 0.8192
 Epoch 11/600
-14:48:09 train - loss: 0.7315, acc: 0.7465
-14:48:09 valid - loss: 0.6634, acc: 0.7874
+14:56:36 train - loss: 0.6097, acc: 0.7866
+14:56:37 valid - loss: 0.5372, acc: 0.8255
 Epoch 12/600
-14:48:17 train - loss: 0.7231, acc: 0.7508
-14:48:17 valid - loss: 0.5333, acc: 0.8252
+14:56:45 train - loss: 0.5940, acc: 0.7937
+14:56:45 valid - loss: 0.5358, acc: 0.8166
 Epoch 13/600
+14:56:54 train - loss: 0.5735, acc: 0.7998
+14:56:54 valid - loss: 0.5079, acc: 0.8333
+Epoch 14/600

@@ -1,0 +1,487 @@
+Epoch 1/240
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+296/296 - 52s - loss: 1.8864 - val_loss: 0.7929
+Epoch 2/240
+296/296 - 11s - loss: 0.5742 - val_loss: 0.4328
+Epoch 3/240
+296/296 - 11s - loss: 0.3747 - val_loss: 0.3509
+Epoch 4/240
+296/296 - 11s - loss: 0.3138 - val_loss: 0.3417
+Epoch 5/240
+296/296 - 11s - loss: 0.2867 - val_loss: 0.2906
+Epoch 6/240
+296/296 - 11s - loss: 0.2651 - val_loss: 0.2684
+Epoch 7/240
+296/296 - 11s - loss: 0.2456 - val_loss: 0.2937
+Epoch 8/240
+296/296 - 11s - loss: 0.2321 - val_loss: 0.2473
+Epoch 9/240
+296/296 - 11s - loss: 0.2209 - val_loss: 0.2292
+Epoch 10/240
+296/296 - 11s - loss: 0.2132 - val_loss: 0.2303
+Epoch 11/240
+296/296 - 11s - loss: 0.2073 - val_loss: 0.2267
+Epoch 12/240
+296/296 - 11s - loss: 0.2029 - val_loss: 0.2155
+Epoch 13/240
+296/296 - 11s - loss: 0.1992 - val_loss: 0.2111
+Epoch 14/240
+296/296 - 11s - loss: 0.1962 - val_loss: 0.2048
+Epoch 15/240
+296/296 - 11s - loss: 0.1939 - val_loss: 0.2192
+Epoch 16/240
+296/296 - 11s - loss: 0.1918 - val_loss: 0.2068
+Epoch 17/240
+296/296 - 11s - loss: 0.1897 - val_loss: 0.2114
+Epoch 18/240
+296/296 - 11s - loss: 0.1880 - val_loss: 0.2002
+Epoch 19/240
+296/296 - 11s - loss: 0.1867 - val_loss: 0.1990
+Epoch 20/240
+296/296 - 11s - loss: 0.1853 - val_loss: 0.1969
+Epoch 21/240
+296/296 - 11s - loss: 0.1839 - val_loss: 0.2064
+Epoch 22/240
+296/296 - 11s - loss: 0.1829 - val_loss: 0.2346
+Epoch 23/240
+296/296 - 11s - loss: 0.1820 - val_loss: 0.1972
+Epoch 24/240
+296/296 - 11s - loss: 0.1807 - val_loss: 0.2003
+Epoch 25/240
+296/296 - 11s - loss: 0.1797 - val_loss: 0.2194
+Epoch 26/240
+296/296 - 11s - loss: 0.1788 - val_loss: 0.1997
+Epoch 27/240
+296/296 - 11s - loss: 0.1785 - val_loss: 0.2027
+Epoch 28/240
+296/296 - 11s - loss: 0.1773 - val_loss: 0.2093
+Epoch 29/240
+296/296 - 11s - loss: 0.1766 - val_loss: 0.2245
+Epoch 30/240
+296/296 - 11s - loss: 0.1757 - val_loss: 0.1914
+Epoch 31/240
+296/296 - 11s - loss: 0.1751 - val_loss: 0.1920
+Epoch 32/240
+296/296 - 11s - loss: 0.1747 - val_loss: 0.1917
+Epoch 33/240
+296/296 - 11s - loss: 0.1741 - val_loss: 0.1951
+Epoch 34/240
+296/296 - 11s - loss: 0.1733 - val_loss: 0.1979
+Epoch 35/240
+296/296 - 11s - loss: 0.1726 - val_loss: 0.2068
+Epoch 36/240
+296/296 - 11s - loss: 0.1722 - val_loss: 0.1948
+Epoch 37/240
+296/296 - 11s - loss: 0.1712 - val_loss: 0.1903
+Epoch 38/240
+296/296 - 11s - loss: 0.1708 - val_loss: 0.2181
+Epoch 39/240
+296/296 - 11s - loss: 0.1705 - val_loss: 0.1873
+Epoch 40/240
+296/296 - 11s - loss: 0.1700 - val_loss: 0.1930
+Epoch 41/240
+296/296 - 11s - loss: 0.1692 - val_loss: 0.1967
+Epoch 42/240
+296/296 - 11s - loss: 0.1686 - val_loss: 0.1968
+Epoch 43/240
+296/296 - 11s - loss: 0.1684 - val_loss: 0.2006
+Epoch 44/240
+296/296 - 11s - loss: 0.1676 - val_loss: 0.1884
+Epoch 45/240
+296/296 - 11s - loss: 0.1671 - val_loss: 0.1847
+Epoch 46/240
+296/296 - 11s - loss: 0.1667 - val_loss: 0.1891
+Epoch 47/240
+296/296 - 11s - loss: 0.1664 - val_loss: 0.2072
+Epoch 48/240
+296/296 - 11s - loss: 0.1654 - val_loss: 0.2133
+Epoch 49/240
+296/296 - 11s - loss: 0.1653 - val_loss: 0.1836
+Epoch 50/240
+296/296 - 11s - loss: 0.1646 - val_loss: 0.1893
+Epoch 51/240
+296/296 - 11s - loss: 0.1641 - val_loss: 0.2278
+Epoch 52/240
+296/296 - 11s - loss: 0.1640 - val_loss: 0.2088
+Epoch 53/240
+296/296 - 11s - loss: 0.1635 - val_loss: 0.1815
+Epoch 54/240
+296/296 - 11s - loss: 0.1629 - val_loss: 0.1849
+Epoch 55/240
+296/296 - 11s - loss: 0.1626 - val_loss: 0.1977
+Epoch 56/240
+296/296 - 11s - loss: 0.1619 - val_loss: 0.1798
+Epoch 57/240
+296/296 - 11s - loss: 0.1620 - val_loss: 0.1783
+Epoch 58/240
+296/296 - 11s - loss: 0.1610 - val_loss: 0.1785
+Epoch 59/240
+296/296 - 11s - loss: 0.1611 - val_loss: 0.1775
+Epoch 60/240
+296/296 - 11s - loss: 0.1605 - val_loss: 0.1911
+Epoch 61/240
+296/296 - 11s - loss: 0.1599 - val_loss: 0.1740
+Epoch 62/240
+296/296 - 11s - loss: 0.1597 - val_loss: 0.1990
+Epoch 63/240
+296/296 - 11s - loss: 0.1591 - val_loss: 0.1715
+Epoch 64/240
+296/296 - 11s - loss: 0.1585 - val_loss: 0.1668
+Epoch 65/240
+296/296 - 11s - loss: 0.1584 - val_loss: 0.1752
+Epoch 66/240
+296/296 - 11s - loss: 0.1577 - val_loss: 0.1904
+Epoch 67/240
+296/296 - 11s - loss: 0.1573 - val_loss: 0.1859
+Epoch 68/240
+296/296 - 11s - loss: 0.1567 - val_loss: 0.1797
+Epoch 69/240
+296/296 - 11s - loss: 0.1566 - val_loss: 0.2088
+Epoch 70/240
+296/296 - 11s - loss: 0.1556 - val_loss: 0.1779
+Epoch 71/240
+296/296 - 11s - loss: 0.1556 - val_loss: 0.1872
+Epoch 72/240
+296/296 - 11s - loss: 0.1544 - val_loss: 0.1677
+Epoch 73/240
+296/296 - 11s - loss: 0.1544 - val_loss: 0.1655
+Epoch 74/240
+296/296 - 12s - loss: 0.1537 - val_loss: 0.1710
+Epoch 75/240
+296/296 - 11s - loss: 0.1535 - val_loss: 0.1669
+Epoch 76/240
+296/296 - 11s - loss: 0.1527 - val_loss: 0.1597
+Epoch 77/240
+296/296 - 11s - loss: 0.1524 - val_loss: 0.1695
+Epoch 78/240
+296/296 - 11s - loss: 0.1515 - val_loss: 0.1634
+Epoch 79/240
+296/296 - 11s - loss: 0.1510 - val_loss: 0.1720
+Epoch 80/240
+296/296 - 11s - loss: 0.1504 - val_loss: 0.1703
+Epoch 81/240
+296/296 - 11s - loss: 0.1498 - val_loss: 0.1677
+Epoch 82/240
+296/296 - 11s - loss: 0.1492 - val_loss: 0.1800
+Epoch 83/240
+296/296 - 11s - loss: 0.1490 - val_loss: 0.1713
+Epoch 84/240
+296/296 - 11s - loss: 0.1480 - val_loss: 0.1587
+Epoch 85/240
+296/296 - 11s - loss: 0.1476 - val_loss: 0.1590
+Epoch 86/240
+296/296 - 11s - loss: 0.1468 - val_loss: 0.1598
+Epoch 87/240
+296/296 - 11s - loss: 0.1463 - val_loss: 0.1553
+Epoch 88/240
+296/296 - 11s - loss: 0.1457 - val_loss: 0.1609
+Epoch 89/240
+296/296 - 11s - loss: 0.1450 - val_loss: 0.1591
+Epoch 90/240
+296/296 - 11s - loss: 0.1450 - val_loss: 0.1682
+Epoch 91/240
+296/296 - 11s - loss: 0.1438 - val_loss: 0.1628
+Epoch 92/240
+296/296 - 11s - loss: 0.1433 - val_loss: 0.1755
+Epoch 93/240
+296/296 - 11s - loss: 0.1428 - val_loss: 0.1599
+Epoch 94/240
+296/296 - 11s - loss: 0.1423 - val_loss: 0.1651
+Epoch 95/240
+296/296 - 11s - loss: 0.1419 - val_loss: 0.1494
+Epoch 96/240
+296/296 - 11s - loss: 0.1415 - val_loss: 0.1500
+Epoch 97/240
+296/296 - 11s - loss: 0.1411 - val_loss: 0.1596
+Epoch 98/240
+296/296 - 11s - loss: 0.1409 - val_loss: 0.1500
+Epoch 99/240
+296/296 - 11s - loss: 0.1409 - val_loss: 0.1518
+Epoch 100/240
+296/296 - 11s - loss: 0.1414 - val_loss: 0.1589
+Epoch 101/240
+296/296 - 11s - loss: 0.1429 - val_loss: 0.1560
+Epoch 102/240
+296/296 - 11s - loss: 0.1492 - val_loss: 0.1686
+Epoch 103/240
+296/296 - 11s - loss: 0.1645 - val_loss: 0.1940
+Epoch 104/240
+296/296 - 11s - loss: 0.1834 - val_loss: 0.2111
+Epoch 105/240
+296/296 - 11s - loss: 0.2005 - val_loss: 0.2305
+Epoch 106/240
+296/296 - 11s - loss: 0.2110 - val_loss: 0.2291
+Epoch 107/240
+296/296 - 11s - loss: 0.2146 - val_loss: 0.2266
+Epoch 108/240
+296/296 - 11s - loss: 0.2133 - val_loss: 0.2411
+Epoch 109/240
+296/296 - 11s - loss: 0.2117 - val_loss: 0.2302
+Epoch 110/240
+296/296 - 11s - loss: 0.2112 - val_loss: 0.2747
+Epoch 111/240
+296/296 - 11s - loss: 0.2106 - val_loss: 0.2364
+Epoch 112/240
+296/296 - 11s - loss: 0.9333 - val_loss: 0.9874
+Epoch 113/240
+296/296 - 11s - loss: 0.9874 - val_loss: 0.9874
+Epoch 114/240
+296/296 - 11s - loss: 0.9874 - val_loss: 0.9872
+Epoch 115/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9874
+Epoch 116/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9872
+Epoch 117/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9872
+Epoch 118/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9872
+Epoch 119/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9870
+Epoch 120/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9872
+Epoch 121/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9872
+Epoch 122/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9872
+Epoch 123/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9875
+Epoch 124/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9870
+Epoch 125/240
+296/296 - 11s - loss: 0.9876 - val_loss: 0.9871
+Epoch 126/240
+296/296 - 11s - loss: 0.9872 - val_loss: 0.9871
+Epoch 127/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9871
+Epoch 128/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9871
+Epoch 129/240
+296/296 - 11s - loss: 0.9873 - val_loss: 0.9871
+Epoch 130/240
+296/296 - 11s - loss: 0.9895 - val_loss: 0.9881
+Epoch 131/240
+296/296 - 11s - loss: 0.9874 - val_loss: 0.9896
+Epoch 132/240
+296/296 - 11s - loss: 0.9874 - val_loss: 0.9889
+Epoch 133/240
+296/296 - 11s - loss: 0.9875 - val_loss: 0.9899
+Epoch 134/240
+296/296 - 11s - loss: 1.0120 - val_loss: 1.0740
+Epoch 135/240
+296/296 - 11s - loss: 1.0349 - val_loss: 0.9916
+Epoch 136/240
+296/296 - 11s - loss: 0.9886 - val_loss: 0.9939
+Epoch 137/240
+296/296 - 11s - loss: 1.0188 - val_loss: 1.2847
+Epoch 138/240
+296/296 - 11s - loss: 1.0113 - val_loss: 0.9955
+Epoch 139/240
+296/296 - 11s - loss: 0.9958 - val_loss: 1.0073
+Epoch 140/240
+296/296 - 11s - loss: 0.9979 - val_loss: 0.9996
+Epoch 141/240
+296/296 - 11s - loss: 1.1317 - val_loss: 1.0437
+Epoch 142/240
+296/296 - 11s - loss: 1.0284 - val_loss: 1.0067
+Epoch 143/240
+296/296 - 11s - loss: 1.0023 - val_loss: 1.1968
+Epoch 144/240
+296/296 - 11s - loss: 1.0000 - val_loss: 1.0001
+Epoch 145/240
+296/296 - 11s - loss: 1.0027 - val_loss: 0.9988
+Epoch 146/240
+296/296 - 11s - loss: 1.0048 - val_loss: 1.4532
+Epoch 147/240
+296/296 - 11s - loss: 1.0083 - val_loss: 1.8287
+Epoch 148/240
+296/296 - 11s - loss: 0.9996 - val_loss: 2.7433
+Epoch 149/240
+296/296 - 11s - loss: 0.9992 - val_loss: 1.0139
+Epoch 150/240
+296/296 - 11s - loss: 1.0075 - val_loss: 0.9987
+Epoch 151/240
+296/296 - 11s - loss: 0.9992 - val_loss: 1.0000
+Epoch 152/240
+296/296 - 11s - loss: 0.9991 - val_loss: 0.9987
+Epoch 153/240
+296/296 - 11s - loss: 0.9992 - val_loss: 0.9988
+Epoch 154/240
+296/296 - 11s - loss: 0.9992 - val_loss: 0.9987
+Epoch 155/240
+296/296 - 11s - loss: 0.9991 - val_loss: 0.9988
+Epoch 156/240
+296/296 - 11s - loss: 0.9994 - val_loss: 0.9988
+Epoch 157/240
+296/296 - 11s - loss: 0.9991 - val_loss: 0.9987
+Epoch 158/240
+296/296 - 11s - loss: 0.9995 - val_loss: 1.0001
+Epoch 159/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 160/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 161/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 162/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 163/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 164/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 165/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 166/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 167/240
+296/296 - 12s - loss: nan - val_loss: nan
+Epoch 168/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 169/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 170/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 171/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 172/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 173/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 174/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 175/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 176/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 177/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 178/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 179/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 180/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 181/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 182/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 183/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 184/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 185/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 186/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 187/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 188/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 189/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 190/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 191/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 192/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 193/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 194/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 195/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 196/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 197/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 198/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 199/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 200/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 201/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 202/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 203/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 204/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 205/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 206/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 207/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 208/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 209/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 210/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 211/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 212/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 213/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 214/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 215/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 216/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 217/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 218/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 219/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 220/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 221/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 222/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 223/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 224/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 225/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 226/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 227/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 228/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 229/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 230/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 231/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 232/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 233/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 234/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 235/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 236/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 237/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 238/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 239/240
+296/296 - 11s - loss: nan - val_loss: nan
+Epoch 240/240
+296/296 - 11s - loss: nan - val_loss: nan
+<tensorflow.python.keras.callbacks.History at 0x7fa7fc7336d8>
