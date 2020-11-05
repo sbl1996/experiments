@@ -1,0 +1,907 @@
+14:10:53 Start training
+Epoch 1/300
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+14:14:34 train - loss: 3.8423, acc: 0.1051
+14:15:19 valid - loss: 3.3834, acc: 0.1789
+Epoch 2/300
+14:15:32 train - loss: 2.9942, acc: 0.2476
+14:15:32 valid - loss: 2.7882, acc: 0.2997
+Epoch 3/300
+14:15:45 train - loss: 2.4588, acc: 0.3585
+14:15:46 valid - loss: 2.4210, acc: 0.3723
+Epoch 4/300
+14:15:58 train - loss: 2.1642, acc: 0.4215
+14:15:59 valid - loss: 2.1070, acc: 0.4403
+Epoch 5/300
+14:16:12 train - loss: 1.9706, acc: 0.4636
+14:16:13 valid - loss: 2.0264, acc: 0.4707
+Epoch 6/300
+14:16:25 train - loss: 1.8483, acc: 0.4955
+14:16:26 valid - loss: 2.1617, acc: 0.4521
+Epoch 7/300
+14:16:39 train - loss: 1.7548, acc: 0.5179
+14:16:40 valid - loss: 1.7626, acc: 0.5232
+Epoch 8/300
+14:16:52 train - loss: 1.6721, acc: 0.5381
+14:16:53 valid - loss: 1.7628, acc: 0.5286
+Epoch 9/300
+14:17:05 train - loss: 1.6198, acc: 0.5471
+14:17:06 valid - loss: 1.7885, acc: 0.5293
+Epoch 10/300
+14:17:19 train - loss: 1.5754, acc: 0.5605
+14:17:20 valid - loss: 1.8495, acc: 0.5149
+Epoch 11/300
+14:17:32 train - loss: 1.5344, acc: 0.5687
+14:17:33 valid - loss: 1.6767, acc: 0.5550
+Epoch 12/300
+14:17:46 train - loss: 1.5090, acc: 0.5778
+14:17:47 valid - loss: 1.6816, acc: 0.5426
+Epoch 13/300
+14:17:59 train - loss: 1.4724, acc: 0.5869
+14:18:00 valid - loss: 1.6591, acc: 0.5586
+Epoch 14/300
+14:18:13 train - loss: 1.4542, acc: 0.5921
+14:18:14 valid - loss: 1.6245, acc: 0.5693
+Epoch 15/300
+14:18:26 train - loss: 1.4224, acc: 0.5985
+14:18:27 valid - loss: 1.7142, acc: 0.5563
+Epoch 16/300
+14:18:40 train - loss: 1.4050, acc: 0.6017
+14:18:40 valid - loss: 1.6533, acc: 0.5568
+Epoch 17/300
+14:18:53 train - loss: 1.3879, acc: 0.6088
+14:18:54 valid - loss: 1.5171, acc: 0.5856
+Epoch 18/300
+14:19:06 train - loss: 1.3636, acc: 0.6126
+14:19:07 valid - loss: 1.6409, acc: 0.5578
+Epoch 19/300
+14:19:20 train - loss: 1.3586, acc: 0.6157
+14:19:21 valid - loss: 1.6970, acc: 0.5575
+Epoch 20/300
+14:19:33 train - loss: 1.3458, acc: 0.6176
+14:19:34 valid - loss: 1.5256, acc: 0.5949
+Epoch 21/300
+14:19:47 train - loss: 1.3271, acc: 0.6212
+14:19:48 valid - loss: 1.4906, acc: 0.5976
+Epoch 22/300
+14:20:00 train - loss: 1.3246, acc: 0.6237
+14:20:01 valid - loss: 1.5446, acc: 0.5888
+Epoch 23/300
+14:20:14 train - loss: 1.3160, acc: 0.6236
+14:20:15 valid - loss: 1.5996, acc: 0.5748
+Epoch 24/300
+14:20:27 train - loss: 1.3062, acc: 0.6246
+14:20:28 valid - loss: 1.7274, acc: 0.5675
+Epoch 25/300
+14:20:41 train - loss: 1.2926, acc: 0.6298
+14:20:42 valid - loss: 1.5738, acc: 0.5803
+Epoch 26/300
+14:20:54 train - loss: 1.2921, acc: 0.6310
+14:20:55 valid - loss: 1.5464, acc: 0.5851
+Epoch 27/300
+14:21:08 train - loss: 1.2831, acc: 0.6319
+14:21:09 valid - loss: 1.5102, acc: 0.5963
+Epoch 28/300
+14:21:21 train - loss: 1.2699, acc: 0.6390
+14:21:22 valid - loss: 1.7427, acc: 0.5552
+Epoch 29/300
+14:21:35 train - loss: 1.2644, acc: 0.6382
+14:21:35 valid - loss: 1.5077, acc: 0.6025
+Epoch 30/300
+14:21:48 train - loss: 1.2610, acc: 0.6408
+14:21:49 valid - loss: 1.5742, acc: 0.5839
+Epoch 31/300
+14:22:01 train - loss: 1.2543, acc: 0.6412
+14:22:02 valid - loss: 1.6015, acc: 0.5810
+Epoch 32/300
+14:22:15 train - loss: 1.2436, acc: 0.6432
+14:22:16 valid - loss: 1.5587, acc: 0.5821
+Epoch 33/300
+14:22:28 train - loss: 1.2401, acc: 0.6435
+14:22:29 valid - loss: 1.6623, acc: 0.5759
+Epoch 34/300
+14:22:42 train - loss: 1.2366, acc: 0.6461
+14:22:43 valid - loss: 1.4648, acc: 0.6098
+Epoch 35/300
+14:22:55 train - loss: 1.2301, acc: 0.6461
+14:22:56 valid - loss: 1.4868, acc: 0.6066
+Epoch 36/300
+14:23:09 train - loss: 1.2249, acc: 0.6493
+14:23:10 valid - loss: 1.6046, acc: 0.5732
+Epoch 37/300
+14:23:22 train - loss: 1.2185, acc: 0.6489
+14:23:23 valid - loss: 1.5860, acc: 0.5909
+Epoch 38/300
+14:23:36 train - loss: 1.2143, acc: 0.6540
+14:23:37 valid - loss: 1.3932, acc: 0.6106
+Epoch 39/300
+14:23:49 train - loss: 1.2143, acc: 0.6524
+14:23:50 valid - loss: 1.4234, acc: 0.6192
+Epoch 40/300
+14:24:03 train - loss: 1.2013, acc: 0.6552
+14:24:04 valid - loss: 1.5428, acc: 0.5915
+Epoch 41/300
+14:24:16 train - loss: 1.2000, acc: 0.6541
+14:24:17 valid - loss: 1.5427, acc: 0.5953
+Epoch 42/300
+14:24:30 train - loss: 1.2021, acc: 0.6516
+14:24:30 valid - loss: 1.4348, acc: 0.6091
+Epoch 43/300
+14:24:43 train - loss: 1.1993, acc: 0.6551
+14:24:44 valid - loss: 1.5246, acc: 0.6030
+Epoch 44/300
+14:24:56 train - loss: 1.1922, acc: 0.6555
+14:24:57 valid - loss: 1.4567, acc: 0.6160
+Epoch 45/300
+14:25:10 train - loss: 1.1924, acc: 0.6570
+14:25:11 valid - loss: 1.6421, acc: 0.5704
+Epoch 46/300
+14:25:23 train - loss: 1.1835, acc: 0.6601
+14:25:24 valid - loss: 1.5518, acc: 0.6053
+Epoch 47/300
+14:25:37 train - loss: 1.1784, acc: 0.6622
+14:25:38 valid - loss: 1.5249, acc: 0.5940
+Epoch 48/300
+14:25:50 train - loss: 1.1730, acc: 0.6623
+14:25:51 valid - loss: 1.4423, acc: 0.6089
+Epoch 49/300
+14:26:04 train - loss: 1.1698, acc: 0.6663
+14:26:05 valid - loss: 1.4309, acc: 0.6180
+Epoch 50/300
+14:26:17 train - loss: 1.1685, acc: 0.6648
+14:26:18 valid - loss: 1.5291, acc: 0.5964
+Epoch 51/300
+14:26:31 train - loss: 1.1599, acc: 0.6649
+14:26:32 valid - loss: 1.4164, acc: 0.6262
+Epoch 52/300
+14:26:44 train - loss: 1.1605, acc: 0.6657
+14:26:45 valid - loss: 1.4436, acc: 0.6177
+Epoch 53/300
+14:26:58 train - loss: 1.1557, acc: 0.6664
+14:26:59 valid - loss: 1.4717, acc: 0.6099
+Epoch 54/300
+14:27:11 train - loss: 1.1533, acc: 0.6678
+14:27:12 valid - loss: 1.4527, acc: 0.6048
+Epoch 55/300
+14:27:25 train - loss: 1.1455, acc: 0.6693
+14:27:25 valid - loss: 1.4354, acc: 0.6163
+Epoch 56/300
+14:27:38 train - loss: 1.1420, acc: 0.6699
+14:27:39 valid - loss: 1.4361, acc: 0.6224
+Epoch 57/300
+14:27:52 train - loss: 1.1496, acc: 0.6713
+14:27:52 valid - loss: 1.3812, acc: 0.6216
+Epoch 58/300
+14:28:05 train - loss: 1.1376, acc: 0.6729
+14:28:06 valid - loss: 1.5295, acc: 0.6103
+Epoch 59/300
+14:28:18 train - loss: 1.1375, acc: 0.6708
+14:28:19 valid - loss: 1.4974, acc: 0.6178
+Epoch 60/300
+14:28:32 train - loss: 1.1361, acc: 0.6719
+14:28:33 valid - loss: 1.4568, acc: 0.6136
+Epoch 61/300
+14:28:45 train - loss: 1.1308, acc: 0.6733
+14:28:46 valid - loss: 1.4726, acc: 0.6038
+Epoch 62/300
+14:28:59 train - loss: 1.1194, acc: 0.6778
+14:29:00 valid - loss: 1.3892, acc: 0.6275
+Epoch 63/300
+14:29:12 train - loss: 1.1221, acc: 0.6766
+14:29:13 valid - loss: 1.3938, acc: 0.6295
+Epoch 64/300
+14:29:26 train - loss: 1.1281, acc: 0.6736
+14:29:27 valid - loss: 1.4579, acc: 0.6191
+Epoch 65/300
+14:29:39 train - loss: 1.1171, acc: 0.6782
+14:29:40 valid - loss: 1.3906, acc: 0.6282
+Epoch 66/300
+14:29:53 train - loss: 1.1150, acc: 0.6765
+14:29:54 valid - loss: 1.3327, acc: 0.6356
+Epoch 67/300
+14:30:06 train - loss: 1.1091, acc: 0.6780
+14:30:07 valid - loss: 1.4912, acc: 0.6090
+Epoch 68/300
+14:30:20 train - loss: 1.1047, acc: 0.6799
+14:30:20 valid - loss: 1.5513, acc: 0.5980
+Epoch 69/300
+14:30:33 train - loss: 1.1026, acc: 0.6821
+14:30:34 valid - loss: 1.4764, acc: 0.6225
+Epoch 70/300
+14:30:46 train - loss: 1.1063, acc: 0.6807
+14:30:47 valid - loss: 1.4214, acc: 0.6333
+Epoch 71/300
+14:31:00 train - loss: 1.0932, acc: 0.6820
+14:31:01 valid - loss: 1.3806, acc: 0.6318
+Epoch 72/300
+14:31:13 train - loss: 1.0931, acc: 0.6833
+14:31:14 valid - loss: 1.4241, acc: 0.6285
+Epoch 73/300
+14:31:27 train - loss: 1.0845, acc: 0.6877
+14:31:28 valid - loss: 1.4603, acc: 0.6264
+Epoch 74/300
+14:31:40 train - loss: 1.0884, acc: 0.6843
+14:31:41 valid - loss: 1.5561, acc: 0.5904
+Epoch 75/300
+14:31:54 train - loss: 1.0869, acc: 0.6848
+14:31:55 valid - loss: 1.5874, acc: 0.5995
+Epoch 76/300
+14:32:07 train - loss: 1.0763, acc: 0.6872
+14:32:08 valid - loss: 1.3940, acc: 0.6313
+Epoch 77/300
+14:32:21 train - loss: 1.0760, acc: 0.6867
+14:32:22 valid - loss: 1.4196, acc: 0.6248
+Epoch 78/300
+14:32:34 train - loss: 1.0808, acc: 0.6884
+14:32:35 valid - loss: 1.4585, acc: 0.6198
+Epoch 79/300
+14:32:48 train - loss: 1.0660, acc: 0.6903
+14:32:48 valid - loss: 1.3805, acc: 0.6381
+Epoch 80/300
+14:33:01 train - loss: 1.0674, acc: 0.6884
+14:33:02 valid - loss: 1.3303, acc: 0.6311
+Epoch 81/300
+14:33:14 train - loss: 1.0644, acc: 0.6933
+14:33:15 valid - loss: 1.4075, acc: 0.6229
+Epoch 82/300
+14:33:28 train - loss: 1.0569, acc: 0.6915
+14:33:29 valid - loss: 1.3809, acc: 0.6266
+Epoch 83/300
+14:33:41 train - loss: 1.0552, acc: 0.6946
+14:33:42 valid - loss: 1.4103, acc: 0.6257
+Epoch 84/300
+14:33:55 train - loss: 1.0583, acc: 0.6914
+14:33:56 valid - loss: 1.3488, acc: 0.6380
+Epoch 85/300
+14:34:08 train - loss: 1.0558, acc: 0.6898
+14:34:09 valid - loss: 1.5068, acc: 0.6157
+Epoch 86/300
+14:34:22 train - loss: 1.0467, acc: 0.6940
+14:34:23 valid - loss: 1.2818, acc: 0.6478
+Epoch 87/300
+14:34:35 train - loss: 1.0328, acc: 0.6981
+14:34:36 valid - loss: 1.2981, acc: 0.6527
+Epoch 88/300
+14:34:49 train - loss: 1.0414, acc: 0.6971
+14:34:50 valid - loss: 1.2900, acc: 0.6546
+Epoch 89/300
+14:35:02 train - loss: 1.0267, acc: 0.6995
+14:35:03 valid - loss: 1.3888, acc: 0.6345
+Epoch 90/300
+14:35:16 train - loss: 1.0362, acc: 0.6959
+14:35:17 valid - loss: 1.2527, acc: 0.6559
+Epoch 91/300
+14:35:29 train - loss: 1.0316, acc: 0.7016
+14:35:30 valid - loss: 1.3031, acc: 0.6480
+Epoch 92/300
+14:35:43 train - loss: 1.0263, acc: 0.6993
+14:35:43 valid - loss: 1.3849, acc: 0.6355
+Epoch 93/300
+14:35:56 train - loss: 1.0160, acc: 0.7026
+14:35:57 valid - loss: 1.4800, acc: 0.6221
+Epoch 94/300
+14:36:09 train - loss: 1.0238, acc: 0.7024
+14:36:10 valid - loss: 1.3023, acc: 0.6520
+Epoch 95/300
+14:36:23 train - loss: 1.0144, acc: 0.7040
+14:36:24 valid - loss: 1.2725, acc: 0.6598
+Epoch 96/300
+14:36:36 train - loss: 1.0101, acc: 0.7034
+14:36:37 valid - loss: 1.3125, acc: 0.6531
+Epoch 97/300
+14:36:50 train - loss: 0.9988, acc: 0.7051
+14:36:51 valid - loss: 1.3454, acc: 0.6418
+Epoch 98/300
+14:37:03 train - loss: 1.0033, acc: 0.7046
+14:37:04 valid - loss: 1.2967, acc: 0.6626
+Epoch 99/300
+14:37:17 train - loss: 0.9944, acc: 0.7096
+14:37:18 valid - loss: 1.4540, acc: 0.6238
+Epoch 100/300
+14:37:30 train - loss: 0.9937, acc: 0.7067
+14:37:31 valid - loss: 1.3318, acc: 0.6395
+Epoch 101/300
+14:37:44 train - loss: 0.9855, acc: 0.7106
+14:37:45 valid - loss: 1.3595, acc: 0.6427
+Epoch 102/300
+14:37:57 train - loss: 0.9887, acc: 0.7107
+14:37:58 valid - loss: 1.4054, acc: 0.6280
+Epoch 103/300
+14:38:11 train - loss: 0.9788, acc: 0.7120
+14:38:12 valid - loss: 1.3924, acc: 0.6321
+Epoch 104/300
+14:38:24 train - loss: 0.9834, acc: 0.7125
+14:38:25 valid - loss: 1.3265, acc: 0.6512
+Epoch 105/300
+14:38:38 train - loss: 0.9763, acc: 0.7146
+14:38:39 valid - loss: 1.3384, acc: 0.6485
+Epoch 106/300
+14:38:51 train - loss: 0.9700, acc: 0.7140
+14:38:52 valid - loss: 1.3917, acc: 0.6468
+Epoch 107/300
+14:39:05 train - loss: 0.9739, acc: 0.7134
+14:39:06 valid - loss: 1.2611, acc: 0.6712
+Epoch 108/300
+14:39:18 train - loss: 0.9683, acc: 0.7166
+14:39:19 valid - loss: 1.3185, acc: 0.6538
+Epoch 109/300
+14:39:32 train - loss: 0.9642, acc: 0.7177
+14:39:32 valid - loss: 1.3162, acc: 0.6524
+Epoch 110/300
+14:39:45 train - loss: 0.9544, acc: 0.7185
+14:39:46 valid - loss: 1.3029, acc: 0.6411
+Epoch 111/300
+14:39:59 train - loss: 0.9408, acc: 0.7245
+14:39:59 valid - loss: 1.2595, acc: 0.6604
+Epoch 112/300
+14:40:12 train - loss: 0.9489, acc: 0.7200
+14:40:13 valid - loss: 1.3372, acc: 0.6470
+Epoch 113/300
+14:40:25 train - loss: 0.9440, acc: 0.7214
+14:40:26 valid - loss: 1.3591, acc: 0.6493
+Epoch 114/300
+14:40:39 train - loss: 0.9412, acc: 0.7228
+14:40:40 valid - loss: 1.3712, acc: 0.6481
+Epoch 115/300
+14:40:52 train - loss: 0.9323, acc: 0.7246
+14:40:53 valid - loss: 1.3672, acc: 0.6403
+Epoch 116/300
+14:41:06 train - loss: 0.9316, acc: 0.7268
+14:41:07 valid - loss: 1.3427, acc: 0.6560
+Epoch 117/300
+14:41:19 train - loss: 0.9336, acc: 0.7247
+14:41:20 valid - loss: 1.2869, acc: 0.6602
+Epoch 118/300
+14:41:33 train - loss: 0.9213, acc: 0.7289
+14:41:34 valid - loss: 1.2463, acc: 0.6670
+Epoch 119/300
+14:41:46 train - loss: 0.9165, acc: 0.7292
+14:41:47 valid - loss: 1.3946, acc: 0.6340
+Epoch 120/300
+14:42:00 train - loss: 0.9164, acc: 0.7276
+14:42:01 valid - loss: 1.3451, acc: 0.6490
+Epoch 121/300
+14:42:13 train - loss: 0.9107, acc: 0.7310
+14:42:14 valid - loss: 1.2427, acc: 0.6708
+Epoch 122/300
+14:42:27 train - loss: 0.9099, acc: 0.7289
+14:42:28 valid - loss: 1.3229, acc: 0.6502
+Epoch 123/300
+14:42:40 train - loss: 0.8998, acc: 0.7333
+14:42:41 valid - loss: 1.2655, acc: 0.6569
+Epoch 124/300
+14:42:54 train - loss: 0.8892, acc: 0.7360
+14:42:54 valid - loss: 1.2391, acc: 0.6640
+Epoch 125/300
+14:43:07 train - loss: 0.8929, acc: 0.7353
+14:43:08 valid - loss: 1.3021, acc: 0.6539
+Epoch 126/300
+14:43:20 train - loss: 0.8871, acc: 0.7369
+14:43:21 valid - loss: 1.2939, acc: 0.6591
+Epoch 127/300
+14:43:34 train - loss: 0.8831, acc: 0.7396
+14:43:35 valid - loss: 1.1981, acc: 0.6751
+Epoch 128/300
+14:43:47 train - loss: 0.8726, acc: 0.7399
+14:43:48 valid - loss: 1.3382, acc: 0.6555
+Epoch 129/300
+14:44:01 train - loss: 0.8712, acc: 0.7415
+14:44:02 valid - loss: 1.2856, acc: 0.6656
+Epoch 130/300
+14:44:14 train - loss: 0.8704, acc: 0.7439
+14:44:15 valid - loss: 1.3371, acc: 0.6540
+Epoch 131/300
+14:44:28 train - loss: 0.8664, acc: 0.7436
+14:44:29 valid - loss: 1.2804, acc: 0.6687
+Epoch 132/300
+14:44:41 train - loss: 0.8648, acc: 0.7435
+14:44:42 valid - loss: 1.3043, acc: 0.6603
+Epoch 133/300
+14:44:55 train - loss: 0.8578, acc: 0.7439
+14:44:56 valid - loss: 1.2943, acc: 0.6670
+Epoch 134/300
+14:45:08 train - loss: 0.8540, acc: 0.7465
+14:45:09 valid - loss: 1.1700, acc: 0.6818
+Epoch 135/300
+14:45:22 train - loss: 0.8497, acc: 0.7484
+14:45:23 valid - loss: 1.2079, acc: 0.6813
+Epoch 136/300
+14:45:35 train - loss: 0.8391, acc: 0.7494
+14:45:36 valid - loss: 1.3048, acc: 0.6599
+Epoch 137/300
+14:45:49 train - loss: 0.8382, acc: 0.7500
+14:45:50 valid - loss: 1.2842, acc: 0.6664
+Epoch 138/300
+14:46:02 train - loss: 0.8320, acc: 0.7536
+14:46:03 valid - loss: 1.2895, acc: 0.6599
+Epoch 139/300
+14:46:16 train - loss: 0.8241, acc: 0.7543
+14:46:16 valid - loss: 1.2607, acc: 0.6638
+Epoch 140/300
+14:46:29 train - loss: 0.8148, acc: 0.7567
+14:46:30 valid - loss: 1.4141, acc: 0.6492
+Epoch 141/300
+14:46:42 train - loss: 0.8168, acc: 0.7552
+14:46:43 valid - loss: 1.2239, acc: 0.6779
+Epoch 142/300
+14:46:56 train - loss: 0.8088, acc: 0.7568
+14:46:57 valid - loss: 1.3346, acc: 0.6642
+Epoch 143/300
+14:47:09 train - loss: 0.8029, acc: 0.7591
+14:47:10 valid - loss: 1.1640, acc: 0.6938
+Epoch 144/300
+14:47:23 train - loss: 0.8020, acc: 0.7600
+14:47:24 valid - loss: 1.3069, acc: 0.6615
+Epoch 145/300
+14:47:36 train - loss: 0.7876, acc: 0.7633
+14:47:37 valid - loss: 1.2509, acc: 0.6705
+Epoch 146/300
+14:47:50 train - loss: 0.7864, acc: 0.7630
+14:47:51 valid - loss: 1.2552, acc: 0.6728
+Epoch 147/300
+14:48:03 train - loss: 0.7837, acc: 0.7632
+14:48:04 valid - loss: 1.2273, acc: 0.6770
+Epoch 148/300
+14:48:17 train - loss: 0.7757, acc: 0.7671
+14:48:18 valid - loss: 1.1779, acc: 0.6890
+Epoch 149/300
+14:48:30 train - loss: 0.7658, acc: 0.7699
+14:48:31 valid - loss: 1.1936, acc: 0.6909
+Epoch 150/300
+14:48:44 train - loss: 0.7668, acc: 0.7680
+14:48:45 valid - loss: 1.1921, acc: 0.6922
+Epoch 151/300
+14:48:57 train - loss: 0.7634, acc: 0.7704
+14:48:58 valid - loss: 1.2287, acc: 0.6725
+Epoch 152/300
+14:49:11 train - loss: 0.7527, acc: 0.7743
+14:49:12 valid - loss: 1.3696, acc: 0.6506
+Epoch 153/300
+14:49:24 train - loss: 0.7508, acc: 0.7742
+14:49:25 valid - loss: 1.2485, acc: 0.6858
+Epoch 154/300
+14:49:38 train - loss: 0.7407, acc: 0.7758
+14:49:38 valid - loss: 1.2896, acc: 0.6716
+Epoch 155/300
+14:49:51 train - loss: 0.7382, acc: 0.7762
+14:49:52 valid - loss: 1.1741, acc: 0.6926
+Epoch 156/300
+14:50:04 train - loss: 0.7308, acc: 0.7806
+14:50:05 valid - loss: 1.2223, acc: 0.6808
+Epoch 157/300
+14:50:18 train - loss: 0.7227, acc: 0.7829
+14:50:19 valid - loss: 1.1290, acc: 0.6921
+Epoch 158/300
+14:50:31 train - loss: 0.7121, acc: 0.7850
+14:50:32 valid - loss: 1.2831, acc: 0.6738
+Epoch 159/300
+14:50:45 train - loss: 0.7015, acc: 0.7856
+14:50:46 valid - loss: 1.2238, acc: 0.6899
+Epoch 160/300
+14:50:58 train - loss: 0.7121, acc: 0.7837
+14:50:59 valid - loss: 1.2619, acc: 0.6783
+Epoch 161/300
+14:51:12 train - loss: 0.7013, acc: 0.7871
+14:51:13 valid - loss: 1.2868, acc: 0.6727
+Epoch 162/300
+14:51:25 train - loss: 0.6967, acc: 0.7886
+14:51:26 valid - loss: 1.1581, acc: 0.6991
+Epoch 163/300
+14:51:39 train - loss: 0.6866, acc: 0.7927
+14:51:40 valid - loss: 1.2502, acc: 0.6808
+Epoch 164/300
+14:51:52 train - loss: 0.6808, acc: 0.7935
+14:51:53 valid - loss: 1.3184, acc: 0.6843
+Epoch 165/300
+14:52:06 train - loss: 0.6751, acc: 0.7936
+14:52:07 valid - loss: 1.2116, acc: 0.6967
+Epoch 166/300
+14:52:19 train - loss: 0.6727, acc: 0.7946
+14:52:20 valid - loss: 1.2103, acc: 0.6882
+Epoch 167/300
+14:52:33 train - loss: 0.6609, acc: 0.8007
+14:52:34 valid - loss: 1.1894, acc: 0.6906
+Epoch 168/300
+14:52:46 train - loss: 0.6620, acc: 0.7968
+14:52:47 valid - loss: 1.2453, acc: 0.6878
+Epoch 169/300
+14:53:00 train - loss: 0.6487, acc: 0.8020
+14:53:00 valid - loss: 1.2129, acc: 0.6908
+Epoch 170/300
+14:53:13 train - loss: 0.6451, acc: 0.8014
+14:53:14 valid - loss: 1.2843, acc: 0.6750
+Epoch 171/300
+14:53:26 train - loss: 0.6468, acc: 0.8029
+14:53:27 valid - loss: 1.2552, acc: 0.6789
+Epoch 172/300
+14:53:40 train - loss: 0.6276, acc: 0.8084
+14:53:41 valid - loss: 1.2773, acc: 0.6896
+Epoch 173/300
+14:53:53 train - loss: 0.6305, acc: 0.8074
+14:53:54 valid - loss: 1.2143, acc: 0.6889
+Epoch 174/300
+14:54:07 train - loss: 0.6083, acc: 0.8149
+14:54:08 valid - loss: 1.1984, acc: 0.6863
+Epoch 175/300
+14:54:20 train - loss: 0.6118, acc: 0.8110
+14:54:21 valid - loss: 1.1923, acc: 0.6864
+Epoch 176/300
+14:54:34 train - loss: 0.6059, acc: 0.8136
+14:54:35 valid - loss: 1.1615, acc: 0.7076
+Epoch 177/300
+14:54:47 train - loss: 0.5985, acc: 0.8154
+14:54:48 valid - loss: 1.3193, acc: 0.6755
+Epoch 178/300
+14:55:01 train - loss: 0.5958, acc: 0.8175
+14:55:02 valid - loss: 1.1910, acc: 0.6981
+Epoch 179/300
+14:55:14 train - loss: 0.5914, acc: 0.8176
+14:55:15 valid - loss: 1.2988, acc: 0.6843
+Epoch 180/300
+14:55:28 train - loss: 0.5771, acc: 0.8210
+14:55:29 valid - loss: 1.2276, acc: 0.7022
+Epoch 181/300
+14:55:41 train - loss: 0.5703, acc: 0.8246
+14:55:42 valid - loss: 1.1399, acc: 0.7120
+Epoch 182/300
+14:55:55 train - loss: 0.5629, acc: 0.8269
+14:55:56 valid - loss: 1.2582, acc: 0.6968
+Epoch 183/300
+14:56:08 train - loss: 0.5603, acc: 0.8284
+14:56:09 valid - loss: 1.2262, acc: 0.6976
+Epoch 184/300
+14:56:22 train - loss: 0.5528, acc: 0.8269
+14:56:22 valid - loss: 1.2591, acc: 0.6906
+Epoch 185/300
+14:56:35 train - loss: 0.5513, acc: 0.8280
+14:56:36 valid - loss: 1.2422, acc: 0.6922
+Epoch 186/300
+14:56:48 train - loss: 0.5317, acc: 0.8350
+14:56:49 valid - loss: 1.1539, acc: 0.7115
+Epoch 187/300
+14:57:02 train - loss: 0.5264, acc: 0.8366
+14:57:03 valid - loss: 1.1983, acc: 0.7008
+Epoch 188/300
+14:57:15 train - loss: 0.5298, acc: 0.8345
+14:57:16 valid - loss: 1.2125, acc: 0.7054
+Epoch 189/300
+14:57:29 train - loss: 0.5194, acc: 0.8389
+14:57:30 valid - loss: 1.3116, acc: 0.6840
+Epoch 190/300
+14:57:42 train - loss: 0.5121, acc: 0.8421
+14:57:43 valid - loss: 1.2043, acc: 0.7119
+Epoch 191/300
+14:57:56 train - loss: 0.5027, acc: 0.8430
+14:57:57 valid - loss: 1.2378, acc: 0.6986
+Epoch 192/300
+14:58:09 train - loss: 0.4950, acc: 0.8465
+14:58:10 valid - loss: 1.2714, acc: 0.6942
+Epoch 193/300
+14:58:23 train - loss: 0.4840, acc: 0.8498
+14:58:24 valid - loss: 1.2378, acc: 0.7049
+Epoch 194/300
+14:58:36 train - loss: 0.4848, acc: 0.8498
+14:58:37 valid - loss: 1.2336, acc: 0.7028
+Epoch 195/300
+14:58:50 train - loss: 0.4771, acc: 0.8525
+14:58:50 valid - loss: 1.1737, acc: 0.7184
+Epoch 196/300
+14:59:03 train - loss: 0.4640, acc: 0.8561
+14:59:04 valid - loss: 1.1588, acc: 0.7211
+Epoch 197/300
+14:59:16 train - loss: 0.4492, acc: 0.8589
+14:59:17 valid - loss: 1.2278, acc: 0.7170
+Epoch 198/300
+14:59:30 train - loss: 0.4430, acc: 0.8609
+14:59:31 valid - loss: 1.2026, acc: 0.7164
+Epoch 199/300
+14:59:43 train - loss: 0.4445, acc: 0.8589
+14:59:44 valid - loss: 1.2671, acc: 0.6981
+Epoch 200/300
+14:59:57 train - loss: 0.4342, acc: 0.8646
+14:59:58 valid - loss: 1.2162, acc: 0.7120
+Epoch 201/300
+15:00:10 train - loss: 0.4309, acc: 0.8642
+15:00:11 valid - loss: 1.1540, acc: 0.7156
+Epoch 202/300
+15:00:24 train - loss: 0.4112, acc: 0.8707
+15:00:25 valid - loss: 1.1819, acc: 0.7251
+Epoch 203/300
+15:00:37 train - loss: 0.4080, acc: 0.8732
+15:00:38 valid - loss: 1.1925, acc: 0.7221
+Epoch 204/300
+15:00:51 train - loss: 0.3992, acc: 0.8732
+15:00:52 valid - loss: 1.1808, acc: 0.7156
+Epoch 205/300
+15:01:04 train - loss: 0.3998, acc: 0.8739
+15:01:05 valid - loss: 1.2763, acc: 0.7098
+Epoch 206/300
+15:01:18 train - loss: 0.3934, acc: 0.8759
+15:01:19 valid - loss: 1.2752, acc: 0.7100
+Epoch 207/300
+15:01:31 train - loss: 0.3880, acc: 0.8753
+15:01:32 valid - loss: 1.2301, acc: 0.7086
+Epoch 208/300
+15:01:45 train - loss: 0.3680, acc: 0.8850
+15:01:46 valid - loss: 1.2152, acc: 0.7212
+Epoch 209/300
+15:01:58 train - loss: 0.3612, acc: 0.8867
+15:01:59 valid - loss: 1.2341, acc: 0.7124
+Epoch 210/300
+15:02:12 train - loss: 0.3627, acc: 0.8863
+15:02:13 valid - loss: 1.2206, acc: 0.7189
+Epoch 211/300
+15:02:25 train - loss: 0.3513, acc: 0.8887
+15:02:26 valid - loss: 1.1749, acc: 0.7202
+Epoch 212/300
+15:02:39 train - loss: 0.3358, acc: 0.8927
+15:02:40 valid - loss: 1.2084, acc: 0.7208
+Epoch 213/300
+15:02:52 train - loss: 0.3342, acc: 0.8942
+15:02:53 valid - loss: 1.2012, acc: 0.7234
+Epoch 214/300
+15:03:06 train - loss: 0.3240, acc: 0.8983
+15:03:07 valid - loss: 1.2362, acc: 0.7192
+Epoch 215/300
+15:03:19 train - loss: 0.3217, acc: 0.8993
+15:03:20 valid - loss: 1.2145, acc: 0.7224
+Epoch 216/300
+15:03:33 train - loss: 0.3159, acc: 0.9003
+15:03:33 valid - loss: 1.2252, acc: 0.7246
+Epoch 217/300
+15:03:46 train - loss: 0.3045, acc: 0.9040
+15:03:47 valid - loss: 1.2258, acc: 0.7282
+Epoch 218/300
+15:03:59 train - loss: 0.2996, acc: 0.9059
+15:04:00 valid - loss: 1.1897, acc: 0.7339
+Epoch 219/300
+15:04:13 train - loss: 0.2802, acc: 0.9116
+15:04:14 valid - loss: 1.2103, acc: 0.7262
+Epoch 220/300
+15:04:26 train - loss: 0.2810, acc: 0.9124
+15:04:27 valid - loss: 1.1983, acc: 0.7235
+Epoch 221/300
+15:04:40 train - loss: 0.2670, acc: 0.9164
+15:04:41 valid - loss: 1.2812, acc: 0.7208
+Epoch 222/300
+15:04:53 train - loss: 0.2685, acc: 0.9152
+15:04:54 valid - loss: 1.1833, acc: 0.7264
+Epoch 223/300
+15:05:07 train - loss: 0.2556, acc: 0.9189
+15:05:08 valid - loss: 1.2922, acc: 0.7156
+Epoch 224/300
+15:05:20 train - loss: 0.2496, acc: 0.9212
+15:05:21 valid - loss: 1.1879, acc: 0.7267
+Epoch 225/300
+15:05:34 train - loss: 0.2343, acc: 0.9264
+15:05:35 valid - loss: 1.1769, acc: 0.7351
+Epoch 226/300
+15:05:47 train - loss: 0.2314, acc: 0.9264
+15:05:48 valid - loss: 1.2051, acc: 0.7347
+Epoch 227/300
+15:06:01 train - loss: 0.2306, acc: 0.9275
+15:06:02 valid - loss: 1.2231, acc: 0.7286
+Epoch 228/300
+15:06:14 train - loss: 0.2175, acc: 0.9313
+15:06:15 valid - loss: 1.2295, acc: 0.7376
+Epoch 229/300
+15:06:28 train - loss: 0.2079, acc: 0.9343
+15:06:29 valid - loss: 1.1948, acc: 0.7329
+Epoch 230/300
+15:06:41 train - loss: 0.2061, acc: 0.9359
+15:06:42 valid - loss: 1.1766, acc: 0.7386
+Epoch 231/300
+15:06:55 train - loss: 0.1996, acc: 0.9383
+15:06:56 valid - loss: 1.1942, acc: 0.7422
+Epoch 232/300
+15:07:08 train - loss: 0.1910, acc: 0.9409
+15:07:09 valid - loss: 1.2031, acc: 0.7324
+Epoch 233/300
+15:07:22 train - loss: 0.1777, acc: 0.9448
+15:07:23 valid - loss: 1.1942, acc: 0.7429
+Epoch 234/300
+15:07:35 train - loss: 0.1689, acc: 0.9479
+15:07:36 valid - loss: 1.2099, acc: 0.7398
+Epoch 235/300
+15:07:49 train - loss: 0.1696, acc: 0.9488
+15:07:50 valid - loss: 1.1871, acc: 0.7386
+Epoch 236/300
+15:08:02 train - loss: 0.1585, acc: 0.9515
+15:08:03 valid - loss: 1.1761, acc: 0.7508
+Epoch 237/300
+15:08:16 train - loss: 0.1499, acc: 0.9545
+15:08:17 valid - loss: 1.1428, acc: 0.7505
+Epoch 238/300
+15:08:29 train - loss: 0.1426, acc: 0.9572
+15:08:30 valid - loss: 1.1702, acc: 0.7513
+Epoch 239/300
+15:08:43 train - loss: 0.1330, acc: 0.9608
+15:08:43 valid - loss: 1.1825, acc: 0.7501
+Epoch 240/300
+15:08:56 train - loss: 0.1246, acc: 0.9632
+15:08:57 valid - loss: 1.2026, acc: 0.7492
+Epoch 241/300
+15:09:10 train - loss: 0.1195, acc: 0.9639
+15:09:10 valid - loss: 1.1632, acc: 0.7552
+Epoch 242/300
+15:09:23 train - loss: 0.1186, acc: 0.9642
+15:09:24 valid - loss: 1.1707, acc: 0.7559
+Epoch 243/300
+15:09:36 train - loss: 0.1095, acc: 0.9685
+15:09:37 valid - loss: 1.1965, acc: 0.7508
+Epoch 244/300
+15:09:50 train - loss: 0.1007, acc: 0.9706
+15:09:51 valid - loss: 1.1981, acc: 0.7532
+Epoch 245/300
+15:10:03 train - loss: 0.0933, acc: 0.9730
+15:10:04 valid - loss: 1.2018, acc: 0.7497
+Epoch 246/300
+15:10:17 train - loss: 0.0876, acc: 0.9755
+15:10:18 valid - loss: 1.1751, acc: 0.7532
+Epoch 247/300
+15:10:30 train - loss: 0.0890, acc: 0.9750
+15:10:31 valid - loss: 1.2069, acc: 0.7471
+Epoch 248/300
+15:10:44 train - loss: 0.0767, acc: 0.9794
+15:10:45 valid - loss: 1.1413, acc: 0.7593
+Epoch 249/300
+15:10:57 train - loss: 0.0705, acc: 0.9804
+15:10:58 valid - loss: 1.1351, acc: 0.7608
+Epoch 250/300
+15:11:11 train - loss: 0.0674, acc: 0.9821
+15:11:12 valid - loss: 1.1673, acc: 0.7626
+Epoch 251/300
+15:11:24 train - loss: 0.0640, acc: 0.9833
+15:11:25 valid - loss: 1.1451, acc: 0.7622
+Epoch 252/300
+15:11:38 train - loss: 0.0632, acc: 0.9842
+15:11:39 valid - loss: 1.1144, acc: 0.7664
+Epoch 253/300
+15:11:51 train - loss: 0.0551, acc: 0.9856
+15:11:52 valid - loss: 1.1369, acc: 0.7617
+Epoch 254/300
+15:12:05 train - loss: 0.0483, acc: 0.9880
+15:12:06 valid - loss: 1.1566, acc: 0.7632
+Epoch 255/300
+15:12:18 train - loss: 0.0477, acc: 0.9880
+15:12:19 valid - loss: 1.0858, acc: 0.7722
+Epoch 256/300
+15:12:32 train - loss: 0.0443, acc: 0.9891
+15:12:33 valid - loss: 1.0845, acc: 0.7747
+Epoch 257/300
+15:12:45 train - loss: 0.0380, acc: 0.9916
+15:12:46 valid - loss: 1.0876, acc: 0.7772
+Epoch 258/300
+15:12:59 train - loss: 0.0356, acc: 0.9919
+15:13:00 valid - loss: 1.0817, acc: 0.7770
+Epoch 259/300
+15:13:12 train - loss: 0.0325, acc: 0.9930
+15:13:13 valid - loss: 1.0892, acc: 0.7795
+Epoch 260/300
+15:13:26 train - loss: 0.0290, acc: 0.9942
+15:13:27 valid - loss: 1.0919, acc: 0.7765
+Epoch 261/300
+15:13:39 train - loss: 0.0291, acc: 0.9940
+15:13:40 valid - loss: 1.0742, acc: 0.7806
+Epoch 262/300
+15:13:53 train - loss: 0.0268, acc: 0.9944
+15:13:53 valid - loss: 1.0772, acc: 0.7797
+Epoch 263/300
+15:14:06 train - loss: 0.0244, acc: 0.9953
+15:14:07 valid - loss: 1.0633, acc: 0.7858
+Epoch 264/300
+15:14:19 train - loss: 0.0223, acc: 0.9957
+15:14:20 valid - loss: 1.0597, acc: 0.7838
+Epoch 265/300
+15:14:33 train - loss: 0.0213, acc: 0.9962
+15:14:34 valid - loss: 1.0654, acc: 0.7831
+Epoch 266/300
+15:14:46 train - loss: 0.0194, acc: 0.9966
+15:14:47 valid - loss: 1.0539, acc: 0.7845
+Epoch 267/300
+15:15:00 train - loss: 0.0182, acc: 0.9970
+15:15:01 valid - loss: 1.0634, acc: 0.7846
+Epoch 268/300
+15:15:13 train - loss: 0.0176, acc: 0.9969
+15:15:14 valid - loss: 1.0660, acc: 0.7863
+Epoch 269/300
+15:15:27 train - loss: 0.0157, acc: 0.9979
+15:15:28 valid - loss: 1.0525, acc: 0.7849
+Epoch 270/300
+15:15:40 train - loss: 0.0142, acc: 0.9978
+15:15:41 valid - loss: 1.0451, acc: 0.7818
+Epoch 271/300
+15:15:54 train - loss: 0.0145, acc: 0.9977
+15:15:55 valid - loss: 1.0457, acc: 0.7867
+Epoch 272/300
+15:16:07 train - loss: 0.0136, acc: 0.9980
+15:16:08 valid - loss: 1.0505, acc: 0.7893
+Epoch 273/300
+15:16:21 train - loss: 0.0129, acc: 0.9983
+15:16:22 valid - loss: 1.0591, acc: 0.7868
+Epoch 274/300
+15:16:34 train - loss: 0.0118, acc: 0.9986
+15:16:35 valid - loss: 1.0517, acc: 0.7871
+Epoch 275/300
+15:16:48 train - loss: 0.0111, acc: 0.9987
+15:16:49 valid - loss: 1.0502, acc: 0.7879
+Epoch 276/300
+15:17:01 train - loss: 0.0108, acc: 0.9986
+15:17:02 valid - loss: 1.0462, acc: 0.7868
+Epoch 277/300
+15:17:15 train - loss: 0.0112, acc: 0.9986
+15:17:16 valid - loss: 1.0465, acc: 0.7847
+Epoch 278/300
+15:17:28 train - loss: 0.0106, acc: 0.9988
+15:17:29 valid - loss: 1.0410, acc: 0.7880
+Epoch 279/300
+15:17:42 train - loss: 0.0099, acc: 0.9988
+15:17:43 valid - loss: 1.0452, acc: 0.7887
+Epoch 280/300
+15:17:55 train - loss: 0.0105, acc: 0.9989
+15:17:56 valid - loss: 1.0587, acc: 0.7881
+Epoch 281/300
+15:18:09 train - loss: 0.0094, acc: 0.9990
+15:18:10 valid - loss: 1.0501, acc: 0.7886
+Epoch 282/300
+15:18:22 train - loss: 0.0098, acc: 0.9988
+15:18:23 valid - loss: 1.0499, acc: 0.7893
+Epoch 283/300
+15:18:36 train - loss: 0.0091, acc: 0.9990
+15:18:36 valid - loss: 1.0475, acc: 0.7886
+Epoch 284/300
+15:18:49 train - loss: 0.0088, acc: 0.9990
+15:18:50 valid - loss: 1.0473, acc: 0.7885
+Epoch 285/300
+15:19:02 train - loss: 0.0086, acc: 0.9991
+15:19:03 valid - loss: 1.0502, acc: 0.7881
+Epoch 286/300
+15:19:16 train - loss: 0.0086, acc: 0.9993
+15:19:17 valid - loss: 1.0401, acc: 0.7893
+Epoch 287/300
+15:19:29 train - loss: 0.0088, acc: 0.9991
+15:19:30 valid - loss: 1.0442, acc: 0.7882
+Epoch 288/300
+15:19:43 train - loss: 0.0085, acc: 0.9990
+15:19:44 valid - loss: 1.0402, acc: 0.7891
+Epoch 289/300
+15:19:56 train - loss: 0.0081, acc: 0.9993
+15:19:57 valid - loss: 1.0434, acc: 0.7876
+Epoch 290/300
+15:20:10 train - loss: 0.0084, acc: 0.9992
+15:20:11 valid - loss: 1.0428, acc: 0.7900
+Epoch 291/300
+15:20:23 train - loss: 0.0077, acc: 0.9993
+15:20:24 valid - loss: 1.0396, acc: 0.7892
+Epoch 292/300
+15:20:37 train - loss: 0.0082, acc: 0.9992
+15:20:38 valid - loss: 1.0399, acc: 0.7889
+Epoch 293/300
+15:20:50 train - loss: 0.0090, acc: 0.9988
+15:20:51 valid - loss: 1.0407, acc: 0.7905
+Epoch 294/300
+15:21:04 train - loss: 0.0083, acc: 0.9990
+15:21:05 valid - loss: 1.0468, acc: 0.7895
+Epoch 295/300
+15:21:17 train - loss: 0.0084, acc: 0.9990
+15:21:18 valid - loss: 1.0352, acc: 0.7900
+Epoch 296/300
+15:21:31 train - loss: 0.0085, acc: 0.9990
+15:21:32 valid - loss: 1.0406, acc: 0.7907
+Epoch 297/300
+15:21:44 train - loss: 0.0075, acc: 0.9993
+15:21:45 valid - loss: 1.0401, acc: 0.7882
+Epoch 298/300
+15:21:58 train - loss: 0.0078, acc: 0.9993
+15:21:59 valid - loss: 1.0424, acc: 0.7893
+Epoch 299/300
+15:22:11 train - loss: 0.0081, acc: 0.9992
+15:22:12 valid - loss: 1.0404, acc: 0.7895
+Epoch 300/300
+15:22:25 train - loss: 0.0077, acc: 0.9993
+15:22:26 valid - loss: 1.0387, acc: 0.7895
