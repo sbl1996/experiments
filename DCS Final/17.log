@@ -1,0 +1,67 @@
+16:10:02 Start training
+Epoch 1/20
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+16:11:39 train - loss: 0.6983, ber: 0.5074
+16:11:47 valid - loss: 0.6926, ber: 0.5210
+Epoch 2/20
+16:13:19 train - loss: 0.6861, ber: 0.5417
+16:13:24 valid - loss: 0.6782, ber: 0.5611
+Epoch 3/20
+16:14:56 train - loss: 0.6667, ber: 0.5806
+16:15:01 valid - loss: 0.6540, ber: 0.5998
+Epoch 4/20
+16:16:34 train - loss: 0.6364, ber: 0.6218
+16:16:39 valid - loss: 0.6204, ber: 0.6404
+Epoch 5/20
+16:18:11 train - loss: 0.6019, ber: 0.6591
+16:18:16 valid - loss: 0.5879, ber: 0.6726
+Epoch 6/20
+16:19:48 train - loss: 0.5724, ber: 0.6863
+16:19:53 valid - loss: 0.5620, ber: 0.6956
+Epoch 7/20
+16:21:27 train - loss: 0.5495, ber: 0.7058
+16:21:32 valid - loss: 0.5432, ber: 0.7111
+Epoch 8/20
+16:23:04 train - loss: 0.5315, ber: 0.7201
+16:23:09 valid - loss: 0.5261, ber: 0.7243
+Epoch 9/20
+16:24:41 train - loss: 0.5165, ber: 0.7316
+16:24:46 valid - loss: 0.5135, ber: 0.7341
+Epoch 10/20
+16:26:19 train - loss: 0.5044, ber: 0.7405
+16:26:24 valid - loss: 0.5028, ber: 0.7421
+Epoch 11/20
+16:27:58 train - loss: 0.4941, ber: 0.7480
+16:28:03 valid - loss: 0.4927, ber: 0.7493
+Epoch 12/20
+16:29:35 train - loss: 0.4853, ber: 0.7543
+16:29:40 valid - loss: 0.4850, ber: 0.7548
+Epoch 13/20
+16:31:12 train - loss: 0.4776, ber: 0.7596
+16:31:17 valid - loss: 0.4774, ber: 0.7599
+Epoch 14/20
+16:32:49 train - loss: 0.4710, ber: 0.7641
+16:32:54 valid - loss: 0.4721, ber: 0.7636
+Epoch 15/20
+16:34:28 train - loss: 0.4651, ber: 0.7681
+16:34:33 valid - loss: 0.4662, ber: 0.7676
+Epoch 16/20
+16:36:07 train - loss: 0.4598, ber: 0.7717
+16:36:12 valid - loss: 0.4614, ber: 0.7709
+Epoch 17/20
+16:37:46 train - loss: 0.4551, ber: 0.7748
+16:37:51 valid - loss: 0.4574, ber: 0.7736
+Epoch 18/20
+16:39:23 train - loss: 0.4510, ber: 0.7774
+16:39:28 valid - loss: 0.4531, ber: 0.7760
+Epoch 19/20
+16:41:00 train - loss: 0.4470, ber: 0.7799
+16:41:05 valid - loss: 0.4497, ber: 0.7785
+Epoch 20/20
+16:42:37 train - loss: 0.4435, ber: 0.7821
+16:42:42 valid - loss: 0.4469, ber: 0.7804

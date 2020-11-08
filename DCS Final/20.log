@@ -1,0 +1,41 @@
+16:48:24 Start training
+Epoch 1/20
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+16:50:01 train - loss: 0.7045, ber: 0.5000
+16:50:09 valid - loss: 0.7022, ber: 0.5002
+Epoch 2/20
+16:51:41 train - loss: 0.6997, ber: 0.5000
+16:51:46 valid - loss: 0.6985, ber: 0.5001
+Epoch 3/20
+16:53:20 train - loss: 0.6984, ber: 0.5000
+16:53:25 valid - loss: 0.6985, ber: 0.5001
+Epoch 4/20
+16:54:57 train - loss: 0.6986, ber: 0.5000
+16:55:02 valid - loss: 0.6987, ber: 0.4998
+Epoch 5/20
+16:56:35 train - loss: 0.6988, ber: 0.5000
+16:56:40 valid - loss: 0.6988, ber: 0.5003
+Epoch 6/20
+16:58:12 train - loss: 0.6988, ber: 0.5000
+16:58:17 valid - loss: 0.6987, ber: 0.5001
+Epoch 7/20
+---------------------------------------------------------------------------
+KeyboardInterrupt                         Traceback (most recent call last)
+<ipython-input-11-6725aee3a84f> in <module>()
+      1 hist = learner.fit(ds_train, epochs, ds_test, val_freq=1,
+----> 2                    steps_per_epoch=steps_per_epoch, val_steps=test_steps)
+
+3 frames
+/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py in _numpy(self)
+   1027   def _numpy(self):
+   1028     try:
+-> 1029       return self._numpy_internal()
+   1030     except core._NotOkStatusException as e:  # pylint: disable=protected-access
+   1031       six.raise_from(core._status_to_exception(e.code, e.message), None)  # pylint: disable=protected-access
+
+KeyboardInterrupt: 

@@ -1,0 +1,35 @@
+16:52:19 Start training
+Epoch 1/10
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+16:53:54 train - loss: 4.3837, ber: 0.5000
+16:54:01 valid - loss: 0.7021, ber: 0.5011
+Epoch 2/10
+16:55:32 train - loss: 0.7016, ber: 0.5064
+16:55:37 valid - loss: 0.6979, ber: 0.5138
+Epoch 3/10
+16:57:08 train - loss: 0.6954, ber: 0.5186
+16:57:13 valid - loss: 0.6933, ber: 0.5233
+Epoch 4/10
+16:58:45 train - loss: 0.6916, ber: 0.5274
+16:58:50 valid - loss: 0.6902, ber: 0.5310
+Epoch 5/10
+---------------------------------------------------------------------------
+KeyboardInterrupt                         Traceback (most recent call last)
+<ipython-input-8-6725aee3a84f> in <module>()
+      1 hist = learner.fit(ds_train, epochs, ds_test, val_freq=1,
+----> 2                    steps_per_epoch=steps_per_epoch, val_steps=test_steps)
+
+3 frames
+/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py in _numpy(self)
+   1027   def _numpy(self):
+   1028     try:
+-> 1029       return self._numpy_internal()
+   1030     except core._NotOkStatusException as e:  # pylint: disable=protected-access
+   1031       six.raise_from(core._status_to_exception(e.code, e.message), None)  # pylint: disable=protected-access
+
+KeyboardInterrupt: 

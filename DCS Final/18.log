@@ -1,0 +1,37 @@
+16:24:43 Start training
+Epoch 1/10
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+16:26:22 train - loss: 0.7277, ber: 0.5036
+16:26:29 valid - loss: 0.6991, ber: 0.5065
+Epoch 2/10
+16:28:03 train - loss: 0.6979, ber: 0.5077
+16:28:08 valid - loss: 0.6968, ber: 0.5097
+Epoch 3/10
+16:29:41 train - loss: 0.6960, ber: 0.5125
+16:29:46 valid - loss: 0.6951, ber: 0.5157
+Epoch 4/10
+16:31:18 train - loss: 0.6937, ber: 0.5208
+16:31:23 valid - loss: 0.6920, ber: 0.5265
+Epoch 5/10
+16:32:54 train - loss: 0.6899, ber: 0.5317
+16:32:59 valid - loss: 0.6877, ber: 0.5364
+Epoch 6/10
+16:34:31 train - loss: 0.6851, ber: 0.5400
+16:34:36 valid - loss: 0.6829, ber: 0.5430
+Epoch 7/10
+16:36:08 train - loss: 0.6804, ber: 0.5459
+16:36:13 valid - loss: 0.6785, ber: 0.5478
+Epoch 8/10
+16:37:45 train - loss: 0.6758, ber: 0.5510
+16:37:50 valid - loss: 0.6740, ber: 0.5526
+Epoch 9/10
+16:39:21 train - loss: 0.6713, ber: 0.5554
+16:39:27 valid - loss: 0.6696, ber: 0.5564
+Epoch 10/10
+16:40:58 train - loss: 0.6670, ber: 0.5594
+16:41:03 valid - loss: 0.6657, ber: 0.5607
