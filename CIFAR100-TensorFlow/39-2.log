@@ -1,0 +1,937 @@
+18:08:52 Start training
+Epoch 1/300
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
+18:10:48 train - loss: 4.0512, acc: 0.0831
+18:11:13 valid - loss: 3.6808, acc: 0.1371
+Epoch 2/300
+18:11:24 train - loss: 3.5069, acc: 0.1633
+18:11:24 valid - loss: 3.3099, acc: 0.2020
+Epoch 3/300
+18:11:35 train - loss: 3.1702, acc: 0.2267
+18:11:35 valid - loss: 2.9566, acc: 0.2610
+Epoch 4/300
+18:11:46 train - loss: 2.8891, acc: 0.2787
+18:11:46 valid - loss: 2.7075, acc: 0.3194
+Epoch 5/300
+18:11:57 train - loss: 2.6547, acc: 0.3230
+18:11:57 valid - loss: 2.4504, acc: 0.3637
+Epoch 6/300
+18:12:08 train - loss: 2.4448, acc: 0.3655
+18:12:08 valid - loss: 2.3286, acc: 0.3946
+Epoch 7/300
+18:12:19 train - loss: 2.2819, acc: 0.4006
+18:12:19 valid - loss: 2.2117, acc: 0.4312
+Epoch 8/300
+18:12:30 train - loss: 2.1453, acc: 0.4289
+18:12:30 valid - loss: 2.0687, acc: 0.4536
+Epoch 9/300
+18:12:41 train - loss: 2.0391, acc: 0.4515
+18:12:41 valid - loss: 2.0066, acc: 0.4678
+Epoch 10/300
+18:12:52 train - loss: 1.9310, acc: 0.4783
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:12:55 valid - loss: 1.9194, acc: 0.4934
+Epoch 11/300
+18:13:06 train - loss: 1.8393, acc: 0.4984
+18:13:06 valid - loss: 1.7630, acc: 0.5246
+Epoch 12/300
+18:13:17 train - loss: 1.7726, acc: 0.5144
+18:13:18 valid - loss: 1.7793, acc: 0.5198
+Epoch 13/300
+18:13:28 train - loss: 1.6995, acc: 0.5339
+18:13:29 valid - loss: 1.7180, acc: 0.5434
+Epoch 14/300
+18:13:39 train - loss: 1.6339, acc: 0.5477
+18:13:40 valid - loss: 1.6590, acc: 0.5458
+Epoch 15/300
+18:13:50 train - loss: 1.5656, acc: 0.5665
+18:13:51 valid - loss: 1.6701, acc: 0.5537
+Epoch 16/300
+18:14:01 train - loss: 1.5255, acc: 0.5733
+18:14:02 valid - loss: 1.6662, acc: 0.5601
+Epoch 17/300
+18:14:12 train - loss: 1.4701, acc: 0.5863
+18:14:13 valid - loss: 1.5936, acc: 0.5671
+Epoch 18/300
+18:14:23 train - loss: 1.4194, acc: 0.5967
+18:14:24 valid - loss: 1.5744, acc: 0.5805
+Epoch 19/300
+18:14:34 train - loss: 1.3786, acc: 0.6081
+18:14:35 valid - loss: 1.5436, acc: 0.5868
+Epoch 20/300
+18:14:45 train - loss: 1.3402, acc: 0.6183
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:14:49 valid - loss: 1.4925, acc: 0.5973
+Epoch 21/300
+18:15:00 train - loss: 1.2993, acc: 0.6287
+18:15:00 valid - loss: 1.4839, acc: 0.6038
+Epoch 22/300
+18:15:11 train - loss: 1.2624, acc: 0.6379
+18:15:11 valid - loss: 1.4867, acc: 0.6016
+Epoch 23/300
+18:15:22 train - loss: 1.2340, acc: 0.6429
+18:15:22 valid - loss: 1.4771, acc: 0.6085
+Epoch 24/300
+18:15:33 train - loss: 1.2045, acc: 0.6534
+18:15:33 valid - loss: 1.4721, acc: 0.6134
+Epoch 25/300
+18:15:44 train - loss: 1.1670, acc: 0.6636
+18:15:44 valid - loss: 1.4240, acc: 0.6339
+Epoch 26/300
+18:15:55 train - loss: 1.1514, acc: 0.6673
+18:15:55 valid - loss: 1.4740, acc: 0.6216
+Epoch 27/300
+18:16:06 train - loss: 1.1214, acc: 0.6744
+18:16:06 valid - loss: 1.4131, acc: 0.6324
+Epoch 28/300
+18:16:17 train - loss: 1.0936, acc: 0.6802
+18:16:17 valid - loss: 1.4203, acc: 0.6378
+Epoch 29/300
+18:16:28 train - loss: 1.0799, acc: 0.6826
+18:16:28 valid - loss: 1.4950, acc: 0.6211
+Epoch 30/300
+18:16:39 train - loss: 1.0531, acc: 0.6910
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:16:43 valid - loss: 1.5138, acc: 0.6192
+Epoch 31/300
+18:16:54 train - loss: 1.0424, acc: 0.6942
+18:16:54 valid - loss: 1.4259, acc: 0.6288
+Epoch 32/300
+18:17:05 train - loss: 1.0098, acc: 0.7039
+18:17:05 valid - loss: 1.4435, acc: 0.6269
+Epoch 33/300
+18:17:16 train - loss: 1.0018, acc: 0.7039
+18:17:16 valid - loss: 1.5196, acc: 0.6172
+Epoch 34/300
+18:17:27 train - loss: 0.9788, acc: 0.7118
+18:17:27 valid - loss: 1.3714, acc: 0.6416
+Epoch 35/300
+18:17:38 train - loss: 0.9686, acc: 0.7134
+18:17:38 valid - loss: 1.4657, acc: 0.6344
+Epoch 36/300
+18:17:49 train - loss: 0.9523, acc: 0.7166
+18:17:49 valid - loss: 1.3704, acc: 0.6494
+Epoch 37/300
+18:18:00 train - loss: 0.9434, acc: 0.7211
+18:18:00 valid - loss: 1.4636, acc: 0.6406
+Epoch 38/300
+18:18:11 train - loss: 0.9251, acc: 0.7223
+18:18:11 valid - loss: 1.4444, acc: 0.6373
+Epoch 39/300
+18:18:22 train - loss: 0.9090, acc: 0.7273
+18:18:22 valid - loss: 1.4177, acc: 0.6470
+Epoch 40/300
+18:18:33 train - loss: 0.8897, acc: 0.7319
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:18:37 valid - loss: 1.3973, acc: 0.6507
+Epoch 41/300
+18:18:47 train - loss: 0.8789, acc: 0.7363
+18:18:48 valid - loss: 1.4288, acc: 0.6475
+Epoch 42/300
+18:18:58 train - loss: 0.8722, acc: 0.7382
+18:18:59 valid - loss: 1.4135, acc: 0.6446
+Epoch 43/300
+18:19:10 train - loss: 0.8565, acc: 0.7434
+18:19:10 valid - loss: 1.4959, acc: 0.6356
+Epoch 44/300
+18:19:21 train - loss: 0.8467, acc: 0.7438
+18:19:21 valid - loss: 1.4300, acc: 0.6426
+Epoch 45/300
+18:19:32 train - loss: 0.8328, acc: 0.7493
+18:19:32 valid - loss: 1.4813, acc: 0.6472
+Epoch 46/300
+18:19:43 train - loss: 0.8273, acc: 0.7513
+18:19:43 valid - loss: 1.3784, acc: 0.6595
+Epoch 47/300
+18:19:54 train - loss: 0.8210, acc: 0.7521
+18:19:54 valid - loss: 1.4067, acc: 0.6475
+Epoch 48/300
+18:20:05 train - loss: 0.8074, acc: 0.7554
+18:20:05 valid - loss: 1.4189, acc: 0.6500
+Epoch 49/300
+18:20:16 train - loss: 0.7974, acc: 0.7571
+18:20:16 valid - loss: 1.3950, acc: 0.6545
+Epoch 50/300
+18:20:27 train - loss: 0.7815, acc: 0.7599
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:20:30 valid - loss: 1.4002, acc: 0.6572
+Epoch 51/300
+18:20:41 train - loss: 0.7830, acc: 0.7631
+18:20:41 valid - loss: 1.2843, acc: 0.6671
+Epoch 52/300
+18:20:52 train - loss: 0.7657, acc: 0.7669
+18:20:52 valid - loss: 1.5054, acc: 0.6454
+Epoch 53/300
+18:21:03 train - loss: 0.7678, acc: 0.7647
+18:21:03 valid - loss: 1.4004, acc: 0.6542
+Epoch 54/300
+18:21:14 train - loss: 0.7557, acc: 0.7686
+18:21:14 valid - loss: 1.4274, acc: 0.6574
+Epoch 55/300
+18:21:25 train - loss: 0.7412, acc: 0.7733
+18:21:25 valid - loss: 1.4318, acc: 0.6518
+Epoch 56/300
+18:21:36 train - loss: 0.7423, acc: 0.7733
+18:21:36 valid - loss: 1.4268, acc: 0.6528
+Epoch 57/300
+18:21:47 train - loss: 0.7235, acc: 0.7780
+18:21:47 valid - loss: 1.4456, acc: 0.6653
+Epoch 58/300
+18:21:58 train - loss: 0.7237, acc: 0.7773
+18:21:58 valid - loss: 1.4805, acc: 0.6480
+Epoch 59/300
+18:22:09 train - loss: 0.7253, acc: 0.7762
+18:22:10 valid - loss: 1.4722, acc: 0.6586
+Epoch 60/300
+18:22:20 train - loss: 0.7101, acc: 0.7830
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:22:24 valid - loss: 1.3697, acc: 0.6680
+Epoch 61/300
+18:22:35 train - loss: 0.7002, acc: 0.7824
+18:22:35 valid - loss: 1.4845, acc: 0.6543
+Epoch 62/300
+18:22:46 train - loss: 0.6926, acc: 0.7872
+18:22:46 valid - loss: 1.4608, acc: 0.6528
+Epoch 63/300
+18:22:57 train - loss: 0.6878, acc: 0.7879
+18:22:57 valid - loss: 1.3433, acc: 0.6738
+Epoch 64/300
+18:23:08 train - loss: 0.6859, acc: 0.7887
+18:23:08 valid - loss: 1.5201, acc: 0.6532
+Epoch 65/300
+18:23:19 train - loss: 0.6731, acc: 0.7923
+18:23:19 valid - loss: 1.4806, acc: 0.6567
+Epoch 66/300
+18:23:30 train - loss: 0.6716, acc: 0.7935
+18:23:30 valid - loss: 1.4190, acc: 0.6628
+Epoch 67/300
+18:23:41 train - loss: 0.6589, acc: 0.7957
+18:23:41 valid - loss: 1.4748, acc: 0.6613
+Epoch 68/300
+18:23:52 train - loss: 0.6562, acc: 0.7977
+18:23:52 valid - loss: 1.4902, acc: 0.6587
+Epoch 69/300
+18:24:03 train - loss: 0.6524, acc: 0.7975
+18:24:03 valid - loss: 1.5616, acc: 0.6445
+Epoch 70/300
+18:24:14 train - loss: 0.6453, acc: 0.7998
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:24:18 valid - loss: 1.4764, acc: 0.6615
+Epoch 71/300
+18:24:28 train - loss: 0.6370, acc: 0.8029
+18:24:29 valid - loss: 1.4962, acc: 0.6645
+Epoch 72/300
+18:24:39 train - loss: 0.6302, acc: 0.8049
+18:24:40 valid - loss: 1.4707, acc: 0.6722
+Epoch 73/300
+18:24:50 train - loss: 0.6335, acc: 0.8035
+18:24:51 valid - loss: 1.5170, acc: 0.6558
+Epoch 74/300
+18:25:01 train - loss: 0.6149, acc: 0.8094
+18:25:02 valid - loss: 1.5289, acc: 0.6453
+Epoch 75/300
+18:25:12 train - loss: 0.6193, acc: 0.8067
+18:25:13 valid - loss: 1.4648, acc: 0.6609
+Epoch 76/300
+18:25:23 train - loss: 0.6131, acc: 0.8090
+18:25:24 valid - loss: 1.5659, acc: 0.6488
+Epoch 77/300
+18:25:34 train - loss: 0.6094, acc: 0.8099
+18:25:35 valid - loss: 1.4871, acc: 0.6560
+Epoch 78/300
+18:25:45 train - loss: 0.6048, acc: 0.8103
+18:25:46 valid - loss: 1.4781, acc: 0.6626
+Epoch 79/300
+18:25:56 train - loss: 0.5878, acc: 0.8168
+18:25:57 valid - loss: 1.4489, acc: 0.6734
+Epoch 80/300
+18:26:07 train - loss: 0.5859, acc: 0.8165
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:26:11 valid - loss: 1.4130, acc: 0.6703
+Epoch 81/300
+18:26:22 train - loss: 0.5772, acc: 0.8205
+18:26:22 valid - loss: 1.5370, acc: 0.6568
+Epoch 82/300
+18:26:33 train - loss: 0.5766, acc: 0.8194
+18:26:33 valid - loss: 1.4432, acc: 0.6699
+Epoch 83/300
+18:26:44 train - loss: 0.5755, acc: 0.8214
+18:26:44 valid - loss: 1.4983, acc: 0.6574
+Epoch 84/300
+18:26:55 train - loss: 0.5711, acc: 0.8212
+18:26:55 valid - loss: 1.4285, acc: 0.6661
+Epoch 85/300
+18:27:06 train - loss: 0.5693, acc: 0.8215
+18:27:06 valid - loss: 1.3824, acc: 0.6741
+Epoch 86/300
+18:27:17 train - loss: 0.5622, acc: 0.8217
+18:27:17 valid - loss: 1.4659, acc: 0.6667
+Epoch 87/300
+18:27:28 train - loss: 0.5545, acc: 0.8261
+18:27:28 valid - loss: 1.4400, acc: 0.6714
+Epoch 88/300
+18:27:39 train - loss: 0.5431, acc: 0.8303
+18:27:39 valid - loss: 1.5129, acc: 0.6601
+Epoch 89/300
+18:27:50 train - loss: 0.5462, acc: 0.8280
+18:27:50 valid - loss: 1.6031, acc: 0.6563
+Epoch 90/300
+18:28:01 train - loss: 0.5365, acc: 0.8300
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:28:05 valid - loss: 1.4251, acc: 0.6834
+Epoch 91/300
+18:28:16 train - loss: 0.5398, acc: 0.8316
+18:28:16 valid - loss: 1.4736, acc: 0.6743
+Epoch 92/300
+18:28:27 train - loss: 0.5420, acc: 0.8287
+18:28:27 valid - loss: 1.4407, acc: 0.6710
+Epoch 93/300
+18:28:38 train - loss: 0.5255, acc: 0.8354
+18:28:38 valid - loss: 1.4533, acc: 0.6648
+Epoch 94/300
+18:28:49 train - loss: 0.5270, acc: 0.8333
+18:28:49 valid - loss: 1.4641, acc: 0.6740
+Epoch 95/300
+18:29:00 train - loss: 0.5151, acc: 0.8379
+18:29:00 valid - loss: 1.4917, acc: 0.6727
+Epoch 96/300
+18:29:11 train - loss: 0.5130, acc: 0.8370
+18:29:11 valid - loss: 1.5355, acc: 0.6746
+Epoch 97/300
+18:29:22 train - loss: 0.5143, acc: 0.8396
+18:29:22 valid - loss: 1.4734, acc: 0.6654
+Epoch 98/300
+18:29:33 train - loss: 0.4966, acc: 0.8435
+18:29:33 valid - loss: 1.5202, acc: 0.6736
+Epoch 99/300
+18:29:44 train - loss: 0.5016, acc: 0.8422
+18:29:44 valid - loss: 1.4804, acc: 0.6672
+Epoch 100/300
+18:29:55 train - loss: 0.4995, acc: 0.8418
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:29:59 valid - loss: 1.4612, acc: 0.6706
+Epoch 101/300
+18:30:09 train - loss: 0.4971, acc: 0.8417
+18:30:10 valid - loss: 1.5228, acc: 0.6650
+Epoch 102/300
+18:30:20 train - loss: 0.4926, acc: 0.8427
+18:30:21 valid - loss: 1.4919, acc: 0.6708
+Epoch 103/300
+18:30:31 train - loss: 0.4720, acc: 0.8507
+18:30:32 valid - loss: 1.5202, acc: 0.6653
+Epoch 104/300
+18:30:42 train - loss: 0.4822, acc: 0.8470
+18:30:43 valid - loss: 1.4875, acc: 0.6756
+Epoch 105/300
+18:30:53 train - loss: 0.4799, acc: 0.8473
+18:30:54 valid - loss: 1.5166, acc: 0.6723
+Epoch 106/300
+18:31:04 train - loss: 0.4578, acc: 0.8556
+18:31:05 valid - loss: 1.5272, acc: 0.6649
+Epoch 107/300
+18:31:15 train - loss: 0.4629, acc: 0.8518
+18:31:16 valid - loss: 1.5164, acc: 0.6720
+Epoch 108/300
+18:31:26 train - loss: 0.4634, acc: 0.8546
+18:31:27 valid - loss: 1.5852, acc: 0.6606
+Epoch 109/300
+18:31:38 train - loss: 0.4480, acc: 0.8569
+18:31:38 valid - loss: 1.5258, acc: 0.6744
+Epoch 110/300
+18:31:49 train - loss: 0.4500, acc: 0.8566
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:31:52 valid - loss: 1.5203, acc: 0.6738
+Epoch 111/300
+18:32:03 train - loss: 0.4488, acc: 0.8569
+18:32:03 valid - loss: 1.5528, acc: 0.6643
+Epoch 112/300
+18:32:14 train - loss: 0.4421, acc: 0.8590
+18:32:14 valid - loss: 1.4990, acc: 0.6738
+Epoch 113/300
+18:32:25 train - loss: 0.4465, acc: 0.8591
+18:32:25 valid - loss: 1.5551, acc: 0.6689
+Epoch 114/300
+18:32:36 train - loss: 0.4302, acc: 0.8632
+18:32:36 valid - loss: 1.4362, acc: 0.6848
+Epoch 115/300
+18:32:47 train - loss: 0.4289, acc: 0.8622
+18:32:47 valid - loss: 1.5576, acc: 0.6607
+Epoch 116/300
+18:32:58 train - loss: 0.4221, acc: 0.8641
+18:32:58 valid - loss: 1.6144, acc: 0.6615
+Epoch 117/300
+18:33:09 train - loss: 0.4365, acc: 0.8594
+18:33:09 valid - loss: 1.5252, acc: 0.6656
+Epoch 118/300
+18:33:20 train - loss: 0.4200, acc: 0.8653
+18:33:20 valid - loss: 1.5657, acc: 0.6760
+Epoch 119/300
+18:33:31 train - loss: 0.4120, acc: 0.8676
+18:33:31 valid - loss: 1.5715, acc: 0.6705
+Epoch 120/300
+18:33:42 train - loss: 0.4119, acc: 0.8685
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:33:46 valid - loss: 1.5703, acc: 0.6720
+Epoch 121/300
+18:33:57 train - loss: 0.4127, acc: 0.8659
+18:33:57 valid - loss: 1.4530, acc: 0.6847
+Epoch 122/300
+18:34:08 train - loss: 0.3975, acc: 0.8714
+18:34:08 valid - loss: 1.5392, acc: 0.6767
+Epoch 123/300
+18:34:19 train - loss: 0.3962, acc: 0.8724
+18:34:19 valid - loss: 1.5120, acc: 0.6843
+Epoch 124/300
+18:34:30 train - loss: 0.3887, acc: 0.8751
+18:34:30 valid - loss: 1.5492, acc: 0.6800
+Epoch 125/300
+18:34:41 train - loss: 0.3880, acc: 0.8770
+18:34:41 valid - loss: 1.5012, acc: 0.6775
+Epoch 126/300
+18:34:52 train - loss: 0.3888, acc: 0.8760
+18:34:52 valid - loss: 1.4771, acc: 0.6856
+Epoch 127/300
+18:35:03 train - loss: 0.3900, acc: 0.8742
+18:35:03 valid - loss: 1.4985, acc: 0.6771
+Epoch 128/300
+18:35:14 train - loss: 0.3673, acc: 0.8831
+18:35:14 valid - loss: 1.5520, acc: 0.6790
+Epoch 129/300
+18:35:25 train - loss: 0.3770, acc: 0.8771
+18:35:25 valid - loss: 1.5853, acc: 0.6726
+Epoch 130/300
+18:35:36 train - loss: 0.3725, acc: 0.8802
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:35:39 valid - loss: 1.5250, acc: 0.6808
+Epoch 131/300
+18:35:50 train - loss: 0.3599, acc: 0.8834
+18:35:50 valid - loss: 1.6116, acc: 0.6737
+Epoch 132/300
+18:36:01 train - loss: 0.3766, acc: 0.8783
+18:36:02 valid - loss: 1.5956, acc: 0.6736
+Epoch 133/300
+18:36:12 train - loss: 0.3494, acc: 0.8891
+18:36:13 valid - loss: 1.5609, acc: 0.6783
+Epoch 134/300
+18:36:23 train - loss: 0.3477, acc: 0.8878
+18:36:24 valid - loss: 1.5570, acc: 0.6794
+Epoch 135/300
+18:36:34 train - loss: 0.3465, acc: 0.8886
+18:36:35 valid - loss: 1.5429, acc: 0.6788
+Epoch 136/300
+18:36:45 train - loss: 0.3462, acc: 0.8881
+18:36:46 valid - loss: 1.5315, acc: 0.6798
+Epoch 137/300
+18:36:56 train - loss: 0.3294, acc: 0.8952
+18:36:57 valid - loss: 1.5725, acc: 0.6873
+Epoch 138/300
+18:37:07 train - loss: 0.3326, acc: 0.8918
+18:37:08 valid - loss: 1.5467, acc: 0.6791
+Epoch 139/300
+18:37:18 train - loss: 0.3323, acc: 0.8921
+18:37:19 valid - loss: 1.5146, acc: 0.6794
+Epoch 140/300
+18:37:29 train - loss: 0.3254, acc: 0.8940
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:37:33 valid - loss: 1.5621, acc: 0.6819
+Epoch 141/300
+18:37:44 train - loss: 0.3308, acc: 0.8928
+18:37:44 valid - loss: 1.6003, acc: 0.6773
+Epoch 142/300
+18:37:55 train - loss: 0.3178, acc: 0.8978
+18:37:55 valid - loss: 1.5218, acc: 0.6875
+Epoch 143/300
+18:38:06 train - loss: 0.3072, acc: 0.9009
+18:38:06 valid - loss: 1.5333, acc: 0.6880
+Epoch 144/300
+18:38:17 train - loss: 0.3100, acc: 0.8990
+18:38:17 valid - loss: 1.5629, acc: 0.6849
+Epoch 145/300
+18:38:28 train - loss: 0.3095, acc: 0.9006
+18:38:28 valid - loss: 1.5392, acc: 0.6847
+Epoch 146/300
+18:38:39 train - loss: 0.3107, acc: 0.8996
+18:38:39 valid - loss: 1.5515, acc: 0.6842
+Epoch 147/300
+18:38:50 train - loss: 0.2959, acc: 0.9050
+18:38:50 valid - loss: 1.5940, acc: 0.6830
+Epoch 148/300
+18:39:01 train - loss: 0.2910, acc: 0.9059
+18:39:01 valid - loss: 1.5462, acc: 0.6839
+Epoch 149/300
+18:39:12 train - loss: 0.2839, acc: 0.9076
+18:39:12 valid - loss: 1.5350, acc: 0.6889
+Epoch 150/300
+18:39:23 train - loss: 0.2870, acc: 0.9077
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:39:26 valid - loss: 1.5265, acc: 0.6902
+Epoch 151/300
+18:39:37 train - loss: 0.2851, acc: 0.9066
+18:39:37 valid - loss: 1.5097, acc: 0.6880
+Epoch 152/300
+18:39:48 train - loss: 0.2828, acc: 0.9091
+18:39:48 valid - loss: 1.5612, acc: 0.6826
+Epoch 153/300
+18:39:59 train - loss: 0.2862, acc: 0.9084
+18:40:00 valid - loss: 1.5920, acc: 0.6873
+Epoch 154/300
+18:40:10 train - loss: 0.2625, acc: 0.9164
+18:40:11 valid - loss: 1.5404, acc: 0.6926
+Epoch 155/300
+18:40:21 train - loss: 0.2711, acc: 0.9126
+18:40:22 valid - loss: 1.5437, acc: 0.6888
+Epoch 156/300
+18:40:32 train - loss: 0.2620, acc: 0.9145
+18:40:33 valid - loss: 1.5576, acc: 0.6863
+Epoch 157/300
+18:40:43 train - loss: 0.2507, acc: 0.9190
+18:40:44 valid - loss: 1.5856, acc: 0.6853
+Epoch 158/300
+18:40:54 train - loss: 0.2562, acc: 0.9166
+18:40:55 valid - loss: 1.5418, acc: 0.6930
+Epoch 159/300
+18:41:05 train - loss: 0.2575, acc: 0.9162
+18:41:06 valid - loss: 1.5142, acc: 0.6986
+Epoch 160/300
+18:41:16 train - loss: 0.2515, acc: 0.9184
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:41:20 valid - loss: 1.5274, acc: 0.6926
+Epoch 161/300
+18:41:31 train - loss: 0.2360, acc: 0.9250
+18:41:31 valid - loss: 1.5975, acc: 0.6880
+Epoch 162/300
+18:41:42 train - loss: 0.2336, acc: 0.9238
+18:41:42 valid - loss: 1.5974, acc: 0.6832
+Epoch 163/300
+18:41:53 train - loss: 0.2367, acc: 0.9235
+18:41:53 valid - loss: 1.5942, acc: 0.6925
+Epoch 164/300
+18:42:04 train - loss: 0.2271, acc: 0.9265
+18:42:04 valid - loss: 1.5743, acc: 0.6890
+Epoch 165/300
+18:42:15 train - loss: 0.2258, acc: 0.9263
+18:42:15 valid - loss: 1.5732, acc: 0.6962
+Epoch 166/300
+18:42:26 train - loss: 0.2204, acc: 0.9283
+18:42:26 valid - loss: 1.6366, acc: 0.6882
+Epoch 167/300
+18:42:37 train - loss: 0.2145, acc: 0.9311
+18:42:37 valid - loss: 1.5402, acc: 0.6959
+Epoch 168/300
+18:42:48 train - loss: 0.2146, acc: 0.9298
+18:42:48 valid - loss: 1.6335, acc: 0.6870
+Epoch 169/300
+18:42:59 train - loss: 0.2130, acc: 0.9296
+18:42:59 valid - loss: 1.6084, acc: 0.6946
+Epoch 170/300
+18:43:10 train - loss: 0.2082, acc: 0.9322
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:43:14 valid - loss: 1.6400, acc: 0.6952
+Epoch 171/300
+18:43:25 train - loss: 0.2098, acc: 0.9323
+18:43:25 valid - loss: 1.5799, acc: 0.6996
+Epoch 172/300
+18:43:36 train - loss: 0.1932, acc: 0.9372
+18:43:36 valid - loss: 1.5986, acc: 0.6885
+Epoch 173/300
+18:43:47 train - loss: 0.1965, acc: 0.9369
+18:43:47 valid - loss: 1.5556, acc: 0.6975
+Epoch 174/300
+18:43:58 train - loss: 0.1906, acc: 0.9379
+18:43:58 valid - loss: 1.5309, acc: 0.7000
+Epoch 175/300
+18:44:09 train - loss: 0.1831, acc: 0.9393
+18:44:09 valid - loss: 1.5900, acc: 0.6941
+Epoch 176/300
+18:44:20 train - loss: 0.1745, acc: 0.9431
+18:44:20 valid - loss: 1.5141, acc: 0.7069
+Epoch 177/300
+18:44:31 train - loss: 0.1819, acc: 0.9417
+18:44:31 valid - loss: 1.6140, acc: 0.6964
+Epoch 178/300
+18:44:42 train - loss: 0.1853, acc: 0.9410
+18:44:42 valid - loss: 1.5790, acc: 0.6941
+Epoch 179/300
+18:44:53 train - loss: 0.1698, acc: 0.9458
+18:44:53 valid - loss: 1.5774, acc: 0.7037
+Epoch 180/300
+18:45:04 train - loss: 0.1690, acc: 0.9448
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:45:08 valid - loss: 1.6072, acc: 0.7009
+Epoch 181/300
+18:45:18 train - loss: 0.1640, acc: 0.9468
+18:45:19 valid - loss: 1.5881, acc: 0.7057
+Epoch 182/300
+18:45:29 train - loss: 0.1621, acc: 0.9469
+18:45:30 valid - loss: 1.5259, acc: 0.7025
+Epoch 183/300
+18:45:41 train - loss: 0.1583, acc: 0.9494
+18:45:41 valid - loss: 1.5515, acc: 0.7046
+Epoch 184/300
+18:45:52 train - loss: 0.1551, acc: 0.9492
+18:45:52 valid - loss: 1.6173, acc: 0.6996
+Epoch 185/300
+18:46:03 train - loss: 0.1581, acc: 0.9494
+18:46:03 valid - loss: 1.5793, acc: 0.7042
+Epoch 186/300
+18:46:14 train - loss: 0.1493, acc: 0.9511
+18:46:14 valid - loss: 1.6369, acc: 0.6966
+Epoch 187/300
+18:46:25 train - loss: 0.1425, acc: 0.9532
+18:46:25 valid - loss: 1.5397, acc: 0.7043
+Epoch 188/300
+18:46:36 train - loss: 0.1419, acc: 0.9549
+18:46:36 valid - loss: 1.5988, acc: 0.7041
+Epoch 189/300
+18:46:47 train - loss: 0.1335, acc: 0.9581
+18:46:47 valid - loss: 1.5873, acc: 0.7031
+Epoch 190/300
+18:46:58 train - loss: 0.1331, acc: 0.9587
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:47:01 valid - loss: 1.5912, acc: 0.7028
+Epoch 191/300
+18:47:12 train - loss: 0.1338, acc: 0.9577
+18:47:12 valid - loss: 1.6620, acc: 0.7016
+Epoch 192/300
+18:47:23 train - loss: 0.1269, acc: 0.9589
+18:47:23 valid - loss: 1.6072, acc: 0.7069
+Epoch 193/300
+18:47:34 train - loss: 0.1195, acc: 0.9626
+18:47:34 valid - loss: 1.5681, acc: 0.7053
+Epoch 194/300
+18:47:45 train - loss: 0.1158, acc: 0.9636
+18:47:46 valid - loss: 1.5920, acc: 0.7072
+Epoch 195/300
+18:47:56 train - loss: 0.1197, acc: 0.9623
+18:47:57 valid - loss: 1.6284, acc: 0.7032
+Epoch 196/300
+18:48:07 train - loss: 0.1143, acc: 0.9642
+18:48:08 valid - loss: 1.6056, acc: 0.7056
+Epoch 197/300
+18:48:18 train - loss: 0.1100, acc: 0.9655
+18:48:19 valid - loss: 1.5665, acc: 0.7116
+Epoch 198/300
+18:48:29 train - loss: 0.1027, acc: 0.9674
+18:48:30 valid - loss: 1.5316, acc: 0.7097
+Epoch 199/300
+18:48:40 train - loss: 0.0984, acc: 0.9689
+18:48:41 valid - loss: 1.5679, acc: 0.7123
+Epoch 200/300
+18:48:51 train - loss: 0.0952, acc: 0.9713
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:48:55 valid - loss: 1.5106, acc: 0.7141
+Epoch 201/300
+18:49:06 train - loss: 0.0945, acc: 0.9712
+18:49:06 valid - loss: 1.5821, acc: 0.7090
+Epoch 202/300
+18:49:17 train - loss: 0.0927, acc: 0.9711
+18:49:17 valid - loss: 1.6058, acc: 0.7088
+Epoch 203/300
+18:49:28 train - loss: 0.0874, acc: 0.9735
+18:49:28 valid - loss: 1.5642, acc: 0.7117
+Epoch 204/300
+18:49:39 train - loss: 0.0839, acc: 0.9738
+18:49:39 valid - loss: 1.5753, acc: 0.7147
+Epoch 205/300
+18:49:50 train - loss: 0.0806, acc: 0.9754
+18:49:50 valid - loss: 1.5482, acc: 0.7163
+Epoch 206/300
+18:50:01 train - loss: 0.0797, acc: 0.9751
+18:50:01 valid - loss: 1.5385, acc: 0.7194
+Epoch 207/300
+18:50:12 train - loss: 0.0769, acc: 0.9769
+18:50:12 valid - loss: 1.5188, acc: 0.7189
+Epoch 208/300
+18:50:23 train - loss: 0.0688, acc: 0.9797
+18:50:23 valid - loss: 1.5694, acc: 0.7150
+Epoch 209/300
+18:50:34 train - loss: 0.0691, acc: 0.9798
+18:50:34 valid - loss: 1.5596, acc: 0.7168
+Epoch 210/300
+18:50:45 train - loss: 0.0653, acc: 0.9804
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:50:49 valid - loss: 1.5441, acc: 0.7215
+Epoch 211/300
+18:51:00 train - loss: 0.0646, acc: 0.9804
+18:51:00 valid - loss: 1.5964, acc: 0.7213
+Epoch 212/300
+18:51:11 train - loss: 0.0594, acc: 0.9825
+18:51:11 valid - loss: 1.5616, acc: 0.7175
+Epoch 213/300
+18:51:22 train - loss: 0.0595, acc: 0.9826
+18:51:22 valid - loss: 1.5565, acc: 0.7224
+Epoch 214/300
+18:51:33 train - loss: 0.0533, acc: 0.9850
+18:51:33 valid - loss: 1.5625, acc: 0.7234
+Epoch 215/300
+18:51:44 train - loss: 0.0523, acc: 0.9848
+18:51:44 valid - loss: 1.5580, acc: 0.7220
+Epoch 216/300
+18:51:55 train - loss: 0.0531, acc: 0.9849
+18:51:55 valid - loss: 1.5608, acc: 0.7241
+Epoch 217/300
+18:52:06 train - loss: 0.0527, acc: 0.9855
+18:52:06 valid - loss: 1.5398, acc: 0.7228
+Epoch 218/300
+18:52:17 train - loss: 0.0477, acc: 0.9861
+18:52:17 valid - loss: 1.5346, acc: 0.7256
+Epoch 219/300
+18:52:28 train - loss: 0.0423, acc: 0.9881
+18:52:28 valid - loss: 1.5430, acc: 0.7254
+Epoch 220/300
+18:52:39 train - loss: 0.0426, acc: 0.9883
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:52:43 valid - loss: 1.5393, acc: 0.7264
+Epoch 221/300
+18:52:53 train - loss: 0.0412, acc: 0.9885
+18:52:54 valid - loss: 1.5757, acc: 0.7221
+Epoch 222/300
+18:53:04 train - loss: 0.0397, acc: 0.9894
+18:53:05 valid - loss: 1.5294, acc: 0.7269
+Epoch 223/300
+18:53:16 train - loss: 0.0333, acc: 0.9914
+18:53:16 valid - loss: 1.5236, acc: 0.7294
+Epoch 224/300
+18:53:27 train - loss: 0.0323, acc: 0.9920
+18:53:27 valid - loss: 1.5028, acc: 0.7291
+Epoch 225/300
+18:53:38 train - loss: 0.0320, acc: 0.9917
+18:53:38 valid - loss: 1.5201, acc: 0.7366
+Epoch 226/300
+18:53:49 train - loss: 0.0291, acc: 0.9924
+18:53:49 valid - loss: 1.5406, acc: 0.7299
+Epoch 227/300
+18:54:00 train - loss: 0.0312, acc: 0.9923
+18:54:00 valid - loss: 1.5478, acc: 0.7264
+Epoch 228/300
+18:54:11 train - loss: 0.0279, acc: 0.9931
+18:54:11 valid - loss: 1.5143, acc: 0.7282
+Epoch 229/300
+18:54:22 train - loss: 0.0241, acc: 0.9940
+18:54:22 valid - loss: 1.5163, acc: 0.7272
+Epoch 230/300
+18:54:33 train - loss: 0.0233, acc: 0.9944
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:54:37 valid - loss: 1.5049, acc: 0.7297
+Epoch 231/300
+18:54:47 train - loss: 0.0242, acc: 0.9941
+18:54:48 valid - loss: 1.5265, acc: 0.7266
+Epoch 232/300
+18:54:58 train - loss: 0.0219, acc: 0.9950
+18:54:59 valid - loss: 1.4902, acc: 0.7326
+Epoch 233/300
+18:55:09 train - loss: 0.0213, acc: 0.9954
+18:55:10 valid - loss: 1.4918, acc: 0.7323
+Epoch 234/300
+18:55:21 train - loss: 0.0206, acc: 0.9955
+18:55:21 valid - loss: 1.5172, acc: 0.7308
+Epoch 235/300
+18:55:32 train - loss: 0.0201, acc: 0.9957
+18:55:32 valid - loss: 1.4998, acc: 0.7352
+Epoch 236/300
+18:55:43 train - loss: 0.0186, acc: 0.9960
+18:55:43 valid - loss: 1.5129, acc: 0.7310
+Epoch 237/300
+18:55:54 train - loss: 0.0186, acc: 0.9958
+18:55:54 valid - loss: 1.4885, acc: 0.7357
+Epoch 238/300
+18:56:05 train - loss: 0.0164, acc: 0.9968
+18:56:05 valid - loss: 1.4777, acc: 0.7356
+Epoch 239/300
+18:56:16 train - loss: 0.0165, acc: 0.9965
+18:56:16 valid - loss: 1.4784, acc: 0.7338
+Epoch 240/300
+18:56:27 train - loss: 0.0155, acc: 0.9967
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:56:30 valid - loss: 1.4702, acc: 0.7356
+Epoch 241/300
+18:56:41 train - loss: 0.0153, acc: 0.9970
+18:56:41 valid - loss: 1.4655, acc: 0.7354
+Epoch 242/300
+18:56:52 train - loss: 0.0141, acc: 0.9975
+18:56:53 valid - loss: 1.4655, acc: 0.7401
+Epoch 243/300
+18:57:03 train - loss: 0.0136, acc: 0.9975
+18:57:04 valid - loss: 1.4848, acc: 0.7329
+Epoch 244/300
+18:57:14 train - loss: 0.0132, acc: 0.9976
+18:57:15 valid - loss: 1.4684, acc: 0.7376
+Epoch 245/300
+18:57:25 train - loss: 0.0133, acc: 0.9974
+18:57:26 valid - loss: 1.4645, acc: 0.7389
+Epoch 246/300
+18:57:36 train - loss: 0.0117, acc: 0.9981
+18:57:37 valid - loss: 1.4552, acc: 0.7396
+Epoch 247/300
+18:57:47 train - loss: 0.0128, acc: 0.9974
+18:57:48 valid - loss: 1.4527, acc: 0.7394
+Epoch 248/300
+18:57:58 train - loss: 0.0117, acc: 0.9979
+18:57:59 valid - loss: 1.4524, acc: 0.7406
+Epoch 249/300
+18:58:09 train - loss: 0.0105, acc: 0.9982
+18:58:10 valid - loss: 1.4735, acc: 0.7390
+Epoch 250/300
+18:58:20 train - loss: 0.0108, acc: 0.9983
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+18:58:24 valid - loss: 1.4552, acc: 0.7393
+Epoch 251/300
+18:58:35 train - loss: 0.0108, acc: 0.9981
+18:58:35 valid - loss: 1.4611, acc: 0.7368
+Epoch 252/300
+18:58:46 train - loss: 0.0104, acc: 0.9981
+18:58:46 valid - loss: 1.4540, acc: 0.7431
+Epoch 253/300
+18:58:57 train - loss: 0.0101, acc: 0.9983
+18:58:57 valid - loss: 1.4559, acc: 0.7395
+Epoch 254/300
+18:59:08 train - loss: 0.0096, acc: 0.9984
+18:59:08 valid - loss: 1.4456, acc: 0.7408
+Epoch 255/300
+18:59:19 train - loss: 0.0096, acc: 0.9986
+18:59:19 valid - loss: 1.4509, acc: 0.7401
+Epoch 256/300
+18:59:30 train - loss: 0.0094, acc: 0.9982
+18:59:30 valid - loss: 1.4543, acc: 0.7399
+Epoch 257/300
+18:59:41 train - loss: 0.0089, acc: 0.9986
+18:59:41 valid - loss: 1.4388, acc: 0.7400
+Epoch 258/300
+18:59:52 train - loss: 0.0093, acc: 0.9984
+18:59:52 valid - loss: 1.4467, acc: 0.7418
+Epoch 259/300
+19:00:03 train - loss: 0.0087, acc: 0.9986
+19:00:03 valid - loss: 1.4368, acc: 0.7428
+Epoch 260/300
+19:00:14 train - loss: 0.0089, acc: 0.9987
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+19:00:18 valid - loss: 1.4366, acc: 0.7398
+Epoch 261/300
+19:00:29 train - loss: 0.0084, acc: 0.9988
+19:00:29 valid - loss: 1.4359, acc: 0.7447
+Epoch 262/300
+19:00:40 train - loss: 0.0080, acc: 0.9989
+19:00:40 valid - loss: 1.4352, acc: 0.7429
+Epoch 263/300
+19:00:51 train - loss: 0.0080, acc: 0.9988
+19:00:51 valid - loss: 1.4382, acc: 0.7416
+Epoch 264/300
+19:01:02 train - loss: 0.0079, acc: 0.9989
+19:01:02 valid - loss: 1.4430, acc: 0.7450
+Epoch 265/300
+19:01:13 train - loss: 0.0078, acc: 0.9987
+19:01:13 valid - loss: 1.4364, acc: 0.7425
+Epoch 266/300
+19:01:24 train - loss: 0.0079, acc: 0.9988
+19:01:24 valid - loss: 1.4320, acc: 0.7466
+Epoch 267/300
+19:01:35 train - loss: 0.0078, acc: 0.9989
+19:01:35 valid - loss: 1.4400, acc: 0.7437
+Epoch 268/300
+19:01:46 train - loss: 0.0072, acc: 0.9991
+19:01:47 valid - loss: 1.4370, acc: 0.7445
+Epoch 269/300
+19:01:57 train - loss: 0.0074, acc: 0.9988
+19:01:58 valid - loss: 1.4355, acc: 0.7446
+Epoch 270/300
+19:02:08 train - loss: 0.0075, acc: 0.9988
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+19:02:14 valid - loss: 1.4358, acc: 0.7464
+Epoch 271/300
+19:02:25 train - loss: 0.0068, acc: 0.9992
+19:02:25 valid - loss: 1.4329, acc: 0.7468
+Epoch 272/300
+19:02:36 train - loss: 0.0069, acc: 0.9991
+19:02:36 valid - loss: 1.4371, acc: 0.7449
+Epoch 273/300
+19:02:47 train - loss: 0.0072, acc: 0.9989
+19:02:47 valid - loss: 1.4461, acc: 0.7410
+Epoch 274/300
+19:02:58 train - loss: 0.0071, acc: 0.9988
+19:02:58 valid - loss: 1.4385, acc: 0.7438
+Epoch 275/300
+19:03:09 train - loss: 0.0069, acc: 0.9989
+19:03:09 valid - loss: 1.4355, acc: 0.7428
+Epoch 276/300
+19:03:20 train - loss: 0.0072, acc: 0.9989
+19:03:20 valid - loss: 1.4267, acc: 0.7455
+Epoch 277/300
+19:03:31 train - loss: 0.0072, acc: 0.9989
+19:03:31 valid - loss: 1.4304, acc: 0.7432
+Epoch 278/300
+19:03:42 train - loss: 0.0068, acc: 0.9992
+19:03:42 valid - loss: 1.4284, acc: 0.7440
+Epoch 279/300
+19:03:53 train - loss: 0.0064, acc: 0.9992
+19:03:53 valid - loss: 1.4306, acc: 0.7440
+Epoch 280/300
+19:04:04 train - loss: 0.0066, acc: 0.9993
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+19:04:08 valid - loss: 1.4295, acc: 0.7430
+Epoch 281/300
+19:04:19 train - loss: 0.0066, acc: 0.9992
+19:04:19 valid - loss: 1.4346, acc: 0.7416
+Epoch 282/300
+19:04:30 train - loss: 0.0066, acc: 0.9992
+19:04:30 valid - loss: 1.4420, acc: 0.7448
+Epoch 283/300
+19:04:41 train - loss: 0.0067, acc: 0.9989
+19:04:41 valid - loss: 1.4248, acc: 0.7458
+Epoch 284/300
+19:04:52 train - loss: 0.0061, acc: 0.9993
+19:04:52 valid - loss: 1.4268, acc: 0.7455
+Epoch 285/300
+19:05:03 train - loss: 0.0062, acc: 0.9992
+19:05:03 valid - loss: 1.4306, acc: 0.7448
+Epoch 286/300
+19:05:14 train - loss: 0.0064, acc: 0.9993
+19:05:14 valid - loss: 1.4286, acc: 0.7457
+Epoch 287/300
+19:05:25 train - loss: 0.0064, acc: 0.9992
+19:05:25 valid - loss: 1.4290, acc: 0.7463
+Epoch 288/300
+19:05:36 train - loss: 0.0065, acc: 0.9990
+19:05:36 valid - loss: 1.4259, acc: 0.7434
+Epoch 289/300
+19:05:47 train - loss: 0.0062, acc: 0.9992
+19:05:47 valid - loss: 1.4389, acc: 0.7433
+Epoch 290/300
+19:05:58 train - loss: 0.0066, acc: 0.9992
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+19:06:02 valid - loss: 1.4209, acc: 0.7434
+Epoch 291/300
+19:06:13 train - loss: 0.0066, acc: 0.9990
+19:06:13 valid - loss: 1.4300, acc: 0.7448
+Epoch 292/300
+19:06:24 train - loss: 0.0062, acc: 0.9993
+19:06:24 valid - loss: 1.4268, acc: 0.7447
+Epoch 293/300
+19:06:35 train - loss: 0.0066, acc: 0.9990
+19:06:35 valid - loss: 1.4271, acc: 0.7438
+Epoch 294/300
+19:06:46 train - loss: 0.0062, acc: 0.9993
+19:06:46 valid - loss: 1.4288, acc: 0.7438
+Epoch 295/300
+19:06:57 train - loss: 0.0065, acc: 0.9992
+19:06:57 valid - loss: 1.4274, acc: 0.7433
+Epoch 296/300
+19:07:08 train - loss: 0.0065, acc: 0.9990
+19:07:08 valid - loss: 1.4318, acc: 0.7438
+Epoch 297/300
+19:07:19 train - loss: 0.0062, acc: 0.9993
+19:07:19 valid - loss: 1.4281, acc: 0.7439
+Epoch 298/300
+19:07:30 train - loss: 0.0062, acc: 0.9991
+19:07:30 valid - loss: 1.4240, acc: 0.7437
+Epoch 299/300
+19:07:41 train - loss: 0.0062, acc: 0.9993
+19:07:41 valid - loss: 1.4323, acc: 0.7437
+Epoch 300/300
+19:07:52 train - loss: 0.0059, acc: 0.9993
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+19:07:56 valid - loss: 1.4205, acc: 0.7445

@@ -1,4 +1,4 @@
-21:30:54 Start training
+16:04:35 Start training
 Epoch 1/300
 WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -6,901 +6,932 @@ Use `tf.data.Iterator.get_next_as_optional()` instead.
 WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.Iterator.get_next_as_optional()` instead.
-21:33:26 valid - loss: 4.6065, acc: 0.0100
+16:06:33 train - loss: 4.4949, acc: 0.0253
+16:06:59 valid - loss: 4.2298, acc: 0.0462
 Epoch 2/300
-21:33:37 train - loss: 4.6082, acc: 0.0089
-21:33:37 valid - loss: 4.6062, acc: 0.0100
+16:07:09 train - loss: 4.1027, acc: 0.0589
+16:07:10 valid - loss: 3.8793, acc: 0.0843
 Epoch 3/300
-21:33:48 train - loss: 4.6079, acc: 0.0094
-21:33:48 valid - loss: 4.6061, acc: 0.0100
+16:07:21 train - loss: 3.7808, acc: 0.1132
+16:07:21 valid - loss: 3.5526, acc: 0.1472
 Epoch 4/300
-21:33:59 train - loss: 4.6079, acc: 0.0090
-21:33:59 valid - loss: 4.6064, acc: 0.0100
+16:07:32 train - loss: 3.4334, acc: 0.1704
+16:07:32 valid - loss: 3.2269, acc: 0.2082
 Epoch 5/300
-21:34:10 train - loss: 4.6078, acc: 0.0095
-21:34:10 valid - loss: 4.6062, acc: 0.0100
+16:07:43 train - loss: 3.1467, acc: 0.2251
+16:07:43 valid - loss: 3.0720, acc: 0.2495
 Epoch 6/300
-21:34:21 train - loss: 4.6078, acc: 0.0095
-21:34:22 valid - loss: 4.6064, acc: 0.0100
+16:07:54 train - loss: 2.8565, acc: 0.2810
+16:07:54 valid - loss: 3.5294, acc: 0.2719
 Epoch 7/300
-21:34:32 train - loss: 4.6078, acc: 0.0090
-21:34:33 valid - loss: 4.6062, acc: 0.0100
+16:08:05 train - loss: 2.5972, acc: 0.3288
+16:08:05 valid - loss: 2.6721, acc: 0.3278
 Epoch 8/300
-21:34:43 train - loss: 4.6078, acc: 0.0089
-21:34:44 valid - loss: 4.6063, acc: 0.0100
+16:08:16 train - loss: 2.3723, acc: 0.3759
+16:08:17 valid - loss: 2.2583, acc: 0.4072
 Epoch 9/300
-21:34:54 train - loss: 4.6080, acc: 0.0090
-21:34:55 valid - loss: 4.6059, acc: 0.0100
+16:08:27 train - loss: 2.1983, acc: 0.4160
+16:08:28 valid - loss: 2.1959, acc: 0.4258
 Epoch 10/300
-21:35:06 train - loss: 4.6077, acc: 0.0097
-21:35:06 valid - loss: 4.6107, acc: 0.0100
+16:08:39 train - loss: 2.0590, acc: 0.4439
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:08:42 valid - loss: 2.1462, acc: 0.4386
 Epoch 11/300
-21:35:17 train - loss: 4.6077, acc: 0.0090
-21:35:17 valid - loss: 4.6062, acc: 0.0100
+16:08:53 train - loss: 1.9375, acc: 0.4736
+16:08:53 valid - loss: 2.1090, acc: 0.4544
 Epoch 12/300
-21:35:28 train - loss: 4.6078, acc: 0.0091
-21:35:28 valid - loss: 4.6157, acc: 0.0100
+16:09:04 train - loss: 1.8262, acc: 0.4992
+16:09:04 valid - loss: 1.9595, acc: 0.4846
 Epoch 13/300
-21:35:39 train - loss: 4.6077, acc: 0.0092
-21:35:39 valid - loss: 4.6063, acc: 0.0100
+16:09:15 train - loss: 1.7352, acc: 0.5218
+16:09:16 valid - loss: 1.8953, acc: 0.4953
 Epoch 14/300
-21:35:50 train - loss: 4.5993, acc: 0.0105
-21:35:50 valid - loss: 4.5429, acc: 0.0178
+16:09:26 train - loss: 1.6511, acc: 0.5393
+16:09:27 valid - loss: 1.7022, acc: 0.5352
 Epoch 15/300
-21:36:01 train - loss: 4.2841, acc: 0.0432
-21:36:01 valid - loss: 4.0490, acc: 0.0727
+16:09:38 train - loss: 1.5677, acc: 0.5609
+16:09:38 valid - loss: 1.7768, acc: 0.5267
 Epoch 16/300
-21:36:12 train - loss: 3.9008, acc: 0.0914
-21:36:12 valid - loss: 3.8474, acc: 0.0988
+16:09:49 train - loss: 1.5118, acc: 0.5756
+16:09:49 valid - loss: 1.6792, acc: 0.5578
 Epoch 17/300
-21:36:23 train - loss: 3.6408, acc: 0.1322
-21:36:23 valid - loss: 3.5069, acc: 0.1625
+16:10:00 train - loss: 1.4528, acc: 0.5873
+16:10:00 valid - loss: 1.7869, acc: 0.5314
 Epoch 18/300
-21:36:34 train - loss: 3.4598, acc: 0.1663
-21:36:35 valid - loss: 3.4239, acc: 0.1833
+16:10:11 train - loss: 1.3974, acc: 0.6023
+16:10:11 valid - loss: 1.7936, acc: 0.5412
 Epoch 19/300
-21:36:45 train - loss: 3.2843, acc: 0.1996
-21:36:46 valid - loss: 3.2268, acc: 0.2165
+16:10:22 train - loss: 1.3503, acc: 0.6144
+16:10:22 valid - loss: 1.6847, acc: 0.5573
 Epoch 20/300
-21:36:56 train - loss: 3.0650, acc: 0.2382
-21:36:57 valid - loss: 2.9347, acc: 0.2683
+16:10:33 train - loss: 1.3102, acc: 0.6221
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:10:37 valid - loss: 1.7078, acc: 0.5553
 Epoch 21/300
-21:37:08 train - loss: 2.8406, acc: 0.2843
-21:37:08 valid - loss: 2.9579, acc: 0.2742
+16:10:48 train - loss: 1.2628, acc: 0.6375
+16:10:48 valid - loss: 1.5902, acc: 0.5793
 Epoch 22/300
-21:37:19 train - loss: 2.6355, acc: 0.3240
-21:37:19 valid - loss: 2.6637, acc: 0.3252
+16:10:59 train - loss: 1.2218, acc: 0.6487
+16:10:59 valid - loss: 1.5292, acc: 0.5899
 Epoch 23/300
-21:37:30 train - loss: 2.4374, acc: 0.3639
-21:37:30 valid - loss: 2.3817, acc: 0.3815
+16:11:10 train - loss: 1.1953, acc: 0.6548
+16:11:10 valid - loss: 1.6016, acc: 0.5789
 Epoch 24/300
-21:37:41 train - loss: 2.2727, acc: 0.3993
-21:37:41 valid - loss: 2.3111, acc: 0.4031
+16:11:21 train - loss: 1.1508, acc: 0.6643
+16:11:21 valid - loss: 1.5216, acc: 0.5917
 Epoch 25/300
-21:37:52 train - loss: 2.1405, acc: 0.4294
-21:37:52 valid - loss: 2.2727, acc: 0.4033
+16:11:32 train - loss: 1.1308, acc: 0.6692
+16:11:33 valid - loss: 1.5532, acc: 0.5958
 Epoch 26/300
-21:38:03 train - loss: 2.0308, acc: 0.4502
-21:38:03 valid - loss: 2.3150, acc: 0.4168
+16:11:43 train - loss: 1.1066, acc: 0.6767
+16:11:44 valid - loss: 1.5612, acc: 0.5918
 Epoch 27/300
-21:38:14 train - loss: 1.9238, acc: 0.4776
-21:38:14 valid - loss: 2.0544, acc: 0.4616
+16:11:54 train - loss: 1.0768, acc: 0.6831
+16:11:55 valid - loss: 1.5224, acc: 0.6001
 Epoch 28/300
-21:38:25 train - loss: 1.8262, acc: 0.5009
-21:38:25 valid - loss: 2.1492, acc: 0.4446
+16:12:06 train - loss: 1.0508, acc: 0.6893
+16:12:06 valid - loss: 1.4606, acc: 0.6096
 Epoch 29/300
-21:38:36 train - loss: 1.7393, acc: 0.5197
-21:38:36 valid - loss: 1.9748, acc: 0.4856
+16:12:17 train - loss: 1.0276, acc: 0.6946
+16:12:17 valid - loss: 1.5028, acc: 0.6095
 Epoch 30/300
-21:38:47 train - loss: 1.6611, acc: 0.5385
-21:38:48 valid - loss: 2.0283, acc: 0.4711
+16:12:28 train - loss: 1.0074, acc: 0.7019
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:12:32 valid - loss: 1.7094, acc: 0.5777
 Epoch 31/300
-21:38:58 train - loss: 1.5909, acc: 0.5548
-21:38:59 valid - loss: 1.7952, acc: 0.5242
+16:12:42 train - loss: 0.9914, acc: 0.7057
+16:12:43 valid - loss: 1.5409, acc: 0.6046
 Epoch 32/300
-21:39:09 train - loss: 1.5229, acc: 0.5719
-21:39:10 valid - loss: 1.7501, acc: 0.5266
+16:12:54 train - loss: 0.9576, acc: 0.7142
+16:12:54 valid - loss: 1.4832, acc: 0.6177
 Epoch 33/300
-21:39:20 train - loss: 1.4647, acc: 0.5838
-21:39:21 valid - loss: 2.0438, acc: 0.4919
+16:13:05 train - loss: 0.9502, acc: 0.7150
+16:13:05 valid - loss: 1.5307, acc: 0.6147
 Epoch 34/300
-21:39:32 train - loss: 1.4228, acc: 0.5967
-21:39:32 valid - loss: 1.8372, acc: 0.5267
+16:13:16 train - loss: 0.9329, acc: 0.7225
+16:13:16 valid - loss: 1.5118, acc: 0.6025
 Epoch 35/300
-21:39:43 train - loss: 1.3823, acc: 0.6085
-21:39:43 valid - loss: 1.6876, acc: 0.5508
+16:13:27 train - loss: 0.9257, acc: 0.7228
+16:13:27 valid - loss: 1.4944, acc: 0.6222
 Epoch 36/300
-21:39:54 train - loss: 1.3313, acc: 0.6189
-21:39:54 valid - loss: 1.6454, acc: 0.5641
+16:13:38 train - loss: 0.9053, acc: 0.7287
+16:13:38 valid - loss: 1.5440, acc: 0.6093
 Epoch 37/300
-21:40:05 train - loss: 1.2981, acc: 0.6263
-21:40:05 valid - loss: 1.6496, acc: 0.5653
+16:13:49 train - loss: 0.8836, acc: 0.7354
+16:13:49 valid - loss: 1.4806, acc: 0.6272
 Epoch 38/300
-21:40:16 train - loss: 1.2616, acc: 0.6368
-21:40:16 valid - loss: 1.5617, acc: 0.5804
+16:14:00 train - loss: 0.8675, acc: 0.7393
+16:14:01 valid - loss: 1.4826, acc: 0.6172
 Epoch 39/300
-21:40:27 train - loss: 1.2307, acc: 0.6445
-21:40:27 valid - loss: 1.6606, acc: 0.5693
+16:14:11 train - loss: 0.8608, acc: 0.7407
+16:14:12 valid - loss: 1.5555, acc: 0.6121
 Epoch 40/300
-21:40:38 train - loss: 1.1982, acc: 0.6516
-21:40:38 valid - loss: 1.6429, acc: 0.5696
+16:14:22 train - loss: 0.8502, acc: 0.7424
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:14:26 valid - loss: 1.4939, acc: 0.6218
 Epoch 41/300
-21:40:49 train - loss: 1.1694, acc: 0.6595
-21:40:49 valid - loss: 1.5984, acc: 0.5786
+16:14:37 train - loss: 0.8406, acc: 0.7434
+16:14:37 valid - loss: 1.5504, acc: 0.6148
 Epoch 42/300
-21:41:00 train - loss: 1.1448, acc: 0.6645
-21:41:01 valid - loss: 1.5650, acc: 0.5901
+16:14:48 train - loss: 0.8261, acc: 0.7508
+16:14:48 valid - loss: 1.4286, acc: 0.6395
 Epoch 43/300
-21:41:11 train - loss: 1.1204, acc: 0.6699
-21:41:12 valid - loss: 1.6694, acc: 0.5700
+16:14:59 train - loss: 0.8109, acc: 0.7550
+16:15:00 valid - loss: 1.6758, acc: 0.6031
 Epoch 44/300
-21:41:22 train - loss: 1.0964, acc: 0.6790
-21:41:23 valid - loss: 1.8106, acc: 0.5508
+16:15:10 train - loss: 0.8016, acc: 0.7556
+16:15:11 valid - loss: 1.4732, acc: 0.6304
 Epoch 45/300
-21:41:34 train - loss: 1.0714, acc: 0.6853
-21:41:34 valid - loss: 1.7864, acc: 0.5536
+16:15:21 train - loss: 0.7960, acc: 0.7583
+16:15:22 valid - loss: 1.5422, acc: 0.6252
 Epoch 46/300
-21:41:45 train - loss: 1.0561, acc: 0.6904
-21:41:45 valid - loss: 1.6476, acc: 0.5830
+16:15:33 train - loss: 0.7854, acc: 0.7607
+16:15:33 valid - loss: 1.4403, acc: 0.6248
 Epoch 47/300
-21:41:56 train - loss: 1.0361, acc: 0.6948
-21:41:56 valid - loss: 1.4531, acc: 0.6093
+16:15:44 train - loss: 0.7745, acc: 0.7640
+16:15:44 valid - loss: 1.6697, acc: 0.6075
 Epoch 48/300
-21:42:07 train - loss: 1.0126, acc: 0.6972
-21:42:07 valid - loss: 1.6108, acc: 0.5822
+16:15:55 train - loss: 0.7691, acc: 0.7679
+16:15:55 valid - loss: 1.4389, acc: 0.6394
 Epoch 49/300
-21:42:18 train - loss: 0.9946, acc: 0.7042
-21:42:18 valid - loss: 1.5567, acc: 0.5989
+16:16:06 train - loss: 0.7534, acc: 0.7701
+16:16:06 valid - loss: 1.5311, acc: 0.6241
 Epoch 50/300
-21:42:29 train - loss: 0.9784, acc: 0.7088
-21:42:29 valid - loss: 1.6212, acc: 0.5912
+16:16:17 train - loss: 0.7472, acc: 0.7726
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:16:21 valid - loss: 1.4851, acc: 0.6314
 Epoch 51/300
-21:42:40 train - loss: 0.9715, acc: 0.7079
-21:42:40 valid - loss: 1.6434, acc: 0.5868
+16:16:32 train - loss: 0.7399, acc: 0.7740
+16:16:32 valid - loss: 1.5568, acc: 0.6323
 Epoch 52/300
-21:42:51 train - loss: 0.9497, acc: 0.7152
-21:42:51 valid - loss: 1.5032, acc: 0.6078
+16:16:43 train - loss: 0.7294, acc: 0.7775
+16:16:43 valid - loss: 1.5186, acc: 0.6284
 Epoch 53/300
-21:43:02 train - loss: 0.9339, acc: 0.7189
-21:43:02 valid - loss: 1.5647, acc: 0.5988
+16:16:54 train - loss: 0.7134, acc: 0.7805
+16:16:54 valid - loss: 1.4310, acc: 0.6420
 Epoch 54/300
-21:43:13 train - loss: 0.9261, acc: 0.7211
-21:43:14 valid - loss: 1.5236, acc: 0.6101
+16:17:05 train - loss: 0.7155, acc: 0.7812
+16:17:05 valid - loss: 1.4359, acc: 0.6411
 Epoch 55/300
-21:43:24 train - loss: 0.9077, acc: 0.7271
-21:43:25 valid - loss: 1.5657, acc: 0.5999
+16:17:16 train - loss: 0.7060, acc: 0.7820
+16:17:16 valid - loss: 1.5417, acc: 0.6222
 Epoch 56/300
-21:43:35 train - loss: 0.8970, acc: 0.7299
-21:43:36 valid - loss: 1.4585, acc: 0.6234
+16:17:27 train - loss: 0.7042, acc: 0.7814
+16:17:27 valid - loss: 1.3843, acc: 0.6573
 Epoch 57/300
-21:43:47 train - loss: 0.8820, acc: 0.7342
-21:43:47 valid - loss: 1.5273, acc: 0.6166
+16:17:38 train - loss: 0.6950, acc: 0.7861
+16:17:39 valid - loss: 1.4570, acc: 0.6441
 Epoch 58/300
-21:43:58 train - loss: 0.8678, acc: 0.7378
-21:43:58 valid - loss: 1.5760, acc: 0.6115
+16:17:49 train - loss: 0.6844, acc: 0.7869
+16:17:50 valid - loss: 1.5467, acc: 0.6406
 Epoch 59/300
-21:44:09 train - loss: 0.8543, acc: 0.7421
-21:44:09 valid - loss: 1.6872, acc: 0.5961
+16:18:00 train - loss: 0.6863, acc: 0.7879
+16:18:01 valid - loss: 1.6434, acc: 0.6158
 Epoch 60/300
-21:44:20 train - loss: 0.8490, acc: 0.7419
-21:44:20 valid - loss: 1.6160, acc: 0.5996
+16:18:12 train - loss: 0.6712, acc: 0.7924
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:18:15 valid - loss: 1.5076, acc: 0.6353
 Epoch 61/300
-21:44:31 train - loss: 0.8341, acc: 0.7456
-21:44:31 valid - loss: 1.6351, acc: 0.5899
+16:18:26 train - loss: 0.6704, acc: 0.7932
+16:18:26 valid - loss: 1.5594, acc: 0.6221
 Epoch 62/300
-21:44:42 train - loss: 0.8230, acc: 0.7482
-21:44:42 valid - loss: 1.7435, acc: 0.5804
+16:18:37 train - loss: 0.6642, acc: 0.7929
+16:18:38 valid - loss: 1.6148, acc: 0.6238
 Epoch 63/300
-21:44:53 train - loss: 0.8161, acc: 0.7530
-21:44:53 valid - loss: 1.5689, acc: 0.6156
+16:18:48 train - loss: 0.6552, acc: 0.7959
+16:18:49 valid - loss: 1.4696, acc: 0.6381
 Epoch 64/300
-21:45:04 train - loss: 0.8088, acc: 0.7538
-21:45:04 valid - loss: 1.5303, acc: 0.6142
+16:18:59 train - loss: 0.6487, acc: 0.7988
+16:19:00 valid - loss: 1.4966, acc: 0.6331
 Epoch 65/300
-21:45:15 train - loss: 0.7897, acc: 0.7579
-21:45:16 valid - loss: 1.4908, acc: 0.6186
+16:19:11 train - loss: 0.6437, acc: 0.8006
+16:19:11 valid - loss: 1.5506, acc: 0.6269
 Epoch 66/300
-21:45:26 train - loss: 0.7897, acc: 0.7612
-21:45:27 valid - loss: 1.5071, acc: 0.6208
+16:19:22 train - loss: 0.6436, acc: 0.7998
+16:19:22 valid - loss: 1.5784, acc: 0.6301
 Epoch 67/300
-21:45:37 train - loss: 0.7751, acc: 0.7627
-21:45:38 valid - loss: 1.5491, acc: 0.6214
+16:19:33 train - loss: 0.6297, acc: 0.8048
+16:19:33 valid - loss: 1.5025, acc: 0.6428
 Epoch 68/300
-21:45:48 train - loss: 0.7703, acc: 0.7639
-21:45:49 valid - loss: 1.5384, acc: 0.6244
+16:19:44 train - loss: 0.6435, acc: 0.8004
+16:19:44 valid - loss: 1.4629, acc: 0.6392
 Epoch 69/300
-21:46:00 train - loss: 0.7607, acc: 0.7642
-21:46:00 valid - loss: 1.6241, acc: 0.6100
+16:19:55 train - loss: 0.6240, acc: 0.8052
+16:19:55 valid - loss: 1.4428, acc: 0.6541
 Epoch 70/300
-21:46:11 train - loss: 0.7528, acc: 0.7692
-21:46:11 valid - loss: 1.5622, acc: 0.6131
+16:20:06 train - loss: 0.6191, acc: 0.8078
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:20:10 valid - loss: 1.7245, acc: 0.6051
 Epoch 71/300
-21:46:22 train - loss: 0.7428, acc: 0.7697
-21:46:22 valid - loss: 1.6040, acc: 0.6195
+16:20:21 train - loss: 0.6145, acc: 0.8088
+16:20:21 valid - loss: 1.4750, acc: 0.6464
 Epoch 72/300
-21:46:33 train - loss: 0.7353, acc: 0.7743
-21:46:33 valid - loss: 1.5435, acc: 0.6301
+16:20:32 train - loss: 0.5980, acc: 0.8140
+16:20:32 valid - loss: 1.5452, acc: 0.6419
 Epoch 73/300
-21:46:44 train - loss: 0.7402, acc: 0.7680
-21:46:44 valid - loss: 1.5729, acc: 0.6163
+16:20:43 train - loss: 0.6029, acc: 0.8112
+16:20:43 valid - loss: 1.5179, acc: 0.6362
 Epoch 74/300
-21:46:55 train - loss: 0.7245, acc: 0.7771
-21:46:55 valid - loss: 1.4868, acc: 0.6296
+16:20:54 train - loss: 0.5967, acc: 0.8137
+16:20:54 valid - loss: 1.5660, acc: 0.6403
 Epoch 75/300
-21:47:06 train - loss: 0.7129, acc: 0.7805
-21:47:06 valid - loss: 1.6980, acc: 0.6092
+16:21:05 train - loss: 0.5943, acc: 0.8139
+16:21:05 valid - loss: 1.4445, acc: 0.6552
 Epoch 76/300
-21:47:17 train - loss: 0.7038, acc: 0.7814
-21:47:17 valid - loss: 1.5090, acc: 0.6281
+16:21:16 train - loss: 0.5848, acc: 0.8171
+16:21:16 valid - loss: 1.4583, acc: 0.6521
 Epoch 77/300
-21:47:28 train - loss: 0.7015, acc: 0.7823
-21:47:28 valid - loss: 1.6234, acc: 0.6178
+16:21:27 train - loss: 0.5828, acc: 0.8156
+16:21:28 valid - loss: 1.5524, acc: 0.6366
 Epoch 78/300
-21:47:39 train - loss: 0.6937, acc: 0.7844
-21:47:40 valid - loss: 1.6859, acc: 0.6081
+16:21:38 train - loss: 0.5829, acc: 0.8175
+16:21:39 valid - loss: 1.6254, acc: 0.6355
 Epoch 79/300
-21:47:50 train - loss: 0.6900, acc: 0.7879
-21:47:51 valid - loss: 1.5713, acc: 0.6219
+16:21:50 train - loss: 0.5698, acc: 0.8209
+16:21:50 valid - loss: 1.5673, acc: 0.6356
 Epoch 80/300
-21:48:01 train - loss: 0.6756, acc: 0.7903
-21:48:02 valid - loss: 1.4995, acc: 0.6284
+16:22:01 train - loss: 0.5684, acc: 0.8213
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:22:04 valid - loss: 1.4392, acc: 0.6573
 Epoch 81/300
-21:48:12 train - loss: 0.6723, acc: 0.7908
-21:48:13 valid - loss: 1.6401, acc: 0.6143
+16:22:15 train - loss: 0.5726, acc: 0.8194
+16:22:16 valid - loss: 1.5590, acc: 0.6360
 Epoch 82/300
-21:48:24 train - loss: 0.6658, acc: 0.7922
-21:48:24 valid - loss: 1.5929, acc: 0.6252
+16:22:26 train - loss: 0.5727, acc: 0.8200
+16:22:27 valid - loss: 1.5144, acc: 0.6454
 Epoch 83/300
-21:48:35 train - loss: 0.6542, acc: 0.7970
-21:48:35 valid - loss: 1.5850, acc: 0.6238
+16:22:37 train - loss: 0.5567, acc: 0.8252
+16:22:38 valid - loss: 1.5139, acc: 0.6446
 Epoch 84/300
-21:48:46 train - loss: 0.6491, acc: 0.7979
-21:48:46 valid - loss: 1.6652, acc: 0.6192
+16:22:49 train - loss: 0.5465, acc: 0.8280
+16:22:49 valid - loss: 1.5428, acc: 0.6468
 Epoch 85/300
-21:48:57 train - loss: 0.6559, acc: 0.7973
-21:48:57 valid - loss: 1.6204, acc: 0.6295
+16:23:00 train - loss: 0.5557, acc: 0.8250
+16:23:00 valid - loss: 1.5298, acc: 0.6477
 Epoch 86/300
-21:49:08 train - loss: 0.6396, acc: 0.8011
-21:49:08 valid - loss: 1.6047, acc: 0.6255
+16:23:11 train - loss: 0.5443, acc: 0.8276
+16:23:11 valid - loss: 1.4629, acc: 0.6583
 Epoch 87/300
-21:49:19 train - loss: 0.6403, acc: 0.7999
-21:49:19 valid - loss: 1.5521, acc: 0.6378
+16:23:22 train - loss: 0.5447, acc: 0.8284
+16:23:22 valid - loss: 1.5237, acc: 0.6464
 Epoch 88/300
-21:49:30 train - loss: 0.6328, acc: 0.8017
-21:49:30 valid - loss: 1.5448, acc: 0.6285
+16:23:33 train - loss: 0.5355, acc: 0.8306
+16:23:33 valid - loss: 1.4900, acc: 0.6486
 Epoch 89/300
-21:49:41 train - loss: 0.6235, acc: 0.8056
-21:49:41 valid - loss: 1.5389, acc: 0.6265
+16:23:44 train - loss: 0.5305, acc: 0.8337
+16:23:44 valid - loss: 1.4977, acc: 0.6504
 Epoch 90/300
-21:49:52 train - loss: 0.6192, acc: 0.8078
-21:49:53 valid - loss: 1.6856, acc: 0.6156
+16:23:55 train - loss: 0.5220, acc: 0.8358
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:23:59 valid - loss: 1.6479, acc: 0.6333
 Epoch 91/300
-21:50:03 train - loss: 0.6187, acc: 0.8058
-21:50:04 valid - loss: 1.5626, acc: 0.6234
+16:24:10 train - loss: 0.5275, acc: 0.8323
+16:24:10 valid - loss: 1.5464, acc: 0.6471
 Epoch 92/300
-21:50:14 train - loss: 0.6126, acc: 0.8086
-21:50:15 valid - loss: 1.5352, acc: 0.6350
+16:24:21 train - loss: 0.5191, acc: 0.8379
+16:24:21 valid - loss: 1.5483, acc: 0.6366
 Epoch 93/300
-21:50:25 train - loss: 0.6011, acc: 0.8127
-21:50:26 valid - loss: 1.5575, acc: 0.6276
+16:24:32 train - loss: 0.5165, acc: 0.8370
+16:24:32 valid - loss: 1.5565, acc: 0.6433
 Epoch 94/300
-21:50:37 train - loss: 0.5856, acc: 0.8145
-21:50:37 valid - loss: 1.6226, acc: 0.6325
+16:24:43 train - loss: 0.5115, acc: 0.8387
+16:24:43 valid - loss: 1.5346, acc: 0.6456
 Epoch 95/300
-21:50:48 train - loss: 0.5925, acc: 0.8149
-21:50:48 valid - loss: 1.6372, acc: 0.6262
+16:24:54 train - loss: 0.4990, acc: 0.8411
+16:24:55 valid - loss: 2.6894, acc: 0.6315
 Epoch 96/300
-21:50:59 train - loss: 0.5805, acc: 0.8170
-21:50:59 valid - loss: 1.5838, acc: 0.6391
+16:25:05 train - loss: 0.4997, acc: 0.8405
+16:25:06 valid - loss: 1.5460, acc: 0.6463
 Epoch 97/300
-21:51:10 train - loss: 0.5828, acc: 0.8173
-21:51:10 valid - loss: 1.5980, acc: 0.6294
+16:25:17 train - loss: 0.5020, acc: 0.8408
+16:25:17 valid - loss: 1.4679, acc: 0.6555
 Epoch 98/300
-21:51:21 train - loss: 0.5699, acc: 0.8181
-21:51:21 valid - loss: 1.5557, acc: 0.6337
+16:25:28 train - loss: 0.5013, acc: 0.8420
+16:25:28 valid - loss: 1.5123, acc: 0.6450
 Epoch 99/300
-21:51:32 train - loss: 0.5639, acc: 0.8216
-21:51:32 valid - loss: 1.6028, acc: 0.6303
+16:25:39 train - loss: 0.4905, acc: 0.8456
+16:25:39 valid - loss: 1.5556, acc: 0.6444
 Epoch 100/300
-21:51:43 train - loss: 0.5734, acc: 0.8198
-21:51:43 valid - loss: 1.5219, acc: 0.6421
+16:25:50 train - loss: 0.4858, acc: 0.8465
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:25:54 valid - loss: 1.5290, acc: 0.6513
 Epoch 101/300
-21:51:54 train - loss: 0.5600, acc: 0.8241
-21:51:54 valid - loss: 1.6148, acc: 0.6359
+16:26:04 train - loss: 0.4798, acc: 0.8473
+16:26:05 valid - loss: 1.4854, acc: 0.6594
 Epoch 102/300
-21:52:05 train - loss: 0.5563, acc: 0.8254
-21:52:06 valid - loss: 1.6756, acc: 0.6192
+16:26:16 train - loss: 0.4788, acc: 0.8472
+16:26:16 valid - loss: 1.6913, acc: 0.6292
 Epoch 103/300
-21:52:16 train - loss: 0.5525, acc: 0.8247
-21:52:17 valid - loss: 1.5952, acc: 0.6399
+16:26:27 train - loss: 0.4832, acc: 0.8478
+16:26:27 valid - loss: 1.5604, acc: 0.6526
 Epoch 104/300
-21:52:27 train - loss: 0.5475, acc: 0.8267
-21:52:28 valid - loss: 1.7430, acc: 0.6073
+16:26:38 train - loss: 0.4780, acc: 0.8475
+16:26:38 valid - loss: 1.6678, acc: 0.6329
 Epoch 105/300
-21:52:39 train - loss: 0.5432, acc: 0.8272
-21:52:39 valid - loss: 1.5262, acc: 0.6471
+16:26:49 train - loss: 0.4643, acc: 0.8523
+16:26:49 valid - loss: 1.6107, acc: 0.6467
 Epoch 106/300
-21:52:50 train - loss: 0.5342, acc: 0.8305
-21:52:50 valid - loss: 1.6382, acc: 0.6389
+16:27:00 train - loss: 0.4658, acc: 0.8512
+16:27:00 valid - loss: 1.6690, acc: 0.6367
 Epoch 107/300
-21:53:01 train - loss: 0.5382, acc: 0.8300
-21:53:01 valid - loss: 1.5563, acc: 0.6447
+16:27:11 train - loss: 0.4665, acc: 0.8532
+16:27:11 valid - loss: 1.6457, acc: 0.6342
 Epoch 108/300
-21:53:12 train - loss: 0.5233, acc: 0.8348
-21:53:12 valid - loss: 1.5190, acc: 0.6514
+16:27:22 train - loss: 0.4547, acc: 0.8555
+16:27:23 valid - loss: 1.7220, acc: 0.6335
 Epoch 109/300
-21:53:23 train - loss: 0.5262, acc: 0.8330
-21:53:23 valid - loss: 1.5892, acc: 0.6301
+16:27:33 train - loss: 0.4572, acc: 0.8536
+16:27:34 valid - loss: 1.6052, acc: 0.6419
 Epoch 110/300
-21:53:34 train - loss: 0.5164, acc: 0.8355
-21:53:34 valid - loss: 1.6225, acc: 0.6389
+16:27:45 train - loss: 0.4445, acc: 0.8596
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:27:48 valid - loss: 1.5385, acc: 0.6555
 Epoch 111/300
-21:53:45 train - loss: 0.5136, acc: 0.8357
-21:53:45 valid - loss: 1.6316, acc: 0.6389
+16:27:59 train - loss: 0.4466, acc: 0.8587
+16:27:59 valid - loss: 1.6289, acc: 0.6436
 Epoch 112/300
-21:53:56 train - loss: 0.5129, acc: 0.8375
-21:53:56 valid - loss: 1.6178, acc: 0.6323
+16:28:10 train - loss: 0.4384, acc: 0.8604
+16:28:10 valid - loss: 1.5778, acc: 0.6472
 Epoch 113/300
-21:54:07 train - loss: 0.5094, acc: 0.8384
-21:54:08 valid - loss: 1.5275, acc: 0.6508
+16:28:21 train - loss: 0.4387, acc: 0.8597
+16:28:22 valid - loss: 1.5855, acc: 0.6488
 Epoch 114/300
-21:54:18 train - loss: 0.5020, acc: 0.8399
-21:54:19 valid - loss: 1.7052, acc: 0.6245
+16:28:32 train - loss: 0.4457, acc: 0.8591
+16:28:33 valid - loss: 1.6834, acc: 0.6465
 Epoch 115/300
-21:54:29 train - loss: 0.4852, acc: 0.8450
-21:54:30 valid - loss: 1.5834, acc: 0.6488
+16:28:44 train - loss: 0.4344, acc: 0.8616
+16:28:44 valid - loss: 1.5124, acc: 0.6675
 Epoch 116/300
-21:54:41 train - loss: 0.4888, acc: 0.8453
-21:54:41 valid - loss: 1.5323, acc: 0.6488
+16:28:55 train - loss: 0.4280, acc: 0.8625
+16:28:55 valid - loss: 1.5356, acc: 0.6599
 Epoch 117/300
-21:54:52 train - loss: 0.4822, acc: 0.8466
-21:54:52 valid - loss: 1.7189, acc: 0.6252
+16:29:06 train - loss: 0.4256, acc: 0.8644
+16:29:06 valid - loss: 1.5986, acc: 0.6570
 Epoch 118/300
-21:55:03 train - loss: 0.4859, acc: 0.8460
-21:55:03 valid - loss: 1.5932, acc: 0.6373
+16:29:17 train - loss: 0.4245, acc: 0.8657
+16:29:17 valid - loss: 1.5325, acc: 0.6546
 Epoch 119/300
-21:55:14 train - loss: 0.4676, acc: 0.8514
-21:55:14 valid - loss: 1.6462, acc: 0.6333
+16:29:28 train - loss: 0.4202, acc: 0.8649
+16:29:28 valid - loss: 1.6107, acc: 0.6519
 Epoch 120/300
-21:55:25 train - loss: 0.4729, acc: 0.8494
-21:55:25 valid - loss: 1.5842, acc: 0.6404
+16:29:39 train - loss: 0.4143, acc: 0.8672
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:29:43 valid - loss: 1.5056, acc: 0.6581
 Epoch 121/300
-21:55:36 train - loss: 0.4679, acc: 0.8501
-21:55:36 valid - loss: 1.5964, acc: 0.6506
+16:29:54 train - loss: 0.4035, acc: 0.8712
+16:29:54 valid - loss: 1.5810, acc: 0.6561
 Epoch 122/300
-21:55:47 train - loss: 0.4592, acc: 0.8544
-21:55:47 valid - loss: 1.6466, acc: 0.6360
+16:30:05 train - loss: 0.4104, acc: 0.8679
+16:30:05 valid - loss: 1.6066, acc: 0.6471
 Epoch 123/300
-21:55:58 train - loss: 0.4573, acc: 0.8532
-21:55:58 valid - loss: 1.5846, acc: 0.6475
+16:30:16 train - loss: 0.4026, acc: 0.8714
+16:30:16 valid - loss: 1.5403, acc: 0.6601
 Epoch 124/300
-21:56:09 train - loss: 0.4519, acc: 0.8529
-21:56:09 valid - loss: 1.6921, acc: 0.6241
+16:30:27 train - loss: 0.4012, acc: 0.8716
+16:30:27 valid - loss: 1.5697, acc: 0.6531
 Epoch 125/300
-21:56:20 train - loss: 0.4498, acc: 0.8573
-21:56:21 valid - loss: 1.6413, acc: 0.6287
+16:30:38 train - loss: 0.3970, acc: 0.8728
+16:30:38 valid - loss: 1.5715, acc: 0.6517
 Epoch 126/300
-21:56:31 train - loss: 0.4440, acc: 0.8584
-21:56:32 valid - loss: 1.6149, acc: 0.6461
+16:30:49 train - loss: 0.3932, acc: 0.8740
+16:30:50 valid - loss: 1.6521, acc: 0.6464
 Epoch 127/300
-21:56:42 train - loss: 0.4393, acc: 0.8589
-21:56:43 valid - loss: 1.6414, acc: 0.6426
+16:31:00 train - loss: 0.3894, acc: 0.8753
+16:31:01 valid - loss: 1.5812, acc: 0.6573
 Epoch 128/300
-21:56:54 train - loss: 0.4412, acc: 0.8591
-21:56:54 valid - loss: 1.6671, acc: 0.6384
+16:31:11 train - loss: 0.3834, acc: 0.8773
+16:31:12 valid - loss: 1.6288, acc: 0.6541
 Epoch 129/300
-21:57:05 train - loss: 0.4330, acc: 0.8617
-21:57:05 valid - loss: 1.6420, acc: 0.6502
+16:31:23 train - loss: 0.3833, acc: 0.8783
+16:31:23 valid - loss: 1.5781, acc: 0.6594
 Epoch 130/300
-21:57:16 train - loss: 0.4267, acc: 0.8632
-21:57:16 valid - loss: 1.6332, acc: 0.6449
+16:31:34 train - loss: 0.3701, acc: 0.8814
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:31:37 valid - loss: 1.5359, acc: 0.6674
 Epoch 131/300
-21:57:27 train - loss: 0.4256, acc: 0.8635
-21:57:27 valid - loss: 1.7313, acc: 0.6329
+16:31:48 train - loss: 0.3805, acc: 0.8772
+16:31:48 valid - loss: 1.6128, acc: 0.6524
 Epoch 132/300
-21:57:38 train - loss: 0.4208, acc: 0.8651
-21:57:38 valid - loss: 1.5652, acc: 0.6522
+16:31:59 train - loss: 0.3670, acc: 0.8824
+16:32:00 valid - loss: 1.7256, acc: 0.6518
 Epoch 133/300
-21:57:49 train - loss: 0.4226, acc: 0.8630
-21:57:49 valid - loss: 1.5981, acc: 0.6494
+16:32:10 train - loss: 0.3653, acc: 0.8836
+16:32:11 valid - loss: 1.5765, acc: 0.6539
 Epoch 134/300
-21:58:00 train - loss: 0.4137, acc: 0.8667
-21:58:00 valid - loss: 1.6634, acc: 0.6421
+16:32:21 train - loss: 0.3664, acc: 0.8830
+16:32:22 valid - loss: 1.5281, acc: 0.6692
 Epoch 135/300
-21:58:11 train - loss: 0.3991, acc: 0.8720
-21:58:11 valid - loss: 1.6250, acc: 0.6585
+16:32:33 train - loss: 0.3632, acc: 0.8825
+16:32:33 valid - loss: 1.6367, acc: 0.6521
 Epoch 136/300
-21:58:22 train - loss: 0.4038, acc: 0.8720
-21:58:22 valid - loss: 1.6478, acc: 0.6470
+16:32:44 train - loss: 0.3566, acc: 0.8846
+16:32:44 valid - loss: 1.6703, acc: 0.6452
 Epoch 137/300
-21:58:33 train - loss: 0.3953, acc: 0.8736
-21:58:34 valid - loss: 1.6033, acc: 0.6521
+16:32:55 train - loss: 0.3605, acc: 0.8849
+16:32:55 valid - loss: 1.5538, acc: 0.6646
 Epoch 138/300
-21:58:44 train - loss: 0.3941, acc: 0.8720
-21:58:45 valid - loss: 1.8581, acc: 0.6286
+16:33:06 train - loss: 0.3492, acc: 0.8885
+16:33:06 valid - loss: 1.6365, acc: 0.6543
 Epoch 139/300
-21:58:55 train - loss: 0.3794, acc: 0.8780
-21:58:56 valid - loss: 1.6343, acc: 0.6512
+16:33:17 train - loss: 0.3441, acc: 0.8893
+16:33:17 valid - loss: 1.6758, acc: 0.6474
 Epoch 140/300
-21:59:06 train - loss: 0.3756, acc: 0.8797
-21:59:07 valid - loss: 1.6865, acc: 0.6443
+16:33:28 train - loss: 0.3332, acc: 0.8944
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:33:32 valid - loss: 1.6206, acc: 0.6565
 Epoch 141/300
-21:59:18 train - loss: 0.3847, acc: 0.8756
-21:59:18 valid - loss: 1.8210, acc: 0.6280
+16:33:43 train - loss: 0.3393, acc: 0.8914
+16:33:43 valid - loss: 1.6867, acc: 0.6559
 Epoch 142/300
-21:59:29 train - loss: 0.3698, acc: 0.8808
-21:59:29 valid - loss: 1.6509, acc: 0.6532
+16:33:54 train - loss: 0.3287, acc: 0.8948
+16:33:54 valid - loss: 1.6342, acc: 0.6581
 Epoch 143/300
-21:59:40 train - loss: 0.3653, acc: 0.8828
-21:59:40 valid - loss: 1.6210, acc: 0.6545
+16:34:05 train - loss: 0.3236, acc: 0.8952
+16:34:05 valid - loss: 1.6372, acc: 0.6620
 Epoch 144/300
-21:59:51 train - loss: 0.3609, acc: 0.8844
-21:59:51 valid - loss: 1.6966, acc: 0.6466
+16:34:16 train - loss: 0.3234, acc: 0.8970
+16:34:16 valid - loss: 1.6433, acc: 0.6586
 Epoch 145/300
-22:00:02 train - loss: 0.3633, acc: 0.8817
-22:00:02 valid - loss: 1.6512, acc: 0.6423
+16:34:27 train - loss: 0.3219, acc: 0.8969
+16:34:27 valid - loss: 1.6004, acc: 0.6691
 Epoch 146/300
-22:00:13 train - loss: 0.3500, acc: 0.8877
-22:00:13 valid - loss: 1.6766, acc: 0.6449
+16:34:38 train - loss: 0.3199, acc: 0.8973
+16:34:39 valid - loss: 1.6443, acc: 0.6563
 Epoch 147/300
-22:00:24 train - loss: 0.3517, acc: 0.8870
-22:00:24 valid - loss: 1.7252, acc: 0.6441
+16:34:49 train - loss: 0.3119, acc: 0.9009
+16:34:50 valid - loss: 1.5884, acc: 0.6608
 Epoch 148/300
-22:00:35 train - loss: 0.3552, acc: 0.8860
-22:00:35 valid - loss: 1.6343, acc: 0.6514
+16:35:00 train - loss: 0.3024, acc: 0.9025
+16:35:01 valid - loss: 1.6538, acc: 0.6619
 Epoch 149/300
-22:00:46 train - loss: 0.3412, acc: 0.8896
-22:00:47 valid - loss: 1.6484, acc: 0.6550
+16:35:12 train - loss: 0.3107, acc: 0.9004
+16:35:12 valid - loss: 1.7016, acc: 0.6565
 Epoch 150/300
-22:00:57 train - loss: 0.3368, acc: 0.8914
-22:00:58 valid - loss: 1.7493, acc: 0.6513
+16:35:23 train - loss: 0.3109, acc: 0.9007
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:35:27 valid - loss: 1.5394, acc: 0.6744
 Epoch 151/300
-22:01:08 train - loss: 0.3322, acc: 0.8930
-22:01:09 valid - loss: 1.6456, acc: 0.6608
+16:35:38 train - loss: 0.3010, acc: 0.9036
+16:35:38 valid - loss: 1.5649, acc: 0.6666
 Epoch 152/300
-22:01:19 train - loss: 0.3274, acc: 0.8935
-22:01:20 valid - loss: 1.6352, acc: 0.6541
+16:35:49 train - loss: 0.3033, acc: 0.9018
+16:35:49 valid - loss: 1.6667, acc: 0.6593
 Epoch 153/300
-22:01:30 train - loss: 0.3260, acc: 0.8941
-22:01:31 valid - loss: 1.6952, acc: 0.6441
+16:36:00 train - loss: 0.2993, acc: 0.9047
+16:36:00 valid - loss: 1.6952, acc: 0.6556
 Epoch 154/300
-22:01:42 train - loss: 0.3174, acc: 0.8985
-22:01:42 valid - loss: 1.8177, acc: 0.6421
+16:36:11 train - loss: 0.2781, acc: 0.9119
+16:36:11 valid - loss: 1.6302, acc: 0.6610
 Epoch 155/300
-22:01:53 train - loss: 0.3307, acc: 0.8946
-22:01:53 valid - loss: 1.6713, acc: 0.6503
+16:36:22 train - loss: 0.2921, acc: 0.9059
+16:36:22 valid - loss: 1.6986, acc: 0.6553
 Epoch 156/300
-22:02:04 train - loss: 0.3127, acc: 0.9001
-22:02:04 valid - loss: 1.6870, acc: 0.6531
+16:36:33 train - loss: 0.2805, acc: 0.9092
+16:36:33 valid - loss: 1.6808, acc: 0.6611
 Epoch 157/300
-22:02:15 train - loss: 0.3076, acc: 0.8999
-22:02:15 valid - loss: 1.7424, acc: 0.6522
+16:36:44 train - loss: 0.2770, acc: 0.9115
+16:36:45 valid - loss: 1.6434, acc: 0.6655
 Epoch 158/300
-22:02:26 train - loss: 0.3002, acc: 0.9032
-22:02:26 valid - loss: 1.7385, acc: 0.6516
+16:36:55 train - loss: 0.2700, acc: 0.9132
+16:36:56 valid - loss: 1.5607, acc: 0.6688
 Epoch 159/300
-22:02:37 train - loss: 0.3039, acc: 0.9011
-22:02:37 valid - loss: 1.7140, acc: 0.6546
+16:37:07 train - loss: 0.2739, acc: 0.9117
+16:37:07 valid - loss: 1.5360, acc: 0.6728
 Epoch 160/300
-22:02:48 train - loss: 0.2956, acc: 0.9042
-22:02:48 valid - loss: 1.7629, acc: 0.6386
+16:37:18 train - loss: 0.2653, acc: 0.9151
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:37:21 valid - loss: 1.6843, acc: 0.6605
 Epoch 161/300
-22:02:59 train - loss: 0.2876, acc: 0.9084
-22:02:59 valid - loss: 1.6445, acc: 0.6573
+16:37:32 train - loss: 0.2743, acc: 0.9107
+16:37:32 valid - loss: 1.6733, acc: 0.6642
 Epoch 162/300
-22:03:10 train - loss: 0.2951, acc: 0.9045
-22:03:11 valid - loss: 1.7041, acc: 0.6472
+16:37:43 train - loss: 0.2570, acc: 0.9185
+16:37:44 valid - loss: 1.5648, acc: 0.6716
 Epoch 163/300
-22:03:21 train - loss: 0.2803, acc: 0.9082
-22:03:22 valid - loss: 1.6875, acc: 0.6482
+16:37:54 train - loss: 0.2668, acc: 0.9143
+16:37:55 valid - loss: 1.6435, acc: 0.6624
 Epoch 164/300
-22:03:32 train - loss: 0.2763, acc: 0.9108
-22:03:33 valid - loss: 1.7561, acc: 0.6504
+16:38:05 train - loss: 0.2561, acc: 0.9181
+16:38:06 valid - loss: 1.6415, acc: 0.6731
 Epoch 165/300
-22:03:43 train - loss: 0.2779, acc: 0.9097
-22:03:44 valid - loss: 1.6435, acc: 0.6573
+16:38:17 train - loss: 0.2548, acc: 0.9183
+16:38:17 valid - loss: 1.6252, acc: 0.6766
 Epoch 166/300
-22:03:55 train - loss: 0.2711, acc: 0.9132
-22:03:55 valid - loss: 1.6547, acc: 0.6624
+16:38:28 train - loss: 0.2424, acc: 0.9215
+16:38:28 valid - loss: 1.6458, acc: 0.6651
 Epoch 167/300
-22:04:06 train - loss: 0.2670, acc: 0.9135
-22:04:06 valid - loss: 1.6362, acc: 0.6552
+16:38:39 train - loss: 0.2439, acc: 0.9221
+16:38:39 valid - loss: 1.6277, acc: 0.6615
 Epoch 168/300
-22:04:17 train - loss: 0.2585, acc: 0.9167
-22:04:17 valid - loss: 1.6892, acc: 0.6615
+16:38:50 train - loss: 0.2431, acc: 0.9209
+16:38:50 valid - loss: 1.6627, acc: 0.6691
 Epoch 169/300
-22:04:28 train - loss: 0.2613, acc: 0.9168
-22:04:28 valid - loss: 1.7504, acc: 0.6545
+16:39:01 train - loss: 0.2369, acc: 0.9235
+16:39:01 valid - loss: 1.6968, acc: 0.6695
 Epoch 170/300
-22:04:39 train - loss: 0.2509, acc: 0.9191
-22:04:39 valid - loss: 1.6510, acc: 0.6646
+16:39:12 train - loss: 0.2275, acc: 0.9262
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:39:16 valid - loss: 1.6163, acc: 0.6750
 Epoch 171/300
-22:04:50 train - loss: 0.2543, acc: 0.9187
-22:04:50 valid - loss: 1.7479, acc: 0.6562
+16:39:26 train - loss: 0.2311, acc: 0.9263
+16:39:27 valid - loss: 1.6781, acc: 0.6683
 Epoch 172/300
-22:05:01 train - loss: 0.2414, acc: 0.9222
-22:05:01 valid - loss: 1.6394, acc: 0.6662
+16:39:38 train - loss: 0.2262, acc: 0.9262
+16:39:38 valid - loss: 1.6810, acc: 0.6665
 Epoch 173/300
-22:05:12 train - loss: 0.2362, acc: 0.9236
-22:05:13 valid - loss: 1.7861, acc: 0.6511
+16:39:49 train - loss: 0.2178, acc: 0.9302
+16:39:49 valid - loss: 1.7169, acc: 0.6713
 Epoch 174/300
-22:05:23 train - loss: 0.2485, acc: 0.9208
-22:05:24 valid - loss: 1.7153, acc: 0.6584
+16:40:00 train - loss: 0.2198, acc: 0.9289
+16:40:00 valid - loss: 1.5972, acc: 0.6765
 Epoch 175/300
-22:05:34 train - loss: 0.2313, acc: 0.9263
-22:05:35 valid - loss: 1.6970, acc: 0.6606
+16:40:11 train - loss: 0.2111, acc: 0.9328
+16:40:11 valid - loss: 1.6524, acc: 0.6737
 Epoch 176/300
-22:05:45 train - loss: 0.2273, acc: 0.9266
-22:05:46 valid - loss: 1.6853, acc: 0.6650
+16:40:22 train - loss: 0.2076, acc: 0.9327
+16:40:22 valid - loss: 1.6360, acc: 0.6763
 Epoch 177/300
-22:05:57 train - loss: 0.2230, acc: 0.9288
-22:05:57 valid - loss: 1.6992, acc: 0.6646
+16:40:33 train - loss: 0.2086, acc: 0.9337
+16:40:33 valid - loss: 1.6945, acc: 0.6687
 Epoch 178/300
-22:06:08 train - loss: 0.2183, acc: 0.9301
-22:06:08 valid - loss: 1.8255, acc: 0.6439
+16:40:44 train - loss: 0.2078, acc: 0.9331
+16:40:45 valid - loss: 1.5857, acc: 0.6763
 Epoch 179/300
-22:06:19 train - loss: 0.2175, acc: 0.9298
-22:06:19 valid - loss: 1.8168, acc: 0.6563
+16:40:55 train - loss: 0.1894, acc: 0.9410
+16:40:56 valid - loss: 1.6456, acc: 0.6779
 Epoch 180/300
-22:06:30 train - loss: 0.2194, acc: 0.9290
-22:06:30 valid - loss: 1.6603, acc: 0.6697
+16:41:07 train - loss: 0.2022, acc: 0.9358
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:41:10 valid - loss: 1.7348, acc: 0.6692
 Epoch 181/300
-22:06:41 train - loss: 0.2091, acc: 0.9322
-22:06:41 valid - loss: 1.7666, acc: 0.6552
+16:41:21 train - loss: 0.1942, acc: 0.9379
+16:41:21 valid - loss: 1.5887, acc: 0.6870
 Epoch 182/300
-22:06:52 train - loss: 0.2027, acc: 0.9348
-22:06:52 valid - loss: 1.7426, acc: 0.6618
+16:41:32 train - loss: 0.1907, acc: 0.9397
+16:41:32 valid - loss: 1.6728, acc: 0.6740
 Epoch 183/300
-22:07:03 train - loss: 0.2042, acc: 0.9358
-22:07:03 valid - loss: 1.7132, acc: 0.6678
+16:41:43 train - loss: 0.1841, acc: 0.9416
+16:41:43 valid - loss: 1.5796, acc: 0.6836
 Epoch 184/300
-22:07:14 train - loss: 0.1978, acc: 0.9369
-22:07:14 valid - loss: 1.6998, acc: 0.6709
+16:41:54 train - loss: 0.1782, acc: 0.9435
+16:41:55 valid - loss: 1.6141, acc: 0.6834
 Epoch 185/300
-22:07:25 train - loss: 0.1931, acc: 0.9395
-22:07:26 valid - loss: 1.8266, acc: 0.6656
+16:42:05 train - loss: 0.1837, acc: 0.9417
+16:42:06 valid - loss: 1.6758, acc: 0.6837
 Epoch 186/300
-22:07:36 train - loss: 0.1938, acc: 0.9380
-22:07:37 valid - loss: 1.7598, acc: 0.6633
+16:42:16 train - loss: 0.1737, acc: 0.9454
+16:42:17 valid - loss: 1.6827, acc: 0.6788
 Epoch 187/300
-22:07:47 train - loss: 0.1835, acc: 0.9420
-22:07:48 valid - loss: 1.7661, acc: 0.6699
+16:42:28 train - loss: 0.1674, acc: 0.9472
+16:42:28 valid - loss: 1.6722, acc: 0.6861
 Epoch 188/300
-22:07:58 train - loss: 0.1715, acc: 0.9452
-22:07:59 valid - loss: 1.7465, acc: 0.6700
+16:42:39 train - loss: 0.1673, acc: 0.9472
+16:42:39 valid - loss: 1.7409, acc: 0.6758
 Epoch 189/300
-22:08:10 train - loss: 0.1744, acc: 0.9451
-22:08:10 valid - loss: 1.7462, acc: 0.6716
+16:42:50 train - loss: 0.1597, acc: 0.9497
+16:42:50 valid - loss: 1.6668, acc: 0.6789
 Epoch 190/300
-22:08:21 train - loss: 0.1721, acc: 0.9443
-22:08:21 valid - loss: 1.7210, acc: 0.6725
+16:43:01 train - loss: 0.1583, acc: 0.9513
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:43:05 valid - loss: 1.6123, acc: 0.6868
 Epoch 191/300
-22:08:32 train - loss: 0.1671, acc: 0.9471
-22:08:32 valid - loss: 1.7020, acc: 0.6737
+16:43:15 train - loss: 0.1615, acc: 0.9494
+16:43:16 valid - loss: 1.6548, acc: 0.6795
 Epoch 192/300
-22:08:43 train - loss: 0.1649, acc: 0.9480
-22:08:43 valid - loss: 1.7043, acc: 0.6699
+16:43:26 train - loss: 0.1520, acc: 0.9521
+16:43:27 valid - loss: 1.6064, acc: 0.6950
 Epoch 193/300
-22:08:54 train - loss: 0.1582, acc: 0.9495
-22:08:54 valid - loss: 1.7722, acc: 0.6654
+16:43:38 train - loss: 0.1444, acc: 0.9559
+16:43:38 valid - loss: 1.6141, acc: 0.6899
 Epoch 194/300
-22:09:05 train - loss: 0.1531, acc: 0.9520
-22:09:05 valid - loss: 1.7360, acc: 0.6701
+16:43:49 train - loss: 0.1418, acc: 0.9558
+16:43:49 valid - loss: 1.6624, acc: 0.6875
 Epoch 195/300
-22:09:16 train - loss: 0.1540, acc: 0.9520
-22:09:16 valid - loss: 1.7076, acc: 0.6780
+16:44:00 train - loss: 0.1420, acc: 0.9562
+16:44:00 valid - loss: 1.6748, acc: 0.6835
 Epoch 196/300
-22:09:27 train - loss: 0.1447, acc: 0.9541
-22:09:27 valid - loss: 1.6753, acc: 0.6745
+16:44:11 train - loss: 0.1409, acc: 0.9560
+16:44:11 valid - loss: 1.6352, acc: 0.6882
 Epoch 197/300
-22:09:38 train - loss: 0.1446, acc: 0.9541
-22:09:38 valid - loss: 1.8416, acc: 0.6610
+16:44:22 train - loss: 0.1324, acc: 0.9584
+16:44:22 valid - loss: 1.5709, acc: 0.7021
 Epoch 198/300
-22:09:49 train - loss: 0.1406, acc: 0.9569
-22:09:50 valid - loss: 1.7386, acc: 0.6680
+16:44:33 train - loss: 0.1268, acc: 0.9618
+16:44:34 valid - loss: 1.5869, acc: 0.6977
 Epoch 199/300
-22:10:00 train - loss: 0.1369, acc: 0.9583
-22:10:01 valid - loss: 1.7511, acc: 0.6738
+16:44:44 train - loss: 0.1328, acc: 0.9588
+16:44:45 valid - loss: 1.6777, acc: 0.6842
 Epoch 200/300
-22:10:11 train - loss: 0.1368, acc: 0.9581
-22:10:12 valid - loss: 1.6966, acc: 0.6807
+16:44:56 train - loss: 0.1337, acc: 0.9592
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:44:59 valid - loss: 1.6791, acc: 0.6894
 Epoch 201/300
-22:10:23 train - loss: 0.1277, acc: 0.9604
-22:10:23 valid - loss: 1.6625, acc: 0.6805
+16:45:10 train - loss: 0.1250, acc: 0.9614
+16:45:11 valid - loss: 1.6131, acc: 0.6976
 Epoch 202/300
-22:10:34 train - loss: 0.1244, acc: 0.9618
-22:10:34 valid - loss: 1.7003, acc: 0.6822
+16:45:21 train - loss: 0.1170, acc: 0.9646
+16:45:22 valid - loss: 1.6725, acc: 0.6905
 Epoch 203/300
-22:10:45 train - loss: 0.1194, acc: 0.9635
-22:10:45 valid - loss: 1.7887, acc: 0.6702
+16:45:33 train - loss: 0.1164, acc: 0.9652
+16:45:33 valid - loss: 1.6106, acc: 0.6904
 Epoch 204/300
-22:10:56 train - loss: 0.1203, acc: 0.9625
-22:10:56 valid - loss: 1.7046, acc: 0.6814
+16:45:44 train - loss: 0.1091, acc: 0.9671
+16:45:44 valid - loss: 1.5954, acc: 0.6947
 Epoch 205/300
-22:11:07 train - loss: 0.1165, acc: 0.9647
-22:11:07 valid - loss: 1.6734, acc: 0.6804
+16:45:55 train - loss: 0.1099, acc: 0.9669
+16:45:55 valid - loss: 1.5878, acc: 0.6958
 Epoch 206/300
-22:11:18 train - loss: 0.1083, acc: 0.9673
-22:11:18 valid - loss: 1.6818, acc: 0.6868
+16:46:06 train - loss: 0.1031, acc: 0.9690
+16:46:06 valid - loss: 1.6489, acc: 0.7023
 Epoch 207/300
-22:11:29 train - loss: 0.1018, acc: 0.9696
-22:11:29 valid - loss: 1.6876, acc: 0.6802
+16:46:17 train - loss: 0.1002, acc: 0.9701
+16:46:18 valid - loss: 1.6633, acc: 0.6971
 Epoch 208/300
-22:11:40 train - loss: 0.1013, acc: 0.9701
-22:11:41 valid - loss: 1.7239, acc: 0.6854
+16:46:28 train - loss: 0.0992, acc: 0.9695
+16:46:29 valid - loss: 1.6728, acc: 0.6956
 Epoch 209/300
-22:11:51 train - loss: 0.0969, acc: 0.9718
-22:11:52 valid - loss: 1.7205, acc: 0.6843
+16:46:40 train - loss: 0.0938, acc: 0.9724
+16:46:40 valid - loss: 1.6743, acc: 0.6877
 Epoch 210/300
-22:12:02 train - loss: 0.0962, acc: 0.9714
-22:12:03 valid - loss: 1.7038, acc: 0.6864
+16:46:51 train - loss: 0.0903, acc: 0.9726
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:46:54 valid - loss: 1.6022, acc: 0.6980
 Epoch 211/300
-22:12:13 train - loss: 0.0879, acc: 0.9739
-22:12:14 valid - loss: 1.7559, acc: 0.6820
+16:47:05 train - loss: 0.0898, acc: 0.9734
+16:47:06 valid - loss: 1.6583, acc: 0.6991
 Epoch 212/300
-22:12:25 train - loss: 0.0858, acc: 0.9744
-22:12:25 valid - loss: 1.7043, acc: 0.6911
+16:47:16 train - loss: 0.0837, acc: 0.9749
+16:47:17 valid - loss: 1.6247, acc: 0.6997
 Epoch 213/300
-22:12:36 train - loss: 0.0842, acc: 0.9760
-22:12:36 valid - loss: 1.6881, acc: 0.6913
+16:47:27 train - loss: 0.0779, acc: 0.9766
+16:47:28 valid - loss: 1.6132, acc: 0.7021
 Epoch 214/300
-22:12:47 train - loss: 0.0817, acc: 0.9766
-22:12:47 valid - loss: 1.7631, acc: 0.6861
+16:47:39 train - loss: 0.0746, acc: 0.9786
+16:47:39 valid - loss: 1.6379, acc: 0.7000
 Epoch 215/300
-22:12:58 train - loss: 0.0764, acc: 0.9773
-22:12:58 valid - loss: 1.6878, acc: 0.6879
+16:47:50 train - loss: 0.0729, acc: 0.9795
+16:47:50 valid - loss: 1.6147, acc: 0.6998
 Epoch 216/300
-22:13:09 train - loss: 0.0743, acc: 0.9787
-22:13:09 valid - loss: 1.6671, acc: 0.6924
+16:48:01 train - loss: 0.0722, acc: 0.9791
+16:48:01 valid - loss: 1.6444, acc: 0.7008
 Epoch 217/300
-22:13:20 train - loss: 0.0720, acc: 0.9798
-22:13:20 valid - loss: 1.6484, acc: 0.6965
+16:48:12 train - loss: 0.0708, acc: 0.9796
+16:48:12 valid - loss: 1.6007, acc: 0.7064
 Epoch 218/300
-22:13:31 train - loss: 0.0714, acc: 0.9801
-22:13:31 valid - loss: 1.6594, acc: 0.6893
+16:48:23 train - loss: 0.0660, acc: 0.9811
+16:48:23 valid - loss: 1.6169, acc: 0.7018
 Epoch 219/300
-22:13:42 train - loss: 0.0676, acc: 0.9811
-22:13:42 valid - loss: 1.6508, acc: 0.6941
+16:48:34 train - loss: 0.0619, acc: 0.9834
+16:48:35 valid - loss: 1.6429, acc: 0.7011
 Epoch 220/300
-22:13:53 train - loss: 0.0616, acc: 0.9830
-22:13:53 valid - loss: 1.6851, acc: 0.6993
+16:48:45 train - loss: 0.0609, acc: 0.9828
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:48:49 valid - loss: 1.6045, acc: 0.7056
 Epoch 221/300
-22:14:04 train - loss: 0.0582, acc: 0.9844
-22:14:05 valid - loss: 1.7082, acc: 0.6931
+16:49:00 train - loss: 0.0561, acc: 0.9856
+16:49:00 valid - loss: 1.5585, acc: 0.7136
 Epoch 222/300
-22:14:15 train - loss: 0.0609, acc: 0.9832
-22:14:16 valid - loss: 1.6561, acc: 0.6960
+16:49:11 train - loss: 0.0554, acc: 0.9855
+16:49:11 valid - loss: 1.5507, acc: 0.7149
 Epoch 223/300
-22:14:26 train - loss: 0.0543, acc: 0.9861
-22:14:27 valid - loss: 1.6781, acc: 0.6895
+16:49:22 train - loss: 0.0511, acc: 0.9862
+16:49:22 valid - loss: 1.6328, acc: 0.7044
 Epoch 224/300
-22:14:38 train - loss: 0.0559, acc: 0.9846
-22:14:38 valid - loss: 1.7140, acc: 0.6936
+16:49:33 train - loss: 0.0495, acc: 0.9869
+16:49:34 valid - loss: 1.5537, acc: 0.7124
 Epoch 225/300
-22:14:49 train - loss: 0.0503, acc: 0.9867
-22:14:49 valid - loss: 1.6429, acc: 0.6985
+16:49:44 train - loss: 0.0477, acc: 0.9871
+16:49:45 valid - loss: 1.5540, acc: 0.7203
 Epoch 226/300
-22:15:00 train - loss: 0.0492, acc: 0.9875
-22:15:00 valid - loss: 1.6992, acc: 0.6945
+16:49:55 train - loss: 0.0446, acc: 0.9884
+16:49:56 valid - loss: 1.5622, acc: 0.7206
 Epoch 227/300
-22:15:11 train - loss: 0.0480, acc: 0.9877
-22:15:11 valid - loss: 1.6562, acc: 0.7044
+16:50:07 train - loss: 0.0425, acc: 0.9895
+16:50:07 valid - loss: 1.5664, acc: 0.7193
 Epoch 228/300
-22:15:22 train - loss: 0.0469, acc: 0.9878
-22:15:22 valid - loss: 1.6670, acc: 0.6962
+16:50:18 train - loss: 0.0412, acc: 0.9898
+16:50:18 valid - loss: 1.6249, acc: 0.7132
 Epoch 229/300
-22:15:33 train - loss: 0.0434, acc: 0.9894
-22:15:33 valid - loss: 1.6401, acc: 0.7016
+16:50:29 train - loss: 0.0406, acc: 0.9900
+16:50:29 valid - loss: 1.5806, acc: 0.7180
 Epoch 230/300
-22:15:44 train - loss: 0.0407, acc: 0.9896
-22:15:44 valid - loss: 1.6609, acc: 0.7044
+16:50:40 train - loss: 0.0356, acc: 0.9914
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:50:44 valid - loss: 1.6001, acc: 0.7138
 Epoch 231/300
-22:15:55 train - loss: 0.0381, acc: 0.9910
-22:15:55 valid - loss: 1.6469, acc: 0.7039
+16:50:55 train - loss: 0.0359, acc: 0.9914
+16:50:55 valid - loss: 1.5728, acc: 0.7162
 Epoch 232/300
-22:16:06 train - loss: 0.0383, acc: 0.9905
-22:16:07 valid - loss: 1.6549, acc: 0.6979
+16:51:06 train - loss: 0.0340, acc: 0.9914
+16:51:06 valid - loss: 1.5676, acc: 0.7176
 Epoch 233/300
-22:16:17 train - loss: 0.0361, acc: 0.9915
-22:16:18 valid - loss: 1.6506, acc: 0.7030
+16:51:17 train - loss: 0.0320, acc: 0.9930
+16:51:17 valid - loss: 1.5627, acc: 0.7190
 Epoch 234/300
-22:16:28 train - loss: 0.0319, acc: 0.9930
-22:16:29 valid - loss: 1.6465, acc: 0.7078
+16:51:28 train - loss: 0.0308, acc: 0.9932
+16:51:28 valid - loss: 1.5539, acc: 0.7225
 Epoch 235/300
-22:16:40 train - loss: 0.0316, acc: 0.9927
-22:16:40 valid - loss: 1.6623, acc: 0.7029
+16:51:39 train - loss: 0.0293, acc: 0.9936
+16:51:39 valid - loss: 1.5782, acc: 0.7239
 Epoch 236/300
-22:16:51 train - loss: 0.0295, acc: 0.9937
-22:16:51 valid - loss: 1.6049, acc: 0.7075
+16:51:50 train - loss: 0.0294, acc: 0.9934
+16:51:51 valid - loss: 1.5288, acc: 0.7258
 Epoch 237/300
-22:17:02 train - loss: 0.0295, acc: 0.9933
-22:17:02 valid - loss: 1.6209, acc: 0.7088
+16:52:01 train - loss: 0.0284, acc: 0.9936
+16:52:02 valid - loss: 1.5383, acc: 0.7258
 Epoch 238/300
-22:17:13 train - loss: 0.0281, acc: 0.9942
-22:17:13 valid - loss: 1.6278, acc: 0.7080
+16:52:13 train - loss: 0.0267, acc: 0.9940
+16:52:13 valid - loss: 1.5339, acc: 0.7295
 Epoch 239/300
-22:17:24 train - loss: 0.0269, acc: 0.9943
-22:17:24 valid - loss: 1.6471, acc: 0.7075
+16:52:24 train - loss: 0.0244, acc: 0.9947
+16:52:24 valid - loss: 1.5406, acc: 0.7276
 Epoch 240/300
-22:17:35 train - loss: 0.0260, acc: 0.9945
-22:17:35 valid - loss: 1.6047, acc: 0.7092
+16:52:35 train - loss: 0.0230, acc: 0.9952
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:52:39 valid - loss: 1.5532, acc: 0.7239
 Epoch 241/300
-22:17:46 train - loss: 0.0227, acc: 0.9959
-22:17:46 valid - loss: 1.5952, acc: 0.7072
+16:52:49 train - loss: 0.0229, acc: 0.9953
+16:52:50 valid - loss: 1.5436, acc: 0.7268
 Epoch 242/300
-22:17:57 train - loss: 0.0232, acc: 0.9956
-22:17:57 valid - loss: 1.6086, acc: 0.7082
+16:53:01 train - loss: 0.0218, acc: 0.9955
+16:53:01 valid - loss: 1.5353, acc: 0.7266
 Epoch 243/300
-22:18:08 train - loss: 0.0228, acc: 0.9956
-22:18:08 valid - loss: 1.6290, acc: 0.7073
+16:53:12 train - loss: 0.0202, acc: 0.9961
+16:53:12 valid - loss: 1.5180, acc: 0.7258
 Epoch 244/300
-22:18:19 train - loss: 0.0212, acc: 0.9959
-22:18:20 valid - loss: 1.6092, acc: 0.7089
+16:53:23 train - loss: 0.0201, acc: 0.9961
+16:53:23 valid - loss: 1.5205, acc: 0.7281
 Epoch 245/300
-22:18:30 train - loss: 0.0207, acc: 0.9960
-22:18:31 valid - loss: 1.5946, acc: 0.7128
+16:53:34 train - loss: 0.0189, acc: 0.9963
+16:53:34 valid - loss: 1.5346, acc: 0.7277
 Epoch 246/300
-22:18:41 train - loss: 0.0202, acc: 0.9965
-22:18:42 valid - loss: 1.6098, acc: 0.7130
+16:53:45 train - loss: 0.0193, acc: 0.9962
+16:53:45 valid - loss: 1.5230, acc: 0.7277
 Epoch 247/300
-22:18:52 train - loss: 0.0199, acc: 0.9962
-22:18:53 valid - loss: 1.5937, acc: 0.7111
+16:53:56 train - loss: 0.0182, acc: 0.9968
+16:53:56 valid - loss: 1.5149, acc: 0.7277
 Epoch 248/300
-22:19:04 train - loss: 0.0184, acc: 0.9973
-22:19:04 valid - loss: 1.5923, acc: 0.7151
+16:54:07 train - loss: 0.0172, acc: 0.9970
+16:54:08 valid - loss: 1.5008, acc: 0.7299
 Epoch 249/300
-22:19:15 train - loss: 0.0178, acc: 0.9970
-22:19:15 valid - loss: 1.6014, acc: 0.7141
+16:54:18 train - loss: 0.0158, acc: 0.9970
+16:54:19 valid - loss: 1.5197, acc: 0.7315
 Epoch 250/300
-22:19:26 train - loss: 0.0174, acc: 0.9970
-22:19:26 valid - loss: 1.5941, acc: 0.7151
+16:54:29 train - loss: 0.0158, acc: 0.9971
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:54:33 valid - loss: 1.5183, acc: 0.7310
 Epoch 251/300
-22:19:37 train - loss: 0.0161, acc: 0.9972
-22:19:37 valid - loss: 1.5995, acc: 0.7160
+16:54:44 train - loss: 0.0168, acc: 0.9968
+16:54:44 valid - loss: 1.5139, acc: 0.7304
 Epoch 252/300
-22:19:48 train - loss: 0.0166, acc: 0.9972
-22:19:48 valid - loss: 1.5942, acc: 0.7157
+16:54:55 train - loss: 0.0159, acc: 0.9972
+16:54:55 valid - loss: 1.5136, acc: 0.7314
 Epoch 253/300
-22:19:59 train - loss: 0.0149, acc: 0.9978
-22:19:59 valid - loss: 1.5919, acc: 0.7156
+16:55:06 train - loss: 0.0152, acc: 0.9974
+16:55:06 valid - loss: 1.4947, acc: 0.7321
 Epoch 254/300
-22:20:10 train - loss: 0.0148, acc: 0.9977
-22:20:10 valid - loss: 1.5844, acc: 0.7181
+16:55:17 train - loss: 0.0144, acc: 0.9976
+16:55:18 valid - loss: 1.5014, acc: 0.7328
 Epoch 255/300
-22:20:21 train - loss: 0.0150, acc: 0.9975
-22:20:21 valid - loss: 1.5884, acc: 0.7159
+16:55:28 train - loss: 0.0132, acc: 0.9977
+16:55:29 valid - loss: 1.5010, acc: 0.7324
 Epoch 256/300
-22:20:32 train - loss: 0.0140, acc: 0.9979
-22:20:33 valid - loss: 1.5944, acc: 0.7146
+16:55:39 train - loss: 0.0138, acc: 0.9976
+16:55:40 valid - loss: 1.4884, acc: 0.7340
 Epoch 257/300
-22:20:43 train - loss: 0.0145, acc: 0.9978
-22:20:44 valid - loss: 1.5749, acc: 0.7153
+16:55:51 train - loss: 0.0124, acc: 0.9982
+16:55:51 valid - loss: 1.4856, acc: 0.7339
 Epoch 258/300
-22:20:54 train - loss: 0.0139, acc: 0.9977
-22:20:55 valid - loss: 1.5800, acc: 0.7149
+16:56:02 train - loss: 0.0121, acc: 0.9983
+16:56:02 valid - loss: 1.4825, acc: 0.7331
 Epoch 259/300
-22:21:06 train - loss: 0.0141, acc: 0.9977
-22:21:06 valid - loss: 1.5867, acc: 0.7169
+16:56:13 train - loss: 0.0118, acc: 0.9982
+16:56:13 valid - loss: 1.4903, acc: 0.7347
 Epoch 260/300
-22:21:17 train - loss: 0.0133, acc: 0.9981
-22:21:17 valid - loss: 1.5774, acc: 0.7154
+16:56:24 train - loss: 0.0119, acc: 0.9981
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:56:28 valid - loss: 1.5018, acc: 0.7360
 Epoch 261/300
-22:21:28 train - loss: 0.0138, acc: 0.9980
-22:21:28 valid - loss: 1.5737, acc: 0.7157
+16:56:38 train - loss: 0.0125, acc: 0.9979
+16:56:39 valid - loss: 1.4993, acc: 0.7360
 Epoch 262/300
-22:21:39 train - loss: 0.0131, acc: 0.9982
-22:21:39 valid - loss: 1.5848, acc: 0.7157
+16:56:50 train - loss: 0.0125, acc: 0.9976
+16:56:50 valid - loss: 1.4966, acc: 0.7361
 Epoch 263/300
-22:21:50 train - loss: 0.0119, acc: 0.9985
-22:21:50 valid - loss: 1.5806, acc: 0.7170
+16:57:01 train - loss: 0.0117, acc: 0.9981
+16:57:01 valid - loss: 1.4865, acc: 0.7361
 Epoch 264/300
-22:22:01 train - loss: 0.0127, acc: 0.9979
-22:22:01 valid - loss: 1.5977, acc: 0.7182
+16:57:12 train - loss: 0.0112, acc: 0.9983
+16:57:12 valid - loss: 1.4893, acc: 0.7340
 Epoch 265/300
-22:22:12 train - loss: 0.0123, acc: 0.9982
-22:22:12 valid - loss: 1.5758, acc: 0.7153
+16:57:23 train - loss: 0.0114, acc: 0.9984
+16:57:23 valid - loss: 1.4779, acc: 0.7339
 Epoch 266/300
-22:22:23 train - loss: 0.0118, acc: 0.9985
-22:22:23 valid - loss: 1.5720, acc: 0.7188
+16:57:34 train - loss: 0.0109, acc: 0.9984
+16:57:34 valid - loss: 1.4833, acc: 0.7346
 Epoch 267/300
-22:22:34 train - loss: 0.0121, acc: 0.9984
-22:22:34 valid - loss: 1.5730, acc: 0.7170
+16:57:45 train - loss: 0.0106, acc: 0.9985
+16:57:45 valid - loss: 1.4771, acc: 0.7372
 Epoch 268/300
-22:22:45 train - loss: 0.0117, acc: 0.9982
-22:22:46 valid - loss: 1.5853, acc: 0.7177
+16:57:56 train - loss: 0.0102, acc: 0.9986
+16:57:57 valid - loss: 1.4776, acc: 0.7361
 Epoch 269/300
-22:22:56 train - loss: 0.0110, acc: 0.9986
-22:22:57 valid - loss: 1.5733, acc: 0.7179
+16:58:07 train - loss: 0.0101, acc: 0.9987
+16:58:08 valid - loss: 1.4813, acc: 0.7336
 Epoch 270/300
-22:23:07 train - loss: 0.0118, acc: 0.9982
-22:23:08 valid - loss: 1.5716, acc: 0.7182
+16:58:18 train - loss: 0.0100, acc: 0.9988
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+16:58:22 valid - loss: 1.4777, acc: 0.7365
 Epoch 271/300
-22:23:19 train - loss: 0.0110, acc: 0.9986
-22:23:19 valid - loss: 1.5655, acc: 0.7184
+16:58:33 train - loss: 0.0101, acc: 0.9985
+16:58:33 valid - loss: 1.4766, acc: 0.7370
 Epoch 272/300
-22:23:30 train - loss: 0.0110, acc: 0.9985
-22:23:30 valid - loss: 1.5819, acc: 0.7180
+16:58:44 train - loss: 0.0100, acc: 0.9986
+16:58:44 valid - loss: 1.4805, acc: 0.7367
 Epoch 273/300
-22:23:41 train - loss: 0.0109, acc: 0.9987
-22:23:41 valid - loss: 1.5663, acc: 0.7193
+16:58:55 train - loss: 0.0098, acc: 0.9985
+16:58:55 valid - loss: 1.4800, acc: 0.7380
 Epoch 274/300
-22:23:52 train - loss: 0.0105, acc: 0.9987
-22:23:52 valid - loss: 1.5634, acc: 0.7182
+16:59:06 train - loss: 0.0094, acc: 0.9990
+16:59:07 valid - loss: 1.4885, acc: 0.7362
 Epoch 275/300
-22:24:03 train - loss: 0.0108, acc: 0.9987
-22:24:03 valid - loss: 1.5722, acc: 0.7188
+16:59:17 train - loss: 0.0095, acc: 0.9987
+16:59:18 valid - loss: 1.4879, acc: 0.7342
 Epoch 276/300
-22:24:14 train - loss: 0.0104, acc: 0.9990
-22:24:14 valid - loss: 1.5671, acc: 0.7182
+16:59:28 train - loss: 0.0096, acc: 0.9989
+16:59:29 valid - loss: 1.4818, acc: 0.7360
 Epoch 277/300
-22:24:25 train - loss: 0.0101, acc: 0.9988
-22:24:25 valid - loss: 1.5723, acc: 0.7181
+16:59:40 train - loss: 0.0094, acc: 0.9988
+16:59:40 valid - loss: 1.4805, acc: 0.7380
 Epoch 278/300
-22:24:36 train - loss: 0.0105, acc: 0.9987
-22:24:36 valid - loss: 1.5677, acc: 0.7184
+16:59:51 train - loss: 0.0094, acc: 0.9988
+16:59:51 valid - loss: 1.4759, acc: 0.7355
 Epoch 279/300
-22:24:47 train - loss: 0.0098, acc: 0.9989
-22:24:48 valid - loss: 1.5763, acc: 0.7163
+17:00:02 train - loss: 0.0093, acc: 0.9988
+17:00:02 valid - loss: 1.4933, acc: 0.7347
 Epoch 280/300
-22:24:58 train - loss: 0.0105, acc: 0.9986
-22:24:59 valid - loss: 1.5718, acc: 0.7182
+17:00:13 train - loss: 0.0093, acc: 0.9989
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+17:00:17 valid - loss: 1.4816, acc: 0.7357
 Epoch 281/300
-22:25:09 train - loss: 0.0103, acc: 0.9986
-22:25:10 valid - loss: 1.5676, acc: 0.7172
+17:00:28 train - loss: 0.0090, acc: 0.9990
+17:00:28 valid - loss: 1.4860, acc: 0.7380
 Epoch 282/300
-22:25:20 train - loss: 0.0096, acc: 0.9989
-22:25:21 valid - loss: 1.5686, acc: 0.7179
+17:00:39 train - loss: 0.0089, acc: 0.9990
+17:00:39 valid - loss: 1.4813, acc: 0.7383
 Epoch 283/300
-22:25:32 train - loss: 0.0098, acc: 0.9989
-22:25:32 valid - loss: 1.5661, acc: 0.7194
+17:00:50 train - loss: 0.0085, acc: 0.9989
+17:00:50 valid - loss: 1.4798, acc: 0.7361
 Epoch 284/300
-22:25:43 train - loss: 0.0092, acc: 0.9989
-22:25:43 valid - loss: 1.5739, acc: 0.7181
+17:01:01 train - loss: 0.0085, acc: 0.9990
+17:01:01 valid - loss: 1.4781, acc: 0.7366
 Epoch 285/300
-22:25:54 train - loss: 0.0094, acc: 0.9991
-22:25:54 valid - loss: 1.5690, acc: 0.7187
+17:01:12 train - loss: 0.0086, acc: 0.9990
+17:01:12 valid - loss: 1.4802, acc: 0.7373
 Epoch 286/300
-22:26:05 train - loss: 0.0095, acc: 0.9989
-22:26:05 valid - loss: 1.5636, acc: 0.7187
+17:01:23 train - loss: 0.0090, acc: 0.9988
+17:01:23 valid - loss: 1.4805, acc: 0.7388
 Epoch 287/300
-22:26:16 train - loss: 0.0101, acc: 0.9986
-22:26:16 valid - loss: 1.5644, acc: 0.7197
+17:01:34 train - loss: 0.0084, acc: 0.9991
+17:01:35 valid - loss: 1.4727, acc: 0.7365
 Epoch 288/300
-22:26:27 train - loss: 0.0100, acc: 0.9985
-22:26:27 valid - loss: 1.5652, acc: 0.7197
+17:01:45 train - loss: 0.0086, acc: 0.9989
+17:01:46 valid - loss: 1.4777, acc: 0.7376
 Epoch 289/300
-22:26:38 train - loss: 0.0101, acc: 0.9987
-22:26:38 valid - loss: 1.5607, acc: 0.7196
+17:01:57 train - loss: 0.0085, acc: 0.9991
+17:01:57 valid - loss: 1.4776, acc: 0.7367
 Epoch 290/300
-22:26:49 train - loss: 0.0091, acc: 0.9992
-22:26:49 valid - loss: 1.5714, acc: 0.7187
+17:02:08 train - loss: 0.0082, acc: 0.9990
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+17:02:11 valid - loss: 1.4767, acc: 0.7372
 Epoch 291/300
-22:27:00 train - loss: 0.0092, acc: 0.9989
-22:27:01 valid - loss: 1.5540, acc: 0.7205
+17:02:22 train - loss: 0.0084, acc: 0.9990
+17:02:23 valid - loss: 1.4761, acc: 0.7392
 Epoch 292/300
-22:27:11 train - loss: 0.0093, acc: 0.9992
-22:27:12 valid - loss: 1.5646, acc: 0.7197
+17:02:33 train - loss: 0.0088, acc: 0.9987
+17:02:34 valid - loss: 1.4817, acc: 0.7394
 Epoch 293/300
-22:27:22 train - loss: 0.0100, acc: 0.9987
-22:27:23 valid - loss: 1.5584, acc: 0.7198
+17:02:44 train - loss: 0.0084, acc: 0.9991
+17:02:45 valid - loss: 1.4818, acc: 0.7378
 Epoch 294/300
-22:27:33 train - loss: 0.0091, acc: 0.9991
-22:27:34 valid - loss: 1.5641, acc: 0.7207
+17:02:56 train - loss: 0.0089, acc: 0.9989
+17:02:56 valid - loss: 1.4805, acc: 0.7371
 Epoch 295/300
-22:27:45 train - loss: 0.0093, acc: 0.9990
-22:27:45 valid - loss: 1.5631, acc: 0.7184
+17:03:07 train - loss: 0.0087, acc: 0.9987
+17:03:07 valid - loss: 1.4755, acc: 0.7373
 Epoch 296/300
-22:27:56 train - loss: 0.0097, acc: 0.9988
-22:27:56 valid - loss: 1.5733, acc: 0.7183
+17:03:18 train - loss: 0.0087, acc: 0.9989
+17:03:18 valid - loss: 1.4805, acc: 0.7384
 Epoch 297/300
-22:28:07 train - loss: 0.0095, acc: 0.9991
-22:28:07 valid - loss: 1.5684, acc: 0.7201
+17:03:29 train - loss: 0.0087, acc: 0.9990
+17:03:29 valid - loss: 1.4929, acc: 0.7362
 Epoch 298/300
-22:28:18 train - loss: 0.0094, acc: 0.9990
-22:28:18 valid - loss: 1.5649, acc: 0.7197
+17:03:40 train - loss: 0.0086, acc: 0.9989
+17:03:40 valid - loss: 1.4808, acc: 0.7368
 Epoch 299/300
-22:28:29 train - loss: 0.0095, acc: 0.9986
-22:28:29 valid - loss: 1.5671, acc: 0.7174
+17:03:51 train - loss: 0.0088, acc: 0.9989
+17:03:51 valid - loss: 1.4830, acc: 0.7380
 Epoch 300/300
-22:28:40 train - loss: 0.0097, acc: 0.9988
-22:28:40 valid - loss: 1.5623, acc: 0.7190
+17:04:02 train - loss: 0.0081, acc: 0.9992
+Save trainer to /content/drive/My Drive/models/CIFAR100-4/ckpt
+17:04:06 valid - loss: 1.4730, acc: 0.7368
